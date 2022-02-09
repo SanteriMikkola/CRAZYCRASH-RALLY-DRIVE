@@ -15958,7 +15958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2.5
-  leftRightSpeed: 2
+  leftRightSpeed: 2.8
   playerCollideWithOsb: 0
   playerMoveLeft: 0
   playerMoveRight: 0
