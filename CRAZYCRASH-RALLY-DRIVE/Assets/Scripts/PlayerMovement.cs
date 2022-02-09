@@ -37,11 +37,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (playerCollideWithOsb == false)
         {
-            transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
+            transform.Translate(moveSpeed * Time.deltaTime * Vector3.forward, Space.World);
         }
         if (playerCollideWithOsb == true)
         {
-            transform.Translate(Vector3.forward * Time.deltaTime * 0f, Space.World);
+            transform.Translate(0f * Time.deltaTime * Vector3.forward, Space.World);
         }
         Move();
     }
@@ -51,20 +51,19 @@ public class PlayerMovement : MonoBehaviour
         //moveSpeed = 2.5f;
         Vector3 targetPoint3 = (playerRotateF.transform.position);
         Player.transform.LookAt(targetPoint3);
-        transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
+        transform.Translate(moveSpeed * Time.deltaTime * Vector3.forward, Space.World);
         //Player.transform.Rotate(0f, 0f, 0f);
         playerMoveLeft = false;
         playerMoveRight = false;
 
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.A) && playerMoveRight == false || Input.GetKey(KeyCode.LeftArrow) && playerMoveRight == false)
         {
-            isInputA = true;
-            isInputD = false;
-            /*Vector3 targetPoint = (playerRotateL.transform.position);
-            transform.Translate(Vector3.left * Time.deltaTime * leftRightSpeed);
+            
+            Vector3 targetPoint = (playerRotateL.transform.position);
+            transform.Translate(leftRightSpeed * Time.deltaTime * Vector3.left);
             Player.transform.LookAt(targetPoint);
+            playerMoveLeft = true;
             //moveSpeed -= 0.2f;
-            playerMoveLeft = true;*/
             //Rotate();
             //Player.transform.Rotate(0f, -20f, 0f);
             /*for (int i = 0; i < 20; i++)
@@ -77,50 +76,21 @@ public class PlayerMovement : MonoBehaviour
             }*/
 
         }
-        if (isInputA == true && isInputD == false)
+        else if (Input.GetKey(KeyCode.D) && playerMoveLeft == false || Input.GetKey(KeyCode.RightArrow) && playerMoveLeft == false)
         {
-            Vector3 targetPoint = (playerRotateL.transform.position);
-            transform.Translate(Vector3.left * Time.deltaTime * leftRightSpeed);
-            Player.transform.LookAt(targetPoint);
-            //moveSpeed -= 0.2f;
-            playerMoveLeft = true;
-            transform.Translate(Vector3.forward * Time.deltaTime * 0f, Space.World);
-
-        }
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-        {
-            isInputA = false;
-            isInputD = true;
-            /*Vector3 targetPoint2 = (playerRotateR.transform.position);
-            transform.Translate(Vector3.right * Time.deltaTime * leftRightSpeed);
+            
+            Vector3 targetPoint2 = (playerRotateR.transform.position);
+            transform.Translate(leftRightSpeed * Time.deltaTime * Vector3.right);
             Player.transform.LookAt(targetPoint2);
+            playerMoveRight = true;
             //moveSpeed -= 0.2f;
-            playerMoveRight = true;*/
             /*for (int i = 0; i < 20; i++)
             {
                 Player.transform.Rotate(0f, 1f, 0f);
             }*/
             //Player.transform.Rotate(0f, 20f, 0f);
         }
-        if (isInputD == true && isInputA == false)
-        {
-            Vector3 targetPoint2 = (playerRotateR.transform.position);
-            transform.Translate(Vector3.right * Time.deltaTime * leftRightSpeed);
-            Player.transform.LookAt(targetPoint2);
-            //moveSpeed -= 0.2f;
-            playerMoveRight = true;
-            transform.Translate(Vector3.forward * Time.deltaTime * 0f, Space.World);
-
-        }
-        /*if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.D))
-        {
-            Player.transform.LookAt(targetPoint3);
-            transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
-            transform.Translate(Vector3.left * Time.deltaTime * 0f);
-            transform.Translate(Vector3.right * Time.deltaTime * 0f);
-            playerMoveLeft = false;
-            playerMoveRight = false;
-        }*/
+        
     }
     /*public void OnTriggerEnter(Collider other)
     {
@@ -136,9 +106,9 @@ public class PlayerMovement : MonoBehaviour
             playerCollideWithOsb = true;
             osumat++;
             Debug.Log("Osuma");
-            transform.Translate(Vector3.forward * Time.deltaTime * 0f, Space.World);
+            transform.Translate(0f * Time.deltaTime * Vector3.forward, Space.World);
         }
-        if (osumat == 3)
+        if (osumat == 10)
         {
             Destroy(gameObject);
             playerCollideWithOsb = false;
@@ -150,7 +120,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Este"))
         {
             playerCollideWithOsb = false;
-            transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
+            transform.Translate(moveSpeed * Time.deltaTime * Vector3.forward, Space.World);
         }
     }
 
