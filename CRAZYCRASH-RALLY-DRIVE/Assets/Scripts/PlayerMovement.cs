@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 2.5f;
-    public float leftRightSpeed = 2f;
+    public float leftRightSpeed = 2.8f;
 
     private GameObject Player;
     private GameObject playerRotateL;
@@ -17,6 +17,9 @@ public class PlayerMovement : MonoBehaviour
 
     public bool playerMoveLeft = false;
     public bool playerMoveRight = false;
+
+    public bool isInputA = false;
+    public bool isInputD = false;
 
     private int osumat = 0;
 
@@ -55,11 +58,13 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
-            Vector3 targetPoint = (playerRotateL.transform.position);
+            isInputA = true;
+            isInputD = false;
+            /*Vector3 targetPoint = (playerRotateL.transform.position);
             transform.Translate(Vector3.left * Time.deltaTime * leftRightSpeed);
             Player.transform.LookAt(targetPoint);
             //moveSpeed -= 0.2f;
-            playerMoveLeft = true;
+            playerMoveLeft = true;*/
             //Rotate();
             //Player.transform.Rotate(0f, -20f, 0f);
             /*for (int i = 0; i < 20; i++)
@@ -70,22 +75,44 @@ public class PlayerMovement : MonoBehaviour
             if(PlayerRotationY => -20f){
                 Player.transform.rotation.y = -20f;
             }*/
-            
+
+        }
+        if (isInputA == true && isInputD == false)
+        {
+            Vector3 targetPoint = (playerRotateL.transform.position);
+            transform.Translate(Vector3.left * Time.deltaTime * leftRightSpeed);
+            Player.transform.LookAt(targetPoint);
+            //moveSpeed -= 0.2f;
+            playerMoveLeft = true;
+            transform.Translate(Vector3.forward * Time.deltaTime * 0f, Space.World);
+
         }
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
-            Vector3 targetPoint2 = (playerRotateR.transform.position);
+            isInputA = false;
+            isInputD = true;
+            /*Vector3 targetPoint2 = (playerRotateR.transform.position);
             transform.Translate(Vector3.right * Time.deltaTime * leftRightSpeed);
             Player.transform.LookAt(targetPoint2);
             //moveSpeed -= 0.2f;
-            playerMoveRight = true;
+            playerMoveRight = true;*/
             /*for (int i = 0; i < 20; i++)
             {
                 Player.transform.Rotate(0f, 1f, 0f);
             }*/
             //Player.transform.Rotate(0f, 20f, 0f);
         }
-        if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.D))
+        if (isInputD == true && isInputA == false)
+        {
+            Vector3 targetPoint2 = (playerRotateR.transform.position);
+            transform.Translate(Vector3.right * Time.deltaTime * leftRightSpeed);
+            Player.transform.LookAt(targetPoint2);
+            //moveSpeed -= 0.2f;
+            playerMoveRight = true;
+            transform.Translate(Vector3.forward * Time.deltaTime * 0f, Space.World);
+
+        }
+        /*if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.D))
         {
             Player.transform.LookAt(targetPoint3);
             transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
@@ -93,7 +120,7 @@ public class PlayerMovement : MonoBehaviour
             transform.Translate(Vector3.right * Time.deltaTime * 0f);
             playerMoveLeft = false;
             playerMoveRight = false;
-        }
+        }*/
     }
     /*public void OnTriggerEnter(Collider other)
     {
