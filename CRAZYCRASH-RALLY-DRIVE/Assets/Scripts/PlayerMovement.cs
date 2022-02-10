@@ -5,21 +5,29 @@ using UnityEngine.AI;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 2.5f;
-    public float leftRightSpeed = 2.8f;
+    public float moveSpeed;
+    public float leftRightSpeed = 3.2f;
+
+    private Rigidbody rb;
 
     private GameObject Player;
+    private GameObject Kamera;
     private GameObject playerRotateL;
     private GameObject playerRotateR;
     private GameObject playerRotateF;
+    ///private GameObject Este;
+    ///private Este este;
+
+    private float PmoveSpeed;
 
     public bool playerCollideWithOsb = false;
 
     public bool playerMoveLeft = false;
     public bool playerMoveRight = false;
 
-    public bool isInputA = false;
-    public bool isInputD = false;
+    public bool playerGotL = false;
+
+    public Vector3 stuckForce;
 
     private int osumat = 0;
 
@@ -28,69 +36,75 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         Player = GameObject.Find("Player");
+        Kamera = GameObject.Find("Main Camera");
         playerRotateL = GameObject.Find("playerRotationL");
         playerRotateR = GameObject.Find("playerRotationR");
         playerRotateF = GameObject.Find("playerRotationF");
+        rb = this.GetComponent<Rigidbody>();
+        ///Este = GameObject.Find("Rock");
+        ///este = Este.GetComponent<Este>();
     }
 
     void Update()
     {
-        if (playerCollideWithOsb == false)
-        {
-            transform.Translate(moveSpeed * Time.deltaTime * Vector3.forward, Space.World);
-        }
+        PmoveSpeed = moveSpeed;
         if (playerCollideWithOsb == true)
         {
-            transform.Translate(0f * Time.deltaTime * Vector3.forward, Space.World);
+            playerGotL = true;
+            transform.Translate(PmoveSpeed * Time.deltaTime * Vector3.forward, Space.World);
+            rb.AddForce(stuckForce, ForceMode.Impulse);
         }
         Move();
     }
 
     private void Move()
     {
-        //moveSpeed = 2.5f;
-        Vector3 targetPoint3 = (playerRotateF.transform.position);
-        Player.transform.LookAt(targetPoint3);
-        transform.Translate(moveSpeed * Time.deltaTime * Vector3.forward, Space.World);
-        //Player.transform.Rotate(0f, 0f, 0f);
-        playerMoveLeft = false;
-        playerMoveRight = false;
-
-        if (Input.GetKey(KeyCode.A) && playerMoveRight == false || Input.GetKey(KeyCode.LeftArrow) && playerMoveRight == false)
+        if (playerCollideWithOsb == false)
         {
-            
-            Vector3 targetPoint = (playerRotateL.transform.position);
-            transform.Translate(leftRightSpeed * Time.deltaTime * Vector3.left);
-            Player.transform.LookAt(targetPoint);
-            playerMoveLeft = true;
-            //moveSpeed -= 0.2f;
-            //Rotate();
-            //Player.transform.Rotate(0f, -20f, 0f);
-            /*for (int i = 0; i < 20; i++)
-            {
-                Player.transform.Rotate(0f, -1f, 0f);
-            }*/
-            /*Player.transform.rotation.y = PlayerRotationY;
-            if(PlayerRotationY => -20f){
-                Player.transform.rotation.y = -20f;
-            }*/
+            //moveSpeed = 2.5f;
+            Vector3 targetPoint3 = (playerRotateF.transform.position);
+            Player.transform.LookAt(targetPoint3);
+            transform.Translate(PmoveSpeed * Time.deltaTime * Vector3.forward, Space.World);
+            //Player.transform.Rotate(0f, 0f, 0f);
+            playerMoveLeft = false;
+            playerMoveRight = false;
 
-        }
-        else if (Input.GetKey(KeyCode.D) && playerMoveLeft == false || Input.GetKey(KeyCode.RightArrow) && playerMoveLeft == false)
-        {
-            
-            Vector3 targetPoint2 = (playerRotateR.transform.position);
-            transform.Translate(leftRightSpeed * Time.deltaTime * Vector3.right);
-            Player.transform.LookAt(targetPoint2);
-            playerMoveRight = true;
-            //moveSpeed -= 0.2f;
-            /*for (int i = 0; i < 20; i++)
+            if (Input.GetKey(KeyCode.A) && playerMoveRight == false || Input.GetKey(KeyCode.LeftArrow) && playerMoveRight == false)
             {
-                Player.transform.Rotate(0f, 1f, 0f);
-            }*/
-            //Player.transform.Rotate(0f, 20f, 0f);
+
+                Vector3 targetPoint = (playerRotateL.transform.position);
+                transform.Translate(leftRightSpeed * Time.deltaTime * Vector3.left);
+                Player.transform.LookAt(targetPoint);
+                playerMoveLeft = true;
+                //moveSpeed -= 0.2f;
+                //Rotate();
+                //Player.transform.Rotate(0f, -20f, 0f);
+                /*for (int i = 0; i < 20; i++)
+                {
+                    Player.transform.Rotate(0f, -1f, 0f);
+                }*/
+                /*Player.transform.rotation.y = PlayerRotationY;
+                if(PlayerRotationY => -20f){
+                    Player.transform.rotation.y = -20f;
+                }*/
+
+            }
+            else if (Input.GetKey(KeyCode.D) && playerMoveLeft == false || Input.GetKey(KeyCode.RightArrow) && playerMoveLeft == false)
+            {
+
+                Vector3 targetPoint2 = (playerRotateR.transform.position);
+                transform.Translate(leftRightSpeed * Time.deltaTime * Vector3.right);
+                Player.transform.LookAt(targetPoint2);
+                playerMoveRight = true;
+                //moveSpeed -= 0.2f;
+                /*for (int i = 0; i < 20; i++)
+                {
+                    Player.transform.Rotate(0f, 1f, 0f);
+                }*/
+                //Player.transform.Rotate(0f, 20f, 0f);
+            }
+            playerGotL = false;
         }
-        
     }
     /*public void OnTriggerEnter(Collider other)
     {
@@ -108,9 +122,10 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Osuma");
             transform.Translate(0f * Time.deltaTime * Vector3.forward, Space.World);
         }
-        if (osumat == 10)
+        if (osumat == 20)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
+            Kamera.SetActive(false);
             playerCollideWithOsb = false;
         }
 
@@ -120,7 +135,8 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Este"))
         {
             playerCollideWithOsb = false;
-            transform.Translate(moveSpeed * Time.deltaTime * Vector3.forward, Space.World);
+            //Este.SetActive(false);
+            //transform.Translate(PmoveSpeed * Time.deltaTime * Vector3.forward, Space.World);
         }
     }
 
