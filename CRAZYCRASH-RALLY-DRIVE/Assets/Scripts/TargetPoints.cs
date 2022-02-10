@@ -13,6 +13,9 @@ public class TargetPoints : MonoBehaviour
 
     private float moveSpeed;
     private float leftRightSpeed;
+    public Vector3 rePositionF;
+    public Vector3 rePositionL;
+    public Vector3 rePositionR;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +34,13 @@ public class TargetPoints : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moveSpeed = playerMove.moveSpeed * 2f;
+        rePositionF = Player.transform.position;
+        rePositionL = Player.transform.position;
+        rePositionR = Player.transform.position;
+        playerRotateF.transform.position = new Vector3(rePositionF.x, rePositionF.y + 1.1f, rePositionF.z + 50f);
+        playerRotateL.transform.position = new Vector3(rePositionL.x - 30f, rePositionL.y + 1.1f, rePositionL.z + 50f);
+        playerRotateR.transform.position = new Vector3(rePositionR.x + 30f, rePositionR.y + 1.1f, rePositionR.z + 50f);
+        moveSpeed = playerMove.moveSpeed;
         leftRightSpeed = playerMove.leftRightSpeed;
 
         if (playerMove.playerCollideWithOsb == false)
