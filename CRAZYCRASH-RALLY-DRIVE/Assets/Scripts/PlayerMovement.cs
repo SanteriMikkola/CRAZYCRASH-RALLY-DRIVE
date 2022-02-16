@@ -15,6 +15,10 @@ public class PlayerMovement : MonoBehaviour
     private GameObject playerRotateL;
     private GameObject playerRotateR;
     private GameObject playerRotateF;
+
+    private GameObject ScoreNumText;
+    private ScoreControll scoreControll;
+
     ///private GameObject Este;
     ///private Este este;
 
@@ -26,6 +30,10 @@ public class PlayerMovement : MonoBehaviour
     public bool playerMoveRight = false;
 
     public bool playerGotL = false;
+
+    public bool isPlayerDead = false;
+
+    public bool playerMoving = false;
 
     public Vector3 stuckForce;
 
@@ -41,6 +49,10 @@ public class PlayerMovement : MonoBehaviour
         playerRotateR = GameObject.Find("playerRotationR");
         playerRotateF = GameObject.Find("playerRotationF");
         rb = this.GetComponent<Rigidbody>();
+
+        ScoreNumText = GameObject.Find("ScoreNumText");
+        scoreControll = ScoreNumText.GetComponent<ScoreControll>();
+
         ///Este = GameObject.Find("Rock");
         ///este = Este.GetComponent<Este>();
     }
@@ -50,11 +62,13 @@ public class PlayerMovement : MonoBehaviour
         PmoveSpeed = moveSpeed;
         if (playerCollideWithOsb == true)
         {
+            playerMoving = false;
             playerGotL = true;
             transform.Translate(PmoveSpeed * Time.deltaTime * Vector3.forward, Space.World);
             rb.AddForce(stuckForce, ForceMode.Impulse);
         }
         Move();
+        PlayerPosChecking();
     }
 
     private void Move()
@@ -103,6 +117,7 @@ public class PlayerMovement : MonoBehaviour
                 }*/
                 //Player.transform.Rotate(0f, 20f, 0f);
             }
+            playerMoving = true;
             playerGotL = false;
         }
     }
@@ -124,6 +139,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (osumat == 20)
         {
+            isPlayerDead = true;
             gameObject.SetActive(false);
             Kamera.SetActive(false);
             playerCollideWithOsb = false;
@@ -144,4 +160,16 @@ public class PlayerMovement : MonoBehaviour
     {
         Player.transform.rotation = -20f;
     }*/
+
+    private void PlayerPosChecking()
+    {
+        if (Player.transform.position.z < 30f)
+        {
+            scoreControll.IsThatStart = true;
+        }
+        else
+        {
+            scoreControll.IsThatStart = false;
+        }
+    }
 }
