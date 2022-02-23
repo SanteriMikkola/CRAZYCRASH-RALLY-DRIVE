@@ -14,13 +14,13 @@ public class PlayerColor : MonoBehaviour
     private PlayerMovement playerMove;
 
     [SerializeField]
-    private float Rn;
+    private float Rn = 0.14f;
     [SerializeField]
-    private float Gn;
+    private float Gn = 0.16f;
     [SerializeField]
-    private float Bn;
+    private float Bn = 0.56f;
     [SerializeField]
-    private float An;
+    private float An = 1f;
 
     public bool IsThatNormalColor = true;
     public bool TrueOrFalse = false;
@@ -30,13 +30,13 @@ public class PlayerColor : MonoBehaviour
     //public float waitPlayer2 = 2f;
 
     [SerializeField]
-    private float R;
+    private float R = 0.52f;
     [SerializeField]
-    private float G;
+    private float G = 0.525f;
     [SerializeField]
-    private float B;
+    private float B = 0.66f;
     [SerializeField]
-    private float A;
+    private float A = 0.58f;
 
     float time = 0.5f;
     float timeDelay = 1.5f;

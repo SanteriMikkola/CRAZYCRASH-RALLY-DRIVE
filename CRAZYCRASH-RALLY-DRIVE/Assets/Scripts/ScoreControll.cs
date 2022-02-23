@@ -38,6 +38,7 @@ public class ScoreControll : MonoBehaviour
             numBer++;
         }
         numBer++;
+        numBer++;
         ScoreNumText.text = numBer.ToString();
     }
 
