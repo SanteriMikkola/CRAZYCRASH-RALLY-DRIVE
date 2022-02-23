@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - CameraControll
     - Este
+    - MenuController
     - PlayerColor
     - PlayerMovement
     - ScoreControll
@@ -19,6 +20,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -68,41 +70,45 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1574}
+      Script: {instanceID: 1582}
     - Class: 114
-      Script: {instanceID: 1900}
+      Script: {instanceID: 1908}
     - Class: 114
-      Script: {instanceID: 2286}
+      Script: {instanceID: 2294}
     - Class: 114
-      Script: {instanceID: 2298}
+      Script: {instanceID: 2306}
     - Class: 114
-      Script: {instanceID: 2368}
+      Script: {instanceID: 2376}
     - Class: 114
-      Script: {instanceID: 2700}
+      Script: {instanceID: 2708}
     - Class: 114
-      Script: {instanceID: 2862}
+      Script: {instanceID: 2870}
     - Class: 114
-      Script: {instanceID: 3086}
+      Script: {instanceID: 2922}
     - Class: 114
-      Script: {instanceID: 3132}
+      Script: {instanceID: 2942}
     - Class: 114
-      Script: {instanceID: 3348}
+      Script: {instanceID: 3096}
     - Class: 114
-      Script: {instanceID: 3486}
+      Script: {instanceID: 3142}
     - Class: 114
-      Script: {instanceID: 4474}
+      Script: {instanceID: 3358}
     - Class: 114
-      Script: {instanceID: 4938}
+      Script: {instanceID: 3496}
     - Class: 114
-      Script: {instanceID: 5294}
+      Script: {instanceID: 4484}
     - Class: 114
-      Script: {instanceID: 5300}
+      Script: {instanceID: 4948}
     - Class: 114
-      Script: {instanceID: 5372}
+      Script: {instanceID: 5304}
     - Class: 114
-      Script: {instanceID: 5660}
+      Script: {instanceID: 5310}
     - Class: 114
-      Script: {instanceID: 5756}
+      Script: {instanceID: 5382}
+    - Class: 114
+      Script: {instanceID: 5670}
+    - Class: 114
+      Script: {instanceID: 5766}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -322,6 +328,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 2a15f44cb864a59c2162227b8f9d5636
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuController
   - hash:
       serializedVersion: 2
       Hash: d6a8e9bec3160a152b9b2710593d3caa
@@ -811,4 +823,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/TestScene.unity
-  playerPath: C:/Users/s0mija01/Documents/ProjectBuilds/CRAZYCRASH-RALLY-DRIVE.exe
+  playerPath: E:/ProjectsBuilds/CRAZYCRASH-RALLY-DRIVE.exe
