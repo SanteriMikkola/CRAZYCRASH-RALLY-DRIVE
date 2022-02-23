@@ -102,6 +102,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("Quit!");
+            Application.Quit();
+        }
 
         //Esteet = GameObject.FindGameObjectsWithTag("Este");
         //Debug.Log(Esteet.Length);
@@ -210,7 +215,7 @@ public class PlayerMovement : MonoBehaviour
             //StartCoroutine(CollidersOn());
             StartCoroutine(PlayerColliderOn());
         }
-        if (osumat == 20)
+        if (osumat == 5)
         {
             isPlayerDead = true;
             gameObject.SetActive(false);
@@ -268,7 +273,7 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator PlayerColliderOn()
     {
-        playerPos_4z.z = Player.transform.position.z + 4.5f;
+        playerPos_4z.z = Player.transform.position.z + 4.2f;
         //playerBoxCollider.enabled = true;
         //Debug.Log("Toimiiko?");
         yield return new WaitUntil(() => Player.transform.position.z >= playerPos_4z.z);
