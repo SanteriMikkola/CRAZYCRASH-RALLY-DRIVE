@@ -33,12 +33,12 @@ public class ScoreControll : MonoBehaviour
 
     private void IncreaseScore()
     {
-        if (IsThatStart == true)
+        /*if (IsThatStart == true)
         {
             numBer++;
-        }
+        }*/
         numBer++;
-        numBer++;
+        //numBer++;
         ScoreNumText.text = numBer.ToString();
     }
 
