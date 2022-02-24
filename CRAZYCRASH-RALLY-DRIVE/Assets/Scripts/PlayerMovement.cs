@@ -89,8 +89,7 @@ public class PlayerMovement : MonoBehaviour
 
         rb = this.GetComponent<Rigidbody>();
 
-        ScoreNumText = GameObject.Find("ScoreNumText");
-        scoreControll = ScoreNumText.GetComponent<ScoreControll>();
+        
 
         playerColor = Player.GetComponent<PlayerColor>();
         ///Este = GameObject.Find("Rock");
@@ -121,7 +120,7 @@ public class PlayerMovement : MonoBehaviour
         {
             playerMoving = false;
             playerGotL = true;
-            lowSpeed = PmoveSpeed - 1.8f;
+            lowSpeed = PmoveSpeed - 2f;
             transform.Translate(lowSpeed * Time.deltaTime * Vector3.forward, Space.World);
             Vector3 targetPoint3 = (playerRotateF.transform.position);
             Player.transform.LookAt(targetPoint3);
@@ -131,13 +130,15 @@ public class PlayerMovement : MonoBehaviour
 
         if (startButtonS.IsGameStarted == true)
         {
+            ScoreNumText = GameObject.Find("ScoreNumText");
+            scoreControll = ScoreNumText.GetComponent<ScoreControll>();
             if (IsThatFirstStart == true)
             {
                 StartCoroutine(TutorialTie());
             }
             Move();
         }
-        PlayerPosChecking();
+        //PlayerPosChecking();
     }
 
     private void Move()
@@ -237,7 +238,7 @@ public class PlayerMovement : MonoBehaviour
         Player.transform.rotation = -20f;
     }*/
 
-    private void PlayerPosChecking()
+    /*private void PlayerPosChecking()
     {
         if (Player.transform.position.z < 30f)
         {
@@ -247,7 +248,7 @@ public class PlayerMovement : MonoBehaviour
         {
             scoreControll.IsThatStart = false;
         }
-    }
+    }*/
 
     /*IEnumerator PlayerColorBlink()
     {

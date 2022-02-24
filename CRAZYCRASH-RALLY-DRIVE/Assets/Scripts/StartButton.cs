@@ -17,8 +17,8 @@ public class StartButton : MonoBehaviour
     void Start()
     {
         Player = GameObject.Find("Player");
-        Kamera = GameObject.Find("Main Camera");
-        StartMenuKamera = GameObject.Find("StartMenuCamera");
+        //Kamera = GameObject.Find("Main Camera");
+        //StartMenuKamera = GameObject.Find("StartMenuCamera");
         playerMove = Player.GetComponent<PlayerMovement>();
     }
 

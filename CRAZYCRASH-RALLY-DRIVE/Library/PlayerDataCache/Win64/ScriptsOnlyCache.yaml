@@ -70,45 +70,45 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1582}
+      Script: {instanceID: 1578}
     - Class: 114
-      Script: {instanceID: 1908}
+      Script: {instanceID: 1904}
     - Class: 114
-      Script: {instanceID: 2294}
+      Script: {instanceID: 2290}
     - Class: 114
-      Script: {instanceID: 2306}
+      Script: {instanceID: 2302}
     - Class: 114
-      Script: {instanceID: 2376}
+      Script: {instanceID: 2372}
     - Class: 114
-      Script: {instanceID: 2708}
+      Script: {instanceID: 2704}
     - Class: 114
-      Script: {instanceID: 2870}
+      Script: {instanceID: 2866}
     - Class: 114
-      Script: {instanceID: 2922}
+      Script: {instanceID: 2918}
     - Class: 114
-      Script: {instanceID: 2942}
+      Script: {instanceID: 2938}
     - Class: 114
-      Script: {instanceID: 3096}
+      Script: {instanceID: 3092}
     - Class: 114
-      Script: {instanceID: 3142}
+      Script: {instanceID: 3138}
     - Class: 114
-      Script: {instanceID: 3358}
+      Script: {instanceID: 3354}
     - Class: 114
-      Script: {instanceID: 3496}
+      Script: {instanceID: 3492}
     - Class: 114
-      Script: {instanceID: 4484}
+      Script: {instanceID: 4480}
     - Class: 114
-      Script: {instanceID: 4948}
+      Script: {instanceID: 4944}
     - Class: 114
-      Script: {instanceID: 5304}
+      Script: {instanceID: 5300}
     - Class: 114
-      Script: {instanceID: 5310}
+      Script: {instanceID: 5306}
     - Class: 114
-      Script: {instanceID: 5382}
+      Script: {instanceID: 5378}
     - Class: 114
-      Script: {instanceID: 5670}
+      Script: {instanceID: 5666}
     - Class: 114
-      Script: {instanceID: 5766}
+      Script: {instanceID: 5762}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -823,4 +823,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/TestScene.unity
-  playerPath: E:/ProjectsBuilds/CRAZYCRASH-RALLY-DRIVE.exe
+  playerPath: C:/Users/s0mija01/Documents/Buildit/CRAZYCRASH-RALLY-DRIVE.exe
