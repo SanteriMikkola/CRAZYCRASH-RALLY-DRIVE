@@ -49,7 +49,10 @@ public class PlayerMovement : MonoBehaviour
 
 
     // Int
-    private int osumat = 0;
+    [HideInInspector]
+    public int osumat = 0;
+    [HideInInspector]
+    public int maxOsumat = 10;
     //private int esteidenMaara = 0;
     //private int i = 0;
     //private int ii = 0;
@@ -212,7 +215,7 @@ public class PlayerMovement : MonoBehaviour
             //StartCoroutine(CollidersOn());
             StartCoroutine(PlayerColliderOn());
         }
-        if (osumat == 5)
+        if (osumat == maxOsumat)
         {
             isPlayerDead = true;
             gameObject.SetActive(false);

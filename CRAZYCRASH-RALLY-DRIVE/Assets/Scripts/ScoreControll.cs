@@ -12,16 +12,19 @@ public class ScoreControll : MonoBehaviour
     private int numBer;
     public bool IsThatStart = true;
 
+    private CarCollider carCollider;
+
     void Start()
     {
         Player = GameObject.Find("Player");
-        playerMove = Player.GetComponent<PlayerMovement>();
+        //playerMove = Player.GetComponent<PlayerMovement>();
+        carCollider = Player.GetComponent<CarCollider>();
         numBer = 000;
     }
     void Update()
     {
         IsplayerDead();
-        if (playerMove.playerCollideWithOsb == false && playerMove.playerMoving == true)
+        if (carCollider.playerCollide == false && carCollider.isPlayerMoving == true)
         {
             IncreaseScore();
         }
@@ -29,6 +32,15 @@ public class ScoreControll : MonoBehaviour
         {
             StartCoroutine(OdotaHetki());
         }
+
+        /*if (playerMove.playerCollideWithOsb == false && playerMove.playerMoving == true)
+        {
+            IncreaseScore();
+        }
+        else
+        {
+            StartCoroutine(OdotaHetki());
+        }*/
     }
 
     private void IncreaseScore()
@@ -49,9 +61,9 @@ public class ScoreControll : MonoBehaviour
 
     private void IsplayerDead()
     {
-        if (playerMove.isPlayerDead == true)
+        if (carCollider.isPlayerDead == true)
         {
-            playerMove.playerCollideWithOsb = true;
+            carCollider.playerCollide = true;
         }
     }
 }

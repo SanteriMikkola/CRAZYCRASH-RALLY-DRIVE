@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraControll.cs" />
+    <Compile Include="Assets\Scripts\HP_Controll.cs" />
     <Compile Include="Assets\Scripts\MenuController.cs" />
     <Compile Include="Assets\Scripts\TargetPoints.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
@@ -64,6 +65,9 @@
     <Compile Include="Assets\Scripts\ScoreControll.cs" />
     <Compile Include="Assets\Scripts\StartButton.cs" />
     <Compile Include="Assets\Scripts\PlayerColor.cs" />
+    <Compile Include="Assets\Scripts\CarController.cs" />
+    <Compile Include="Assets\Scripts\CarCollider.cs" />
+    <Compile Include="Assets\Scripts\WheelColliders.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
