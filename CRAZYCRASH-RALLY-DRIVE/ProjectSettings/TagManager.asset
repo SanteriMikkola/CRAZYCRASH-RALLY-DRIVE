@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Platform
   - Este
+  - ToolBox
   layers:
   - Default
   - TransparentFX

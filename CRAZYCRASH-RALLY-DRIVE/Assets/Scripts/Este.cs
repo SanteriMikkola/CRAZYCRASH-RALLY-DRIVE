@@ -9,13 +9,30 @@ public class Este : MonoBehaviour
         gameObject.SetActive(false);
     }*/
 
+    private BoxCollider boxCollider;
+    private SphereCollider sphereCollider;
+
+    /*public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+
+            this.sphereCollider.enabled = false;
+            this.boxCollider.enabled = false;
+            //gameObject.SetActive(false);
+            
+        }
+    }
+
     public void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
 
-            gameObject.SetActive(false);
-            
+            this.sphereCollider.enabled = enabled;
+            this.boxCollider.enabled = enabled;
+            //gameObject.SetActive(false);
+
         }
-    }
+    }*/
 }

@@ -18,8 +18,12 @@ public class CarCollider : MonoBehaviour
     public bool isPlayerDead = false;
 
     public bool isPlayerMoving = true;
+    public bool toolBoxPicked = false;
+    public bool isThatFullHealthReverse;
 
-    public int osuma;
+    public int osuma = 0;
+    
+    public int maxOsumat = 5;
 
     private Vector3 playerPos_4z;
 
@@ -35,6 +39,7 @@ public class CarCollider : MonoBehaviour
 
     public void Update()
     {
+
         /*if (playerCollide == true)
         {
             isPlayerMoving = false;
@@ -47,7 +52,7 @@ public class CarCollider : MonoBehaviour
 
     public void OnCollisionEnter(Collision collider)
     {
-        if (collider.gameObject.CompareTag("Este"))
+        if (collider.gameObject.CompareTag("Este") && playerCollide == false)
         {
             playerCollide = true;
             playersBoxCollider.enabled = false;
@@ -64,12 +69,32 @@ public class CarCollider : MonoBehaviour
             //StartCoroutine(CollidersOn());
             StartCoroutine(PlayerColliderOn());
         }
-        if (osuma == 20)
+        if (osuma == maxOsumat)
         {
             isPlayerDead = true;
             gameObject.SetActive(false);
             Kamera.SetActive(false);
             playerCollide = false;
+        }
+
+        if (collider.gameObject.CompareTag("ToolBox") && toolBoxPicked == false)
+        {
+            toolBoxPicked = true;
+            if (isThatFullHealthReverse == true)
+            {
+                osuma = 0;
+            }
+            else if (isThatFullHealthReverse == false)
+            {
+                if (osuma >= 2)
+                {
+                    osuma -= 2;
+                }
+                else if (osuma < 2)
+                {
+                    osuma = 0;
+                }
+            }
         }
 
     }
