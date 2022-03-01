@@ -37,7 +37,7 @@ public class WheelColliders : MonoBehaviour
 
     public void OnCollisionEnter(Collision collider)
     {
-        if (collider.gameObject.CompareTag("Este"))
+        if (collider.gameObject.CompareTag("Este") && carCollider.playerCollide == false)
         {
             carCollider.playerCollide = true;
             playersBoxCollider.enabled = false;
@@ -54,7 +54,7 @@ public class WheelColliders : MonoBehaviour
             //StartCoroutine(CollidersOn());
             StartCoroutine(PlayerColliderOn());
         }
-        if (carCollider.osuma == 20)
+        if (carCollider.osuma == carCollider.maxOsumat)
         {
             carCollider.isPlayerDead = true;
             gameObject.SetActive(false);
@@ -62,6 +62,26 @@ public class WheelColliders : MonoBehaviour
             carCollider.playerCollide = false;
         }
 
+        if (collider.gameObject.CompareTag("ToolBox") && carCollider.toolBoxPicked == false)
+        {
+            carCollider.toolBoxPicked = true;
+            if (carCollider.isThatFullHealthReverse == true)
+            {
+                carCollider.osuma = 0;
+            }
+            else if (carCollider.isThatFullHealthReverse == false)
+            {
+                if (carCollider.osuma >= 2)
+                {
+                    carCollider.osuma -= 2;
+                }
+                else if (carCollider.osuma < 2)
+                {
+                    carCollider.osuma = 0;
+                }
+            }
+            
+        }
     }
 
     IEnumerator PlayerColliderOn()
