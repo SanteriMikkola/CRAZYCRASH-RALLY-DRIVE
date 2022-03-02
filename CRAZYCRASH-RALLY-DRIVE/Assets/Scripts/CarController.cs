@@ -54,6 +54,12 @@ public class CarController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("Quit!");
+            Application.Quit();
+        }
+
         forwardSpeed = 2f;
         Kamera.transform.position = new Vector3(rB.position.x, rB.position.y + 5.310003f, rB.position.z - 8.23f);
         //Kamera.transform.Translate(Vector3.forward * Time.deltaTime * 3.6f, Space.World);

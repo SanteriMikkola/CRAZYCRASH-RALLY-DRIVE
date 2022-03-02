@@ -2,13 +2,23 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CameraControll
+    - CarCollider
+    - CarController
     - Este
+    - FenceControll
+    - FewRocksControll
+    - HP_Controll
+    - MapControll
     - MenuController
     - PlayerColor
-    - PlayerMovement
+    - RockControll
     - ScoreControll
     - StartButton
     - TargetPoints
+    - ToolBox
+    - TreeControll
+    - TrunkControll
+    - WheelColliders
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
@@ -32,6 +42,9 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Mask
+    - UnityEngine.UI.RectMask2D
+    - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/TestScene.unity:
@@ -70,45 +83,71 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1578}
+      Script: {instanceID: 1574}
     - Class: 114
-      Script: {instanceID: 1904}
+      Script: {instanceID: 1900}
     - Class: 114
-      Script: {instanceID: 2290}
+      Script: {instanceID: 1908}
     - Class: 114
-      Script: {instanceID: 2302}
+      Script: {instanceID: 1978}
     - Class: 114
-      Script: {instanceID: 2372}
+      Script: {instanceID: 2186}
     - Class: 114
-      Script: {instanceID: 2704}
+      Script: {instanceID: 2292}
     - Class: 114
-      Script: {instanceID: 2866}
+      Script: {instanceID: 2304}
     - Class: 114
-      Script: {instanceID: 2918}
+      Script: {instanceID: 2362}
     - Class: 114
-      Script: {instanceID: 2938}
+      Script: {instanceID: 2376}
     - Class: 114
-      Script: {instanceID: 3092}
+      Script: {instanceID: 2426}
     - Class: 114
-      Script: {instanceID: 3138}
+      Script: {instanceID: 2710}
     - Class: 114
-      Script: {instanceID: 3354}
+      Script: {instanceID: 2872}
     - Class: 114
-      Script: {instanceID: 3492}
+      Script: {instanceID: 2924}
     - Class: 114
-      Script: {instanceID: 4480}
+      Script: {instanceID: 2944}
     - Class: 114
-      Script: {instanceID: 4944}
+      Script: {instanceID: 3098}
     - Class: 114
-      Script: {instanceID: 5300}
+      Script: {instanceID: 3144}
     - Class: 114
-      Script: {instanceID: 5306}
+      Script: {instanceID: 3196}
     - Class: 114
-      Script: {instanceID: 5378}
+      Script: {instanceID: 3240}
     - Class: 114
-      Script: {instanceID: 5666}
+      Script: {instanceID: 3364}
     - Class: 114
-      Script: {instanceID: 5762}
+      Script: {instanceID: 3380}
+    - Class: 114
+      Script: {instanceID: 3502}
+    - Class: 114
+      Script: {instanceID: 3562}
+    - Class: 114
+      Script: {instanceID: 3590}
+    - Class: 114
+      Script: {instanceID: 3846}
+    - Class: 114
+      Script: {instanceID: 4604}
+    - Class: 114
+      Script: {instanceID: 4938}
+    - Class: 114
+      Script: {instanceID: 4960}
+    - Class: 114
+      Script: {instanceID: 5316}
+    - Class: 114
+      Script: {instanceID: 5322}
+    - Class: 114
+      Script: {instanceID: 5394}
+    - Class: 114
+      Script: {instanceID: 5682}
+    - Class: 114
+      Script: {instanceID: 5778}
+    - Class: 114
+      Script: {instanceID: 82200}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -234,6 +273,24 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TrunkControll
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MapControll
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FewRocksControll
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -252,6 +309,12 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TreeControll
+  - hash:
+      serializedVersion: 2
       Hash: cd0ecdca0166232906c6f2df9dddc3d3
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.Editor
@@ -268,6 +331,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CameraControll
+  - hash:
+      serializedVersion: 2
+      Hash: 00396078be3ac9222ce6f6da44b5cdb3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HP_Controll
   - hash:
       serializedVersion: 2
       Hash: c1d728126ff1918728036c59106d32b2
@@ -384,10 +453,22 @@ ScriptsOnlyBuild:
     className: Entity
   - hash:
       serializedVersion: 2
+      Hash: 76e73593f5a84a163f6f30bcf142cdef
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CarCollider
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: TestResultRendererCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 728689308bbc4f631756bf5b16faed9e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CarController
   - hash:
       serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
@@ -457,6 +538,18 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ToolBox
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RockControll
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.UI.Editor
     className: InputSystemUIInputModuleEditor
@@ -502,6 +595,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: b960263372a8c7e8a781482e187e4018
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WheelColliders
   - hash:
       serializedVersion: 2
       Hash: 76aef43e801605d1829c8805eeee135c
@@ -618,7 +717,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: 93e34b8907550e5ae90793d5054a056d
+      Hash: 625495650197c8247b960a702e102e5e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
@@ -738,7 +837,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: f8035b6ea3d161bf1ed89105e3a9eba2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Este
@@ -792,7 +891,7 @@ ScriptsOnlyBuild:
     className: ActivationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 68c0a3e9adc37ef1309ce04fc8427097
+      Hash: 2ec8d6283238b72720d5c8bc098faab7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerColor
@@ -820,7 +919,13 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FenceControll
   platform: 19
   scenePathNames:
   - Assets/Scenes/TestScene.unity
-  playerPath: C:/Users/s0mija01/Documents/Buildit/CRAZYCRASH-RALLY-DRIVE.exe
+  playerPath: E:/ProjectsBuilds/CRAZYCRASH-RALLY-DRIVE_build2/CRAZYCRASH-RALLY-DRIVE.exe
