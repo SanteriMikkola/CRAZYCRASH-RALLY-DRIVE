@@ -9,6 +9,7 @@ TagManager:
   - ToolBox
   - MapCback
   - Trunk
+  - MapCfront
   layers:
   - Default
   - TransparentFX

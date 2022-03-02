@@ -13,6 +13,7 @@ public class Este : MonoBehaviour
     private SphereCollider sphereCollider;
 
     public bool isColliderUnActive = false;
+    public bool activateMesh = false;
 
     public void OnCollisionEnter(Collision collision)
     {
@@ -25,10 +26,17 @@ public class Este : MonoBehaviour
             
         }*/
 
-        if (collision.gameObject.CompareTag("MapCback"))
+        if (collision.gameObject.CompareTag("MapCback") && isColliderUnActive == false)
         {
             gameObject.SetActive(false);
             isColliderUnActive = true;
+            activateMesh = false;
+        }
+        if (collision.gameObject.CompareTag("MapCfront") && activateMesh == false)
+        {
+            gameObject.SetActive(true);
+            activateMesh = true;
+            isColliderUnActive = false;
         }
     }
 
@@ -41,6 +49,12 @@ public class Este : MonoBehaviour
             this.boxCollider.enabled = enabled;
             //gameObject.SetActive(false);
 
+        }
+
+        if (collision.gameObject.CompareTag("MapCfront"))
+        {
+            gameObject.SetActive(true);
+            activateMesh = true;
         }
     }*/
 }

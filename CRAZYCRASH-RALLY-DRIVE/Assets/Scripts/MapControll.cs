@@ -31,6 +31,7 @@ public class MapControll : MonoBehaviour
     void Update()
     {
         bCollider.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y + 1f, Player.transform.position.z - 8.07f);
+        fCollider.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y + 1f, Player.transform.position.z + 48.5f);
     }
 
     /*public void OnCollisionEnter(Collision collision)
