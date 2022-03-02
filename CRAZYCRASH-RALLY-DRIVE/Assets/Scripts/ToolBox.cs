@@ -13,5 +13,11 @@ public class ToolBox : MonoBehaviour
             this.gameObject.SetActive(false);
 
         }
+
+        if (collision.gameObject.CompareTag("MapCback"))
+        {
+            gameObject.SetActive(false);
+            //isColliderUnActive = true;
+        }
     }
 }
