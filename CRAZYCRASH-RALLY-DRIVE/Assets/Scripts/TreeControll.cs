@@ -6,11 +6,13 @@ public class TreeControll : MonoBehaviour
 {
     private Este esteS;
     private TrunkControll trunks;
+    private MeshRenderer meshRenderer;
 
     void Start()
     {
         esteS = gameObject.GetComponentInChildren<Este>();
         trunks = gameObject.GetComponentInChildren<TrunkControll>();
+        meshRenderer = gameObject.GetComponent<MeshRenderer>();
     }
 
     // Update is called once per frame
@@ -20,6 +22,12 @@ public class TreeControll : MonoBehaviour
         {
             gameObject.SetActive(false);
             trunks.SetTrunkInActive();
+        }
+        if (esteS.activateMesh == true)
+        {
+            gameObject.SetActive(true);
+            meshRenderer.enabled = true;
+            trunks.SetTrunkActive();
         }
     }
 }
