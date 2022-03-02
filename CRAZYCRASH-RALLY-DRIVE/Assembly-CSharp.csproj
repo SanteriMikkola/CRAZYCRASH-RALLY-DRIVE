@@ -62,13 +62,16 @@
     <Compile Include="Assets\Scripts\TargetPoints.cs" />
     <Compile Include="Assets\Scripts\CarCollider.cs" />
     <Compile Include="Assets\Scripts\CarController.cs" />
+    <Compile Include="Assets\Scripts\ToolBox.cs" />
     <Compile Include="Assets\Scripts\WheelColliders.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Este.cs" />
     <Compile Include="Assets\Scripts\ScoreControll.cs" />
     <Compile Include="Assets\Scripts\StartButton.cs" />
     <Compile Include="Assets\Scripts\PlayerColor.cs" />
-    <Compile Include="Assets\Scripts\ToolBox.cs" />
+    <Compile Include="Assets\Scripts\MapControll.cs" />
+    <Compile Include="Assets\Scripts\TreeControll.cs" />
+    <Compile Include="Assets\Scripts\TrunkControll.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
