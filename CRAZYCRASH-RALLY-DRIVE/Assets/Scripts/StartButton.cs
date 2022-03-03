@@ -10,7 +10,7 @@ public class StartButton : MonoBehaviour
     private GameObject StartMenuKamera;
 
 
-    [HideInInspector]
+    
     public bool IsGameStarted = false;
 
     // Start is called before the first frame update

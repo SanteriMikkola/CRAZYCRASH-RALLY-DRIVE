@@ -10,6 +10,7 @@ TagManager:
   - MapCback
   - Trunk
   - MapCfront
+  - Tie
   layers:
   - Default
   - TransparentFX
