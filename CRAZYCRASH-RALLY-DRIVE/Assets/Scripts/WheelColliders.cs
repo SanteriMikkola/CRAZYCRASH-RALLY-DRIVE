@@ -37,6 +37,11 @@ public class WheelColliders : MonoBehaviour
 
     public void OnCollisionEnter(Collision collider)
     {
+        if (collider.gameObject.CompareTag("Tie"))
+        {
+
+        }
+
         if (collider.gameObject.CompareTag("Este") && carCollider.playerCollide == false)
         {
             carCollider.playerCollide = true;
