@@ -15,6 +15,15 @@ public class Este : MonoBehaviour
     public bool isColliderUnActive = false;
     public bool activateMesh = false;
 
+
+    public GameObject[] Esteet;
+
+    private void Update()
+    {
+        Esteet = GameObject.FindGameObjectsWithTag("Este");
+        
+    }
+
     public void OnCollisionEnter(Collision collision)
     {
         /*if (collision.gameObject.CompareTag("Player"))

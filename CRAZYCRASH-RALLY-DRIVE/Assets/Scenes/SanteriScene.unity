@@ -165,7 +165,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7585624}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -265,6 +265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &7602256
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -320,7 +321,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8045535}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -420,6 +421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &8413786
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -473,7 +475,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 10408194}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -576,6 +578,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &14125230
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -696,6 +699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &16399700
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -787,6 +791,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &20071732
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1096,6 +1101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &28208489
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1180,7 +1186,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 31714591}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1311,6 +1317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &32917367
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1397,7 +1404,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 37264898}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1497,6 +1504,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &37291552
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1556,6 +1564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &38182211
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1615,6 +1624,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &39283981
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1736,6 +1746,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &46994684
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2011,7 +2022,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 53254639}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2111,6 +2122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &56701699
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2170,6 +2182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &57101852
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2223,7 +2236,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58909615}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2421,6 +2434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &59750336
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2505,7 +2519,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62632308}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2605,6 +2619,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &64787699
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2758,6 +2773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &65647269
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2813,7 +2829,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 66005583}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2909,7 +2925,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 66249115}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3009,6 +3025,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &66264634
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3068,6 +3085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &66730718
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3223,6 +3241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &71262028
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3299,6 +3318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &71313566
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3320,7 +3340,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 71313562}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3416,7 +3436,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 71452036}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3519,6 +3539,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &72959132
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3539,7 +3560,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 72959129}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3708,6 +3729,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &76488377
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3932,7 +3954,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 84773312}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4124,7 +4146,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87765664}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4237,6 +4259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &89842161
 GameObject:
   m_ObjectHideFlags: 0
@@ -4283,6 +4306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &89842164
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4367,7 +4391,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100423844}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4463,7 +4487,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100795778}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4563,6 +4587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &103321216
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4743,7 +4768,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 108397296}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4843,6 +4868,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &108588882
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4896,7 +4922,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111201797}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5096,6 +5122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &112063591
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5151,7 +5178,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 113051409}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5251,6 +5278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &118084530
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5497,6 +5525,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &123536111
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5556,6 +5585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &124126014
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5804,7 +5834,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 127510146}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5898,7 +5928,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 127758245}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5998,6 +6028,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &128465492
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6057,6 +6088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &129660334
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6288,6 +6320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &132708771
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6308,7 +6341,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 132708768}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -6404,7 +6437,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 137770186}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -6620,6 +6653,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &141313985
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6673,7 +6707,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 141408487}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -6769,7 +6803,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 144756472}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7103,6 +7137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &147771332
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7175,6 +7210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &148375556
 GameObject:
   m_ObjectHideFlags: 0
@@ -7250,7 +7286,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153556965}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7350,6 +7386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &154298378
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7490,6 +7527,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &158707380
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7543,7 +7581,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 159193844}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7739,6 +7777,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &164522124
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7894,6 +7933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &166340486
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7947,7 +7987,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168070140}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -8232,7 +8272,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173568913}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -8757,6 +8797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &186458798
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8891,6 +8932,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &187607904
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8946,7 +8988,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 190613932}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -9046,6 +9088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &194352300
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9101,7 +9144,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 195390076}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -9282,6 +9325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &198864401
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9335,7 +9379,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199285044}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -9479,6 +9523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &201831783
 GameObject:
   m_ObjectHideFlags: 0
@@ -9628,7 +9673,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202874252}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -9869,6 +9914,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &206391171
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9924,7 +9970,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 208348236}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -10055,6 +10101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &208580416
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10108,7 +10155,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 208657124}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -10424,7 +10471,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 210057370}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -10619,6 +10666,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &211687690
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10768,7 +10816,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 212504977}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -10862,7 +10910,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 212528817}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -11348,7 +11396,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 234865917}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -11479,6 +11527,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &239197431
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11614,7 +11663,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242653690}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -11703,6 +11752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &245870627
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11811,6 +11861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &250116515
 GameObject:
   m_ObjectHideFlags: 0
@@ -11853,7 +11904,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250116515}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -11953,6 +12004,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &259886411
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12012,6 +12064,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &259963444
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12065,7 +12118,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 262839882}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -12315,7 +12368,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 264776982}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -12500,6 +12553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &269626061
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12555,7 +12609,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 272535416}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -12893,6 +12947,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &280188562
 GameObject:
   m_ObjectHideFlags: 0
@@ -12952,6 +13007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &280387833
 GameObject:
   m_ObjectHideFlags: 0
@@ -13147,6 +13203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &283504258
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13206,6 +13263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &287413493
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13268,6 +13326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &288691647
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13466,7 +13525,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 289585377}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -13662,6 +13721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &294101519
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13748,7 +13808,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301172905}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -13970,6 +14030,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &320418378
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14085,7 +14146,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323163970}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -14181,7 +14242,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323582987}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -14315,6 +14376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &324575436
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14335,7 +14397,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 324575433}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -14520,6 +14582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &325943661
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14592,6 +14655,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &328186239
 GameObject:
   m_ObjectHideFlags: 0
@@ -14638,6 +14702,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &328186242
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14897,6 +14962,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &334849027
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14956,6 +15022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &335288613
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15011,7 +15078,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335761526}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -15138,7 +15205,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 336291242}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -15348,7 +15415,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 347474813}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -15442,7 +15509,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349378066}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -15625,6 +15692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &352795379
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15680,7 +15748,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353570387}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -15776,7 +15844,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 354683317}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -15876,6 +15944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &356529980
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15929,7 +15998,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 359894384}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -16023,7 +16092,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 360859878}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -16250,6 +16319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &367244355
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16408,6 +16478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &369920950
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16429,7 +16500,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 369920946}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -16741,6 +16812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &376214621
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16861,6 +16933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &376552583
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17045,6 +17118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &381257181
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17104,6 +17178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &382467000
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17162,7 +17237,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382564824}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -17300,7 +17375,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 384643290}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -17394,7 +17469,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 384675909}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -17715,6 +17790,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &391708852
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17768,7 +17844,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393496496}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -17868,6 +17944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &395046366
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17927,6 +18004,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &396169666
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17980,7 +18058,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398533471}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -18097,6 +18175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &403418876
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18118,7 +18197,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 403418872}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -18327,6 +18406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &406312674
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18347,7 +18427,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 406312671}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -18707,6 +18787,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &413656962
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18845,7 +18926,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 416270673}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -19058,6 +19139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &418847988
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19192,7 +19274,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 423972124}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -19337,7 +19419,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 425612828}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -25.5}
   m_LocalScale: {x: 250, y: 5.35, z: 0.66}
   m_Children: []
   m_Father: {fileID: 2038863076}
@@ -19355,6 +19437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 688420ba972f676429bf620b87ab9dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vector3s: []
 --- !u!54 &425612834
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19417,6 +19500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &428245343
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19476,6 +19560,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &429333628
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19531,7 +19616,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 430422847}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -19730,7 +19815,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 436280814}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -19926,6 +20011,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &441477788
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19985,6 +20071,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &443992751
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20038,7 +20125,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 445798991}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -20172,6 +20259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &446398666
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20426,6 +20514,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &448440205
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20485,6 +20574,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &452165614
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20833,6 +20923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &460244907
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21008,6 +21099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &464105750
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21201,6 +21293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &468650984
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21335,6 +21428,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &478724732
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21473,6 +21567,132 @@ Transform:
   m_Father: {fileID: 553437147}
   m_RootOrder: 105
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &486409650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 486409651}
+  - component: {fileID: 486409656}
+  - component: {fileID: 486409655}
+  - component: {fileID: 486409654}
+  - component: {fileID: 486409653}
+  - component: {fileID: 486409652}
+  m_Layer: 0
+  m_Name: FrontCollider (1)
+  m_TagString: MapCfront
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &486409651
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486409650}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -2.5}
+  m_LocalScale: {x: 250, y: 5.35, z: 0.66}
+  m_Children: []
+  m_Father: {fileID: 2038863076}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &486409652
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486409650}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!114 &486409653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486409650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688420ba972f676429bf620b87ab9dd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vector3s: []
+--- !u!65 &486409654
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486409650}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &486409655
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486409650}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &486409656
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486409650}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &487348367
 GameObject:
   m_ObjectHideFlags: 0
@@ -21607,7 +21827,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 488463766}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -21769,6 +21989,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &491543300
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21822,7 +22043,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492031596}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -21990,6 +22211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &493245311
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22093,6 +22315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &500408911
 GameObject:
   m_ObjectHideFlags: 0
@@ -22133,7 +22356,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500408911}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -22233,6 +22456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &500933269
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22292,6 +22516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &506411187
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22711,7 +22936,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521263766}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -23140,6 +23365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &529999183
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23291,6 +23517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &530578049
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23312,7 +23539,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 530578045}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -23415,6 +23642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &533213734
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -23538,6 +23766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &534715813
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23558,7 +23787,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534715810}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -23654,7 +23883,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534944037}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -23848,6 +24077,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &540537030
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23901,7 +24131,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 541931335}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -24001,6 +24231,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &542784723
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24060,6 +24291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &544859672
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24122,6 +24354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &545902185
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -24142,7 +24375,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545902182}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -24236,7 +24469,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550542249}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -24424,6 +24657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &553437146
 GameObject:
   m_ObjectHideFlags: 0
@@ -24715,6 +24949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &556324074
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24774,6 +25009,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &557563103
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24833,6 +25069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &561964260
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24923,6 +25160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &567194748
 GameObject:
   m_ObjectHideFlags: 0
@@ -25083,6 +25321,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &569692239
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25233,6 +25472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &570504778
 GameObject:
   m_ObjectHideFlags: 0
@@ -25354,6 +25594,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &571412587
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -25413,6 +25654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &572018830
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25693,6 +25935,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &577911370
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -25748,7 +25991,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579083799}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -25954,6 +26197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &586352108
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26240,7 +26484,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601442941}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -26528,7 +26772,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 606030482}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -26628,6 +26872,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &607200070
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26690,6 +26935,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &607404797
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27056,6 +27302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &618186258
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27115,6 +27362,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &619527695
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27174,6 +27422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &619654360
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27454,7 +27703,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624984042}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -27548,7 +27797,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 625500327}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -27679,6 +27928,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &626197414
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27751,6 +28001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &627475837
 GameObject:
   m_ObjectHideFlags: 0
@@ -27997,6 +28248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &630008184
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28056,6 +28308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &633786805
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28115,6 +28368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &634048546
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28168,7 +28422,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640477896}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -28360,7 +28614,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 644095173}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -28591,6 +28845,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &646371687
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28721,7 +28976,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 648590792}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -28965,7 +29220,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656540583}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -29074,7 +29329,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659204403}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -29163,6 +29418,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &660235609
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29258,6 +29514,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &661652171
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29348,6 +29605,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &663589381
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29407,6 +29665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &666445519
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29721,7 +29980,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 684228784}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -30003,7 +30262,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686675280}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -30097,7 +30356,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 687081476}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -30194,7 +30453,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 691416660}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -30373,7 +30632,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 692103590}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -30470,7 +30729,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 693366072}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -30785,7 +31044,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 698755010}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -31012,6 +31271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &700857533
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31074,6 +31334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &701097093
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31194,6 +31455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &702180618
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31397,6 +31659,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &709758794
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31606,6 +31869,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &714209429
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31626,7 +31890,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714209426}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -31743,6 +32007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &715788316
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31764,7 +32029,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715788312}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -31877,6 +32142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &719068405
 GameObject:
   m_ObjectHideFlags: 0
@@ -31954,6 +32220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &720580388
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32047,6 +32314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &722652956
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -32067,7 +32335,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 722652953}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -32167,6 +32435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &725056252
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32263,7 +32532,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 729512945}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -32345,7 +32614,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 731072783}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -32445,6 +32714,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &731551063
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32668,7 +32938,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 734042677}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -32768,6 +33038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &736267243
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32854,7 +33125,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 743025692}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -32954,6 +33225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &743344555
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -33057,6 +33329,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &746311070
 GameObject:
   m_ObjectHideFlags: 0
@@ -33134,6 +33407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &748305383
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33289,6 +33563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &748652738
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33348,6 +33623,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &748934119
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33630,7 +33906,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 758177035}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -33771,7 +34047,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 761375622}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -33871,6 +34147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &762292568
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33924,7 +34201,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 764271795}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -34020,7 +34297,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767648540}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -34114,7 +34391,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769333132}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -34214,6 +34491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &773528787
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34320,7 +34598,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 777028488}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -34416,7 +34694,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 777544675}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -34516,6 +34794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &784377423
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34702,6 +34981,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &791216248
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34755,7 +35035,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 794529276}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -34855,6 +35135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &794868736
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34910,7 +35191,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 798601854}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -35004,7 +35285,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 799949111}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -35100,7 +35381,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 799993304}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -35294,6 +35575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &804561581
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35349,7 +35631,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 807447324}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -35543,6 +35825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &810529691
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35633,6 +35916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &811749092
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35686,7 +35970,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 811876697}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -36193,6 +36477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!114 &819993198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36325,7 +36610,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824784750}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -36682,6 +36967,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &834006852
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36927,6 +37213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &845180165
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -36947,7 +37234,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845180162}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -37047,6 +37334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &846201078
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37181,6 +37469,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &848949626
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37267,7 +37556,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 851277171}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -37606,7 +37895,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 862060269}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -37700,7 +37989,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 862701346}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -37800,6 +38089,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &863714108
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38140,6 +38430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &878076410
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -38161,7 +38452,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878076406}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -38278,6 +38569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &878866307
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -38299,7 +38591,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878866303}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -38542,6 +38834,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &892997249
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38614,6 +38907,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &897589442
 GameObject:
   m_ObjectHideFlags: 0
@@ -38656,7 +38950,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897589442}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -38892,7 +39186,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 900640484}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -38999,7 +39293,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 900949094}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -39083,7 +39377,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 901748148}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -39183,6 +39477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &905479641
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39254,7 +39549,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906411562}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -39453,7 +39748,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910518335}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -39549,7 +39844,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912699470}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -39649,6 +39944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &912719762
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39702,7 +39998,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 913724205}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -39796,7 +40092,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 915398049}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -40129,6 +40425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &919770566
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41523,6 +41820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &921095319
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41607,7 +41905,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 926107007}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -41803,6 +42101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &929200871
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41956,6 +42255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &932279988
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42148,7 +42448,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 943932307}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -42244,7 +42544,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 947253876}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -42338,7 +42638,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 948488752}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -42432,7 +42732,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 948600681}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -42532,6 +42832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &949680622
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42622,6 +42923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &953934942
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -42677,7 +42979,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954627595}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -42873,6 +43175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &962607986
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42976,6 +43279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &964429085
 GameObject:
   m_ObjectHideFlags: 0
@@ -43091,7 +43395,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965464545}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -43191,6 +43495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &966590235
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43253,6 +43558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &968096103
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -43273,7 +43579,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 968096100}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -43465,7 +43771,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972231681}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -43565,6 +43871,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &976537649
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43626,7 +43933,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977988659}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -43727,6 +44034,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &979427636
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43786,6 +44094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &981769460
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43845,6 +44154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &982020343
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43900,7 +44210,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 985447871}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -44000,6 +44310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &985981759
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44053,7 +44364,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988038454}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -44153,6 +44464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &989789257
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44288,7 +44600,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 996686171}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -44431,7 +44743,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 997323712}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 109.6}
+  m_LocalPosition: {x: 0, y: 0, z: 103}
   m_LocalScale: {x: 100, y: 1, z: 300}
   m_Children: []
   m_Father: {fileID: 0}
@@ -44514,6 +44826,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1000841548
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44567,7 +44880,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001157369}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -44667,6 +44980,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1001984934
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44757,6 +45071,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1004000237
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44816,6 +45131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1006445029
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44878,6 +45194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1006487320
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45126,7 +45443,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012485177}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -45226,6 +45543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1012740173
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45319,7 +45637,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1013253023}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -45500,7 +45818,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1019115223}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -45713,6 +46031,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &1026710494
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -45847,6 +46166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &1033076189
 GameObject:
   m_ObjectHideFlags: 0
@@ -45949,7 +46269,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036727692}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -46326,7 +46646,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045247993}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -46426,6 +46746,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1051031757
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46502,6 +46823,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &1051607682
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -46523,7 +46845,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1051607678}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -46619,7 +46941,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1051900893}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -46825,6 +47147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1062000644
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46901,6 +47224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &1064895916
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -46922,7 +47246,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1064895912}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -47159,6 +47483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &1068676179
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -47179,7 +47504,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068676176}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -47354,6 +47679,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1072163962
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47446,6 +47772,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1074979517
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47802,7 +48129,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1087961163}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -48375,7 +48702,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095148362}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -48471,7 +48798,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095735404}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -48579,7 +48906,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1101869003}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -48888,7 +49215,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1107778357}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -49103,7 +49430,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112732401}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -49206,6 +49533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &1116528311
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -49226,7 +49554,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116528308}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -49320,7 +49648,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1118167456}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -49530,7 +49858,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125478791}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -49740,6 +50068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &1128266765
 GameObject:
   m_ObjectHideFlags: 0
@@ -49786,6 +50115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1128266768
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49876,6 +50206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1129699235
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49931,7 +50262,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1130493668}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -50031,6 +50362,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1132528393
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50086,7 +50418,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1134024353}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -50180,7 +50512,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1135976022}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -50293,6 +50625,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &1142627204
 GameObject:
   m_ObjectHideFlags: 0
@@ -50335,7 +50668,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1142627204}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -50462,7 +50795,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1146709900}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -50624,6 +50957,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1151403548
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50677,7 +51011,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1151868752}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -51021,6 +51355,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1158390337
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51074,7 +51409,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160322340}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -51210,6 +51545,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1167314038
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51370,6 +51706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1168231962
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51423,7 +51760,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1168615926}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -51650,6 +51987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1175631961
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51703,7 +52041,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1183540401}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -51829,7 +52167,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1187931073}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -51942,6 +52280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &1188668009
 GameObject:
   m_ObjectHideFlags: 0
@@ -52031,6 +52370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1191019155
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52051,7 +52391,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1191019152}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -52145,7 +52485,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1192126097}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -52397,7 +52737,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1197352879}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -52572,6 +52912,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1198616310
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52727,7 +53068,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204091828}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -52915,6 +53256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &1208298748
 GameObject:
   m_ObjectHideFlags: 0
@@ -52974,6 +53316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &1208666573
 GameObject:
   m_ObjectHideFlags: 0
@@ -53137,7 +53480,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1210298774}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -53389,7 +53732,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1214757397}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -53686,7 +54029,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1223672121}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -53786,6 +54129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1225225791
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53839,7 +54183,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1225485099}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -53935,7 +54279,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1225561369}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -54035,6 +54379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1226324104
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54205,6 +54550,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &1233356864
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -54226,7 +54572,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233356860}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -54343,6 +54689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &1235454687
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -54554,7 +54901,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1236435949}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -54749,6 +55096,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1238635287
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54808,6 +55156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1239648561
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54863,7 +55212,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1241832388}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -55052,7 +55401,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1242703314}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -55242,7 +55591,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1245355296}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -55342,6 +55691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1245407003
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55395,7 +55745,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1245710508}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -55489,7 +55839,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246022551}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -55636,6 +55986,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &1250636115
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -55753,7 +56104,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1252350156}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -55853,6 +56204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1254049816
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55912,6 +56264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1255989626
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56028,7 +56381,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1261717385}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -56128,6 +56481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &1262066185
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -56295,7 +56649,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264287007}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -56426,6 +56780,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1270892402
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56597,6 +56952,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1274543170
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56652,7 +57008,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1277308351}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -56803,6 +57159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &1282019451
 GameObject:
   m_ObjectHideFlags: 0
@@ -56845,7 +57202,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1282019451}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -57101,6 +57458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1287047407
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57160,6 +57518,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1287837247
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57244,7 +57603,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1289384335}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -57560,6 +57919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1290889275
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57688,7 +58048,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1292455680}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -57788,6 +58148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1295647263
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57943,6 +58304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1299315902
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58029,7 +58391,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1308742951}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -58225,6 +58587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1310922289
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58287,6 +58650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1311165206
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58307,7 +58671,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311165203}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -58407,6 +58771,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1312086715
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58460,7 +58825,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1313256121}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -58554,7 +58919,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1313536921}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -58667,6 +59032,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &1318006946
 GameObject:
   m_ObjectHideFlags: 0
@@ -58811,6 +59177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &1320049240
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -58870,6 +59237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1321220653
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59056,6 +59424,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1327288708
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59109,7 +59478,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1328283016}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -59237,7 +59606,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1336468032}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -59338,6 +59707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1337516903
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59553,7 +59923,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1341069192}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -59697,6 +60067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &1347151547
 GameObject:
   m_ObjectHideFlags: 0
@@ -59837,6 +60208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1347927352
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59896,6 +60268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1348264635
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60026,7 +60399,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1358059525}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -60143,6 +60516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &1360955330
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -60164,7 +60538,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1360955326}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -60295,6 +60669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1370421190
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60354,6 +60729,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1370901941
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60534,7 +60910,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380097615}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -60665,6 +61041,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1382784160
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60724,6 +61101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1384765029
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60903,6 +61281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1388958601
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61037,6 +61416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1396029912
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61127,6 +61507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1398421514
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61427,6 +61808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &1405296807
 GameObject:
   m_ObjectHideFlags: 0
@@ -61476,6 +61858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &1405296810
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -61496,7 +61879,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1405296807}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -61670,7 +62053,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1415217828}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.9245903, y: 0.50017804, z: 27.973495}
+  m_LocalPosition: {x: -1.9245903, y: 0.50017804, z: 26.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1453557667}
@@ -61723,6 +62106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1415453979
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61782,6 +62166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1418137579
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61929,6 +62314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &1430710977
 GameObject:
   m_ObjectHideFlags: 0
@@ -61975,6 +62361,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1430710980
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62158,6 +62545,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1440388818
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62378,6 +62766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1442763870
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62509,7 +62898,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1447782784}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -62789,7 +63178,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1450753970}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -62988,6 +63377,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &1453364749
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -63009,7 +63399,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453364745}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -63205,6 +63595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &1456587776
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -63258,7 +63649,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458828721}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -63463,7 +63854,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1459395179}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -63552,6 +63943,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1459554910
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63666,6 +64058,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &1461127776
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -63687,7 +64080,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461127772}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -64098,7 +64491,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1470721489}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -64292,6 +64685,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1472214539
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64445,6 +64839,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1473309675
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64535,6 +64930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1476248569
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64594,6 +64990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1479842058
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64731,6 +65128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &1484246607
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -64751,7 +65149,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1484246604}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -64845,7 +65243,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485281617}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -65033,7 +65431,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487765396}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -65164,6 +65562,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1490099579
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65223,6 +65622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1490338551
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65426,6 +65826,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &1494926376
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -65447,7 +65848,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1494926372}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -65547,6 +65948,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1495425095
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65602,7 +66004,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1495814417}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -65702,6 +66104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1496374283
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65757,7 +66160,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1497457336}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -65942,6 +66345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1499831920
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66026,7 +66430,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1503990125}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -66126,6 +66530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1504548039
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66179,7 +66584,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1508291145}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -66582,6 +66987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1517746011
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66735,6 +67141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1524624553
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67150,7 +67557,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1531174708}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -67246,7 +67653,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1531253307}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -67415,7 +67822,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1533585362}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -67532,6 +67939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &1534136123
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -67553,7 +67961,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1534136119}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -67890,6 +68298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1541546191
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68152,6 +68561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &1545793119
 GameObject:
   m_ObjectHideFlags: 0
@@ -68198,6 +68608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1545793122
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68355,6 +68766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &1552109247
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -68572,6 +68984,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1562415512
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68743,7 +69156,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1568925288}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -68870,7 +69283,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1569425673}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -68973,6 +69386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1570519522
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68993,7 +69407,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1570519519}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -69087,7 +69501,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575306728}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -69308,6 +69722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1578457621
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -69361,7 +69776,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1583175364}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -69519,6 +69934,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &1586566056
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -69540,7 +69956,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1586566052}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -69736,6 +70152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1588277088
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -69889,6 +70306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 688420ba972f676429bf620b87ab9dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vector3s: []
 --- !u!54 &1591258430
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -69951,6 +70369,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1594623179
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -70004,7 +70423,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1594705096}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -70100,7 +70519,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596787295}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -70196,7 +70615,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596980467}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -70296,6 +70715,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1598175147
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -70411,7 +70831,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606884147}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -70590,6 +71010,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &1610684832
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -70611,7 +71032,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1610684828}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -70767,7 +71188,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1620389029}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -70898,6 +71319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1621126019
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -70960,6 +71382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1623990187
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -70980,7 +71403,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1623990184}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -71076,7 +71499,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626384474}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -71172,7 +71595,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1635640821}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -71291,6 +71714,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!114 &1635708122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71445,6 +71869,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &1639388590
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -71500,7 +71925,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1639952267}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -71596,7 +72021,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1642655527}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -71707,7 +72132,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1643777319}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -71852,7 +72277,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh149394
+  m_Name: pb_Mesh23800
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -72108,7 +72533,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1650929061}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.2, y: -9.246, z: 26.9}
+  m_LocalPosition: {x: -14.2, y: -9.246, z: 28.83}
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 0.19999999}
   m_Children: []
   m_Father: {fileID: 315111503}
@@ -72128,6 +72553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &1650929064
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -72329,7 +72755,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1661307588}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -72425,7 +72851,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1662120123}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -72671,6 +73097,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &1664808287
 GameObject:
   m_ObjectHideFlags: 0
@@ -72852,6 +73279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &1671068685
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -72873,7 +73301,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671068681}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -73000,7 +73428,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671697329}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -73100,6 +73528,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1675182972
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -73250,7 +73679,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1676968104}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -73350,6 +73779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1680112447
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -73405,7 +73835,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1681347608}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -73530,7 +73960,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1688488495}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -73629,7 +74059,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693519967}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -73708,7 +74138,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693579052}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.6672707, y: 0.50017804, z: 28.237228}
+  m_LocalPosition: {x: 5.6672707, y: 0.50017804, z: 29.95}
   m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_Children:
   - {fileID: 1465621866}
@@ -73761,6 +74191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1693968464
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -73923,6 +74354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1696125067
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -73985,6 +74417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &1698835965
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -74005,7 +74438,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698835962}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -74105,6 +74538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1700389276
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -74255,7 +74689,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1701200143}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -74350,7 +74784,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1705940293}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -74446,7 +74880,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1709311985}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -74546,6 +74980,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1710334055
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -74605,6 +75040,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1710898678
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -74670,7 +75106,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711552640}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -74933,6 +75369,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1720395857
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -74992,6 +75429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1721983926
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75082,6 +75520,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1723605094
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75141,6 +75580,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1725661835
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75600,7 +76040,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1731916434}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -75694,7 +76134,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1735717394}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -75906,6 +76346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1742564236
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -76182,7 +76623,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1748803663}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -76664,6 +77105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1759085296
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -76717,7 +77159,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1760648850}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -76817,6 +77259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1763145618
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -76870,7 +77313,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1763401571}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -77032,6 +77475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1769711151
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -77091,6 +77535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &1772531077
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -77219,7 +77664,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776006289}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -77322,6 +77767,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1777066808
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -77438,7 +77884,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1778547775}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -77534,7 +77980,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1780661358}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -77705,7 +78151,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1793869211}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -77788,7 +78234,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1794929873}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -78266,7 +78712,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809367151}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -78491,7 +78937,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809968182}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.57, y: 0, z: -11.889999}
+  m_LocalPosition: {x: 26.57, y: 0, z: -13.45}
   m_LocalScale: {x: 0.3, y: 0.15, z: 0.15}
   m_Children: []
   m_Father: {fileID: 707955922}
@@ -78633,7 +79079,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1810942665}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -78924,6 +79370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &1812677197
 GameObject:
   m_ObjectHideFlags: 0
@@ -78970,6 +79417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1812677200
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -79029,6 +79477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1814313271
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -79295,6 +79744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &1821627177
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -79316,7 +79766,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1821627173}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -79528,6 +79978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1824072034
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -79583,7 +80034,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1824506273}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -79686,6 +80137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1825952488
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -79802,7 +80254,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1826072075}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -79902,6 +80354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1826495366
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -79955,7 +80408,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1828898053}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -80009,6 +80462,132 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c1e7fa95d97541438601bf725befc55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1832604769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1832604770}
+  - component: {fileID: 1832604775}
+  - component: {fileID: 1832604774}
+  - component: {fileID: 1832604773}
+  - component: {fileID: 1832604772}
+  - component: {fileID: 1832604771}
+  m_Layer: 0
+  m_Name: FrontCollider (2)
+  m_TagString: MapCfront
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1832604770
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832604769}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 20.5}
+  m_LocalScale: {x: 250, y: 5.35, z: 0.66}
+  m_Children: []
+  m_Father: {fileID: 2038863076}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1832604771
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832604769}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!114 &1832604772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832604769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688420ba972f676429bf620b87ab9dd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vector3s: []
+--- !u!65 &1832604773
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832604769}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1832604774
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832604769}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1832604775
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832604769}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1834159299
 GameObject:
   m_ObjectHideFlags: 0
@@ -80055,6 +80634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1834159302
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -80176,6 +80756,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &1843741843
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -80248,6 +80829,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &1844304920
 GameObject:
   m_ObjectHideFlags: 0
@@ -80386,7 +80968,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844350340}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -80486,6 +81068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1846658643
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -80674,6 +81257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &1848452985
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -80791,7 +81375,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850257478}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -80908,6 +81492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!64 &1850841446
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -80929,7 +81514,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850841442}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -81029,6 +81614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1850971291
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -81185,6 +81771,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &1852955756
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -81205,7 +81792,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1852955753}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -81305,6 +81892,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1857968894
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -81439,6 +82027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1862883996
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -81529,6 +82118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1864139659
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -81615,7 +82205,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1867292530}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -81746,6 +82336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1875845947
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -82008,6 +82599,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1882633007
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -82061,7 +82653,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886979207}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -82174,6 +82766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &1894923553
 GameObject:
   m_ObjectHideFlags: 0
@@ -82216,7 +82809,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1894923553}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -82418,7 +83011,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1897229183}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -82531,6 +83124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &1909472472
 GameObject:
   m_ObjectHideFlags: 0
@@ -82577,6 +83171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1909472475
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -82636,6 +83231,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1910243129
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -82695,6 +83291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1910865369
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -82912,6 +83509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1916485213
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -83087,6 +83685,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1922154530
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -83124,7 +83723,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1924624993}
   m_LocalRotation: {x: 0, y: -0.1867813, z: 0, w: 0.98240155}
-  m_LocalPosition: {x: -36.91, y: 0.50017804, z: 27.54}
+  m_LocalPosition: {x: -34.83, y: 0.50017804, z: 26.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 899832609}
@@ -83173,7 +83772,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1925220155}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -83342,7 +83941,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929994876}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -83442,6 +84041,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1930936962
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -83661,6 +84261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1938443872
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -83728,7 +84329,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1939371360}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -83819,6 +84420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1939877472
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -83839,7 +84441,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1939877469}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -83970,6 +84572,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1944736441
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -84029,6 +84632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1946203193
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -84088,6 +84692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1947561884
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -84299,7 +84904,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1954351366}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -84511,7 +85116,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958723711}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -84785,7 +85390,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1963707028}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -84953,7 +85558,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1969736205}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -85050,7 +85655,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1974142234}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -85235,6 +85840,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1977532931
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -85386,7 +85992,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1980725588}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -85480,7 +86086,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1982618634}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -85583,6 +86189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1983319167
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -85603,7 +86210,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983319164}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -85734,6 +86341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1984702693
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -85793,6 +86401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1985037933
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -85977,6 +86586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &1993856810
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -86032,7 +86642,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1994082182}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -86126,7 +86736,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1994623266}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -86226,6 +86836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &2008815024
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -86384,6 +86995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!135 &2009950344
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -86404,7 +87016,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2009950341}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -86500,7 +87112,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2010221494}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -86600,6 +87212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &2011063290
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -86655,7 +87268,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2011735176}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -86755,6 +87368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &2012588504
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -86986,6 +87600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &2021758535
 GameObject:
   m_ObjectHideFlags: 0
@@ -87193,6 +87808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &2024039989
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -87251,7 +87867,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024269080}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -87616,6 +88232,8 @@ Transform:
   m_Children:
   - {fileID: 1591258428}
   - {fileID: 425612832}
+  - {fileID: 486409651}
+  - {fileID: 1832604770}
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -87668,6 +88286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &2043082969
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -87863,6 +88482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &2046833379
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -88082,7 +88702,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051970506}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -88182,6 +88802,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &2052398213
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -88241,6 +88862,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &2057381216
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -88438,7 +89060,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2065447639}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -88534,7 +89156,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2065992667}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -88768,6 +89390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &2078571761
 GameObject:
   m_ObjectHideFlags: 0
@@ -88805,7 +89428,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh148662
+  m_Name: pb_Mesh23068
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -89090,7 +89713,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2084316612}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -89296,6 +89919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &2094831850
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -89498,7 +90122,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2104856029}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -89629,6 +90253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &2106800098
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -89799,6 +90424,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &2109298140
 GameObject:
   m_ObjectHideFlags: 0
@@ -89858,6 +90484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!1 &2112827697
 GameObject:
   m_ObjectHideFlags: 0
@@ -90028,7 +90655,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114184750}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -90122,7 +90749,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2121068370}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -90506,6 +91133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &2128644758
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -90559,7 +91187,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2129749864}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -90755,6 +91383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &2132652543
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -90810,7 +91439,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2132764262}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -91040,6 +91669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &2140346667
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -91099,6 +91729,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isColliderUnActive: 0
   activateMesh: 0
+  Esteet: []
 --- !u!65 &2142857704
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -91418,24 +92049,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &232707723014916351
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 608389317797810757}
-  - component: {fileID: 4602315195202936288}
-  - component: {fileID: 1745780376957413674}
-  m_Layer: 0
-  m_Name: jerrycan2 (9)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!4 &330953220093974327
 Transform:
   m_ObjectHideFlags: 0
@@ -91458,20 +92071,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4172445902172010911}
   m_Mesh: {fileID: 3722787753090754048, guid: 836105822f95e9c45bccaa7423422853, type: 3}
---- !u!4 &390350755884103530
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1018127276651752912}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 3.6886244, y: 0.5, z: 26.06}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 32
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &526515215429262563
 Transform:
   m_ObjectHideFlags: 0
@@ -91485,20 +92084,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1586173497}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &608389317797810757
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 232707723014916351}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -15.84, y: 0.5, z: 41.932297}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &711302150023650301
 MeshFilter:
@@ -91516,47 +92101,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3951837658122211456}
   m_Mesh: {fileID: -3912723805244371984, guid: 742598f158c1fd343a60b0cd384cda4d, type: 3}
---- !u!23 &784126528547441615
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1288375411967289882}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -876546973899608171, guid: f635bed822c75a445abd016c8c884c8d, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!4 &825903827135115131
 Transform:
   m_ObjectHideFlags: 0
@@ -91597,114 +92141,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3503967226095037895}
   m_Mesh: {fileID: -4082099787275433480, guid: d5c54f5c60ed0e445ac8437d824db644, type: 3}
---- !u!23 &886931495265742503
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1679841625347723122}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -876546973899608171, guid: f635bed822c75a445abd016c8c884c8d, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!23 &905572457138885158
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1698350921241310195}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -876546973899608171, guid: f635bed822c75a445abd016c8c884c8d, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &984184727620500112
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3552370277810728847}
-  m_Mesh: {fileID: -5495902117074765545, guid: f635bed822c75a445abd016c8c884c8d, type: 3}
---- !u!1 &1018127276651752912
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390350755884103530}
-  - component: {fileID: 3658354895226534095}
-  - component: {fileID: 1522745732725541893}
-  m_Layer: 0
-  m_Name: jerrycan2 (8)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1142815480286367117
 GameObject:
   m_ObjectHideFlags: 0
@@ -91731,24 +92167,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3192991075524441279}
   m_Mesh: {fileID: -5495902117074765545, guid: f635bed822c75a445abd016c8c884c8d, type: 3}
---- !u!1 &1288375411967289882
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1921605687018270880}
-  - component: {fileID: 3244053694334320389}
-  - component: {fileID: 784126528547441615}
-  m_Layer: 0
-  m_Name: jerrycan2 (6)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!23 &1503328094757776472
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -91770,47 +92188,6 @@ MeshRenderer:
   m_Materials:
   - {fileID: 2413751341462511734, guid: b9ab15c6eac20404f8a87243a51b6e8b, type: 3}
   - {fileID: 6133712870518801159, guid: b9ab15c6eac20404f8a87243a51b6e8b, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!23 &1522745732725541893
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1018127276651752912}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -876546973899608171, guid: f635bed822c75a445abd016c8c884c8d, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -91873,97 +92250,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &1679841625347723122
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2018790906998838728}
-  - component: {fileID: 3146877281733663341}
-  - component: {fileID: 886931495265742503}
-  m_Layer: 0
-  m_Name: jerrycan2 (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1698350921241310195
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2078993448399792457}
-  - component: {fileID: 3131631303023453932}
-  - component: {fileID: 905572457138885158}
-  m_Layer: 0
-  m_Name: jerrycan2 (7)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!23 &1745780376957413674
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 232707723014916351}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -876546973899608171, guid: f635bed822c75a445abd016c8c884c8d, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!4 &1921605687018270880
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1288375411967289882}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -15.84, y: 0.5, z: 41.932297}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 30
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1962760175619789844
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -92005,34 +92291,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!4 &2018790906998838728
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1679841625347723122}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -15.84, y: 0.5, z: 41.932297}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 27
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &2078993448399792457
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1698350921241310195}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 3.6886244, y: 0.5, z: 26.06}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 29
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &2515116361061013578
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -92089,55 +92347,6 @@ Transform:
   m_Father: {fileID: 1257798155}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -89.98, y: -33.69, z: 0}
---- !u!23 &3047935852882677338
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3552370277810728847}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -876546973899608171, guid: f635bed822c75a445abd016c8c884c8d, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &3131631303023453932
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1698350921241310195}
-  m_Mesh: {fileID: -5495902117074765545, guid: f635bed822c75a445abd016c8c884c8d, type: 3}
 --- !u!23 &3143631083932666898
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -92183,14 +92392,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &3146877281733663341
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1679841625347723122}
-  m_Mesh: {fileID: -5495902117074765545, guid: f635bed822c75a445abd016c8c884c8d, type: 3}
 --- !u!1 &3192991075524441279
 GameObject:
   m_ObjectHideFlags: 0
@@ -92209,14 +92410,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!33 &3244053694334320389
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1288375411967289882}
-  m_Mesh: {fileID: -5495902117074765545, guid: f635bed822c75a445abd016c8c884c8d, type: 3}
 --- !u!23 &3303182629453263189
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -92330,24 +92523,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 866202270198367833}
   m_Mesh: {fileID: 4493585093827132993, guid: 96f528a75564649479ea95eee7793622, type: 3}
---- !u!1 &3552370277810728847
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4181413441054979381}
-  - component: {fileID: 984184727620500112}
-  - component: {fileID: 3047935852882677338}
-  m_Layer: 0
-  m_Name: jerrycan2 (11)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!4 &3651383410100757285
 Transform:
   m_ObjectHideFlags: 0
@@ -92362,14 +92537,6 @@ Transform:
   m_Father: {fileID: 1586173497}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &3658354895226534095
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1018127276651752912}
-  m_Mesh: {fileID: -5495902117074765545, guid: f635bed822c75a445abd016c8c884c8d, type: 3}
 --- !u!33 &3690721498432411794
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -92473,20 +92640,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4181413441054979381
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3552370277810728847}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 3.6886244, y: 0.5, z: 26.06}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 33
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4317622784675100541
 Transform:
   m_ObjectHideFlags: 0
@@ -92537,14 +92690,6 @@ Transform:
   m_Father: {fileID: 1586173497}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4602315195202936288
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 232707723014916351}
-  m_Mesh: {fileID: -5495902117074765545, guid: f635bed822c75a445abd016c8c884c8d, type: 3}
 --- !u!1 &4762629311063795544
 GameObject:
   m_ObjectHideFlags: 0
@@ -92581,14 +92726,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!33 &5216824867879534723
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8395248096981620124}
-  m_Mesh: {fileID: -5495902117074765545, guid: f635bed822c75a445abd016c8c884c8d, type: 3}
 --- !u!23 &5240410092880247133
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -92652,22 +92789,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8467675202804957633}
   m_Mesh: {fileID: 5950909317267441272, guid: b5476690c0488464a97ec0171f2e105d, type: 3}
---- !u!33 &5329046694666518606
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8435409786843829585}
-  m_Mesh: {fileID: -5495902117074765545, guid: f635bed822c75a445abd016c8c884c8d, type: 3}
---- !u!33 &5446002851158005988
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8606411344733195771}
-  m_Mesh: {fileID: -5495902117074765545, guid: f635bed822c75a445abd016c8c884c8d, type: 3}
 --- !u!4 &5491371109794107630
 Transform:
   m_ObjectHideFlags: 0
@@ -92682,14 +92803,6 @@ Transform:
   m_Father: {fileID: 1586173497}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5892975252336532542
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7866670332085569825}
-  m_Mesh: {fileID: -5495902117074765545, guid: f635bed822c75a445abd016c8c884c8d, type: 3}
 --- !u!1 &6032942540583344264
 GameObject:
   m_ObjectHideFlags: 0
@@ -92809,120 +92922,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!4 &7379102154891514779
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7866670332085569825}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -15.84, y: 0.5, z: 41.932297}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 25
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &7813993794916412462
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8606411344733195771}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -876546973899608171, guid: f635bed822c75a445abd016c8c884c8d, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &7866670332085569825
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7379102154891514779}
-  - component: {fileID: 5892975252336532542}
-  - component: {fileID: 8515456478474086644}
-  m_Layer: 0
-  m_Name: jerrycan2 (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!23 &7930949934629631108
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8435409786843829585}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -876546973899608171, guid: f635bed822c75a445abd016c8c884c8d, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!23 &7963426044176588820
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -92976,83 +92975,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6032942540583344264}
   m_Mesh: {fileID: -5495902117074765545, guid: 26d9e3f3eedb8f24aaa92d522e0e95ad, type: 3}
---- !u!23 &8034727237250102345
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8395248096981620124}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -876546973899608171, guid: f635bed822c75a445abd016c8c884c8d, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &8395248096981620124
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9208235088585510694}
-  - component: {fileID: 5216824867879534723}
-  - component: {fileID: 8034727237250102345}
-  m_Layer: 0
-  m_Name: jerrycan2 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &8435409786843829585
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9104950437238165483}
-  - component: {fileID: 5329046694666518606}
-  - component: {fileID: 7930949934629631108}
-  m_Layer: 0
-  m_Name: jerrycan2 (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &8467675202804957633
 GameObject:
   m_ObjectHideFlags: 0
@@ -93071,65 +92993,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!23 &8515456478474086644
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7866670332085569825}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -876546973899608171, guid: f635bed822c75a445abd016c8c884c8d, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &8606411344733195771
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8951974257806972737}
-  - component: {fileID: 5446002851158005988}
-  - component: {fileID: 7813993794916412462}
-  m_Layer: 0
-  m_Name: jerrycan2 (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!33 &8906606565034942283
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -93138,34 +93001,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5151718037424867924}
   m_Mesh: {fileID: 1476294476455431859, guid: f00089a59d835744d8d68499fd759c07, type: 3}
---- !u!4 &8951974257806972737
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8606411344733195771}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 3.6886244, y: 0.5, z: 26.06}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 24
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &9104950437238165483
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8435409786843829585}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 3.6886244, y: 0.5, z: 26.06}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 28
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &9135808129687264123
 Transform:
   m_ObjectHideFlags: 0
@@ -93188,17 +93023,3 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4762629311063795544}
   m_Mesh: {fileID: -5114752610373334196, guid: 219156d0aa74c3048b3a47e728733ac0, type: 3}
---- !u!4 &9208235088585510694
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8395248096981620124}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -23.111177, y: 0.5, z: 41.932297}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 26
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
