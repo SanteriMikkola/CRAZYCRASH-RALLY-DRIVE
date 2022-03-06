@@ -92,7 +92,7 @@ public class PlayerMovement : MonoBehaviour
 
         rb = this.GetComponent<Rigidbody>();
 
-        
+
 
         playerColor = Player.GetComponent<PlayerColor>();
         ///Este = GameObject.Find("Rock");
@@ -104,7 +104,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        
+
 
         //Esteet = GameObject.FindGameObjectsWithTag("Este");
         //Debug.Log(Esteet.Length);
@@ -279,7 +279,9 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitUntil(() => Player.transform.position.z >= playerPos_4z.z);
         playerCollideWithOsb = false;
         playerBoxCollider.enabled = true;
-        playerColor.playerRenderer.material.color = playerColor.playerNormalColor;
+        //playerColor.playerRenderer.material.color = playerColor.playerNormalColor;
+        //playerColor.playerRenderer.material = playerColor.playerNormalColorMaterial;
+        playerColor.playerRenderer.material.SetColor("_BaseColor", playerColor.playerNormalColor);
     }
 
     /*IEnumerator CollidersOff()

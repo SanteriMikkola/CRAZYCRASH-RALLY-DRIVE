@@ -6,12 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TestScene.unity
-    guid: 7d39fda87e7894f44b66bb4285a1d684
-  - enabled: 1
-    path: Assets/Scenes/NooraScene.unity
-    guid: 09a5c5fa8cff0e3489fcfccf30194072
-  - enabled: 1
-    path: Assets/Scenes/Start.unity
-    guid: e20fd95613ba8884caf5ea977cb55c12
+    path: Assets/Scenes/SanteriScene.unity
+    guid: 77e8814375e643b40b9e60d042a124de
   m_configObjects: {}

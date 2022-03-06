@@ -22,7 +22,7 @@ public class CarCollider : MonoBehaviour
     public bool isThatFullHealthReverse;
 
     public int osuma = 0;
-    
+
     public int maxOsumat = 5;
 
     private Vector3 playerPos_4z;
@@ -46,7 +46,6 @@ public class CarCollider : MonoBehaviour
             //playerGotL = true;
             carController.forwardSpeed = carController.forwardSpeed - 1f;
             //rb.AddForce(stuckForce, ForceMode.Impulse);
-
         }*/
     }
 
@@ -113,6 +112,11 @@ public class CarCollider : MonoBehaviour
         WheelColliders[3].enabled = true;
         SphereCollider.enabled = true;
         isPlayerMoving = true;
-        playerColor.playerRenderer.material.color = playerColor.playerNormalColor;
+        //playerColor.playerRenderer.material.color = playerColor.playerNormalColor;
+        //playerColor.playerRenderer.material = playerColor.playerNormalColorMaterial;
+        //playerColor.playerRenderer.material.SetColor("_BaseColor", playerColor.playerNormalColor);
+        var block = new MaterialPropertyBlock();
+        block.SetColor("_BaseColor", playerColor.playerNormalColor);
+        playerColor.playerRenderer.SetPropertyBlock(block);
     }
 }
