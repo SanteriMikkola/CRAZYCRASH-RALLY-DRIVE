@@ -6,8 +6,9 @@ public class PlayerColor : MonoBehaviour
 {
 
     private GameObject Player;
-    private Material playerMaterial;
-    public Renderer playerRenderer;
+    public Material playerNewColorMaterial;
+    public Material playerNormalColorMaterial;
+    public MeshRenderer playerRenderer;
     public Color playerNormalColor;
     public Color playerNewColor;
     private PlayerMovement playerMove;
@@ -48,8 +49,7 @@ public class PlayerColor : MonoBehaviour
     {
 
         Player = GameObject.Find("Car");
-        playerRenderer = Player.GetComponent<Renderer>();
-        playerMaterial = Player.GetComponent<Material>();
+        playerRenderer = Player.GetComponent<MeshRenderer>();
         //playerMove = Player.GetComponent<PlayerMove>();
 
         MainPlayer = GameObject.Find("Player");
@@ -86,6 +86,9 @@ public class PlayerColor : MonoBehaviour
     {
         /*if (playerMove.playerCollideWithOsb == true)
         {*/
+        var block = new MaterialPropertyBlock();
+        //block.SetColor("_BaseColor", playerNewColor);
+
         for (int i = 0; i < 5; i++)
         {
             time += 1f * Time.deltaTime;
@@ -98,12 +101,18 @@ public class PlayerColor : MonoBehaviour
 
             if (IsThatNormalColor == false)
             {
-                playerRenderer.material.color = playerNewColor;
+                block.SetColor("_BaseColor", playerNewColor);
+                playerRenderer.SetPropertyBlock(block);
+                //playerRenderer.material.SetColor("_BaseColor", playerNewColor);
+                //playerRenderer.material = playerNewColorMaterial;
                 TrueOrFalse = true;
             }
             if (IsThatNormalColor == true)
             {
-                playerRenderer.material.color = playerNormalColor;
+                block.SetColor("_BaseColor", playerNormalColor);
+                playerRenderer.SetPropertyBlock(block);
+                //playerRenderer.material.SetColor("_BaseColor", playerNormalColor);
+                //playerRenderer.material = playerNormalColorMaterial;
                 TrueOrFalse = false;
             }
         }
@@ -120,13 +129,11 @@ public class PlayerColor : MonoBehaviour
             playerRenderer.material.color = playerNormalColor;
             StartCoroutine(WaitForChangingColor2());
     }
-
     IEnumerator WaitForChangingColor()
     {
         yield return new WaitForSeconds(5);
         yield return new WaitUntil(() => IsThatNormalColor == false);
     }
-
     IEnumerator WaitForChangingColor2()
     {
         yield return new WaitForSeconds(5);

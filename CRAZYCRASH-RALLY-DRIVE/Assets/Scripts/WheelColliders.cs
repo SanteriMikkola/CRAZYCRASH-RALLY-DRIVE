@@ -37,11 +37,6 @@ public class WheelColliders : MonoBehaviour
 
     public void OnCollisionEnter(Collision collider)
     {
-        if (collider.gameObject.CompareTag("Tie"))
-        {
-
-        }
-
         if (collider.gameObject.CompareTag("Este") && carCollider.playerCollide == false)
         {
             carCollider.playerCollide = true;
@@ -85,7 +80,7 @@ public class WheelColliders : MonoBehaviour
                     carCollider.osuma = 0;
                 }
             }
-            
+
         }
     }
 
@@ -103,6 +98,11 @@ public class WheelColliders : MonoBehaviour
         WheelCollider[3].enabled = true;
         SphereCollider.enabled = true;
         carCollider.isPlayerMoving = true;
-        playerColor.playerRenderer.material.color = playerColor.playerNormalColor;
+        //playerColor.playerRenderer.material.color = playerColor.playerNormalColor;
+        //playerColor.playerRenderer.material = playerColor.playerNormalColorMaterial;
+        //playerColor.playerRenderer.material.SetColor("_BaseColor", playerColor.playerNormalColor);
+        var block = new MaterialPropertyBlock();
+        block.SetColor("_BaseColor", playerColor.playerNormalColor);
+        playerColor.playerRenderer.SetPropertyBlock(block);
     }
 }
