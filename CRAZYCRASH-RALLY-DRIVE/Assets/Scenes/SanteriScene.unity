@@ -19344,6 +19344,7 @@ GameObject:
   - component: {fileID: 425612829}
   - component: {fileID: 425612834}
   - component: {fileID: 425612833}
+  - component: {fileID: 425612835}
   m_Layer: 0
   m_Name: FrontCollider
   m_TagString: MapCfront
@@ -19425,7 +19426,7 @@ Transform:
   m_LocalScale: {x: 250, y: 5.35, z: 0.66}
   m_Children: []
   m_Father: {fileID: 2038863076}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &425612833
 MonoBehaviour:
@@ -19434,7 +19435,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 425612828}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7bd4b9793d977d14183af4ac625bf662, type: 3}
   m_Name: 
@@ -19455,6 +19456,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &425612835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425612828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688420ba972f676429bf620b87ab9dd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Esteet: []
+  frontColliders: []
+  vector3s: []
+  Obs_vectors: []
+  PickedObjects: []
 --- !u!1 &428245340
 GameObject:
   m_ObjectHideFlags: 0
@@ -21588,7 +21606,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &486409651
 Transform:
   m_ObjectHideFlags: 0
@@ -21601,7 +21619,7 @@ Transform:
   m_LocalScale: {x: 250, y: 5.35, z: 0.66}
   m_Children: []
   m_Father: {fileID: 2038863076}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &486409652
 Rigidbody:
@@ -21631,8 +21649,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 688420ba972f676429bf620b87ab9dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vectorsF: []
+  Esteet: []
+  frontColliders: []
   vector3s: []
+  Obs_vectors: []
+  PickedObjects: []
 --- !u!65 &486409654
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -70294,7 +70315,7 @@ Transform:
   m_LocalScale: {x: 250, y: 5.35, z: 0.66}
   m_Children: []
   m_Father: {fileID: 2038863076}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1591258429
 MonoBehaviour:
@@ -70303,7 +70324,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1591258424}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7bd4b9793d977d14183af4ac625bf662, type: 3}
   m_Name: 
@@ -72278,7 +72299,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh170144
+  m_Name: pb_Mesh26548
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -80526,8 +80547,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 688420ba972f676429bf620b87ab9dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vectorsF: []
+  Esteet: []
+  frontColliders: []
   vector3s: []
+  Obs_vectors: []
+  PickedObjects: []
 --- !u!65 &1832604773
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -88232,9 +88256,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 3.18, z: 48.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1591258428}
   - {fileID: 425612832}
   - {fileID: 486409651}
+  - {fileID: 1591258428}
   - {fileID: 1832604770}
   m_Father: {fileID: 0}
   m_RootOrder: 22
