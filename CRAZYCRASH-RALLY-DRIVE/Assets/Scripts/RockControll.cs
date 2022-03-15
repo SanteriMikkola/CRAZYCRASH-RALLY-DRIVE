@@ -21,6 +21,7 @@ public class RockControll : MonoBehaviour
         {
             gameObject.SetActive(true);
             meshRenderer.enabled = true;
+            //Destroy(gameObject);
         }
     }
 }

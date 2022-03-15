@@ -22,6 +22,7 @@ public class TreeControll : MonoBehaviour
         {
             gameObject.SetActive(false);
             trunks.SetTrunkInActive();
+            //Destroy(gameObject);
         }
         if (esteS.activateMesh == true)
         {

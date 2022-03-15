@@ -13,6 +13,8 @@ public class StartButton : MonoBehaviour
 
     [HideInInspector]
     public bool IsGameStarted = false;
+    [HideInInspector]
+    public bool GameStartForMapControll = false;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +29,7 @@ public class StartButton : MonoBehaviour
     public void StartGame()
     {
         IsGameStarted = true;
+        GameStartForMapControll = true;
         playerRB.isKinematic = false;
         //Kamera.SetActive(true);
         //StartMenuKamera.SetActive(false);
