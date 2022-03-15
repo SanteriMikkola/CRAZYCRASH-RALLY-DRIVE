@@ -21,7 +21,14 @@ public class Este : MonoBehaviour
     private void Update()
     {
         Esteet = GameObject.FindGameObjectsWithTag("Este");
-        
+
+        if (activateMesh == true)
+        {
+            gameObject.SetActive(true);
+            isColliderUnActive = false;
+            //Destroy(gameObject);
+        }
+
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -41,12 +48,12 @@ public class Este : MonoBehaviour
             isColliderUnActive = true;
             activateMesh = false;
         }
-        if (collision.gameObject.CompareTag("MapCfront") && activateMesh == false)
+        /*if (collision.gameObject.CompareTag("MapCfront") && activateMesh == false)
         {
             gameObject.SetActive(true);
             activateMesh = true;
             isColliderUnActive = false;
-        }
+        }*/
     }
 
     /*public void OnCollisionExit(Collision collision)

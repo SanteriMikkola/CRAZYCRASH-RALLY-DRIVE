@@ -20,5 +20,6 @@ public class TrunkControll : MonoBehaviour
     {
         gameObject.SetActive(true);
         meshRenderer.enabled = true;
+        //Destroy(gameObject);
     }
 }

@@ -21,6 +21,7 @@ public class FenceControll : MonoBehaviour
         {
             gameObject.SetActive(true);
             meshRenderer.enabled = true;
+            //Destroy(gameObject);
         }
     }
 }
