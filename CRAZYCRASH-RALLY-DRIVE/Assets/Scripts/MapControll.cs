@@ -6,6 +6,8 @@ public class MapControll : MonoBehaviour
 {
     private GameObject Player;
 
+    private CarCollider carCollider;
+
     public GameObject[] Esteet;
 
     public GameObject[] ToolBoxes;
@@ -47,11 +49,13 @@ public class MapControll : MonoBehaviour
     void Start()
     {
         Player = GameObject.Find("Player");
+        carCollider = Player.GetComponent<CarCollider>();
 
         bCollider = GameObject.Find("BackCollider");
         fCollider = GameObject.Find("FrontCollider");
-        startButtonB = GameObject.Find("StartButton");
-        startButtonS = startButtonB.GetComponent<StartButton>();
+
+            startButtonB = GameObject.Find("StartButton");
+            startButtonS = startButtonB.GetComponent<StartButton>();
 
         fBoxCollider = fCollider.GetComponent<BoxCollider>();
         //bBoxCollider = bCollider.GetComponent<BoxCollider>();
@@ -63,6 +67,7 @@ public class MapControll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         Esteet = GameObject.FindGameObjectsWithTag("Este");
         ToolBoxes = GameObject.FindGameObjectsWithTag("ToolBox");
 
@@ -73,16 +78,27 @@ public class MapControll : MonoBehaviour
             
         }*/
 
-        //StartThings();
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("Quit!");
+            Application.Quit();
+        }
+
+        if (carCollider.isThatLevel2 == true)
+        {
+            startButtonS.StartLevel2();
+        }
+
+            //StartThings();
 
         bCollider.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y + 1f, Player.transform.position.z - 8.07f);
         //Debug.Log(frontColliders.Length);
-        if (startButtonS.GameStartForMapControll == true || playerCollidedFcollider == true)
-        {
-            isObjectsPicked = false;
-            PositionCheck();
-            startButtonS.GameStartForMapControll = false;
-        }
+            if (startButtonS.GameStartForMapControll == true || playerCollidedFcollider == true)
+            {
+                isObjectsPicked = false;
+                PositionCheck();
+                startButtonS.GameStartForMapControll = false;
+            }
         //ObsActive();
         //fCollider.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y + 1f, Player.transform.position.z + 48.5f);
     }

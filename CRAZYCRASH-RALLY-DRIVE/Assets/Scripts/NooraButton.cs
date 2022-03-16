@@ -17,4 +17,10 @@ public class NooraButton : MonoBehaviour
         SceneManager.LoadScene("TestScene");
     }
 
+
+    public void Quit()
+    {
+        Debug.Log("Quit");
+        Application.Quit();
+    }
 }

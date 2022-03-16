@@ -42,11 +42,12 @@ public class CarController : MonoBehaviour
         playerRotateF = GameObject.Find("playerRotationF");
         Kamera = GameObject.Find("Main Camera");
         Player = GameObject.Find("Player");
-        startButtonB = GameObject.Find("StartButton");
-        startButtonS = startButtonB.GetComponent<StartButton>();
+        
         carCollider = Player.GetComponent<CarCollider>();
         rB.transform.parent = null;
 
+            startButtonB = GameObject.Find("StartButton");
+            startButtonS = startButtonB.GetComponent<StartButton>();
 
         aloitusTienLoppu = new Vector3(0f, 0f, 17.5f);
     }
@@ -54,6 +55,7 @@ public class CarController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         forwardSpeed = 2f;
         Kamera.transform.position = new Vector3(rB.position.x, rB.position.y + 5.310003f, rB.position.z - 8.23f);
         //Kamera.transform.Translate(Vector3.forward * Time.deltaTime * 3.6f, Space.World);
@@ -134,14 +136,14 @@ public class CarController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (startButtonS.IsGameStarted == true)
-        {
-            rB.AddForce(transform.forward * forwardSpeed * 1000f);
-            transform.position = rB.transform.position;
-            if (Player.transform.position.z >= aloitusTienLoppu.z)
+            if (startButtonS.IsGameStarted == true)
             {
-                IsTutorialEnded = true;
+                rB.AddForce(transform.forward * forwardSpeed * 1000f);
+                transform.position = rB.transform.position;
+                if (Player.transform.position.z >= aloitusTienLoppu.z)
+                {
+                    IsTutorialEnded = true;
+                }
             }
-        }
     }
 }
