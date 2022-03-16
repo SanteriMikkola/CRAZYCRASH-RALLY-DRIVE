@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
@@ -29,9 +30,10 @@ public class MenuController : MonoBehaviour
     }
     public void MainM()
     {
-        MainMenu.SetActive(true);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        /*MainMenu.SetActive(true);
         MainCamera.SetActive(true);
-        StartCamera.SetActive(false);
+        StartCamera.SetActive(false);*/
         StartMenu.SetActive(false);
         GarageCamera.SetActive(false);
         GarageMenu.SetActive(false);

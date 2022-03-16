@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CarCollider : MonoBehaviour
 {
@@ -14,12 +15,17 @@ public class CarCollider : MonoBehaviour
     public CapsuleCollider[] WheelColliders;
     public SphereCollider SphereCollider;
 
+    private GameObject startButtonB;
+    private StartButton startButtonS;
+
     public bool playerCollide = false;
     public bool isPlayerDead = false;
 
     public bool isPlayerMoving = true;
     public bool toolBoxPicked = false;
     public bool isThatFullHealthReverse;
+
+    public bool isThatLevel2 = false;
 
     public int osuma = 0;
 
@@ -33,6 +39,10 @@ public class CarCollider : MonoBehaviour
         Player = GameObject.Find("Player");
         carController = Player.GetComponent<CarController>();
         //carBody = GameObject.Find("CarBody");
+
+        startButtonB = GameObject.Find("StartButton");
+        startButtonS = startButtonB.GetComponent<StartButton>();
+
         playerColor = Player.GetComponent<PlayerColor>();
         Kamera = GameObject.Find("Main Camera");
     }
@@ -96,6 +106,20 @@ public class CarCollider : MonoBehaviour
             }
         }
 
+        if (collider.gameObject.CompareTag("LevelEnd"))
+        {
+            isThatLevel2 = true;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+            startButtonS.StartLevel2();
+            
+        }
+
+        if (collider.gameObject.CompareTag("LevelEnd2"))
+        {
+            Debug.Log("Quit");
+            Application.Quit();
+        }
     }
 
     IEnumerator PlayerColliderOn()

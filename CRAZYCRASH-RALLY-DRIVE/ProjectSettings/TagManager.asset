@@ -11,6 +11,8 @@ TagManager:
   - Trunk
   - MapCfront
   - Tie
+  - LevelEnd
+  - LevelEnd2
   layers:
   - Default
   - TransparentFX
