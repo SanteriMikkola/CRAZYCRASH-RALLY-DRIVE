@@ -11,6 +11,7 @@ public class CarController : MonoBehaviour
     private CarCollider carCollider;
     private GameObject startButtonB;
     private StartButton startButtonS;
+    private AavikonStartti aavikonStartti;
     private GameObject ScoreNumText;
     private ScoreControll scoreControll;
 
@@ -48,6 +49,7 @@ public class CarController : MonoBehaviour
 
             startButtonB = GameObject.Find("StartButton");
             startButtonS = startButtonB.GetComponent<StartButton>();
+        //aavikonStartti = startButtonB.GetComponent<AavikonStartti>();
 
         aloitusTienLoppu = new Vector3(0f, 0f, 17.5f);
     }
@@ -136,7 +138,7 @@ public class CarController : MonoBehaviour
 
     private void FixedUpdate()
     {
-            if (startButtonS.IsGameStarted == true)
+            if (startButtonS.IsGameStarted == true /*|| aavikonStartti.IsGameStarted == true*/)
             {
                 rB.AddForce(transform.forward * forwardSpeed * 1000f);
                 transform.position = rB.transform.position;

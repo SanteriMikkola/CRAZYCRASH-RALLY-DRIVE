@@ -40,8 +40,8 @@ public class CarCollider : MonoBehaviour
         carController = Player.GetComponent<CarController>();
         //carBody = GameObject.Find("CarBody");
 
-        startButtonB = GameObject.Find("StartButton");
-        startButtonS = startButtonB.GetComponent<StartButton>();
+        /*startButtonB = GameObject.Find("StartButton");
+        startButtonS = startButtonB.GetComponent<StartButton>();*/
 
         playerColor = Player.GetComponent<PlayerColor>();
         Kamera = GameObject.Find("Main Camera");
@@ -111,7 +111,7 @@ public class CarCollider : MonoBehaviour
             isThatLevel2 = true;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
-            startButtonS.StartLevel2();
+            //startButtonS.StartLevel2();
             
         }
 
