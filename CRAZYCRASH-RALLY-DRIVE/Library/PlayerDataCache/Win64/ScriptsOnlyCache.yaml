@@ -1630,9 +1630,15 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: ce0c45e31411f94678232d8798cfa7f1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AavikonStartti
   platform: 19
   scenePathNames:
   - Assets/Scenes/NooraScene.unity
   - Assets/Scenes/TestScene.unity
   - Assets/Scenes/Aavikko.unity
-  playerPath: E:/ProjectsBuilds/CRAZYCRASH-RALLY-DRIVE_build5/CRAZYCRASH-RALLY-DRIVE.exe
+  playerPath: E:/ProjectsBuilds/CRAZYCRASH-RALLY-DRIVE_build6/CRAZYCRASH-RALLY-DRIVE.exe
