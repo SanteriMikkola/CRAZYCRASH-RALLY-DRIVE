@@ -198,6 +198,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &3784392
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -628,6 +631,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &10471565
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -818,6 +824,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &10855598
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -969,6 +978,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &13086613
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1057,6 +1069,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &14511659
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1076,7 +1091,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-6182
+  m_Name: pb_Mesh24918
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1278,6 +1293,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &20989533
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1335,6 +1353,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &21209235
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1392,6 +1413,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &22254895
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1493,6 +1517,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &23002337
 GameObject:
   m_ObjectHideFlags: 0
@@ -1539,6 +1566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0864ec977a2eb249ba13fe6bcc3b890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activeToolBox: 0
 --- !u!65 &23002340
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1802,6 +1830,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &27561004
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2080,6 +2111,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &33660158
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2252,6 +2286,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &37577774
 GameObject:
   m_ObjectHideFlags: 0
@@ -2373,6 +2410,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &40999915
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2936,6 +2976,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &49779324
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3042,6 +3085,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &51854544
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3355,6 +3401,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &64873509
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3596,6 +3645,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &72770407
 GameObject:
   m_ObjectHideFlags: 0
@@ -3830,6 +3882,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &73959266
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4266,6 +4321,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &82031796
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4373,6 +4431,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &82529391
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4572,6 +4633,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &84468340
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4904,6 +4968,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &91499762
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4961,6 +5028,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &92681571
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5129,6 +5199,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &102934003
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5646,6 +5719,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &110386930
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5922,6 +5998,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &115675151
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5994,6 +6073,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &118679502
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6290,6 +6372,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &123540953
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6487,6 +6572,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &129473494
 GameObject:
   m_ObjectHideFlags: 0
@@ -6754,6 +6842,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &132453816
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6958,6 +7049,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &136811660
 GameObject:
   m_ObjectHideFlags: 0
@@ -7254,6 +7348,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &145473526
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7418,6 +7515,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &161055894
 GameObject:
   m_ObjectHideFlags: 0
@@ -7491,6 +7591,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &161055899
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7846,6 +7949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bd6778fbf084b64d81dd69357586de1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rePosition: {x: 0, y: 0, z: 0}
 --- !u!81 &164755097
 AudioListener:
   m_ObjectHideFlags: 0
@@ -7909,7 +8013,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 17.27, y: 0, z: 0}
 --- !u!1 &166121667
 GameObject:
@@ -8051,6 +8155,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &167775520
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8208,6 +8315,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &171098069
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8265,6 +8375,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &174672346
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8322,6 +8435,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &176249063
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8415,7 +8531,7 @@ Transform:
   m_Children:
   - {fileID: 1510703771}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &177101389
 GameObject:
@@ -8461,6 +8577,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &177101392
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8614,6 +8733,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &178515584
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8767,6 +8889,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &182217033
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8873,6 +8998,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &182719275
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8930,6 +9058,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &186821079
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9321,6 +9452,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &192738372
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10116,6 +10250,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &203846899
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10656,6 +10793,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &207400790
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11506,7 +11646,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 50, y: 0, z: 0}
 --- !u!1 &231976676
 GameObject:
@@ -11689,6 +11829,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &235779316
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11777,6 +11920,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &237142737
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11863,6 +12009,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &240427587
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12063,6 +12212,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &248379728
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12148,7 +12300,7 @@ Transform:
   - {fileID: 2007215136}
   - {fileID: 863583066}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &257241760
 GameObject:
@@ -12194,6 +12346,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &257241763
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12251,6 +12406,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &258203800
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12499,6 +12657,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0bd3b324b2a32049a0b8bbf4bd01c7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playersBoxCollider: {fileID: 0}
+  WheelColliders: []
+  SphereCollider: {fileID: 0}
+  playerCollide: 0
+  isPlayerDead: 0
+  isPlayerMoving: 1
+  toolBoxPicked: 0
+  isThatFullHealthReverse: 0
+  isThatLevel2: 0
+  osuma: 0
+  maxOsumat: 5
 --- !u!114 &265999888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12511,6 +12680,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccd94d4bbb816a24bb2146cc7caaed0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerNewColorMaterial: {fileID: 0}
+  playerNormalColorMaterial: {fileID: 0}
+  playerRenderer: {fileID: 0}
+  playerNormalColor: {r: 0, g: 0, b: 0, a: 0}
+  playerNewColor: {r: 0, g: 0, b: 0, a: 0}
+  Rn: 0
+  Gn: 0
+  Bn: 0
+  An: 0
+  IsThatNormalColor: 1
+  TrueOrFalse: 0
+  IsChangeEnded: 0
+  R: 0
+  G: 0
+  B: 0
+  A: 0
 --- !u!114 &265999889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12523,6 +12708,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72c79df5eba6d8047a654d868a6fdc72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rB: {fileID: 0}
+  forwardSpeed: 2
+  turnStrenght: 90
+  turnInput: 0
+  leftFrontWheel: {fileID: 0}
+  rightFrontWheel: {fileID: 0}
+  wheelTurn: 30
+  maxTurn: 0
+  IsThatFirstStart: 1
 --- !u!54 &265999890
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12564,7 +12758,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &266512466
 GameObject:
@@ -12639,6 +12833,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &266512471
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13300,6 +13497,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &275250406
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13370,6 +13570,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &278679503
 GameObject:
   m_ObjectHideFlags: 0
@@ -13463,7 +13666,7 @@ Transform:
   m_LocalScale: {x: 800, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &279084712
 GameObject:
@@ -13622,7 +13825,7 @@ Transform:
   - {fileID: 2050269237}
   - {fileID: 1632647472}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &286378495
 GameObject:
@@ -14685,6 +14888,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &316124003
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14755,6 +14961,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &319473088
 GameObject:
   m_ObjectHideFlags: 0
@@ -14799,6 +15008,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &319473091
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14856,6 +15068,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &325569355
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14913,6 +15128,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &326046328
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15341,6 +15559,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &349205133
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15398,6 +15619,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &349935748
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15468,6 +15692,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &351777545
 GameObject:
   m_ObjectHideFlags: 0
@@ -15512,6 +15739,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &351777548
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15855,6 +16085,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &362556837
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16290,6 +16523,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &369338105
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16347,6 +16583,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &372125427
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16531,6 +16770,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &379722900
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16684,6 +16926,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &380815079
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16741,6 +16986,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &381772187
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17164,6 +17412,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &391102958
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17236,6 +17487,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &392597613
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17704,6 +17958,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &406949309
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18059,6 +18316,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &414213732
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18228,6 +18488,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &416938879
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18287,6 +18550,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6294404d1cbf8b418d455e7b4ba6334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playersBoxCollider: {fileID: 0}
+  WheelCollider: []
+  SphereCollider: {fileID: 0}
 --- !u!136 &417165633
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -18650,7 +18916,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &420623586
 GameObject:
@@ -18696,6 +18962,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &420623589
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19813,6 +20082,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &442914512
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19964,6 +20236,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &444772605
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20117,6 +20392,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &445387051
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20758,6 +21036,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &466942627
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20911,6 +21192,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &471221429
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20968,6 +21252,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &472156470
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21025,6 +21312,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &472499861
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22197,6 +22487,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &498255624
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22681,6 +22974,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &507702876
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22957,6 +23253,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &516570784
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23317,6 +23616,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &520519840
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23765,6 +24067,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &527526801
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -24274,6 +24579,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &544219759
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24458,6 +24766,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &547430689
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24624,6 +24935,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &550406044
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24843,6 +25157,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &556874273
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25169,6 +25486,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &568931633
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25611,6 +25931,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &577859874
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25717,7 +26040,7 @@ Transform:
   m_LocalScale: {x: 100, y: 1, z: 300}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &579303263
 GameObject:
@@ -25905,6 +26228,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &581758891
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -26024,6 +26350,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &585062740
 GameObject:
   m_ObjectHideFlags: 0
@@ -26316,6 +26645,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &597182864
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26388,6 +26720,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &598832127
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -26494,6 +26829,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &599234409
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26651,6 +26989,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &601728220
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26708,6 +27049,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &602544621
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26765,6 +27109,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &603800973
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26822,6 +27169,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &607376316
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26892,6 +27242,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &609006932
 GameObject:
   m_ObjectHideFlags: 0
@@ -29028,6 +29381,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &624842787
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29343,6 +29699,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &631710507
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29627,6 +29986,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &637428091
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29780,6 +30142,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &640120654
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30148,6 +30513,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &648527777
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30459,6 +30827,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &659138604
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30516,6 +30887,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &660156020
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30698,6 +31072,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &663572526
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31075,7 +31452,7 @@ Transform:
   - {fileID: 1116527023}
   - {fileID: 774135394}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &673024676
 GameObject:
@@ -31121,6 +31498,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &673024679
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31559,6 +31939,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &687626632
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31616,6 +31999,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &688945270
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31673,6 +32059,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &689268401
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32135,6 +32524,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &699923722
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32223,6 +32615,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &702277309
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32407,6 +32802,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &704973070
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32479,6 +32877,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &707857903
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -32585,6 +32986,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &710761630
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32800,6 +33204,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &712455090
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32984,6 +33391,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &717268511
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33601,6 +34011,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &724796145
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33850,6 +34263,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &736250201
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34414,6 +34830,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &749624482
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34898,6 +35317,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &761795628
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35323,6 +35745,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &775504913
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35538,6 +35963,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &778661805
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35610,6 +36038,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &779023099
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35716,6 +36147,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &779981102
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35802,6 +36236,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &780224590
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -36181,6 +36618,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &794177892
 GameObject:
   m_ObjectHideFlags: 0
@@ -36383,6 +36823,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &805977385
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36471,6 +36914,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &812554231
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36621,6 +37067,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &818060503
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36740,6 +37189,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &819593133
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37199,6 +37651,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &824795436
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37380,6 +37835,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!23 &826293831
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37607,6 +38065,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &829415290
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37695,6 +38156,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &833667526
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37848,6 +38312,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &834046344
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37905,6 +38372,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &836955497
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37962,6 +38432,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &838267090
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38126,6 +38599,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &839658423
 GameObject:
   m_ObjectHideFlags: 0
@@ -38245,6 +38721,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &842373212
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38411,6 +38890,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &846044386
 GameObject:
   m_ObjectHideFlags: 0
@@ -38455,6 +38937,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &846044389
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38527,6 +39012,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &849394364
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38662,6 +39150,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &849400133
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -38775,6 +39266,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3bdcc31831b104ba18e3d9e2f49ddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ScoreNumText: {fileID: 0}
+  IsThatStart: 1
 --- !u!114 &849756217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39028,7 +39521,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &863451251
 GameObject:
@@ -39136,6 +39629,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &865751684
 GameObject:
   m_ObjectHideFlags: 0
@@ -39578,6 +40074,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &873967997
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39909,6 +40408,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &881585461
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40028,6 +40530,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &885080312
 GameObject:
   m_ObjectHideFlags: 0
@@ -40532,6 +41037,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &892792954
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40589,6 +41097,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &893047532
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40856,6 +41367,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &897826555
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -40963,6 +41477,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &899916873
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41147,6 +41664,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &904862318
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41204,6 +41724,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &906296307
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41261,6 +41784,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &908354579
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41318,6 +41844,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &914998371
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41473,6 +42002,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6294404d1cbf8b418d455e7b4ba6334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playersBoxCollider: {fileID: 0}
+  WheelCollider: []
+  SphereCollider: {fileID: 0}
 --- !u!136 &919593868
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -41580,6 +42112,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &922410777
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41681,6 +42216,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &929065476
 GameObject:
   m_ObjectHideFlags: 0
@@ -41915,6 +42453,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &931598942
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42199,6 +42740,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &947544605
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42285,6 +42829,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &951250280
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -42392,6 +42939,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &953364033
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42444,7 +42994,7 @@ Transform:
   - {fileID: 1878014747}
   - {fileID: 717830819}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &956049208
 GameObject:
@@ -42505,6 +43055,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &956049212
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -43254,6 +43807,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &971810172
 GameObject:
   m_ObjectHideFlags: 0
@@ -43563,6 +44119,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &985187505
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43620,6 +44179,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &985449479
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44033,6 +44595,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &992116781
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -44441,6 +45006,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &1000884038
 GameObject:
   m_ObjectHideFlags: 0
@@ -44568,7 +45136,7 @@ Transform:
   - {fileID: 1865769373}
   - {fileID: 1742483430}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1004136596
 GameObject:
@@ -44614,6 +45182,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1004136599
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44740,6 +45311,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1006918364
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44873,6 +45447,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1010126084
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45026,6 +45603,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1012840303
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45306,7 +45886,7 @@ Transform:
   - {fileID: 556338898}
   - {fileID: 1901743243}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1018869480
 GameObject:
@@ -45521,6 +46101,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1020732609
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45640,6 +46223,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1021741031
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45994,6 +46580,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &1028501834
 GameObject:
   m_ObjectHideFlags: 0
@@ -46257,6 +46846,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1036905015
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46410,6 +47002,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1040214552
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46467,6 +47062,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &1041223712
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -46635,6 +47233,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1046327053
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47446,6 +48047,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &1059083270
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -47553,6 +48157,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1059990076
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47610,6 +48217,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1060166692
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48026,6 +48636,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1074629397
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48239,6 +48852,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &1079749964
 GameObject:
   m_ObjectHideFlags: 0
@@ -48410,6 +49026,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1080940195
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48688,6 +49307,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1088839136
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48952,6 +49574,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1092325329
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49750,6 +50375,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1105725068
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49807,6 +50435,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1107826488
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50042,6 +50673,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &1116527022
 GameObject:
   m_ObjectHideFlags: 0
@@ -50117,6 +50751,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1117867654
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50421,7 +51058,7 @@ Transform:
   - {fileID: 1631715204}
   - {fileID: 1945955851}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1123010612
 GameObject:
@@ -50467,6 +51104,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1123010615
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50524,6 +51164,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1124244738
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50737,7 +51380,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 7.8, y: 70, z: 0}
 --- !u!1 &1132353445
 GameObject:
@@ -50937,6 +51580,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &1133273929
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -51251,6 +51897,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &1143260585
 GameObject:
   m_ObjectHideFlags: 0
@@ -51295,6 +51944,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1143260588
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51367,6 +52019,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1144584028
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51517,6 +52172,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb53c31ae1e1c14796c0967c3ac6407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsGameStarted: 0
+  GameStartForMapControll: 0
 --- !u!114 &1146483316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51734,6 +52391,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1151597305
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51885,6 +52545,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &1153353425
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -51942,6 +52605,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1155486773
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51999,6 +52665,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1156072679
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52416,6 +53085,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &1167947627
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -53140,6 +53812,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1184180200
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53503,6 +54178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0864ec977a2eb249ba13fe6bcc3b890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activeToolBox: 0
 --- !u!65 &1193763029
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53721,6 +54397,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &1196222994
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -54282,6 +54961,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1206139568
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54464,6 +55146,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1210940920
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54521,6 +55206,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &1211251807
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -54663,6 +55351,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1216915602
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54751,6 +55442,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1217448335
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54844,6 +55538,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1221349760
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55055,6 +55752,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1225841909
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55112,6 +55812,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1226026953
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55169,6 +55872,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1227243938
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55288,6 +55994,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1232876254
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55345,6 +56054,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1235138953
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55402,6 +56114,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1239074342
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56109,6 +56824,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1251209188
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56416,6 +57134,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1255857009
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56533,6 +57254,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &1256363396
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -56671,6 +57395,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1267878284
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56835,6 +57562,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &1271069380
 GameObject:
   m_ObjectHideFlags: 0
@@ -56975,6 +57705,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1273231338
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57032,6 +57765,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1275009935
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58055,6 +58791,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1301534173
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58112,6 +58851,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1303367729
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58169,6 +58911,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1303498331
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58276,7 +59021,7 @@ RectTransform:
   - {fileID: 2121347518}
   - {fileID: 1877461334}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -58725,6 +59470,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1312923737
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58813,6 +59561,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1315992623
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58883,6 +59634,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &1321808893
 GameObject:
   m_ObjectHideFlags: 0
@@ -59025,6 +59779,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1323628485
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59176,6 +59933,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1327640272
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59360,6 +60120,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1335572253
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59528,6 +60291,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1339772861
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59825,6 +60591,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1347559722
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59911,6 +60680,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &1348233165
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -60018,6 +60790,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1349623398
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60682,6 +61457,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1359354100
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60788,6 +61566,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1362363132
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61502,6 +62283,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1378416436
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62521,6 +63305,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1394037699
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63014,6 +63801,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1403925896
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63178,7 +63968,7 @@ Transform:
   - {fileID: 1477631465}
   - {fileID: 1733999634}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1414987157
 GameObject:
@@ -63226,6 +64016,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6294404d1cbf8b418d455e7b4ba6334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playersBoxCollider: {fileID: 0}
+  WheelCollider: []
+  SphereCollider: {fileID: 0}
 --- !u!136 &1414987160
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -63519,6 +64312,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1419757578
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63610,6 +64406,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e293c5e85e871e64897db8e25ba139a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rePositionF: {x: 0, y: 0, z: 0}
+  rePositionL: {x: 0, y: 0, z: 0}
+  rePositionR: {x: 0, y: 0, z: 0}
 --- !u!4 &1421559309
 Transform:
   m_ObjectHideFlags: 0
@@ -63622,7 +64421,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1422314829
 GameObject:
@@ -63668,6 +64467,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1422314832
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63850,6 +64652,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1423737847
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63938,6 +64743,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1426256893
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63995,6 +64803,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &1427424518
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -64052,6 +64863,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1427984535
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64298,6 +65112,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &1433578612
 GameObject:
   m_ObjectHideFlags: 0
@@ -64355,6 +65172,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &1435882476
 GameObject:
   m_ObjectHideFlags: 0
@@ -65070,6 +65890,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1450848706
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65127,6 +65950,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1452920036
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65365,6 +66191,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1460901734
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65516,6 +66345,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1463367327
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65588,6 +66420,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &1465066925
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -65802,6 +66637,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &1469985800
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -65986,6 +66824,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1470852634
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66268,6 +67109,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &1477015267
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -66389,6 +67233,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1479312278
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66470,7 +67317,7 @@ Transform:
   - {fileID: 1575741737}
   - {fileID: 1447673170}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1488929839
 GameObject:
@@ -66547,6 +67394,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1489869821
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66633,6 +67483,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &1491154953
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -66834,6 +67687,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1496573613
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66937,6 +67793,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &1497566393
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -67402,6 +68261,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &1511222953
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -67509,6 +68371,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1511494293
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67566,6 +68431,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1515115436
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67623,6 +68491,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1516436086
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67680,6 +68551,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1520188341
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67833,6 +68707,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1522450926
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67890,6 +68767,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1527818459
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68227,6 +69107,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb0f8a4c4438eb0429aedb86ade4a4e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MainCamera: {fileID: 0}
+  StartCamera: {fileID: 0}
+  GarageCamera: {fileID: 0}
+  MainMenu: {fileID: 0}
+  StartMenu: {fileID: 0}
+  GarageMenu: {fileID: 0}
+  scoreCanvas: {fileID: 0}
 --- !u!4 &1537749182
 Transform:
   m_ObjectHideFlags: 0
@@ -68242,7 +69129,7 @@ Transform:
   - {fileID: 36509944}
   - {fileID: 487952666}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1540012296
 GameObject:
@@ -68785,6 +69672,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &1550782213
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -68842,6 +69732,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1550792702
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68899,6 +69792,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &1552673609
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -69187,6 +70083,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1555809619
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -69590,6 +70489,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &1567392405
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -70079,6 +70981,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &1580067371
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -70312,6 +71217,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1592446245
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -70400,6 +71308,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1594043924
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -71142,6 +72053,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1601453090
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -71391,6 +72305,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1609077905
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -71448,6 +72365,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1609201937
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -71505,6 +72425,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1610672089
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -71562,6 +72485,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1613953418
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -71784,6 +72710,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &1621635943
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -72017,6 +72946,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1625029912
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -72074,6 +73006,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1625753438
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -72350,6 +73285,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &1630108418
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -72555,6 +73493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0864ec977a2eb249ba13fe6bcc3b890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activeToolBox: 0
 --- !u!65 &1631715206
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -72682,7 +73621,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1632647471
 GameObject:
@@ -72747,6 +73686,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 688420ba972f676429bf620b87ab9dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Esteet: []
+  ToolBoxes: []
+  Obs_vectors: []
+  TB_vectors: []
+  AreaVector1: {x: 0, y: 3.18, z: 23}
+  AreaVector2: {x: 0, y: 3.18, z: 55}
+  playerCollidedFcollider: 0
 --- !u!65 &1632647475
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -73346,6 +74292,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1642614638
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -73701,6 +74650,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1654241487
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -73935,6 +74887,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1661599032
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -73992,6 +74947,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1662485651
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -74049,6 +75007,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1664794046
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -74260,6 +75221,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &1670962560
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -75019,6 +75983,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1686901708
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75234,6 +76201,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1694447231
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75291,6 +76261,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1695095446
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75645,6 +76618,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &1706203932
 GameObject:
   m_ObjectHideFlags: 0
@@ -75908,6 +76884,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &1708173844
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -76103,6 +77082,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &1711104282
 GameObject:
   m_ObjectHideFlags: 0
@@ -76147,6 +77129,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1711104285
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -76204,6 +77189,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1714970474
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -76452,6 +77440,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1716706802
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -76524,6 +77515,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &1717618894
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -76835,6 +77829,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1723725423
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -77179,6 +78176,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1730242829
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -77383,6 +78383,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6294404d1cbf8b418d455e7b4ba6334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playersBoxCollider: {fileID: 0}
+  WheelCollider: []
+  SphereCollider: {fileID: 0}
 --- !u!136 &1733894175
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -77528,6 +78531,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1734804263
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -77919,6 +78925,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 688420ba972f676429bf620b87ab9dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Esteet: []
+  ToolBoxes: []
+  Obs_vectors: []
+  TB_vectors: []
+  AreaVector1: {x: 0, y: 3.18, z: 23}
+  AreaVector2: {x: 0, y: 3.18, z: 55}
+  playerCollidedFcollider: 0
 --- !u!65 &1741126712
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -78120,6 +79133,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1742657013
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -78273,6 +79289,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &1751910236
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -78599,6 +79618,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1761923993
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -78656,6 +79678,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1762032671
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -78744,6 +79769,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &1763357175
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -79470,6 +80498,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1780949249
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -79715,6 +80746,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1793653320
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -79980,6 +81014,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1805755052
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -80099,6 +81136,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1811134725
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -80156,6 +81196,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1811267579
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -80392,6 +81435,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1812147731
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -80636,6 +81682,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1820323829
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -80693,6 +81742,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1822522867
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -80765,6 +81817,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1827848459
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -81060,6 +82115,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1833353792
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -81211,6 +82269,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &1837322959
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -81268,6 +82329,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1842558738
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -81356,6 +82420,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1848903651
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -81442,6 +82509,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &1851063565
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -81624,6 +82694,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &1857467461
 GameObject:
   m_ObjectHideFlags: 0
@@ -81764,6 +82837,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1858047449
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -81821,6 +82897,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1860547224
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -82113,6 +83192,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1866515912
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -82356,6 +83438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19bfabc861c1cfc46838accd7dec9eda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HealthPointsScrollBar: {fileID: 0}
 --- !u!1 &1878014746
 GameObject:
   m_ObjectHideFlags: 0
@@ -82685,6 +83768,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1879981916
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -83278,6 +84364,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &1891947541
 GameObject:
   m_ObjectHideFlags: 0
@@ -83322,6 +84411,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1891947544
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -83417,6 +84509,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1895140626
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -83587,7 +84682,7 @@ Transform:
   - {fileID: 892081920}
   - {fileID: 1399821052}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1897278241
 GameObject:
@@ -83646,6 +84741,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &1900685455
 GameObject:
   m_ObjectHideFlags: 0
@@ -83690,6 +84788,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1900685458
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -84211,6 +85312,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1930304625
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -84402,6 +85506,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1935924326
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -84588,6 +85695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0864ec977a2eb249ba13fe6bcc3b890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activeToolBox: 0
 --- !u!65 &1945955853
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -84866,6 +85974,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1954888582
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -85066,6 +86177,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1959178635
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -85344,6 +86458,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &1969128151
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -85778,6 +86895,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &1979855205
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -85885,6 +87005,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1982223211
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -85977,6 +87100,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 688420ba972f676429bf620b87ab9dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Esteet: []
+  ToolBoxes: []
+  Obs_vectors: []
+  TB_vectors: []
+  AreaVector1: {x: 0, y: 3.18, z: 23}
+  AreaVector2: {x: 0, y: 3.18, z: 55}
+  playerCollidedFcollider: 0
 --- !u!114 &1983788408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86147,7 +87277,7 @@ Transform:
   m_Children:
   - {fileID: 989022109}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: -90, y: 50, z: 0}
 --- !u!1 &1985680181
 GameObject:
@@ -86206,6 +87336,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &1987212744
 GameObject:
   m_ObjectHideFlags: 0
@@ -86344,6 +87477,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &1989184858
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -86822,6 +87958,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &2010135080
 GameObject:
   m_ObjectHideFlags: 0
@@ -87259,6 +88398,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &2020009287
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -87410,6 +88552,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &2029229031
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -88365,6 +89510,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &2045851679
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -88453,6 +89601,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &2047875592
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -88929,6 +90080,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &2060034940
 GameObject:
   m_ObjectHideFlags: 0
@@ -89002,6 +90156,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &2060034945
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -89573,6 +90730,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &2062467496
 GameObject:
   m_ObjectHideFlags: 0
@@ -89698,6 +90858,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &2064110923
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -89820,6 +90983,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &2070400996
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -89921,6 +91087,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &2071427559
 GameObject:
   m_ObjectHideFlags: 0
@@ -89965,6 +91134,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &2071427562
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -90053,6 +91225,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &2076262798
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -90206,6 +91381,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &2079548657
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -90451,6 +91629,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &2084104309
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -90508,6 +91689,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &2084128400
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -90659,6 +91843,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &2084388509
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -90716,6 +91903,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &2085550826
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -90963,6 +92153,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &2086698183
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -91114,6 +92307,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &2093124826
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -91325,6 +92521,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!64 &2096835707
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -91557,6 +92756,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &2104491539
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -91684,6 +92886,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e293c5e85e871e64897db8e25ba139a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rePositionF: {x: 0, y: 0, z: 0}
+  rePositionL: {x: 0, y: 0, z: 0}
+  rePositionR: {x: 0, y: 0, z: 0}
 --- !u!4 &2106873226
 Transform:
   m_ObjectHideFlags: 0
@@ -91696,7 +92901,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2109386585
 GameObject:
@@ -91817,6 +93022,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &2112667933
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -91858,7 +93066,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2114078091
 GameObject:
@@ -91998,6 +93206,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!65 &2116252333
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -92483,6 +93694,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!135 &2139202176
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -92582,7 +93796,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-5984
+  m_Name: pb_Mesh24452
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -92797,6 +94011,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e12f2d638b27a42967e840698ccef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isColliderUnActive: 0
+  activateMesh: 0
+  Esteet: []
 --- !u!1 &2143676395
 GameObject:
   m_ObjectHideFlags: 0
@@ -92891,3 +94108,330 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2143676395}
   m_Mesh: {fileID: 5668788170693331272, guid: 21592552abeb3e040ade67d4a7c4288a, type: 3}
+--- !u!23 &94179110402576666
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6969562805267529256}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!4 &676247229359779449
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7527111997617330762}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_Children:
+  - {fileID: 6210335003578840005}
+  m_Father: {fileID: 7142447086882726017}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &723833475978301406
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880225330646319136}
+  m_Mesh: {fileID: -5495902117074765545, guid: edda1fa2917018546813d9a91e4cfa05, type: 3}
+--- !u!4 &1300773752960756706
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880225330646319136}
+  m_LocalRotation: {x: -1.2644165e-18, y: -0.71735615, z: 1.2644165e-18, w: 0.69670665}
+  m_LocalPosition: {x: 0.015423195, y: 0.0003663504, z: 0.010365569}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_Children: []
+  m_Father: {fileID: 6210335003578840005}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1529776797719347503
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7527111997617330762}
+  m_Mesh: {fileID: 2042827527355997232, guid: edda1fa2917018546813d9a91e4cfa05, type: 3}
+--- !u!1 &1880225330646319136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1300773752960756706}
+  - component: {fileID: 723833475978301406}
+  - component: {fileID: 2894708969699406326}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &2894708969699406326
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880225330646319136}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!4 &4937816612229999065
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6464925247356614070}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0, y: -1.5999999, z: 0}
+  m_LocalScale: {x: 28.440857, y: 28.440857, z: 28.440857}
+  m_Children: []
+  m_Father: {fileID: 7142447086882726017}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &6210335003578840005
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6969562805267529256}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.009774251, y: -0.010628885, z: 0.0017212608}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1300773752960756706}
+  m_Father: {fileID: 676247229359779449}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6464925247356614070
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4937816612229999065}
+  m_Layer: 0
+  m_Name: Animation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &6969562805267529256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6210335003578840005}
+  - component: {fileID: 7845877256752474863}
+  - component: {fileID: 94179110402576666}
+  m_Layer: 0
+  m_Name: SafeDoor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7142447086882726017
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7517846313667099195}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.6929264, y: 1.75, z: -36.38457}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4937816612229999065}
+  - {fileID: 676247229359779449}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7517846313667099195
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7142447086882726017}
+  - component: {fileID: 7517846313667099196}
+  m_Layer: 0
+  m_Name: safeAnimation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &7517846313667099196
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7517846313667099195}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5ef4dd5318caca8409306c99a30f242d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &7527111997617330762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 676247229359779449}
+  - component: {fileID: 1529776797719347503}
+  - component: {fileID: 8532523838554392335}
+  m_Layer: 0
+  m_Name: SafeAnimated
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!33 &7845877256752474863
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6969562805267529256}
+  m_Mesh: {fileID: 5617216203210757533, guid: edda1fa2917018546813d9a91e4cfa05, type: 3}
+--- !u!23 &8532523838554392335
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7527111997617330762}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
