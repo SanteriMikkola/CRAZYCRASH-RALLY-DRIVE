@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class CarController : MonoBehaviour
 {
-    public Rigidbody rB;
+    private GameObject Sphere;
+    private Rigidbody rB;
 
     private GameObject Player;
     private GameObject Kamera;
     private CarCollider carCollider;
     private GameObject startButtonB;
     private StartButton startButtonS;
-    private AavikonStartti aavikonStartti;
     private GameObject ScoreNumText;
     private ScoreControll scoreControll;
 
@@ -22,12 +22,14 @@ public class CarController : MonoBehaviour
     public float turnStrenght = 90f;
     public float turnInput;
 
-    public Transform leftFrontWheel, rightFrontWheel;
+    private GameObject leftFrontWheelGameOb, rightFrontWheelGameOb;
+    private Transform leftFrontWheel, rightFrontWheel;
     public float wheelTurn = 30f;
 
     public bool maxTurn = false;
     public bool IsThatFirstStart = true;
-    private bool IsTutorialEnded = false;
+    [HideInInspector]
+    public bool IsTutorialEnded = false;
 
     private float maxinumRotationL;
     private float maxinumRotationR;
@@ -43,13 +45,17 @@ public class CarController : MonoBehaviour
         playerRotateF = GameObject.Find("playerRotationF");
         Kamera = GameObject.Find("Main Camera");
         Player = GameObject.Find("Player");
-        
+        Sphere = GameObject.Find("Sphere");
+        leftFrontWheelGameOb = GameObject.Find("LeftFrontWheel");
+        rightFrontWheelGameOb = GameObject.Find("RightFrontWheel");
+        leftFrontWheel = leftFrontWheelGameOb.GetComponent<Transform>();
+        rightFrontWheel = rightFrontWheelGameOb.GetComponent<Transform>();
+        rB = Sphere.GetComponent<Rigidbody>();
+        startButtonB = GameObject.Find("StartButton");
+        startButtonS = startButtonB.GetComponent<StartButton>();
         carCollider = Player.GetComponent<CarCollider>();
         rB.transform.parent = null;
 
-            startButtonB = GameObject.Find("StartButton");
-            startButtonS = startButtonB.GetComponent<StartButton>();
-        //aavikonStartti = startButtonB.GetComponent<AavikonStartti>();
 
         aloitusTienLoppu = new Vector3(0f, 0f, 17.5f);
     }
@@ -57,7 +63,6 @@ public class CarController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         forwardSpeed = 2f;
         Kamera.transform.position = new Vector3(rB.position.x, rB.position.y + 5.310003f, rB.position.z - 8.23f);
         //Kamera.transform.Translate(Vector3.forward * Time.deltaTime * 3.6f, Space.World);
@@ -78,7 +83,7 @@ public class CarController : MonoBehaviour
         {
             turnInput = Input.GetAxis("Horizontal");
         }
-        
+
 
         if (maxTurn == false)
         {
@@ -138,14 +143,14 @@ public class CarController : MonoBehaviour
 
     private void FixedUpdate()
     {
-            if (startButtonS.IsGameStarted == true /*|| aavikonStartti.IsGameStarted == true*/)
+        if (startButtonS.IsGameStarted == true)
+        {
+            rB.AddForce(transform.forward * forwardSpeed * 1000f);
+            transform.position = rB.transform.position;
+            if (Player.transform.position.z >= aloitusTienLoppu.z)
             {
-                rB.AddForce(transform.forward * forwardSpeed * 1000f);
-                transform.position = rB.transform.position;
-                if (Player.transform.position.z >= aloitusTienLoppu.z)
-                {
-                    IsTutorialEnded = true;
-                }
+                IsTutorialEnded = true;
             }
+        }
     }
 }

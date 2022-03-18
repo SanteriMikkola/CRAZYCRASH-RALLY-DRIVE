@@ -45,7 +45,6 @@ public class ToolBox : MonoBehaviour
             gameObject.SetActive(false);
 
             activeToolBox = false;
-            //Destroy(gameObject);
             //isColliderUnActive = true;
         }
         /*if (collision.gameObject.CompareTag("MapCfront"))

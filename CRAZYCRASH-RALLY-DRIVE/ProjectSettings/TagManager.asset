@@ -13,6 +13,7 @@ TagManager:
   - Tie
   - LevelEnd
   - LevelEnd2
+  - JerryCan
   layers:
   - Default
   - TransparentFX

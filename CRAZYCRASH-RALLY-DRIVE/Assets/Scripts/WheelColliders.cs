@@ -8,11 +8,11 @@ public class WheelColliders : MonoBehaviour
     private PlayerColor playerColor;
     private GameObject Player;
     private GameObject Kamera;
-    private GameObject carBody;
+    private GameObject SpheRe;
     private CarCollider carCollider;
 
     public BoxCollider playersBoxCollider;
-    public CapsuleCollider[] WheelCollider;
+    //public CapsuleCollider[] WheelCollider;
     public SphereCollider SphereCollider;
 
     private Vector3 playerPos_4z;
@@ -21,8 +21,10 @@ public class WheelColliders : MonoBehaviour
     void Start()
     {
         Player = GameObject.Find("Player");
+        SpheRe = GameObject.Find("Sphere");
         carController = Player.GetComponent<CarController>();
-        //carBody = GameObject.Find("Player");
+        playersBoxCollider = Player.GetComponent<BoxCollider>();
+        SphereCollider = SpheRe.GetComponent<SphereCollider>();
         playerColor = Player.GetComponent<PlayerColor>();
         Kamera = GameObject.Find("Main Camera");
         carCollider = Player.GetComponent<CarCollider>();
@@ -41,10 +43,10 @@ public class WheelColliders : MonoBehaviour
         {
             carCollider.playerCollide = true;
             playersBoxCollider.enabled = false;
-            WheelCollider[0].enabled = false;
+            /*WheelCollider[0].enabled = false;
             WheelCollider[1].enabled = false;
             WheelCollider[2].enabled = false;
-            WheelCollider[3].enabled = false;
+            WheelCollider[3].enabled = false;*/
             SphereCollider.enabled = false;
             carCollider.osuma++;
             Debug.Log("Osuma");
@@ -92,10 +94,10 @@ public class WheelColliders : MonoBehaviour
         yield return new WaitUntil(() => Player.transform.position.z >= playerPos_4z.z);
         carCollider.playerCollide = false;
         playersBoxCollider.enabled = true;
-        WheelCollider[0].enabled = true;
+        /*WheelCollider[0].enabled = true;
         WheelCollider[1].enabled = true;
         WheelCollider[2].enabled = true;
-        WheelCollider[3].enabled = true;
+        WheelCollider[3].enabled = true;*/
         SphereCollider.enabled = true;
         carCollider.isPlayerMoving = true;
         //playerColor.playerRenderer.material.color = playerColor.playerNormalColor;

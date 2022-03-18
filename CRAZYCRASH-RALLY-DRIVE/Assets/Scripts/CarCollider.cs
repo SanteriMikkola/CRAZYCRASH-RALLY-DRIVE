@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class CarCollider : MonoBehaviour
 {
@@ -9,25 +8,24 @@ public class CarCollider : MonoBehaviour
     private PlayerColor playerColor;
     private GameObject Player;
     private GameObject Kamera;
-    private GameObject carBody;
+    private GameObject SpheRe;
+    //private GameObject[] Wheels;
 
-    public BoxCollider playersBoxCollider;
-    public CapsuleCollider[] WheelColliders;
-    public SphereCollider SphereCollider;
-
-    private GameObject startButtonB;
-    private StartButton startButtonS;
+    private BoxCollider playersBoxCollider;
+    //public CapsuleCollider[] WheelColliders;
+    private SphereCollider SphereCollider;
 
     public bool playerCollide = false;
     public bool isPlayerDead = false;
 
     public bool isPlayerMoving = true;
     public bool toolBoxPicked = false;
+    public bool jerryCanPicked = false;
     public bool isThatFullHealthReverse;
 
-    public bool isThatLevel2 = false;
-
     public int osuma = 0;
+
+    public float fuel = 100f;
 
     public int maxOsumat = 5;
 
@@ -37,11 +35,11 @@ public class CarCollider : MonoBehaviour
     void Start()
     {
         Player = GameObject.Find("Player");
+        //Wheels = GameObject.FindGameObjectsWithTag("Wheel");
+        SpheRe = GameObject.Find("Sphere");
         carController = Player.GetComponent<CarController>();
-        //carBody = GameObject.Find("CarBody");
-
-        /*startButtonB = GameObject.Find("StartButton");
-        startButtonS = startButtonB.GetComponent<StartButton>();*/
+        playersBoxCollider = Player.GetComponent<BoxCollider>();
+        SphereCollider = SpheRe.GetComponent<SphereCollider>();
 
         playerColor = Player.GetComponent<PlayerColor>();
         Kamera = GameObject.Find("Main Camera");
@@ -65,10 +63,10 @@ public class CarCollider : MonoBehaviour
         {
             playerCollide = true;
             playersBoxCollider.enabled = false;
-            WheelColliders[0].enabled = false;
+            /*WheelColliders[0].enabled = false;
             WheelColliders[1].enabled = false;
             WheelColliders[2].enabled = false;
-            WheelColliders[3].enabled = false;
+            WheelColliders[3].enabled = false;*/
             SphereCollider.enabled = false;
             osuma++;
             Debug.Log("Osuma");
@@ -106,20 +104,13 @@ public class CarCollider : MonoBehaviour
             }
         }
 
-        if (collider.gameObject.CompareTag("LevelEnd"))
+        if (collider.gameObject.CompareTag("JerryCan") && jerryCanPicked == false)
         {
-            isThatLevel2 = true;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            jerryCanPicked = true;
 
-            //startButtonS.StartLevel2();
-            
+            //fuel = 100f;
         }
 
-        if (collider.gameObject.CompareTag("LevelEnd2"))
-        {
-            Debug.Log("Quit");
-            Application.Quit();
-        }
     }
 
     IEnumerator PlayerColliderOn()
@@ -130,10 +121,10 @@ public class CarCollider : MonoBehaviour
         yield return new WaitUntil(() => Player.transform.position.z >= playerPos_4z.z);
         playerCollide = false;
         playersBoxCollider.enabled = true;
-        WheelColliders[0].enabled = true;
+        /*WheelColliders[0].enabled = true;
         WheelColliders[1].enabled = true;
         WheelColliders[2].enabled = true;
-        WheelColliders[3].enabled = true;
+        WheelColliders[3].enabled = true;*/
         SphereCollider.enabled = true;
         isPlayerMoving = true;
         //playerColor.playerRenderer.material.color = playerColor.playerNormalColor;
