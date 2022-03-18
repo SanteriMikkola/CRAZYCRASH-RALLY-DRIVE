@@ -16,7 +16,7 @@ public class Este : MonoBehaviour
     public bool activateMesh = false;
 
 
-    public GameObject[] Esteet;
+    private GameObject[] Esteet;
 
     private void Update()
     {
@@ -26,7 +26,6 @@ public class Este : MonoBehaviour
         {
             gameObject.SetActive(true);
             isColliderUnActive = false;
-            //Destroy(gameObject);
         }
 
     }

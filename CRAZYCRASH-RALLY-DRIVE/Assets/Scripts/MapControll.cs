@@ -6,11 +6,11 @@ public class MapControll : MonoBehaviour
 {
     private GameObject Player;
 
-    private CarCollider carCollider;
-
     public GameObject[] Esteet;
 
     public GameObject[] ToolBoxes;
+
+    public GameObject[] JerryCans;
 
     //public Este[] estes;
 
@@ -33,6 +33,7 @@ public class MapControll : MonoBehaviour
 
     public Vector3[] Obs_vectors;
     public Vector3[] TB_vectors;
+    public Vector3[] Jerry_vectors;
 
     //public GameObject[] PickedObjects;
 
@@ -49,13 +50,11 @@ public class MapControll : MonoBehaviour
     void Start()
     {
         Player = GameObject.Find("Player");
-        carCollider = Player.GetComponent<CarCollider>();
 
         bCollider = GameObject.Find("BackCollider");
         fCollider = GameObject.Find("FrontCollider");
-
-            startButtonB = GameObject.Find("StartButton");
-            startButtonS = startButtonB.GetComponent<StartButton>();
+        startButtonB = GameObject.Find("StartButton");
+        startButtonS = startButtonB.GetComponent<StartButton>();
 
         fBoxCollider = fCollider.GetComponent<BoxCollider>();
         //bBoxCollider = bCollider.GetComponent<BoxCollider>();
@@ -67,9 +66,9 @@ public class MapControll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         Esteet = GameObject.FindGameObjectsWithTag("Este");
         ToolBoxes = GameObject.FindGameObjectsWithTag("ToolBox");
+        JerryCans = GameObject.FindGameObjectsWithTag("JerryCan");
 
         /*for (int i = 0; i < Esteet.Length; i++)
         {
@@ -78,27 +77,16 @@ public class MapControll : MonoBehaviour
             
         }*/
 
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Debug.Log("Quit!");
-            Application.Quit();
-        }
-
-        if (carCollider.isThatLevel2 == true)
-        {
-            startButtonS.StartLevel2();
-        }
-
-            //StartThings();
+        //StartThings();
 
         bCollider.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y + 1f, Player.transform.position.z - 8.07f);
         //Debug.Log(frontColliders.Length);
-            if (startButtonS.GameStartForMapControll == true || playerCollidedFcollider == true)
-            {
-                isObjectsPicked = false;
-                PositionCheck();
-                startButtonS.GameStartForMapControll = false;
-            }
+        if (startButtonS.GameStartForMapControll == true || playerCollidedFcollider == true)
+        {
+            isObjectsPicked = false;
+            PositionCheck();
+            startButtonS.GameStartForMapControll = false;
+        }
         //ObsActive();
         //fCollider.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y + 1f, Player.transform.position.z + 48.5f);
     }
@@ -138,6 +126,8 @@ public class MapControll : MonoBehaviour
         }*/
         Obs_vectors = new Vector3[Esteet.Length];
         TB_vectors = new Vector3[ToolBoxes.Length];
+        Jerry_vectors = new Vector3[JerryCans.Length];
+
         if (!isObjectsPicked)
         {
             for (int i = 0; i < Esteet.Length; i++)
@@ -183,6 +173,36 @@ public class MapControll : MonoBehaviour
                     var esteComponent = ToolBoxes[i].gameObject.GetComponent<ToolBox>();
 
                     esteComponent.activeToolBox = true;
+
+                    /*var objecti = Esteet[i];
+
+                    //Debug.Log(objecti);
+                    Debug.Log(Testi.Length);
+
+                    PickedObjects.SetValue(objecti, iii);*/
+
+                    //objecti = null;
+                    /*
+                    System.Array.Copy(Esteet, i, PickedObjects, iii, 1);
+                    Debug.Log(PickedObjects);
+                    //System.Array.ConstrainedCopy(PickedObjects, iii, Esteet, ii, 1);
+                    iii++;*/
+                    //Esteet.CopyTo(PickedObjects, ii);
+                }
+            }
+
+            for (int i = 0; i < JerryCans.Length; i++)
+            {
+                Jerry_vectors[i].Set(JerryCans[i].transform.position.x, JerryCans[i].transform.position.y, JerryCans[i].transform.position.z);
+
+                if (Jerry_vectors[i].z > AreaVector1.z && Jerry_vectors[i].z < AreaVector2.z)
+                {
+                    //ii++;
+                    //PickedObjects = new GameObject[ii];
+
+                    var esteComponent = JerryCans[i].gameObject.GetComponent<JerryCan>();
+
+                    esteComponent.activeJerryCan = true;
 
                     /*var objecti = Esteet[i];
 

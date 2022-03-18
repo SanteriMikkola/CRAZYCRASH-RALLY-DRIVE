@@ -6,7 +6,10 @@ public class PlayerColor : MonoBehaviour
 {
 
     private GameObject Player;
+
+    [HideInInspector]
     public Material playerNewColorMaterial;
+    [HideInInspector]
     public Material playerNormalColorMaterial;
     public MeshRenderer playerRenderer;
     public Color playerNormalColor;

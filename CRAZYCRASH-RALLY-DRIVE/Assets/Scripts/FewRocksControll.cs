@@ -13,13 +13,13 @@ public class FewRocksControll : MonoBehaviour
     void Start()
     {
         esteS = gameObject.GetComponent<Este>();
-
+        meshRenderer = gameObject.GetComponentsInChildren<MeshRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        meshRenderer = gameObject.GetComponentsInChildren<MeshRenderer>();
+
         //Debug.Log("Mesh Renderin pituus: " + meshRenderer.Length);
         if (esteS.activateMesh == true)
         {

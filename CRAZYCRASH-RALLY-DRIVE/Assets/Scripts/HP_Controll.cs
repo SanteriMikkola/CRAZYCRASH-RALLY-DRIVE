@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class HP_Controll : MonoBehaviour
 {
-    public Scrollbar HealthPointsScrollBar;
+    private GameObject HealthPoint;
+    private Scrollbar HealthPointsScrollBar;
     private GameObject Player;
     private PlayerMovement playerMove;
     private CarCollider carCollider;
@@ -18,6 +19,8 @@ public class HP_Controll : MonoBehaviour
     void Start()
     {
         Player = GameObject.Find("Player");
+        HealthPoint = GameObject.Find("HealthScrollbar");
+        HealthPointsScrollBar = HealthPoint.GetComponent<Scrollbar>();
         //playerMove = Player.GetComponent<PlayerMovement>();
         carCollider = Player.GetComponent<CarCollider>();
     }
@@ -76,7 +79,7 @@ public class HP_Controll : MonoBehaviour
                         HealthPointsScrollBar.value += 0.2f;
                         hitted = true;
                     }
-                    
+
                 }
                 break;
             case 2.5f:
