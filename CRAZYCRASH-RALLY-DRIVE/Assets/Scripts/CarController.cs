@@ -24,12 +24,14 @@ public class CarController : MonoBehaviour
 
     private GameObject leftFrontWheelGameOb, rightFrontWheelGameOb;
     private Transform leftFrontWheel, rightFrontWheel;
-    public float wheelTurn = 30f;
+    public float wheelTurn = 25f;
 
     public bool maxTurn = false;
     public bool IsThatFirstStart = true;
     [HideInInspector]
     public bool IsTutorialEnded = false;
+    [HideInInspector]
+    public bool PposChanget = false;
 
     private float maxinumRotationL;
     private float maxinumRotationR;
@@ -56,7 +58,6 @@ public class CarController : MonoBehaviour
         carCollider = Player.GetComponent<CarCollider>();
         rB.transform.parent = null;
 
-
         aloitusTienLoppu = new Vector3(0f, 0f, 17.5f);
     }
 
@@ -70,13 +71,20 @@ public class CarController : MonoBehaviour
         maxinumRotationR = 38f;
         //transform.position = rB.transform.position;
 
+        if (carCollider.isThatLevel2 == true && PposChanget == false)
+        {
+            Player.transform.position = new Vector3(0f, 400.633f, -1.024994f);
+            rB.transform.position = new Vector3(0f, 400.595f, 0.4799957f);
+            Kamera.transform.position = new Vector3(rB.position.x, rB.position.y + 5.310003f, rB.position.z - 8.23f);
+            PposChanget = true;
+        }
+
         if (carCollider.playerCollide == true)
         {
             carCollider.isPlayerMoving = false;
             //playerGotL = true;
             forwardSpeed = forwardSpeed - 1f;
             //rb.AddForce(stuckForce, ForceMode.Impulse);
-
         }
 
         if (IsTutorialEnded == true)

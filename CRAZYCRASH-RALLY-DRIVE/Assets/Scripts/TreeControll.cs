@@ -13,6 +13,8 @@ public class TreeControll : MonoBehaviour
         esteS = gameObject.GetComponentInChildren<Este>();
         trunks = gameObject.GetComponentInChildren<TrunkControll>();
         meshRenderer = gameObject.GetComponent<MeshRenderer>();
+
+        meshRenderer.enabled = false;
     }
 
     // Update is called once per frame

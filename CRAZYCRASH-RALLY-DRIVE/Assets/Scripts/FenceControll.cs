@@ -12,6 +12,7 @@ public class FenceControll : MonoBehaviour
     {
         esteS = gameObject.GetComponent<Este>();
         meshRenderer = gameObject.GetComponent<MeshRenderer>();
+        meshRenderer.enabled = false;
     }
 
     // Update is called once per frame

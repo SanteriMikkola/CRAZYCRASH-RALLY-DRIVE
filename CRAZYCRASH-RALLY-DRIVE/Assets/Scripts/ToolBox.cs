@@ -17,6 +17,8 @@ public class ToolBox : MonoBehaviour
 
         fColliders = GameObject.FindGameObjectWithTag("MapCfront");
         mapControll = fColliders.GetComponent<MapControll>();
+
+        meshRenderer.enabled = false;
     }
 
 

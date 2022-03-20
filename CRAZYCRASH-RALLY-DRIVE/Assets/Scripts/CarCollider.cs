@@ -22,6 +22,7 @@ public class CarCollider : MonoBehaviour
     public bool toolBoxPicked = false;
     public bool jerryCanPicked = false;
     public bool isThatFullHealthReverse;
+    public bool isThatLevel2 = false;
 
     public int osuma = 0;
 
@@ -76,6 +77,23 @@ public class CarCollider : MonoBehaviour
             //StartCoroutine(CollidersOn());
             StartCoroutine(PlayerColliderOn());
         }
+        if (collider.gameObject.CompareTag("AavikonEste") && playerCollide == false)
+        {
+            playerCollide = true;
+            playersBoxCollider.enabled = false;
+            /*WheelColliders[0].enabled = false;
+            WheelColliders[1].enabled = false;
+            WheelColliders[2].enabled = false;
+            WheelColliders[3].enabled = false;*/
+            SphereCollider.enabled = false;
+            osuma++;
+            Debug.Log("Osuma");
+            //StartCoroutine(PlayerColorBlink());
+            //StartCoroutine(CollidersOff());
+            //transform.Translate(lowSpeed * Time.deltaTime * Vector3.forward, Space.World);
+            //StartCoroutine(CollidersOn());
+            StartCoroutine(PlayerColliderOn());
+        }
         if (osuma == maxOsumat)
         {
             isPlayerDead = true;
@@ -103,6 +121,25 @@ public class CarCollider : MonoBehaviour
                 }
             }
         }
+        if (collider.gameObject.CompareTag("A_ToolBox") && toolBoxPicked == false)
+        {
+            toolBoxPicked = true;
+            if (isThatFullHealthReverse == true)
+            {
+                osuma = 0;
+            }
+            else if (isThatFullHealthReverse == false)
+            {
+                if (osuma >= 2)
+                {
+                    osuma -= 2;
+                }
+                else if (osuma < 2)
+                {
+                    osuma = 0;
+                }
+            }
+        }
 
         if (collider.gameObject.CompareTag("JerryCan") && jerryCanPicked == false)
         {
@@ -110,7 +147,21 @@ public class CarCollider : MonoBehaviour
 
             //fuel = 100f;
         }
+        if (collider.gameObject.CompareTag("A_JerryCan") && jerryCanPicked == false)
+        {
+            jerryCanPicked = true;
 
+            //fuel = 100f;
+        }
+
+        if (collider.gameObject.CompareTag("LevelEnd"))
+        {
+            isThatLevel2 = true;
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+            //startButtonS.StartLevel2();
+
+        }
     }
 
     IEnumerator PlayerColliderOn()

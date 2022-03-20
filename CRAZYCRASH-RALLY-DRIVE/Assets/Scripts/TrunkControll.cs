@@ -9,6 +9,7 @@ public class TrunkControll : MonoBehaviour
     private void Start()
     {
         meshRenderer = gameObject.GetComponent<MeshRenderer>();
+        meshRenderer.enabled = false;
     }
 
     public void SetTrunkInActive()

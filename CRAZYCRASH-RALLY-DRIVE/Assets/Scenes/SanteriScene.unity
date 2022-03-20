@@ -11462,7 +11462,7 @@ GameObject:
   - component: {fileID: 247507571}
   - component: {fileID: 247507570}
   m_Layer: 0
-  m_Name: RightFrontWheel
+  m_Name: RightFrontWheelMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13368,7 +13368,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 303273847}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6294404d1cbf8b418d455e7b4ba6334, type: 3}
   m_Name: 
@@ -13384,7 +13384,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 303273847}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -15683,7 +15683,7 @@ MonoBehaviour:
   forwardSpeed: 2
   turnStrenght: 90
   turnInput: 0
-  wheelTurn: 25
+  wheelTurn: 30
   maxTurn: 0
   IsThatFirstStart: 1
   IsTutorialEnded: 0
@@ -15715,7 +15715,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.91045713, y: 0.5592077, z: 2.7085576}
-  m_Center: {x: 0.00092458725, y: 0.584, z: -0.7849858}
+  m_Center: {x: 0.00092458725, y: 0.584, z: 0.26}
 --- !u!4 &359329450
 Transform:
   m_ObjectHideFlags: 0
@@ -15724,7 +15724,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 359329444}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.653, z: 0}
+  m_LocalPosition: {x: 0, y: 0.653, z: -1.025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1846316900}
@@ -23899,7 +23899,7 @@ GameObject:
   - component: {fileID: 545908694}
   - component: {fileID: 545908693}
   m_Layer: 0
-  m_Name: LeftFrontWheel
+  m_Name: LeftFrontWheelMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35206,7 +35206,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 782795017}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6294404d1cbf8b418d455e7b4ba6334, type: 3}
   m_Name: 
@@ -35222,7 +35222,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 782795017}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -40153,7 +40153,7 @@ GameObject:
   - component: {fileID: 906722303}
   - component: {fileID: 906722302}
   m_Layer: 0
-  m_Name: LeftFrontWheel
+  m_Name: LeftFrontWheelGarage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42599,7 +42599,7 @@ GameObject:
   - component: {fileID: 955298124}
   - component: {fileID: 955298123}
   m_Layer: 0
-  m_Name: RightBackWheel
+  m_Name: RightBackWheelGarage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48121,7 +48121,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1071265546}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6294404d1cbf8b418d455e7b4ba6334, type: 3}
   m_Name: 
@@ -48137,7 +48137,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1071265546}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -48593,7 +48593,7 @@ GameObject:
   - component: {fileID: 1083661289}
   - component: {fileID: 1083661288}
   m_Layer: 0
-  m_Name: LeftBackWheel
+  m_Name: LeftBackWheelGarage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51865,7 +51865,7 @@ GameObject:
   - component: {fileID: 1148648425}
   - component: {fileID: 1148648424}
   m_Layer: 0
-  m_Name: RightFrontWheel
+  m_Name: RightFrontWheelGarage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53589,7 +53589,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh320098
+  m_Name: pb_Mesh114110
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -54666,7 +54666,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh318822
+  m_Name: pb_Mesh112826
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -72638,7 +72638,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1641363821}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6294404d1cbf8b418d455e7b4ba6334, type: 3}
   m_Name: 
@@ -72654,7 +72654,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1641363821}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -81811,8 +81811,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1846316899}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.27100003, z: -1.39}
-  m_LocalScale: {x: 100, y: 100.00004, z: 100.00004}
+  m_LocalPosition: {x: 0, y: 0.27100003, z: -0.365}
+  m_LocalScale: {x: 100, y: 100.00008, z: 100.00008}
   m_Children:
   - {fileID: 1418359417}
   m_Father: {fileID: 359329450}
@@ -87511,7 +87511,7 @@ GameObject:
   - component: {fileID: 1978484511}
   - component: {fileID: 1978484510}
   m_Layer: 0
-  m_Name: LeftBackWheel
+  m_Name: LeftBackWheelMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93102,7 +93102,7 @@ GameObject:
   - component: {fileID: 2097323774}
   - component: {fileID: 2097323773}
   m_Layer: 0
-  m_Name: RightBackWheel
+  m_Name: RightBackWheelMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
