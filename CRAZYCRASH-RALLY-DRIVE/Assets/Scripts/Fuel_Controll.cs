@@ -23,6 +23,8 @@ public class Fuel_Controll : MonoBehaviour
 
     public Vector3 fuelDecreaseDelay;
 
+    private bool Reseted = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +40,12 @@ public class Fuel_Controll : MonoBehaviour
     void Update()
     {
         //HitValueCheck();
+
+        if (carCollider.isThatLevel2 && Reseted == false)
+        {
+            fuelDecreaseDelay.z = 0;
+            Reseted = true;
+        }
 
         if (carCollider.fuel <= 0 && rotationZ >= 83f)
         {

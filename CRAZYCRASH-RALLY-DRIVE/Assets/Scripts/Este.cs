@@ -9,14 +9,24 @@ public class Este : MonoBehaviour
         gameObject.SetActive(false);
     }*/
 
+    private GameObject Player;
+    private CarCollider carCollider;
+
     private BoxCollider boxCollider;
     private SphereCollider sphereCollider;
 
     public bool isColliderUnActive = false;
     public bool activateMesh = false;
-
+    public bool reActivate = false;
 
     private GameObject[] Esteet;
+
+
+    private void Start()
+    {
+        Player = GameObject.Find("Player");
+        carCollider = Player.GetComponent<CarCollider>();
+    }
 
     private void Update()
     {
