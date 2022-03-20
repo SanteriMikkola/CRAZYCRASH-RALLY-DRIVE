@@ -72,14 +72,15 @@
     <Compile Include="Assets\Scripts\TargetPoints.cs" />
     <Compile Include="Assets\Scripts\CarCollider.cs" />
     <Compile Include="Assets\Scripts\CarController.cs" />
+    <Compile Include="Assets\Scripts\JerryCan.cs" />
     <Compile Include="Assets\Scripts\FenceControll.cs" />
+    <Compile Include="Assets\Scripts\Fuel_Controll.cs" />
     <Compile Include="Assets\Scripts\FewRocksControll.cs" />
     <Compile Include="Assets\Scripts\Este.cs" />
     <Compile Include="Assets\Scripts\ScoreControll.cs" />
     <Compile Include="Assets\Scripts\RockControll.cs" />
     <Compile Include="Assets\Scripts\StartButton.cs" />
-    <Compile Include="Assets\Scripts\Fuel_Controll.cs" />
-    <Compile Include="Assets\Scripts\JerryCan.cs" />
+    <Compile Include="Assets\Scripts\StartTrees.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

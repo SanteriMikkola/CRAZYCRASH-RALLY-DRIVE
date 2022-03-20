@@ -16,15 +16,23 @@ public class JerryCan : MonoBehaviour
     private void Start()
     {
         //meshRenderer = gameObject.GetComponent<MeshRenderer>();
+        meshRenderer = gameObject.GetComponentsInChildren<MeshRenderer>();
 
         fColliders = GameObject.FindGameObjectWithTag("MapCfront");
         mapControll = fColliders.GetComponent<MapControll>();
+
+        while (i != meshRenderer.Length)
+        {
+            meshRenderer[i].enabled = false;
+
+            i++;
+        }
+        i = 0;
     }
 
 
     private void Update()
     {
-        meshRenderer = gameObject.GetComponentsInChildren<MeshRenderer>();
 
         if (activeJerryCan == true)
         {

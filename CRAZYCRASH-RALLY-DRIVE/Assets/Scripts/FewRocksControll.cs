@@ -14,6 +14,14 @@ public class FewRocksControll : MonoBehaviour
     {
         esteS = gameObject.GetComponent<Este>();
         meshRenderer = gameObject.GetComponentsInChildren<MeshRenderer>();
+
+        while (i != meshRenderer.Length)
+        {
+            meshRenderer[i].enabled = false;
+
+            i++;
+        }
+        i = 0;
     }
 
     // Update is called once per frame
