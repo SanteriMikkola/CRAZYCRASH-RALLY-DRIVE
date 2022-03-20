@@ -8,6 +8,7 @@ public class FewRocksControll : MonoBehaviour
     private MeshRenderer[] meshRenderer;
 
     private int i = 0;
+    private int ii = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +41,24 @@ public class FewRocksControll : MonoBehaviour
                 i++;
             }
 
+            /*meshRenderer[1].enabled = true;
+            meshRenderer[2].enabled = true;
+            meshRenderer[3].enabled = true;
+            meshRenderer[4].enabled = true;*/
+            return;
+        }
+        if (esteS.reActivate == true)
+        {
+            gameObject.SetActive(true);
+
+            while (ii != meshRenderer.Length)
+            {
+                meshRenderer[ii].enabled = false;
+
+                ii++;
+            }
+
+            esteS.reActivate = false;
             /*meshRenderer[1].enabled = true;
             meshRenderer[2].enabled = true;
             meshRenderer[3].enabled = true;

@@ -10,6 +10,7 @@ public class JerryCan : MonoBehaviour
     private MapControll mapControll;
 
     public bool activeJerryCan = false;
+    public bool rebackJerry = false;
 
     private int i = 0;
 
@@ -33,6 +34,19 @@ public class JerryCan : MonoBehaviour
 
     private void Update()
     {
+        if (rebackJerry == true)
+        {
+            gameObject.SetActive(true);
+
+            while (i != meshRenderer.Length)
+            {
+                meshRenderer[i].enabled = false;
+
+                i++;
+            }
+            i = 0;
+            rebackJerry = false;
+        }
 
         if (activeJerryCan == true)
         {
@@ -44,6 +58,7 @@ public class JerryCan : MonoBehaviour
 
                 i++;
             }
+            i = 0;
         }
     }
 

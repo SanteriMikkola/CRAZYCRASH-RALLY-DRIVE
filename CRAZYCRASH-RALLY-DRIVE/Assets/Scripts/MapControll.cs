@@ -9,12 +9,23 @@ public class MapControll : MonoBehaviour
     public GameObject[] Esteet;
     public GameObject[] AavikonEsteet;
 
-    public GameObject[] ToolBoxes;
-    public GameObject[] A_ToolBoxes;
+    public GameObject[] Reback_Obs;
+    public GameObject[] Reback_A_Obs;
 
-    public GameObject[] JerryCans;
-    public GameObject[] A_JerryCans;
+    private GameObject[] ToolBoxes;
+    private GameObject[] A_ToolBoxes;
 
+    public GameObject[] Reback_ToolBoxes;
+    public GameObject[] Reback_A_ToolBoxes;
+
+    private GameObject[] JerryCans;
+    private GameObject[] A_JerryCans;
+
+    public GameObject[] Reback_JerryCans;
+    public GameObject[] Reback_A_JerryCans;
+
+
+    public GameObject[] Trees;
     //public Este[] estes;
 
     //public GameObject[] frontColliders;
@@ -36,9 +47,9 @@ public class MapControll : MonoBehaviour
 
     //public Vector3[] vector3s;
 
-    public Vector3[] Obs_vectors;
-    public Vector3[] TB_vectors;
-    public Vector3[] Jerry_vectors;
+    private Vector3[] Obs_vectors;
+    private Vector3[] TB_vectors;
+    private Vector3[] Jerry_vectors;
 
     public Vector3[] A_Obs_vectors;
     public Vector3[] A_TB_vectors;
@@ -57,6 +68,7 @@ public class MapControll : MonoBehaviour
     private bool isObjectsPicked = false;
 
     public bool playerCollidedFcollider = false;
+    private bool spawnObs = false;
 
     [HideInInspector]
     public bool CposChanget = false;
@@ -74,6 +86,14 @@ public class MapControll : MonoBehaviour
 
         fBoxCollider = fCollider.GetComponent<BoxCollider>();
         //bBoxCollider = bCollider.GetComponent<BoxCollider>();
+
+        Reback_Obs = GameObject.FindGameObjectsWithTag("Este");
+        Reback_A_Obs = GameObject.FindGameObjectsWithTag("AavikonEste");
+        Reback_ToolBoxes = GameObject.FindGameObjectsWithTag("ToolBox");
+        Reback_A_ToolBoxes = GameObject.FindGameObjectsWithTag("A_ToolBox");
+        Reback_JerryCans = GameObject.FindGameObjectsWithTag("JerryCan");
+        Reback_A_JerryCans = GameObject.FindGameObjectsWithTag("A_JerryCan");
+        Trees = GameObject.FindGameObjectsWithTag("TreeWithMesh");
 
         bCollider.transform.parent = null;
         fCollider.transform.parent = null;
@@ -96,14 +116,110 @@ public class MapControll : MonoBehaviour
             
         }*/
 
-        if (carCollider.isThatLevel2 == true && CposChanget == false)
+        if (carCollider.reback_Obs == true && carCollider.isThatLevel2 == false && CposChanget == true)
+        {
+            bCollider.transform.position = new Vector3(0, 0, -8.069992f);
+            fCollider.transform.position = new Vector3(0, 3.18f, 23f);
+            AreaVector1 = new Vector3(0f, 3.18f, 23f);
+            AreaVector2 = new Vector3(0f, 3.18f, 55f);
+            startButtonS.GameStartForMapControll = true;
+            CposChanget = false;
+
+            for (int i = 0; i < Reback_Obs.Length; i++)
+            {
+                Reback_Obs[i].SetActive(true);
+
+                var esteComponent = Reback_Obs[i].gameObject.GetComponent<Este>();
+
+                //esteComponent.activateMesh = true;
+                esteComponent.isColliderUnActive = false;
+                esteComponent.reActivate = true;
+            }
+            for (int i = 0; i < Reback_ToolBoxes.Length; i++)
+            {
+                Reback_ToolBoxes[i].SetActive(true);
+
+                var TBComponent = Reback_ToolBoxes[i].gameObject.GetComponent<ToolBox>();
+
+                //esteComponent.activateMesh = true;
+                TBComponent.reBackTB = true;
+            }
+            for (int i = 0; i < Reback_JerryCans.Length; i++)
+            {
+                Reback_JerryCans[i].SetActive(true);
+
+                var JerryComponent = Reback_JerryCans[i].gameObject.GetComponent<JerryCan>();
+
+                //esteComponent.activateMesh = true;
+                JerryComponent.rebackJerry = true;
+            }
+            for (int i = 0; i < Trees.Length; i++)
+            {
+                Trees[i].SetActive(true);
+
+                var treeControlComponent = Trees[i].gameObject.GetComponent<TreeControll>();
+
+                //esteComponent.activateMesh = true;
+                treeControlComponent.ActiveTrees();
+            }
+            Esteet = GameObject.FindGameObjectsWithTag("Este");
+            JerryCans = GameObject.FindGameObjectsWithTag("JerryCan");
+            ToolBoxes = GameObject.FindGameObjectsWithTag("ToolBox");
+            //carCollider.reback_Obs = false;
+            //return;
+        }
+
+        if (carCollider.isThatLevel2 == true && carCollider.reback_Obs == false && CposChanget == false)
         {
             bCollider.transform.position = new Vector3(0, 402.06f, -8.069992f);
             fCollider.transform.position = new Vector3(0, 402.81f, 23f);
             AreaVector1 = new Vector3(0f, 402.81f, 23f);
             AreaVector2 = new Vector3(0f, 402.81f, 55f);
+            A_AreaVector1 = new Vector3(0f, 3.18f, 23f);
+            A_AreaVector2 = new Vector3(0f, 3.18f, 55f);
             startButtonS.GameStartForMapControll = true;
             CposChanget = true;
+
+            for (int i = 0; i < Reback_A_Obs.Length; i++)
+            {
+                Reback_A_Obs[i].SetActive(true);
+
+                var esteComponent = Reback_A_Obs[i].gameObject.GetComponent<Este>();
+
+                //esteComponent.activateMesh = true;
+                esteComponent.isColliderUnActive = false;
+                esteComponent.reActivate = true;
+            }
+            for (int i = 0; i < Reback_A_ToolBoxes.Length; i++)
+            {
+                Reback_A_ToolBoxes[i].SetActive(true);
+
+                var TBComponent = Reback_A_ToolBoxes[i].gameObject.GetComponent<ToolBox>();
+
+                //esteComponent.activateMesh = true;
+                TBComponent.reBackTB = true;
+            }
+            for (int i = 0; i < Reback_A_JerryCans.Length; i++)
+            {
+                Reback_A_JerryCans[i].SetActive(true);
+
+                var JerryComponent = Reback_A_JerryCans[i].gameObject.GetComponent<JerryCan>();
+
+                //esteComponent.activateMesh = true;
+                JerryComponent.rebackJerry = true;
+            }
+            for (int i = 0; i < Trees.Length; i++)
+            {
+                Trees[i].SetActive(true);
+
+                var treeControlComponent = Trees[i].gameObject.GetComponent<TreeControll>();
+
+                //esteComponent.activateMesh = true;
+                treeControlComponent.ActiveTrees();
+            }
+            AavikonEsteet = GameObject.FindGameObjectsWithTag("AavikonEste");
+            A_JerryCans = GameObject.FindGameObjectsWithTag("A_JerryCan");
+            A_ToolBoxes = GameObject.FindGameObjectsWithTag("A_ToolBox");
         }
 
         //StartThings();
@@ -131,6 +247,7 @@ public class MapControll : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            Debug.Log("Testi");
             playerCollidedFcollider = true;
             //gameObject.SetActive(false)
 
@@ -163,6 +280,8 @@ public class MapControll : MonoBehaviour
         Obs_vectors = new Vector3[Esteet.Length];
         TB_vectors = new Vector3[ToolBoxes.Length];
         Jerry_vectors = new Vector3[JerryCans.Length];
+
+        //Debug.Log("GameStartForMapControll!");
 
         if (!isObjectsPicked)
         {

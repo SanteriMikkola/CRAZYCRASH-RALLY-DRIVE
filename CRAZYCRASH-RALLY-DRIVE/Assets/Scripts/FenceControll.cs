@@ -24,5 +24,13 @@ public class FenceControll : MonoBehaviour
             meshRenderer.enabled = true;
             //Destroy(gameObject);
         }
+
+        if (esteS.reActivate == true)
+        {
+            gameObject.SetActive(true);
+            meshRenderer.enabled = false;
+            esteS.reActivate = false;
+            //Destroy(gameObject);
+        }
     }
 }

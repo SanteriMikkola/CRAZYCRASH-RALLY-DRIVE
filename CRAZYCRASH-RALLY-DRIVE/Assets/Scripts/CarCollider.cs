@@ -23,6 +23,7 @@ public class CarCollider : MonoBehaviour
     public bool jerryCanPicked = false;
     public bool isThatFullHealthReverse;
     public bool isThatLevel2 = false;
+    public bool reback_Obs = false;
 
     public int osuma = 0;
 
@@ -156,7 +157,18 @@ public class CarCollider : MonoBehaviour
 
         if (collider.gameObject.CompareTag("LevelEnd"))
         {
+            reback_Obs = false;
             isThatLevel2 = true;
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+            //startButtonS.StartLevel2();
+
+        }
+
+        if (collider.gameObject.CompareTag("LevelEnd2"))
+        {
+            isThatLevel2 = false;
+            reback_Obs = true;
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
             //startButtonS.StartLevel2();

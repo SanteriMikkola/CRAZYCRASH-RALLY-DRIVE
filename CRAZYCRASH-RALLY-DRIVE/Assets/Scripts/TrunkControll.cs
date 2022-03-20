@@ -23,4 +23,11 @@ public class TrunkControll : MonoBehaviour
         meshRenderer.enabled = true;
         //Destroy(gameObject);
     }
+
+    public void TrunkReset()
+    {
+        gameObject.SetActive(true);
+        meshRenderer.enabled = false;
+        //Destroy(gameObject);
+    }
 }

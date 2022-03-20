@@ -28,7 +28,7 @@ public class CarController : MonoBehaviour
 
     public bool maxTurn = false;
     public bool IsThatFirstStart = true;
-    [HideInInspector]
+    //[HideInInspector]
     public bool IsTutorialEnded = false;
     [HideInInspector]
     public bool PposChanget = false;
@@ -76,7 +76,16 @@ public class CarController : MonoBehaviour
             Player.transform.position = new Vector3(0f, 400.633f, -1.024994f);
             rB.transform.position = new Vector3(0f, 400.595f, 0.4799957f);
             Kamera.transform.position = new Vector3(rB.position.x, rB.position.y + 5.310003f, rB.position.z - 8.23f);
+            //startButtonS.GameStartForMapControll = true;
             PposChanget = true;
+        }
+        if (carCollider.isThatLevel2 == false && PposChanget == true)
+        {
+            Player.transform.position = new Vector3(0f, 0.6529999f, -1.024994f);
+            rB.transform.position = new Vector3(0f, 0.6059999f, 0.4799957f);
+            Kamera.transform.position = new Vector3(rB.position.x, rB.position.y + 5.310003f, rB.position.z - 8.23f);
+            //startButtonS.GameStartForMapControll = true;
+            PposChanget = false;
         }
 
         if (carCollider.playerCollide == true)
