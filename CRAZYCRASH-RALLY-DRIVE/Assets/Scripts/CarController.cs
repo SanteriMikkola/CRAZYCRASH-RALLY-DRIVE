@@ -85,6 +85,7 @@ public class CarController : MonoBehaviour
             rB.transform.position = new Vector3(0f, 0.6059999f, 0.4799957f);
             Kamera.transform.position = new Vector3(rB.position.x, rB.position.y + 5.310003f, rB.position.z - 8.23f);
             //startButtonS.GameStartForMapControll = true;
+            IsTutorialEnded = false;
             PposChanget = false;
         }
 
