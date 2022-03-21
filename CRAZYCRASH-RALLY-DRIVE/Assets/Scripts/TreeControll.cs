@@ -50,4 +50,11 @@ public class TreeControll : MonoBehaviour
         trunks.TrunkReset();
         esteS.reActivate = false;
     }
+
+    public void ActiveSTrees()
+    {
+        gameObject.SetActive(true);
+        meshRenderer.enabled = true;
+        trunks.SetTrunkActive();
+    }
 }

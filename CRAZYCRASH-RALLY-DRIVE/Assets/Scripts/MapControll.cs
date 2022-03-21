@@ -26,6 +26,7 @@ public class MapControll : MonoBehaviour
 
 
     public GameObject[] Trees;
+    private GameObject[] startTrees;
     //public Este[] estes;
 
     //public GameObject[] frontColliders;
@@ -94,6 +95,7 @@ public class MapControll : MonoBehaviour
         Reback_JerryCans = GameObject.FindGameObjectsWithTag("JerryCan");
         Reback_A_JerryCans = GameObject.FindGameObjectsWithTag("A_JerryCan");
         Trees = GameObject.FindGameObjectsWithTag("TreeWithMesh");
+        startTrees = GameObject.FindGameObjectsWithTag("StartTrees");
 
         bCollider.transform.parent = null;
         fCollider.transform.parent = null;
@@ -162,10 +164,19 @@ public class MapControll : MonoBehaviour
                 //esteComponent.activateMesh = true;
                 treeControlComponent.ActiveTrees();
             }
+            /*for (int i = 0; i < startTrees.Length; i++)
+            {
+                startTrees[i].SetActive(true);
+
+                var treeControlComponent = startTrees[i].gameObject.GetComponent<TreeControll>();
+
+                //esteComponent.activateMesh = true;
+                treeControlComponent.ActiveSTrees();
+            }*/
             Esteet = GameObject.FindGameObjectsWithTag("Este");
             JerryCans = GameObject.FindGameObjectsWithTag("JerryCan");
             ToolBoxes = GameObject.FindGameObjectsWithTag("ToolBox");
-            //carCollider.reback_Obs = false;
+            carCollider.reback_Obs = false;
             //return;
         }
 
@@ -220,6 +231,7 @@ public class MapControll : MonoBehaviour
             AavikonEsteet = GameObject.FindGameObjectsWithTag("AavikonEste");
             A_JerryCans = GameObject.FindGameObjectsWithTag("A_JerryCan");
             A_ToolBoxes = GameObject.FindGameObjectsWithTag("A_ToolBox");
+            carCollider.reback_Obs = true;
         }
 
         //StartThings();

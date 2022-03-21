@@ -46,6 +46,11 @@ public class Fuel_Controll : MonoBehaviour
             fuelDecreaseDelay.z = 0;
             Reseted = true;
         }
+        if (!carCollider.isThatLevel2 && Reseted == true)
+        {
+            fuelDecreaseDelay.z = 0;
+            Reseted = false;
+        }
 
         if (carCollider.fuel <= 0 && rotationZ >= 83f)
         {
