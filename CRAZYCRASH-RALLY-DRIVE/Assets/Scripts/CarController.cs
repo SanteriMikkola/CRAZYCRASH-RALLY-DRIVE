@@ -32,6 +32,8 @@ public class CarController : MonoBehaviour
     public bool IsTutorialEnded = false;
     [HideInInspector]
     public bool PposChanget = false;
+    public bool turnLock = false;
+
 
     private float maxinumRotationL;
     private float maxinumRotationR;
@@ -39,6 +41,7 @@ public class CarController : MonoBehaviour
     private float moveSpeed;
 
     private Vector3 aloitusTienLoppu;
+    private Vector3 aavikonLoppu;
 
     // Start is called before the first frame update
     void Start()
@@ -59,6 +62,7 @@ public class CarController : MonoBehaviour
         rB.transform.parent = null;
 
         aloitusTienLoppu = new Vector3(0f, 0f, 17.5f);
+        aavikonLoppu = new Vector3(0f, 400f, 109.5f);
     }
 
     // Update is called once per frame
@@ -82,10 +86,25 @@ public class CarController : MonoBehaviour
         if (carCollider.isThatLevel2 == false && PposChanget == true)
         {
             Player.transform.position = new Vector3(0f, 0.6529999f, -1.024994f);
+            IsTutorialEnded = false;
+            /*Vector3 targetPoint = (playerRotateF.transform.position);
+            Player.transform.LookAt(targetPoint);*/
             rB.transform.position = new Vector3(0f, 0.6059999f, 0.4799957f);
             Kamera.transform.position = new Vector3(rB.position.x, rB.position.y + 5.310003f, rB.position.z - 8.23f);
+
+            if  (transform.localRotation.eulerAngles.y != 0f)
+            {
+                /*if (convertedTinput == false)
+                {
+                    turnInput = turnInput * -1f;
+                    convertedTinput = true;
+                }*/
+
+                Player.transform.Rotate(0, (transform.localRotation.eulerAngles.y * -1), 0f);
+                //transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, (transform.localRotation.eulerAngles.y * -1) * Time.deltaTime, 0f));
+            }
+
             //startButtonS.GameStartForMapControll = true;
-            IsTutorialEnded = false;
             PposChanget = false;
         }
 
@@ -97,7 +116,23 @@ public class CarController : MonoBehaviour
             //rb.AddForce(stuckForce, ForceMode.Impulse);
         }
 
-        if (IsTutorialEnded == true)
+        if (turnLock == true && IsTutorialEnded == false)
+        {
+            turnInput = 0;
+            /*if (transform.localRotation.eulerAngles.y != 0f)
+            {
+                if (convertedTinput == false)
+                {
+                    turnInput = turnInput * -1f;
+                    convertedTinput = true;
+                }
+
+                Player.transform.Rotate(0, (transform.localRotation.eulerAngles.y * -1), 0f);
+                //transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, (transform.localRotation.eulerAngles.y * -1) * Time.deltaTime, 0f));
+            }*/
+        }
+
+        if (IsTutorialEnded == true && turnLock == false)
         {
             turnInput = Input.GetAxis("Horizontal");
         }
@@ -165,9 +200,14 @@ public class CarController : MonoBehaviour
         {
             rB.AddForce(transform.forward * forwardSpeed * 1000f);
             transform.position = rB.transform.position;
-            if (Player.transform.position.z >= aloitusTienLoppu.z)
+            if (Player.transform.position.z >= aloitusTienLoppu.z && Player.transform.position.y < aavikonLoppu.y)
             {
                 IsTutorialEnded = true;
+                turnLock = false;
+            }
+            if (Player.transform.position.z >= aavikonLoppu.z && Player.transform.position.y >= aavikonLoppu.y)
+            {
+                turnLock = true;
             }
         }
     }
