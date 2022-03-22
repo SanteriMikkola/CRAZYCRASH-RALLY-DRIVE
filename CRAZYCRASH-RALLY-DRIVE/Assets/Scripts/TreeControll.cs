@@ -11,7 +11,7 @@ public class TreeControll : MonoBehaviour
     void Start()
     {
         esteS = gameObject.GetComponentInChildren<Este>();
-        trunks = gameObject.GetComponentInChildren<TrunkControll>();
+        //trunks = gameObject.GetComponentInChildren<TrunkControll>();
         meshRenderer = gameObject.GetComponent<MeshRenderer>();
 
         meshRenderer.enabled = false;
@@ -31,14 +31,14 @@ public class TreeControll : MonoBehaviour
         if (esteS.isColliderUnActive == true && esteS.reActivate == false)
         {
             gameObject.SetActive(false);
-            trunks.SetTrunkInActive();
+            //trunks.SetTrunkInActive();
             //Destroy(gameObject);
         }
         if (esteS.activateMesh == true)
         {
             gameObject.SetActive(true);
             meshRenderer.enabled = true;
-            trunks.SetTrunkActive();
+            //trunks.SetTrunkActive();
         }
     }
 
@@ -47,7 +47,7 @@ public class TreeControll : MonoBehaviour
     {
         gameObject.SetActive(true);
         meshRenderer.enabled = false;
-        trunks.TrunkReset();
+        //trunks.TrunkReset();
         esteS.reActivate = false;
     }
 
@@ -55,6 +55,6 @@ public class TreeControll : MonoBehaviour
     {
         gameObject.SetActive(true);
         meshRenderer.enabled = true;
-        trunks.SetTrunkActive();
+        //trunks.SetTrunkActive();
     }
 }
