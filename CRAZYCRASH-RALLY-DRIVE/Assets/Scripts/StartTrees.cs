@@ -36,9 +36,9 @@ public class StartTrees : MonoBehaviour
             {
                 startTrees[ii].SetActive(true);
 
-                var trunk = startTrees[ii].gameObject.transform.GetChild(0);
+                /*var trunk = startTrees[ii].gameObject.transform.GetChild(0);
 
-                trunk.gameObject.SetActive(true);
+                trunk.gameObject.SetActive(true);*/
 
                 ii++;
             }
@@ -57,9 +57,9 @@ public class StartTrees : MonoBehaviour
             {
                 startTrees[i].SetActive(false);
 
-                var trunk = startTrees[i].gameObject.transform.GetChild(0);
+                /*var trunk = startTrees[i].gameObject.transform.GetChild(0);
 
-                trunk.gameObject.SetActive(false);
+                trunk.gameObject.SetActive(false);*/
 
                 i++;
             }
