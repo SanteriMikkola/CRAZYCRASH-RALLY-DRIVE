@@ -30,8 +30,8 @@ public class CarController : MonoBehaviour
     public bool IsThatFirstStart = true;
     //[HideInInspector]
     public bool IsTutorialEnded = false;
-    [HideInInspector]
-    public bool PposChanget = false;
+    //[HideInInspector]
+    public bool PposChanget = true;
     public bool turnLock = false;
 
 
@@ -75,7 +75,16 @@ public class CarController : MonoBehaviour
         maxinumRotationR = 38f;
         //transform.position = rB.transform.position;
 
-        if (carCollider.isThatLevel2 == true && PposChanget == false)
+        if (carCollider.isThatMT == true && PposChanget == true && carCollider.isThatLevel2 == false && carCollider.reback_Obs == false)
+        {
+            Player.transform.position = new Vector3(0f, 800.986f, -212.5f);
+            rB.transform.position = new Vector3(0f, 800.948f, -31f);
+            Kamera.transform.position = new Vector3(rB.position.x, rB.position.y + 5.310003f, rB.position.z - 8.23f);
+            //startButtonS.GameStartForMapControll = true;
+            PposChanget = false;
+        }
+
+        if (carCollider.isThatLevel2 == true && PposChanget == false && carCollider.isThatMT == false && carCollider.reback_Obs == false)
         {
             Player.transform.position = new Vector3(0f, 400.633f, -1.024994f);
             rB.transform.position = new Vector3(0f, 400.595f, 0.4799957f);
@@ -83,7 +92,7 @@ public class CarController : MonoBehaviour
             //startButtonS.GameStartForMapControll = true;
             PposChanget = true;
         }
-        if (carCollider.isThatLevel2 == false && PposChanget == true)
+        if (carCollider.isThatLevel2 == false && PposChanget == true && carCollider.isThatMT == false && carCollider.reback_Obs == true)
         {
             Player.transform.position = new Vector3(0f, 0.6529999f, -1.024994f);
             IsTutorialEnded = false;
@@ -105,7 +114,7 @@ public class CarController : MonoBehaviour
             }
 
             //startButtonS.GameStartForMapControll = true;
-            PposChanget = false;
+            PposChanget = true;
         }
 
         if (carCollider.playerCollide == true)

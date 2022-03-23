@@ -20,6 +20,8 @@ TagManager:
   - AavikonEste
   - A_ToolBox
   - A_JerryCan
+  - MoottoriTie
+  - HighWay
   layers:
   - Default
   - TransparentFX
