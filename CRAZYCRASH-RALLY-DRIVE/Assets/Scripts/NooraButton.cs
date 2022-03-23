@@ -14,7 +14,7 @@ public class NooraButton : MonoBehaviour
 
     public void buttonPress()
     {
-        SceneManager.LoadScene("TestScene");
+        SceneManager.LoadScene("CameplayScene");
     }
 
 

@@ -71,7 +71,7 @@ public class MapControll : MonoBehaviour
     public bool playerCollidedFcollider = false;
     private bool spawnObs = false;
 
-    [HideInInspector]
+    //[HideInInspector]
     public bool CposChanget = false;
 
     // Start is called before the first frame update
@@ -118,8 +118,79 @@ public class MapControll : MonoBehaviour
             
         }*/
 
-        if (carCollider.reback_Obs == true && carCollider.isThatLevel2 == false && CposChanget == true)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
+            Debug.Log("Quit!");
+            Application.Quit();
+        }
+
+        if (carCollider.reback_Obs == false && carCollider.isThatLevel2 == false && CposChanget == false && carCollider.isThatMT == true)
+        {
+            fBoxCollider.enabled = false;
+            bCollider.transform.position = new Vector3(0, 802.6f, -40.06f);
+            fCollider.transform.position = new Vector3(0, 802.6f, 23f);
+            AreaVector1 = new Vector3(0f, 802.6f, 23f);
+            AreaVector2 = new Vector3(0f, 802.6f, 55f);
+            startButtonS.GameStartForMapControll = true;
+            CposChanget = false;
+
+            /*for (int i = 0; i < Reback_Obs.Length; i++)
+            {
+                Reback_Obs[i].SetActive(true);
+
+                var esteComponent = Reback_Obs[i].gameObject.GetComponent<Este>();
+
+                //esteComponent.activateMesh = true;
+                esteComponent.isColliderUnActive = false;
+                esteComponent.reActivate = true;
+            }
+            for (int i = 0; i < Reback_ToolBoxes.Length; i++)
+            {
+                Reback_ToolBoxes[i].SetActive(true);
+
+                var TBComponent = Reback_ToolBoxes[i].gameObject.GetComponent<ToolBox>();
+
+                //esteComponent.activateMesh = true;
+                TBComponent.reBackTB = true;
+            }
+            for (int i = 0; i < Reback_JerryCans.Length; i++)
+            {
+                Reback_JerryCans[i].SetActive(true);
+
+                var JerryComponent = Reback_JerryCans[i].gameObject.GetComponent<JerryCan>();
+
+                //esteComponent.activateMesh = true;
+                JerryComponent.rebackJerry = true;
+            }
+            for (int i = 0; i < Trees.Length; i++)
+            {
+                Trees[i].SetActive(true);
+
+                var treeControlComponent = Trees[i].gameObject.GetComponent<TreeControll>();
+
+                //esteComponent.activateMesh = true;
+                treeControlComponent.ActiveTrees();
+            }
+            /*for (int i = 0; i < startTrees.Length; i++)
+            {
+                startTrees[i].SetActive(true);
+
+                var treeControlComponent = startTrees[i].gameObject.GetComponent<TreeControll>();
+
+                //esteComponent.activateMesh = true;
+                treeControlComponent.ActiveSTrees();
+            }
+            Esteet = GameObject.FindGameObjectsWithTag("Este");
+            JerryCans = GameObject.FindGameObjectsWithTag("JerryCan");
+            ToolBoxes = GameObject.FindGameObjectsWithTag("ToolBox");*/
+            carCollider.reback_Obs = false; 
+            //return;
+        }
+
+
+        if (carCollider.reback_Obs == true && carCollider.isThatLevel2 == false && CposChanget == true && carCollider.isThatMT == false)
+        {
+            fBoxCollider.enabled = true;
             bCollider.transform.position = new Vector3(0, 0, -8.069992f);
             fCollider.transform.position = new Vector3(0, 3.18f, 23f);
             AreaVector1 = new Vector3(0f, 3.18f, 23f);
@@ -180,8 +251,9 @@ public class MapControll : MonoBehaviour
             //return;
         }
 
-        if (carCollider.isThatLevel2 == true && carCollider.reback_Obs == false && CposChanget == false)
+        if (carCollider.isThatLevel2 == true && carCollider.reback_Obs == false && CposChanget == false && carCollider.isThatMT == false)
         {
+            fBoxCollider.enabled = true;
             bCollider.transform.position = new Vector3(0, 402.06f, -8.069992f);
             fCollider.transform.position = new Vector3(0, 402.81f, 23f);
             AreaVector1 = new Vector3(0f, 402.81f, 23f);
@@ -238,14 +310,21 @@ public class MapControll : MonoBehaviour
 
         bCollider.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y + 1f, Player.transform.position.z - 8.07f);
         //Debug.Log(frontColliders.Length);
-        if (startButtonS.GameStartForMapControll == true && carCollider.isThatLevel2 == false || playerCollidedFcollider == true && carCollider.isThatLevel2 == false)
+        if (startButtonS.GameStartForMapControll == true && carCollider.isThatLevel2 == false && carCollider.isThatMT == true || playerCollidedFcollider == true && carCollider.isThatLevel2 == false && carCollider.isThatMT == true)
+        {
+            isObjectsPicked = false;
+            MoottoriTiePositionCheck();
+            startButtonS.GameStartForMapControll = false;
+        }
+
+        if (startButtonS.GameStartForMapControll == true && carCollider.isThatLevel2 == false && carCollider.isThatMT == false || playerCollidedFcollider == true && carCollider.isThatLevel2 == false && carCollider.isThatMT == false)
         {
             isObjectsPicked = false;
             PositionCheck();
             startButtonS.GameStartForMapControll = false;
         }
 
-        if (startButtonS.GameStartForMapControll == true && carCollider.isThatLevel2 == true || playerCollidedFcollider == true && carCollider.isThatLevel2 == true)
+        if (startButtonS.GameStartForMapControll == true && carCollider.isThatLevel2 == true && carCollider.isThatMT == false || playerCollidedFcollider == true && carCollider.isThatLevel2 == true && carCollider.isThatMT == false)
         {
             isObjectsPicked = false;
             AavikkoPositionCheck();
@@ -259,7 +338,7 @@ public class MapControll : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Testi");
+            //Debug.Log("Testi");
             playerCollidedFcollider = true;
             //gameObject.SetActive(false)
 
@@ -545,18 +624,46 @@ public class MapControll : MonoBehaviour
         //return;
     }
 
-    /*private void ObsActive()
+    private void MoottoriTiePositionCheck()
     {
-        
-        for (int i = 0; i < PickedObjects.Length; i++)
+        //vectorsF = new float[frontColliders.Length];
+        /*vector3s = new Vector3[frontColliders.Length];
+
+        for (int i = 0; i < frontColliders.Length; i++)
         {
-            PickedObjects[i].SetActive(true);
+            vector3s[i].Set(frontColliders[i].transform.position.x, frontColliders[i].transform.position.y, frontColliders[i].transform.position.z);
+            //vectorsF[i] = frontColliders[i].transform.position.z;
+        }*/
+        /*Obs_vectors = new Vector3[Esteet.Length];
+        TB_vectors = new Vector3[ToolBoxes.Length];
+        Jerry_vectors = new Vector3[JerryCans.Length];*/
 
-            var esteComponent = PickedObjects[i].gameObject.GetComponent<Este>();
+        //Debug.Log("GameStartForMapControll!");
 
-            esteComponent.activateMesh = true;
-            activeToolBox = true;
+        if (!isObjectsPicked)
+        {
+            
+
+            isObjectsPicked = true;
         }
-        return;
-    }*/
+        playerCollidedFcollider = false;
+        AreaVector1.z = AreaVector1.z + 29f;
+        AreaVector2.z = AreaVector2.z + 29f;
+        //PickedObjects = new GameObject[ii];
+        //Esteet.CopyTo(PickedObjects, ii);
+        /*for (int i = 0; i < Esteet.Length; i++)
+        {
+            //Obs_vectors[i].Set(Esteet[i].transform.position.x, Esteet[i].transform.position.y, Esteet[i].transform.position.z);
+
+            if (Obs_vectors[i].z > AreaVector1.z && Obs_vectors[i].z < AreaVector2.z)
+            {
+                if (i < ii)
+                {
+                    Esteet.CopyTo(PickedObjects, ii);
+                }
+            }
+            
+        }*/
+        //return;
+    }
 }
