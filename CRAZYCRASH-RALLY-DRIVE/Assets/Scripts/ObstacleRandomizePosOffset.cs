@@ -20,7 +20,7 @@ public class ObstacleRandomizePosOffset : MonoBehaviour
 
     private void Update()
     {
-        if (carCollider.reback_Obs == true)
+        if (carCollider.reback_Obs == true && carCollider.isThatLevel2 == false || carCollider.reback_Obs == false && carCollider.isThatLevel2 == true)
         {
             RandomizePos();
         }
