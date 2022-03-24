@@ -35,6 +35,7 @@ public class MapControll : MonoBehaviour
 
     private BoxCollider fBoxCollider;
     //private BoxCollider bBoxCollider;
+    private GameObject PauseMenu;
 
 
     private int i = 0, ii = 0, iii = 0;
@@ -104,6 +105,7 @@ public class MapControll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        PauseMenu = GameObject.Find("PauseMenu");
         Esteet = GameObject.FindGameObjectsWithTag("Este");
         AavikonEsteet = GameObject.FindGameObjectsWithTag("AavikonEste");
         ToolBoxes = GameObject.FindGameObjectsWithTag("ToolBox");
@@ -120,8 +122,7 @@ public class MapControll : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("Quit!");
-            Application.Quit();
+            PauseMenu.SetActive(false);
         }
 
         if (carCollider.reback_Obs == false && carCollider.isThatLevel2 == false && CposChanget == false && carCollider.isThatMT == true)
