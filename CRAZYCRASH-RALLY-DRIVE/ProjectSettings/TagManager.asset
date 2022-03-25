@@ -22,6 +22,9 @@ TagManager:
   - A_JerryCan
   - MoottoriTie
   - HighWay
+  - StartRocks
+  - Grass
+  - LittleRock
   layers:
   - Default
   - TransparentFX

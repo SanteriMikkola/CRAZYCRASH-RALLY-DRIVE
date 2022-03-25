@@ -17,6 +17,9 @@ public class CarController : MonoBehaviour
 
     private GameObject playerRotateF;
 
+    private GameObject startTreeDestroyer;
+    private StartTrees startTreesS;
+
     public float forwardSpeed = 2f;
     //public float maxSpeed = 50f;
     public float turnStrenght = 90f;
@@ -33,6 +36,7 @@ public class CarController : MonoBehaviour
     //[HideInInspector]
     public bool PposChanget = true;
     public bool turnLock = false;
+    public bool resetPposChanget = false;
 
 
     private float maxinumRotationL;
@@ -59,6 +63,9 @@ public class CarController : MonoBehaviour
         startButtonB = GameObject.Find("StartButton");
         startButtonS = startButtonB.GetComponent<StartButton>();
         carCollider = Player.GetComponent<CarCollider>();
+
+        startTreeDestroyer = GameObject.Find("StarTreeDestroyer");
+        startTreesS = startTreeDestroyer.GetComponent<StartTrees>();
         rB.transform.parent = null;
 
         aloitusTienLoppu = new Vector3(0f, 0f, 17.5f);
@@ -82,6 +89,8 @@ public class CarController : MonoBehaviour
             Kamera.transform.position = new Vector3(rB.position.x, rB.position.y + 5.310003f, rB.position.z - 8.23f);
             //startButtonS.GameStartForMapControll = true;
             PposChanget = false;
+            resetPposChanget = false;
+            startTreesS.reseted = false;
         }
 
         if (carCollider.isThatLevel2 == true && PposChanget == false && carCollider.isThatMT == false && carCollider.reback_Obs == false)
@@ -92,8 +101,10 @@ public class CarController : MonoBehaviour
             //startButtonS.GameStartForMapControll = true;
             PposChanget = true;
         }
-        if (carCollider.isThatLevel2 == false && PposChanget == true && carCollider.isThatMT == false && carCollider.reback_Obs == true)
+        if (carCollider.isThatLevel2 == false && PposChanget == true && carCollider.isThatMT == false && carCollider.reback_Obs == true && resetPposChanget == false)
         {
+            Debug.Log("toimiiko?");
+            PposChanget = false;
             Player.transform.position = new Vector3(0f, 0.6529999f, -1.024994f);
             IsTutorialEnded = false;
             /*Vector3 targetPoint = (playerRotateF.transform.position);
@@ -101,7 +112,7 @@ public class CarController : MonoBehaviour
             rB.transform.position = new Vector3(0f, 0.6059999f, 0.4799957f);
             Kamera.transform.position = new Vector3(rB.position.x, rB.position.y + 5.310003f, rB.position.z - 8.23f);
 
-            if  (transform.localRotation.eulerAngles.y != 0f)
+            if (transform.localRotation.eulerAngles.y != 0f)
             {
                 /*if (convertedTinput == false)
                 {
@@ -114,6 +125,10 @@ public class CarController : MonoBehaviour
             }
 
             //startButtonS.GameStartForMapControll = true;
+            resetPposChanget = true;
+        }
+        if (resetPposChanget == true)
+        {
             PposChanget = true;
         }
 
