@@ -5,13 +5,19 @@ using UnityEngine;
 public class StartTrees : MonoBehaviour
 {
     private GameObject[] startTrees;
+    private GameObject[] startRock;
 
     private BoxCollider boxCollider;
 
     private GameObject Player;
     private CarCollider carCollider;
+    private CarController carController;
 
-    private bool reseted = false;
+    //private StartRocks startRocksS;
+
+    public bool reseted = false;
+    public bool ReSet = true;
+
 
     int i = 0;
     int ii = 0;
@@ -20,9 +26,13 @@ public class StartTrees : MonoBehaviour
     void Start()
     {
         startTrees = GameObject.FindGameObjectsWithTag("StartTrees");
+        startRock = GameObject.FindGameObjectsWithTag("StartRocks");
 
         Player = GameObject.Find("Player");
         carCollider = Player.GetComponent<CarCollider>();
+        carController = Player.GetComponent<CarController>();
+
+        //startRocksS = gameObject.GetComponent<StartRocks>();
 
         boxCollider = gameObject.GetComponent<BoxCollider>();
     }
@@ -30,7 +40,25 @@ public class StartTrees : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (carCollider.reback_Obs == true && carCollider.isThatLevel2 == false && reseted == false)
+        if (carCollider.reback_Obs == true && carCollider.isThatLevel2 == false && reseted == false && ReSet == true)
+        {
+            while (ii != startRock.Length)
+            {
+                startRock[ii].SetActive(true);
+
+                /*var trunk = startTrees[ii].gameObject.transform.GetChild(0);
+
+                trunk.gameObject.SetActive(true);*/
+
+                ii++;
+            }
+            ii = 0;
+            //gameObject.SetActive(false);
+            //sphereCollider.enabled = true;
+            ReSet = false;
+        }
+
+        if (carCollider.reback_Obs == true && carCollider.isThatLevel2 == false && reseted == false && ReSet == false && carController.resetPposChanget == true)
         {
             while (ii != startTrees.Length)
             {
@@ -44,8 +72,8 @@ public class StartTrees : MonoBehaviour
             }
             ii = 0;
             //gameObject.SetActive(false);
-            boxCollider.enabled = true;
             reseted = true;
+            boxCollider.enabled = true;
         }
     }
 
@@ -53,6 +81,7 @@ public class StartTrees : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            boxCollider.enabled = false;
             while (i != startTrees.Length)
             {
                 startTrees[i].SetActive(false);
@@ -64,9 +93,19 @@ public class StartTrees : MonoBehaviour
                 i++;
             }
             i = 0;
+            while (i != startRock.Length)
+            {
+                startRock[i].SetActive(false);
+
+                /*var trunk = startTrees[i].gameObject.transform.GetChild(0);
+
+                trunk.gameObject.SetActive(false);*/
+
+                i++;
+            }
+            i = 0;
             //gameObject.SetActive(false);
-            boxCollider.enabled = false;
-            reseted = false;
+            ReSet = true;
         }
     }
 }

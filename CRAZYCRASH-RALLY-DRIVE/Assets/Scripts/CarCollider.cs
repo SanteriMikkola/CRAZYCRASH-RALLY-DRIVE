@@ -26,6 +26,8 @@ public class CarCollider : MonoBehaviour
     public bool reback_Obs = false;
     public bool isThatMT = false;
 
+    public bool isEstePosRandomized = false;
+
     public int osuma = 0;
 
     public float fuel = 100f;
@@ -171,8 +173,10 @@ public class CarCollider : MonoBehaviour
 
         if (collider.gameObject.CompareTag("LevelEnd2"))
         {
-            isThatLevel2 = false;
+            Debug.Log("osuko?");
+            isEstePosRandomized = false;
             reback_Obs = true;
+            isThatLevel2 = false;
             isThatMT = false;
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
@@ -182,6 +186,7 @@ public class CarCollider : MonoBehaviour
 
         if (collider.gameObject.CompareTag("MoottoriTie"))
         {
+            isEstePosRandomized = false;
             reback_Obs = false;
             isThatLevel2 = true;
             isThatMT = false;
@@ -193,7 +198,7 @@ public class CarCollider : MonoBehaviour
 
         if (collider.gameObject.CompareTag("HighWay"))
         {
-            
+
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
             //startButtonS.StartLevel2();
