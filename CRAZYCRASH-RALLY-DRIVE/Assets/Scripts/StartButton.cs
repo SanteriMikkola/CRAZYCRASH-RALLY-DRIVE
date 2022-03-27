@@ -8,10 +8,13 @@ public class StartButton : MonoBehaviour
     private Rigidbody playerRB;
     private CarCollider carCollider;
     private PlayerMovement playerMove;
-    private GameObject Kamera;
     private GameObject StartMenuKamera;
     private GameObject startCamera;
+    private GameObject StartMenu;
 
+    public GameObject MainCamera;
+    public GameObject StartCamera;
+    public GameObject scoreCanvas;
 
     //[HideInInspector]
     public bool IsGameStarted = false;
@@ -25,7 +28,7 @@ public class StartButton : MonoBehaviour
         startCamera = GameObject.Find("StartCamera");
         playerRB = Player.GetComponent<Rigidbody>();
         carCollider = Player.GetComponent<CarCollider>();
-        Kamera = GameObject.Find("Main Camera");
+        StartMenu = GameObject.Find("StartMenu");
         //StartMenuKamera = GameObject.Find("StartMenuCamera");
         playerMove = Player.GetComponent<PlayerMovement>();
     }
@@ -52,6 +55,19 @@ public class StartButton : MonoBehaviour
         //StartMenuKamera.SetActive(false);
     }
 
+    public void GiveUp()
+    {
+        IsGameStarted = false;
+        GameStartForMapControll = false;
+        playerRB.isKinematic = true;
+        StartMenu.SetActive(true);
+        MainCamera.SetActive(false);
+        StartCamera.SetActive(true);
+        scoreCanvas.SetActive(false);
+        //Kamera.SetActive(true);
+        //StartMenuKamera.SetActive(false);
+    }
+
     public void StartLevel2()
     {
         IsGameStarted = true;
@@ -59,6 +75,5 @@ public class StartButton : MonoBehaviour
         playerRB.isKinematic = false;
         gameObject.SetActive(false);
         startCamera.SetActive(false);
-        Kamera.SetActive(true);
     }
 }

@@ -42,39 +42,49 @@ public class StartTrees : MonoBehaviour
     {
         if (carCollider.reback_Obs == true && carCollider.isThatLevel2 == false && reseted == false && ReSet == true)
         {
-            while (ii != startRock.Length)
-            {
-                startRock[ii].SetActive(true);
-
-                /*var trunk = startTrees[ii].gameObject.transform.GetChild(0);
-
-                trunk.gameObject.SetActive(true);*/
-
-                ii++;
-            }
-            ii = 0;
-            //gameObject.SetActive(false);
-            //sphereCollider.enabled = true;
-            ReSet = false;
+            ActiveS_Rocks();
         }
 
         if (carCollider.reback_Obs == true && carCollider.isThatLevel2 == false && reseted == false && ReSet == false && carController.resetPposChanget == true)
         {
-            while (ii != startTrees.Length)
-            {
-                startTrees[ii].SetActive(true);
-
-                /*var trunk = startTrees[ii].gameObject.transform.GetChild(0);
-
-                trunk.gameObject.SetActive(true);*/
-
-                ii++;
-            }
-            ii = 0;
-            //gameObject.SetActive(false);
-            reseted = true;
-            boxCollider.enabled = true;
+            ActiveS_Trees();
         }
+    }
+
+    public void ActiveS_Rocks()
+    {
+        while (ii != startRock.Length)
+        {
+            startRock[ii].SetActive(true);
+
+            /*var trunk = startTrees[ii].gameObject.transform.GetChild(0);
+
+            trunk.gameObject.SetActive(true);*/
+
+            ii++;
+        }
+        ii = 0;
+        //gameObject.SetActive(false);
+        //sphereCollider.enabled = true;
+        ReSet = false;
+    }
+
+    public void ActiveS_Trees()
+    {
+        while (ii != startTrees.Length)
+        {
+            startTrees[ii].SetActive(true);
+
+            /*var trunk = startTrees[ii].gameObject.transform.GetChild(0);
+
+            trunk.gameObject.SetActive(true);*/
+
+            ii++;
+        }
+        ii = 0;
+        //gameObject.SetActive(false);
+        reseted = true;
+        boxCollider.enabled = true;
     }
 
     public void OnCollisionEnter(Collision collision)

@@ -9,7 +9,7 @@ public class ScoreControll : MonoBehaviour
     private Text ScoreNumText;
     private PlayerMovement playerMove;
     private GameObject Player;
-    private int numBer;
+    public int numBer;
     public bool IsThatStart = true;
 
     private CarCollider carCollider;

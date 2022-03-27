@@ -12,10 +12,18 @@ public class CarController : MonoBehaviour
     private CarCollider carCollider;
     private GameObject startButtonB;
     private StartButton startButtonS;
-    private GameObject ScoreNumText;
+    public GameObject ScoreNumText;
     private ScoreControll scoreControll;
 
     private GameObject playerRotateF;
+    private GameObject frontCcollider;
+    private MapControll mapControll;
+
+    public GameObject FuelMeter;
+    private Fuel_Controll fuelControll;
+
+    public GameObject HealthBar;
+    private HP_Controll hpControll;
 
     private GameObject startTreeDestroyer;
     private StartTrees startTreesS;
@@ -63,7 +71,12 @@ public class CarController : MonoBehaviour
         startButtonB = GameObject.Find("StartButton");
         startButtonS = startButtonB.GetComponent<StartButton>();
         carCollider = Player.GetComponent<CarCollider>();
+        scoreControll = ScoreNumText.GetComponent<ScoreControll>();
+        fuelControll = FuelMeter.GetComponent<Fuel_Controll>();
+        hpControll = HealthBar.GetComponent<HP_Controll>();
 
+        frontCcollider = GameObject.Find("FrontCollider");
+        mapControll = frontCcollider.GetComponent<MapControll>();
         startTreeDestroyer = GameObject.Find("StarTreeDestroyer");
         startTreesS = startTreeDestroyer.GetComponent<StartTrees>();
         rB.transform.parent = null;
@@ -81,6 +94,50 @@ public class CarController : MonoBehaviour
         maxinumRotationL = 322f;
         maxinumRotationR = 38f;
         //transform.position = rB.transform.position;
+
+        if (mapControll.isGamePaused == true)
+        {
+            forwardSpeed = 0f;
+        }
+
+        if (mapControll.isGiveUp == true)
+        {
+            carCollider.isEstePosRandomized = false;
+            carCollider.reback_Obs = true;
+            carCollider.isThatLevel2 = false;
+            carCollider.isThatMT = false;
+            //Debug.Log("toimiiko?");
+            PposChanget = false;
+            Player.transform.position = new Vector3(0f, 0.6529999f, -1.024994f);
+            IsTutorialEnded = false;
+            /*Vector3 targetPoint = (playerRotateF.transform.position);
+            Player.transform.LookAt(targetPoint);*/
+            rB.transform.position = new Vector3(0f, 0.6059999f, 0.4799957f);
+            Kamera.transform.position = new Vector3(rB.position.x, rB.position.y + 5.310003f, rB.position.z - 8.23f);
+
+            if (transform.localRotation.eulerAngles.y != 0f)
+            {
+                /*if (convertedTinput == false)
+                {
+                    turnInput = turnInput * -1f;
+                    convertedTinput = true;
+                }*/
+
+                Player.transform.Rotate(0, (transform.localRotation.eulerAngles.y * -1), 0f);
+                //transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, (transform.localRotation.eulerAngles.y * -1) * Time.deltaTime, 0f));
+            }
+
+            //startButtonS.GameStartForMapControll = true;
+            resetPposChanget = true;
+            startTreesS.ActiveS_Rocks();
+            startTreesS.ActiveS_Trees();
+            scoreControll.numBer = 0;
+            StartCoroutine(fuelControll.JerryCanReverseFullHealth());
+            hpControll.HealthPointsScrollBar.value = 0f;
+            carCollider.osuma = 0;
+            startButtonS.GiveUp();
+            mapControll.isGiveUp = false;
+        }
 
         if (carCollider.isThatMT == true && PposChanget == true && carCollider.isThatLevel2 == false && carCollider.reback_Obs == false)
         {
@@ -103,7 +160,7 @@ public class CarController : MonoBehaviour
         }
         if (carCollider.isThatLevel2 == false && PposChanget == true && carCollider.isThatMT == false && carCollider.reback_Obs == true && resetPposChanget == false)
         {
-            Debug.Log("toimiiko?");
+            //Debug.Log("toimiiko?");
             PposChanget = false;
             Player.transform.position = new Vector3(0f, 0.6529999f, -1.024994f);
             IsTutorialEnded = false;

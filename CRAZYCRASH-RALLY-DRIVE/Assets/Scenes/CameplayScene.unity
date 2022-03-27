@@ -29438,7 +29438,9 @@ MonoBehaviour:
   Reback_JerryCans: []
   Reback_A_JerryCans: []
   Trees: []
+  pauseSetup: 1
   isGamePaused: 0
+  isGiveUp: 0
   A_Obs_vectors: []
   A_TB_vectors: []
   A_Jerry_vectors: []
@@ -41357,7 +41359,9 @@ MonoBehaviour:
   Reback_JerryCans: []
   Reback_A_JerryCans: []
   Trees: []
+  pauseSetup: 1
   isGamePaused: 0
+  isGiveUp: 0
   A_Obs_vectors: []
   A_TB_vectors: []
   A_Jerry_vectors: []
@@ -69182,6 +69186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19bfabc861c1cfc46838accd7dec9eda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HealthPointsScrollBar: {fileID: 0}
 --- !u!1 &1208267485
 GameObject:
   m_ObjectHideFlags: 0
@@ -76200,7 +76205,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1317922653}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 517513895}
+        m_TargetAssemblyTypeName: MapControll, Assembly-CSharp
+        m_MethodName: PressedGiveUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1317922653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76290,6 +76307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreNumText: {fileID: 1319008718}
+  numBer: 0
   IsThatStart: 1
 --- !u!114 &1319008718
 MonoBehaviour:
@@ -78008,7 +78026,9 @@ MonoBehaviour:
   Reback_JerryCans: []
   Reback_A_JerryCans: []
   Trees: []
+  pauseSetup: 1
   isGamePaused: 0
+  isGiveUp: 0
   A_Obs_vectors: []
   A_TB_vectors: []
   A_Jerry_vectors: []
@@ -78745,6 +78765,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72c79df5eba6d8047a654d868a6fdc72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ScoreNumText: {fileID: 1319008715}
+  FuelMeter: {fileID: 1072289778}
+  HealthBar: {fileID: 1206378097}
   forwardSpeed: 2
   turnStrenght: 90
   turnInput: 0
@@ -83759,6 +83782,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb53c31ae1e1c14796c0967c3ac6407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MainCamera: {fileID: 1591088144}
+  StartCamera: {fileID: 1947999576}
+  scoreCanvas: {fileID: 1525589125}
   IsGameStarted: 0
   GameStartForMapControll: 0
 --- !u!114 &1431691169
