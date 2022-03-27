@@ -9,6 +9,8 @@ public class ScoreControll : MonoBehaviour
     private Text ScoreNumText;
     private PlayerMovement playerMove;
     private GameObject Player;
+    private GameObject fCfrontCol;
+    private MapControll mapControll;
     public int numBer;
     public bool IsThatStart = true;
 
@@ -17,14 +19,15 @@ public class ScoreControll : MonoBehaviour
     void Start()
     {
         Player = GameObject.Find("Player");
-        //playerMove = Player.GetComponent<PlayerMovement>();
         carCollider = Player.GetComponent<CarCollider>();
+        fCfrontCol = GameObject.Find("FrontCollider");
+        mapControll = fCfrontCol.GetComponent<MapControll>();
         numBer = 000;
     }
     void Update()
     {
         IsplayerDead();
-        if (carCollider.playerCollide == false && carCollider.isPlayerMoving == true)
+        if (carCollider.playerCollide == false && carCollider.isPlayerMoving == true && mapControll.isGamePaused == false)
         {
             IncreaseScore();
         }

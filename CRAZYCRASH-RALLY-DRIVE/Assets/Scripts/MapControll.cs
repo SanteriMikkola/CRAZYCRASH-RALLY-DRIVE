@@ -76,6 +76,10 @@ public class MapControll : MonoBehaviour
 
     //public Vector3[] vector3s;
 
+    public bool pressedR = false;
+    public float time = 0f;
+    private float timeDelay = 3f;
+
     private Vector3[] Obs_vectors;
     private Vector3[] TB_vectors;
     private Vector3[] Jerry_vectors;
@@ -132,7 +136,6 @@ public class MapControll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         Esteet = GameObject.FindGameObjectsWithTag("Este");
         AavikonEsteet = GameObject.FindGameObjectsWithTag("AavikonEste");
         ToolBoxes = GameObject.FindGameObjectsWithTag("ToolBox");
@@ -171,7 +174,41 @@ public class MapControll : MonoBehaviour
             pauseSetup = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape) && isGamePaused == false && pauseSetup == false)
+        if (isGamePaused == true && pressedR == true)
+        {
+            time = time + 1f * Time.deltaTime;
+
+            if (time >= timeDelay)
+            {
+                PM_bg_image.enabled = false;
+                PM_fg_image.enabled = false;
+                PM_pauseT_image.enabled = false;
+                PM_resumeT_image.enabled = false;
+                PM_optionsT_image.enabled = false;
+                PM_giveupT_image.enabled = false;
+                for (int i = 0; i < PAUSE_images.Length; i++)
+                {
+                    PAUSE_images[i].enabled = false;
+                }
+                for (int i = 0; i < Resume_images.Length; i++)
+                {
+                    Resume_images[i].enabled = false;
+                }
+                for (int i = 0; i < Options_images.Length; i++)
+                {
+                    Options_images[i].enabled = false;
+                }
+                for (int i = 0; i < GiveUp_images.Length; i++)
+                {
+                    GiveUp_images[i].enabled = false;
+                }
+                isGamePaused = false;
+                time = 0f;
+                pressedR = false;
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape) && isGamePaused == false && pauseSetup == false && carCollider.playerCollide == false)
         {
             isGamePaused = true;
             PM_bg_image.enabled = true;
@@ -642,39 +679,13 @@ public class MapControll : MonoBehaviour
 
     public void PressedResume()
     {
-        if (isGamePaused == true)
-        {
-            isGamePaused = false;
-            PM_bg_image.enabled = false;
-            PM_fg_image.enabled = false;
-            PM_pauseT_image.enabled = false;
-            PM_resumeT_image.enabled = false;
-            PM_optionsT_image.enabled = false;
-            PM_giveupT_image.enabled = false;
-            for (int i = 0; i < PAUSE_images.Length; i++)
-            {
-                PAUSE_images[i].enabled = false;
-            }
-            for (int i = 0; i < Resume_images.Length; i++)
-            {
-                Resume_images[i].enabled = false;
-            }
-            for (int i = 0; i < Options_images.Length; i++)
-            {
-                Options_images[i].enabled = false;
-            }
-            for (int i = 0; i < GiveUp_images.Length; i++)
-            {
-                GiveUp_images[i].enabled = false;
-            }
-        }
+        pressedR = true;
     }
 
     public void PressedGiveUp()
     {
         if (isGamePaused == true)
         {
-            isGamePaused = false;
             PM_bg_image.enabled = false;
             PM_fg_image.enabled = false;
             PM_pauseT_image.enabled = false;
@@ -699,65 +710,10 @@ public class MapControll : MonoBehaviour
             }
         }
 
-        fBoxCollider.enabled = true;
-        bCollider.transform.position = new Vector3(0, 0, -8.069992f);
-        fCollider.transform.position = new Vector3(0, 3.18f, 23f);
-        AreaVector1 = new Vector3(0f, 3.18f, 23f);
-        AreaVector2 = new Vector3(0f, 3.18f, 55f);
-        startButtonS.GameStartForMapControll = true;
-        CposChanget = false;
+        
+        CposChanget = true;
 
-        for (int i = 0; i < Reback_Obs.Length; i++)
-        {
-            Reback_Obs[i].SetActive(true);
-
-            var esteComponent = Reback_Obs[i].gameObject.GetComponent<Este>();
-
-            //esteComponent.activateMesh = true;
-            esteComponent.isColliderUnActive = false;
-            esteComponent.reActivate = true;
-        }
-        for (int i = 0; i < Reback_ToolBoxes.Length; i++)
-        {
-            Reback_ToolBoxes[i].SetActive(true);
-
-            var TBComponent = Reback_ToolBoxes[i].gameObject.GetComponent<ToolBox>();
-
-            //esteComponent.activateMesh = true;
-            TBComponent.reBackTB = true;
-        }
-        for (int i = 0; i < Reback_JerryCans.Length; i++)
-        {
-            Reback_JerryCans[i].SetActive(true);
-
-            var JerryComponent = Reback_JerryCans[i].gameObject.GetComponent<JerryCan>();
-
-            //esteComponent.activateMesh = true;
-            JerryComponent.rebackJerry = true;
-        }
-        for (int i = 0; i < Trees.Length; i++)
-        {
-            Trees[i].SetActive(true);
-
-            var treeControlComponent = Trees[i].gameObject.GetComponent<TreeControll>();
-
-            //esteComponent.activateMesh = true;
-            treeControlComponent.ActiveTrees();
-        }
-        /*for (int i = 0; i < startTrees.Length; i++)
-        {
-            startTrees[i].SetActive(true);
-
-            var treeControlComponent = startTrees[i].gameObject.GetComponent<TreeControll>();
-
-            //esteComponent.activateMesh = true;
-            treeControlComponent.ActiveSTrees();
-        }*/
-        Esteet = GameObject.FindGameObjectsWithTag("Este");
-        JerryCans = GameObject.FindGameObjectsWithTag("JerryCan");
-        ToolBoxes = GameObject.FindGameObjectsWithTag("ToolBox");
-        //carCollider.reback_Obs = false;
-        //return;
+        isGamePaused = false;
         isGiveUp = true;
     }
 }
