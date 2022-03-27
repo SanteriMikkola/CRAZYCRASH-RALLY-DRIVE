@@ -102,6 +102,7 @@ public class CarController : MonoBehaviour
 
         if (mapControll.isGiveUp == true)
         {
+            turnInput = 0f;
             carCollider.isEstePosRandomized = false;
             carCollider.reback_Obs = true;
             carCollider.isThatLevel2 = false;
@@ -109,6 +110,7 @@ public class CarController : MonoBehaviour
             //Debug.Log("toimiiko?");
             PposChanget = false;
             Player.transform.position = new Vector3(0f, 0.6529999f, -1.024994f);
+            
             IsTutorialEnded = false;
             /*Vector3 targetPoint = (playerRotateF.transform.position);
             Player.transform.LookAt(targetPoint);*/
@@ -126,6 +128,8 @@ public class CarController : MonoBehaviour
                 Player.transform.Rotate(0, (transform.localRotation.eulerAngles.y * -1), 0f);
                 //transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, (transform.localRotation.eulerAngles.y * -1) * Time.deltaTime, 0f));
             }
+            Vector3 targetPoint = (playerRotateF.transform.position);
+            Player.transform.LookAt(targetPoint);
 
             //startButtonS.GameStartForMapControll = true;
             resetPposChanget = true;
