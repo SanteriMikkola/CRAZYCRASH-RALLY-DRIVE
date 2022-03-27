@@ -130,7 +130,7 @@ public class Fuel_Controll : MonoBehaviour
         }
     }*/
 
-    IEnumerator JerryCanReverseFullHealth()
+    public IEnumerator JerryCanReverseFullHealth()
     {
         //carCollider.isThatFullHealthReverse = true;
         /*if (carCollider.jerryCanPicked == true)

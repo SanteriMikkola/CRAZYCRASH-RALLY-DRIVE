@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class HP_Controll : MonoBehaviour
 {
     private GameObject HealthPoint;
-    private Scrollbar HealthPointsScrollBar;
+    [HideInInspector]
+    public Scrollbar HealthPointsScrollBar;
     private GameObject Player;
     private PlayerMovement playerMove;
     private CarCollider carCollider;
