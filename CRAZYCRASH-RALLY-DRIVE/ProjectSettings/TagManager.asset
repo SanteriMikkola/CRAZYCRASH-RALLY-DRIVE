@@ -25,6 +25,10 @@ TagManager:
   - StartRocks
   - Grass
   - LittleRock
+  - Car
+  - EquippedCar
+  - RightFrontWheel
+  - LeftFrontWheel
   layers:
   - Default
   - TransparentFX

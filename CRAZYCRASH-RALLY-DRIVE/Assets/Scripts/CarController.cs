@@ -16,6 +16,7 @@ public class CarController : MonoBehaviour
     private ScoreControll scoreControll;
 
     private GameObject playerRotateF;
+    private GameObject playerRotateF_A;
     private GameObject frontCcollider;
     private MapControll mapControll;
 
@@ -27,6 +28,10 @@ public class CarController : MonoBehaviour
 
     private GameObject startTreeDestroyer;
     private StartTrees startTreesS;
+
+    private GameObject MenuController;
+    private MenuController menuController;
+    private GameObject Cars;
 
     public float forwardSpeed = 2f;
     //public float maxSpeed = 50f;
@@ -60,6 +65,7 @@ public class CarController : MonoBehaviour
     {
 
         playerRotateF = GameObject.Find("playerRotationF");
+        playerRotateF_A = GameObject.Find("playerRotationF_A");
         Kamera = GameObject.Find("Main Camera");
         Player = GameObject.Find("Player");
         Sphere = GameObject.Find("Sphere");
@@ -79,10 +85,13 @@ public class CarController : MonoBehaviour
         mapControll = frontCcollider.GetComponent<MapControll>();
         startTreeDestroyer = GameObject.Find("StarTreeDestroyer");
         startTreesS = startTreeDestroyer.GetComponent<StartTrees>();
+        MenuController = GameObject.Find("MenuController");
+        menuController = MenuController.GetComponent<MenuController>();
+
         rB.transform.parent = null;
 
         aloitusTienLoppu = new Vector3(0f, 0f, 17.5f);
-        aavikonLoppu = new Vector3(0f, 400f, 109.5f);
+        aavikonLoppu = new Vector3(0f, 400f, 125.3f);
     }
 
     // Update is called once per frame
@@ -95,8 +104,14 @@ public class CarController : MonoBehaviour
         maxinumRotationR = 38f;
         //transform.position = rB.transform.position;
 
+        if (menuController.isThatGarage == true)
+        {
+            Player.transform.position = new Vector3(0f, 0.6529999f, -1.024994f);
+        }
+
         if (mapControll.isGamePaused == true)
         {
+            carCollider.playersBoxCollider.enabled = false;
             forwardSpeed = 0f;
             turnInput = 0f;
         }
@@ -294,6 +309,8 @@ public class CarController : MonoBehaviour
             if (Player.transform.position.z >= aavikonLoppu.z && Player.transform.position.y >= aavikonLoppu.y)
             {
                 turnLock = true;
+                Vector3 targetPoint = (playerRotateF_A.transform.position);
+                Player.transform.LookAt(targetPoint);
             }
         }
     }

@@ -221,6 +221,7 @@ public class MapControll : MonoBehaviour
                 CountDownText.enabled = false;
                 
                 isGamePaused = false;
+                carCollider.playersBoxCollider.enabled = true;
                 time = 0f;
                 countfloat = 4f;
                 pressedR = false;

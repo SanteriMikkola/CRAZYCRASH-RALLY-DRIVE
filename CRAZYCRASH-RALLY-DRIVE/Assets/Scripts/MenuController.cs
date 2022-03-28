@@ -14,6 +14,9 @@ public class MenuController : MonoBehaviour
     public GameObject GarageMenu;
     public GameObject scoreCanvas;
 
+    [HideInInspector]
+    public bool isThatGarage = false;
+
     public void Start()
     {
     }
@@ -27,6 +30,7 @@ public class MenuController : MonoBehaviour
         GarageCamera.SetActive(false);
         GarageMenu.SetActive(false);
         scoreCanvas.SetActive(false);
+        isThatGarage = false;
     }
     public void MainM()
     {
@@ -37,6 +41,7 @@ public class MenuController : MonoBehaviour
         StartMenu.SetActive(false);
         GarageCamera.SetActive(false);
         GarageMenu.SetActive(false);
+        isThatGarage = false;
     }
     public void Garage()
     {
@@ -47,6 +52,7 @@ public class MenuController : MonoBehaviour
         GarageCamera.SetActive(true);
         GarageMenu.SetActive(true);
         scoreCanvas.SetActive(false);
+        isThatGarage = true;
     }
     
     public void ScoreCanvas()

@@ -51,7 +51,7 @@ public class PlayerColor : MonoBehaviour
     void Start()
     {
 
-        Player = GameObject.Find("Car");
+        Player = GameObject.FindGameObjectWithTag("EquippedCar");
         playerRenderer = Player.GetComponent<MeshRenderer>();
         //playerMove = Player.GetComponent<PlayerMove>();
 
