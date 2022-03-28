@@ -11,7 +11,8 @@ public class CarCollider : MonoBehaviour
     private GameObject SpheRe;
     //private GameObject[] Wheels;
 
-    private BoxCollider playersBoxCollider;
+    [HideInInspector]
+    public BoxCollider playersBoxCollider;
     //public CapsuleCollider[] WheelColliders;
     private SphereCollider SphereCollider;
 
