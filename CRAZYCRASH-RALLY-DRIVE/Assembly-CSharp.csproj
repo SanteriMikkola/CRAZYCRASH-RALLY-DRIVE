@@ -83,6 +83,7 @@
     <Compile Include="Assets\Scripts\ScoreControll.cs" />
     <Compile Include="Assets\Scripts\RockControll.cs" />
     <Compile Include="Assets\Scripts\StartButton.cs" />
+    <Compile Include="Assets\Scripts\GarageControll.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

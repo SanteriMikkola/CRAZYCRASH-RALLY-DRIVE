@@ -60,6 +60,8 @@ public class MapControll : MonoBehaviour
     private Image[] Options_images;
     private GameObject GiveUp;
     private Image[] GiveUp_images;
+    private GameObject CountDown;
+    private Text CountDownText;
 
     public bool pauseSetup = true;
     public bool isGamePaused = false;
@@ -79,6 +81,7 @@ public class MapControll : MonoBehaviour
     public bool pressedR = false;
     public float time = 0f;
     private float timeDelay = 3f;
+    private float countfloat = 4f;
 
     private Vector3[] Obs_vectors;
     private Vector3[] TB_vectors;
@@ -156,6 +159,7 @@ public class MapControll : MonoBehaviour
             Resume = GameObject.Find("Resume");
             Options = GameObject.Find("Options");
             GiveUp = GameObject.Find("GiveUp");
+            CountDown = GameObject.Find("CountDown");
 
             PM_bg_image = PM_bg.GetComponent<Image>();
             PM_fg_image = PM_fg.GetComponent<Image>();
@@ -170,40 +174,55 @@ public class MapControll : MonoBehaviour
             Resume_images = Resume.GetComponentsInChildren<Image>();
             Options_images = Options.GetComponentsInChildren<Image>();
             GiveUp_images = GiveUp.GetComponentsInChildren<Image>();
+            CountDownText = CountDown.GetComponent<Text>();
 
             pauseSetup = false;
         }
 
         if (isGamePaused == true && pressedR == true)
         {
+            PM_fg_image.enabled = false;
+            PM_pauseT_image.enabled = false;
+            PM_resumeT_image.enabled = false;
+            PM_optionsT_image.enabled = false;
+            PM_giveupT_image.enabled = false;
+            for (int i = 0; i < PAUSE_images.Length; i++)
+            {
+                PAUSE_images[i].enabled = false;
+            }
+            for (int i = 0; i < Resume_images.Length; i++)
+            {
+                Resume_images[i].enabled = false;
+            }
+            for (int i = 0; i < Options_images.Length; i++)
+            {
+                Options_images[i].enabled = false;
+            }
+            for (int i = 0; i < GiveUp_images.Length; i++)
+            {
+                GiveUp_images[i].enabled = false;
+            }
+
+            CountDownText.enabled = true;
+
+            int countInt;
+
+            countInt = (int)countfloat;
+
+            CountDownText.text = countInt.ToString();
+
+            countfloat = countfloat - 1f * Time.deltaTime;
             time = time + 1f * Time.deltaTime;
+
 
             if (time >= timeDelay)
             {
                 PM_bg_image.enabled = false;
-                PM_fg_image.enabled = false;
-                PM_pauseT_image.enabled = false;
-                PM_resumeT_image.enabled = false;
-                PM_optionsT_image.enabled = false;
-                PM_giveupT_image.enabled = false;
-                for (int i = 0; i < PAUSE_images.Length; i++)
-                {
-                    PAUSE_images[i].enabled = false;
-                }
-                for (int i = 0; i < Resume_images.Length; i++)
-                {
-                    Resume_images[i].enabled = false;
-                }
-                for (int i = 0; i < Options_images.Length; i++)
-                {
-                    Options_images[i].enabled = false;
-                }
-                for (int i = 0; i < GiveUp_images.Length; i++)
-                {
-                    GiveUp_images[i].enabled = false;
-                }
+                CountDownText.enabled = false;
+                
                 isGamePaused = false;
                 time = 0f;
+                countfloat = 4f;
                 pressedR = false;
             }
         }

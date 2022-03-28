@@ -98,6 +98,7 @@ public class CarController : MonoBehaviour
         if (mapControll.isGamePaused == true)
         {
             forwardSpeed = 0f;
+            turnInput = 0f;
         }
 
         if (mapControll.isGiveUp == true)
@@ -217,7 +218,7 @@ public class CarController : MonoBehaviour
             }*/
         }
 
-        if (IsTutorialEnded == true && turnLock == false)
+        if (IsTutorialEnded == true && turnLock == false && mapControll.isGamePaused == false)
         {
             turnInput = Input.GetAxis("Horizontal");
         }
