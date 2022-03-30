@@ -36,9 +36,9 @@ public class PlayerColor : MonoBehaviour
     public bool IsChangeEnded = false;
 
     [HideInInspector]
-    public bool changeNormalcolor = false;
+    public bool changeNormalcolor = true;
     [HideInInspector]
-    public bool changeNcolor = false;
+    public bool changeNcolor = true;
 
     //public float waitPlayer1 = 0f;
     //public float waitPlayer2 = 2f;
@@ -76,7 +76,7 @@ public class PlayerColor : MonoBehaviour
         }*/
         playerRenderer = Player.GetComponent<MeshRenderer>();
 
-        if (garageControll.isThatOldCar == true && changeNormalcolor == false)
+        if (garageControll.isThatOldCar == true && changeNormalcolor == false)  //oldC
         {
             Rn = 0.149f;
             Gn = 0.164f;
@@ -93,7 +93,7 @@ public class PlayerColor : MonoBehaviour
 
             changeNormalcolor = true;
         }
-        if (garageControll.isThatOldCar == false && changeNcolor == false)
+        if (garageControll.isThatOldCar == false && changeNcolor == false)  //defaultC
         {
             Rn = 1f;
             Gn = 1f;

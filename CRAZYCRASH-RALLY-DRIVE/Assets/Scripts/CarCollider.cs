@@ -9,7 +9,12 @@ public class CarCollider : MonoBehaviour
     private GameObject Player;
     private GameObject Kamera;
     private GameObject SpheRe;
+    private GameObject playerRotateF;
     //private GameObject[] Wheels;
+    public GameObject FuelMeter;
+    private Fuel_Controll fuelControll;
+
+    private GameObject fuelHelper;
 
     [HideInInspector]
     public BoxCollider playersBoxCollider;
@@ -43,9 +48,13 @@ public class CarCollider : MonoBehaviour
         Player = GameObject.Find("Player");
         //Wheels = GameObject.FindGameObjectsWithTag("Wheel");
         SpheRe = GameObject.Find("Sphere");
+        playerRotateF = GameObject.Find("playerRotationF");
         carController = Player.GetComponent<CarController>();
         playersBoxCollider = Player.GetComponent<BoxCollider>();
         SphereCollider = SpheRe.GetComponent<SphereCollider>();
+        fuelControll = FuelMeter.GetComponent<Fuel_Controll>();
+
+        fuelHelper = GameObject.FindGameObjectWithTag("fuelHelper");
 
         playerColor = Player.GetComponent<PlayerColor>();
         Kamera = GameObject.Find("Main Camera");
@@ -197,13 +206,18 @@ public class CarCollider : MonoBehaviour
 
         }
 
-        if (collider.gameObject.CompareTag("HighWay"))
+        if (collider.gameObject.CompareTag("RotateHelper"))
         {
+            Vector3 targetPoint = (playerRotateF.transform.position);
+            Player.transform.LookAt(targetPoint);
+        }
+        if (collider.gameObject.CompareTag("fuelHelper"))
+        {
+            StartCoroutine(fuelControll.JerryCanReverseFullHealth());
 
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            var boxCol = fuelHelper.GetComponent<BoxCollider>();
 
-            //startButtonS.StartLevel2();
-
+            boxCol.enabled = false;
         }
     }
 
