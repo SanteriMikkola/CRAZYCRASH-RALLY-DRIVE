@@ -19,30 +19,38 @@ public class PlayerColor : MonoBehaviour
     private GameObject MainPlayer;
     private CarCollider carCollider;
 
+    public GameObject Garage;
+    private GarageControll garageControll;
+
     [SerializeField]
-    private float Rn;
+    private float Rn = 1f;
     [SerializeField]
-    private float Gn;
+    private float Gn = 1f;
     [SerializeField]
-    private float Bn;
+    private float Bn = 1f;
     [SerializeField]
-    private float An;
+    private float An = 1f;
 
     public bool IsThatNormalColor = true;
     public bool TrueOrFalse = false;
     public bool IsChangeEnded = false;
 
+    [HideInInspector]
+    public bool changeNormalcolor = false;
+    [HideInInspector]
+    public bool changeNcolor = false;
+
     //public float waitPlayer1 = 0f;
     //public float waitPlayer2 = 2f;
 
     [SerializeField]
-    private float R;
+    private float R = 0.52f;
     [SerializeField]
-    private float G;
+    private float G = 0.52f;
     [SerializeField]
-    private float B;
+    private float B = 0.66f;
     [SerializeField]
-    private float A;
+    private float A = 0.58f;
 
     float time = 0.5f;
     float timeDelay = 1.5f;
@@ -51,16 +59,57 @@ public class PlayerColor : MonoBehaviour
     void Start()
     {
 
-        Player = GameObject.FindGameObjectWithTag("EquippedCar");
-        playerRenderer = Player.GetComponent<MeshRenderer>();
+
         //playerMove = Player.GetComponent<PlayerMove>();
 
         MainPlayer = GameObject.Find("Player");
         carCollider = MainPlayer.GetComponent<CarCollider>();
+        Player = GameObject.FindGameObjectWithTag("EquippedCar");
+        garageControll = Garage.GetComponent<GarageControll>();
     }
 
     void Update()
     {
+        /*if (garageControll.changeCarColor == false)
+        {
+            Player = GameObject.FindGameObjectWithTag("EquippedCar");
+        }*/
+        playerRenderer = Player.GetComponent<MeshRenderer>();
+
+        if (garageControll.isThatOldCar == true && changeNormalcolor == false)
+        {
+            Rn = 0.149f;
+            Gn = 0.164f;
+            Bn = 0.560f;
+            An = 1f;
+
+            var block = new MaterialPropertyBlock();
+
+            playerNormalColor = new Color(Rn, Gn, Bn, An);
+            playerNewColor = new Color(R, G, B, A);
+
+            block.SetColor("_BaseColor", playerNormalColor);
+            playerRenderer.SetPropertyBlock(block);
+
+            changeNormalcolor = true;
+        }
+        if (garageControll.isThatOldCar == false && changeNcolor == false)
+        {
+            Rn = 1f;
+            Gn = 1f;
+            Bn = 1f;
+            An = 1f;
+
+            var block = new MaterialPropertyBlock();
+
+            playerNormalColor = new Color(Rn, Gn, Bn, An);
+            playerNewColor = new Color(R, G, B, A);
+
+            block.SetColor("_BaseColor", playerNormalColor);
+            playerRenderer.SetPropertyBlock(block);
+            changeNcolor = true;
+        }
+
         playerNormalColor = new Color(Rn, Gn, Bn, An);
         playerNewColor = new Color(R, G, B, A);
 

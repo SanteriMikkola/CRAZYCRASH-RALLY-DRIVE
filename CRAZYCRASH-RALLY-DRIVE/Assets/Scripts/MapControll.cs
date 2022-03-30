@@ -95,11 +95,11 @@ public class MapControll : MonoBehaviour
 
     //public GameObject[] Testi;
 
-    public Vector3 AreaVector1 = new Vector3(0f, 3.18f, 23f);
-    public Vector3 AreaVector2 = new Vector3(0f, 3.18f, 55f);
+    public Vector3 AreaVector1 = new Vector3(0f, 3.18f, 5f);
+    public Vector3 AreaVector2 = new Vector3(0f, 3.18f, 37f);
 
-    public Vector3 A_AreaVector1 = new Vector3(0f, 3.18f, 23f);
-    public Vector3 A_AreaVector2 = new Vector3(0f, 3.18f, 55f);
+    public Vector3 A_AreaVector1 = new Vector3(0f, 3.18f, 5f);
+    public Vector3 A_AreaVector2 = new Vector3(0f, 3.18f, 37f);
 
     private bool isObjectsPicked = false;
 
@@ -219,7 +219,7 @@ public class MapControll : MonoBehaviour
             {
                 PM_bg_image.enabled = false;
                 CountDownText.enabled = false;
-                
+
                 isGamePaused = false;
                 carCollider.playersBoxCollider.enabled = true;
                 time = 0f;
@@ -259,9 +259,9 @@ public class MapControll : MonoBehaviour
         {
             fBoxCollider.enabled = false;
             bCollider.transform.position = new Vector3(0, 802.6f, -40.06f);
-            fCollider.transform.position = new Vector3(0, 802.6f, 23f);
-            AreaVector1 = new Vector3(0f, 802.6f, 23f);
-            AreaVector2 = new Vector3(0f, 802.6f, 55f);
+            fCollider.transform.position = new Vector3(0, 802.6f, 5f);
+            AreaVector1 = new Vector3(0f, 802.6f, 5f);
+            AreaVector2 = new Vector3(0f, 802.6f, 37f);
             startButtonS.GameStartForMapControll = true;
             CposChanget = false;
 
@@ -275,9 +275,9 @@ public class MapControll : MonoBehaviour
         {
             fBoxCollider.enabled = true;
             bCollider.transform.position = new Vector3(0, 0, -8.069992f);
-            fCollider.transform.position = new Vector3(0, 3.18f, 23f);
-            AreaVector1 = new Vector3(0f, 3.18f, 23f);
-            AreaVector2 = new Vector3(0f, 3.18f, 55f);
+            fCollider.transform.position = new Vector3(0, 3.18f, 5f);
+            AreaVector1 = new Vector3(0f, 3.18f, 5f);
+            AreaVector2 = new Vector3(0f, 3.18f, 37f);
             startButtonS.GameStartForMapControll = true;
             CposChanget = false;
 
@@ -338,11 +338,11 @@ public class MapControll : MonoBehaviour
         {
             fBoxCollider.enabled = true;
             bCollider.transform.position = new Vector3(0, 402.06f, -8.069992f);
-            fCollider.transform.position = new Vector3(0, 402.81f, 23f);
-            AreaVector1 = new Vector3(0f, 402.81f, 23f);
-            AreaVector2 = new Vector3(0f, 402.81f, 55f);
-            A_AreaVector1 = new Vector3(0f, 3.18f, 23f);
-            A_AreaVector2 = new Vector3(0f, 3.18f, 55f);
+            fCollider.transform.position = new Vector3(0, 402.81f, 5f);
+            AreaVector1 = new Vector3(0f, 402.81f, 5f);
+            AreaVector2 = new Vector3(0f, 402.81f, 37f);
+            A_AreaVector1 = new Vector3(0f, 3.18f, 5f);
+            A_AreaVector2 = new Vector3(0f, 3.18f, 37f);
             startButtonS.GameStartForMapControll = true;
             CposChanget = true;
 
@@ -553,8 +553,8 @@ public class MapControll : MonoBehaviour
             isObjectsPicked = true;
         }
         playerCollidedFcollider = false;
-        AreaVector1.z = AreaVector1.z + 29f;
-        AreaVector2.z = AreaVector2.z + 29f;
+        AreaVector1.z = AreaVector1.z + 32f;
+        AreaVector2.z = AreaVector2.z + 32f;
         //PickedObjects = new GameObject[ii];
         //Esteet.CopyTo(PickedObjects, ii);
         /*for (int i = 0; i < Esteet.Length; i++)
@@ -677,10 +677,10 @@ public class MapControll : MonoBehaviour
             isObjectsPicked = true;
         }
         playerCollidedFcollider = false;
-        AreaVector1.z = AreaVector1.z + 29f;
-        AreaVector2.z = AreaVector2.z + 29f;
-        A_AreaVector1.z = A_AreaVector1.z + 29f;
-        A_AreaVector2.z = A_AreaVector2.z + 29f;
+        AreaVector1.z = AreaVector1.z + 32f;
+        AreaVector2.z = AreaVector2.z + 32f;
+        A_AreaVector1.z = A_AreaVector1.z + 32f;
+        A_AreaVector2.z = A_AreaVector2.z + 32f;
     }
 
     private void MoottoriTiePositionCheck()
@@ -693,8 +693,8 @@ public class MapControll : MonoBehaviour
             isObjectsPicked = true;
         }
         playerCollidedFcollider = false;
-        AreaVector1.z = AreaVector1.z + 29f;
-        AreaVector2.z = AreaVector2.z + 29f;
+        AreaVector1.z = AreaVector1.z + 32f;
+        AreaVector2.z = AreaVector2.z + 32f;
     }
 
     public void PressedResume()
@@ -730,7 +730,7 @@ public class MapControll : MonoBehaviour
             }
         }
 
-        
+
         CposChanget = true;
 
         isGamePaused = false;

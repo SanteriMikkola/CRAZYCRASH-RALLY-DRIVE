@@ -29,6 +29,7 @@ TagManager:
   - EquippedCar
   - RightFrontWheel
   - LeftFrontWheel
+  - Wheel
   layers:
   - Default
   - TransparentFX
