@@ -33,6 +33,9 @@ public class CarController : MonoBehaviour
     private MenuController menuController;
     private GameObject Cars;
 
+    public GameObject Garage;
+    private GarageControll garageControll;
+
     public float forwardSpeed = 2f;
     //public float maxSpeed = 50f;
     public float turnStrenght = 90f;
@@ -52,6 +55,9 @@ public class CarController : MonoBehaviour
     public bool resetPposChanget = false;
 
 
+    [HideInInspector]
+    public bool wheelsReady = false;
+
     private float maxinumRotationL;
     private float maxinumRotationR;
 
@@ -69,10 +75,10 @@ public class CarController : MonoBehaviour
         Kamera = GameObject.Find("Main Camera");
         Player = GameObject.Find("Player");
         Sphere = GameObject.Find("Sphere");
-        leftFrontWheelGameOb = GameObject.Find("LeftFrontWheel");
+        /*leftFrontWheelGameOb = GameObject.Find("LeftFrontWheel");
         rightFrontWheelGameOb = GameObject.Find("RightFrontWheel");
         leftFrontWheel = leftFrontWheelGameOb.GetComponent<Transform>();
-        rightFrontWheel = rightFrontWheelGameOb.GetComponent<Transform>();
+        rightFrontWheel = rightFrontWheelGameOb.GetComponent<Transform>();*/
         rB = Sphere.GetComponent<Rigidbody>();
         startButtonB = GameObject.Find("StartButton");
         startButtonS = startButtonB.GetComponent<StartButton>();
@@ -87,6 +93,7 @@ public class CarController : MonoBehaviour
         startTreesS = startTreeDestroyer.GetComponent<StartTrees>();
         MenuController = GameObject.Find("MenuController");
         menuController = MenuController.GetComponent<MenuController>();
+        garageControll = Garage.GetComponent<GarageControll>();
 
         rB.transform.parent = null;
 
@@ -97,6 +104,16 @@ public class CarController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (garageControll.changeCarColor == false && wheelsReady == false)
+        {
+            Debug.Log("Hurrei!");
+            leftFrontWheelGameOb = GameObject.Find("LeftFrontWheel");
+            rightFrontWheelGameOb = GameObject.Find("RightFrontWheel");
+            leftFrontWheel = leftFrontWheelGameOb.GetComponent<Transform>();
+            rightFrontWheel = rightFrontWheelGameOb.GetComponent<Transform>();
+            wheelsReady = true;
+        }
+
         forwardSpeed = 2f;
         Kamera.transform.position = new Vector3(rB.position.x, rB.position.y + 5.310003f, rB.position.z - 8.23f);
         //Kamera.transform.Translate(Vector3.forward * Time.deltaTime * 3.6f, Space.World);
@@ -126,7 +143,7 @@ public class CarController : MonoBehaviour
             //Debug.Log("toimiiko?");
             PposChanget = false;
             Player.transform.position = new Vector3(0f, 0.6529999f, -1.024994f);
-            
+            carCollider.playersBoxCollider.enabled = true;
             IsTutorialEnded = false;
             /*Vector3 targetPoint = (playerRotateF.transform.position);
             Player.transform.LookAt(targetPoint);*/
