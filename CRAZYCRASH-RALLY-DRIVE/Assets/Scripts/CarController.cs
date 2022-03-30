@@ -23,6 +23,8 @@ public class CarController : MonoBehaviour
     public GameObject FuelMeter;
     private Fuel_Controll fuelControll;
 
+    private GameObject fuelHelper;
+
     public GameObject HealthBar;
     private HP_Controll hpControll;
 
@@ -75,6 +77,7 @@ public class CarController : MonoBehaviour
         Kamera = GameObject.Find("Main Camera");
         Player = GameObject.Find("Player");
         Sphere = GameObject.Find("Sphere");
+        fuelHelper = GameObject.FindGameObjectWithTag("fuelHelper");
         /*leftFrontWheelGameOb = GameObject.Find("LeftFrontWheel");
         rightFrontWheelGameOb = GameObject.Find("RightFrontWheel");
         leftFrontWheel = leftFrontWheelGameOb.GetComponent<Transform>();
@@ -106,7 +109,7 @@ public class CarController : MonoBehaviour
     {
         if (garageControll.changeCarColor == false && wheelsReady == false)
         {
-            Debug.Log("Hurrei!");
+            
             leftFrontWheelGameOb = GameObject.Find("LeftFrontWheel");
             rightFrontWheelGameOb = GameObject.Find("RightFrontWheel");
             leftFrontWheel = leftFrontWheelGameOb.GetComponent<Transform>();
@@ -121,10 +124,10 @@ public class CarController : MonoBehaviour
         maxinumRotationR = 38f;
         //transform.position = rB.transform.position;
 
-        if (menuController.isThatGarage == true)
+        /*if (menuController.isThatGarage == true)
         {
             Player.transform.position = new Vector3(0f, 0.6529999f, -1.024994f);
-        }
+        }*/
 
         if (mapControll.isGamePaused == true)
         {
@@ -142,6 +145,8 @@ public class CarController : MonoBehaviour
             carCollider.isThatMT = false;
             //Debug.Log("toimiiko?");
             PposChanget = false;
+            var boxCol = fuelHelper.GetComponent<BoxCollider>();
+            boxCol.enabled = true;
             Player.transform.position = new Vector3(0f, 0.6529999f, -1.024994f);
             carCollider.playersBoxCollider.enabled = true;
             IsTutorialEnded = false;

@@ -25,8 +25,8 @@ public class GarageControll : MonoBehaviour
     private Material matChanger;
 
     public MeshFilter playerMF;
-    public MeshFilter defaultMF;
-    public MeshFilter oldMF;
+    public Mesh defaultMF;
+    public Mesh oldMF;
 
     public int index = 0;
     public int a = 0;
@@ -57,6 +57,11 @@ public class GarageControll : MonoBehaviour
         playerColor = Player.GetComponent<PlayerColor>();
         Cars = GameObject.FindGameObjectsWithTag("Car");
 
+        Wheels = GameObject.FindGameObjectWithTag("Wheel");
+        PlayersChild = GameObject.FindGameObjectWithTag("EquippedCar");
+
+        playerRotateF = GameObject.Find("playerRotationF");
+
         pressedRight = false;
         pressedLeft = false;
         pressedCarB = true;
@@ -69,12 +74,6 @@ public class GarageControll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        carsFinded = false;
-
-        Wheels = GameObject.FindGameObjectWithTag("Wheel");
-        PlayersChild = GameObject.FindGameObjectWithTag("EquippedCar");
-
-        playerRotateF = GameObject.Find("playerRotationF");
 
         if (Cars.Length >= 2)
         {
@@ -83,22 +82,21 @@ public class GarageControll : MonoBehaviour
 
         if (matSetUp == true && carsFinded == true)
         {
-            defaultMF = Cars[a].GetComponent<MeshFilter>();
+            defaultMF = Cars[a].GetComponent<MeshFilter>().mesh;
             a++;
-            oldMF = Cars[a].GetComponent<MeshFilter>();
+            oldMF = Cars[a].GetComponent<MeshFilter>().mesh;
             a = 0;
 
-            matChanger = Cars[a].GetComponent<Renderer>().material;
-            defaultCarMat = matChanger;
+            defaultCarMat = Cars[a].GetComponent<MeshRenderer>().material;
             a++;
-            matChanger = Cars[a].GetComponent<Renderer>().material;
-            oldCarMat = matChanger;
+            oldCarMat = Cars[a].GetComponent<MeshRenderer>().material;
+            //Debug.Log("A");
             matSetUp = false;
         }
 
         if (pressedRight == true && pressedLeft == false && indexBLock == false)
         {
-            if (index < 1)
+            if (index == 0)
             {
                 index++;
                 Cars[index].SetActive(true);
@@ -132,12 +130,15 @@ public class GarageControll : MonoBehaviour
                         playerColor.changeNcolor = false;
                         changeCarColor = true;
 
-                        playerMF.mesh = defaultMF.mesh;
+                        playerMF.mesh = defaultMF;
                         playerRenderer.material = defaultCarMat;
 
                         PlayersChild.transform.position = new Vector3(0f, 0.93f, -1.4f);
 
-                        //PlayersChild.transform.Rotate(0f, 0f, 180f);
+                        Debug.Log("defaltcar");
+
+                        PlayersChild.transform.Rotate(0f, 0f, 180f);
+
                         /*PlayersChild.SetActive(false);
                         Player.transform.DetachChildren();
                         Player.transform.SetParent(gameObject.transform);
@@ -161,13 +162,14 @@ public class GarageControll : MonoBehaviour
                         playerColor.changeNormalcolor = false;
                         changeCarColor = true;
 
-                        playerMF.mesh = oldMF.mesh;
+                        playerMF.mesh = oldMF;
                         playerRenderer.material = oldCarMat;
+
                         PlayersChild.transform.position = new Vector3(0f, 1f, -0.32f);
 
-                        //PlayersChild.transform.Rotate(0f, 0f, -180f);
+                        Debug.Log("oldcar");
 
-
+                        PlayersChild.transform.Rotate(0f, 0f, -180f);
 
                         /*PlayersChild.SetActive(false);
                         Player.transform.DetachChildren();

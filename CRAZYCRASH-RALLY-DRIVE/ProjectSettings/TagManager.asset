@@ -30,6 +30,8 @@ TagManager:
   - RightFrontWheel
   - LeftFrontWheel
   - Wheel
+  - RotateHelper
+  - fuelHelper
   layers:
   - Default
   - TransparentFX

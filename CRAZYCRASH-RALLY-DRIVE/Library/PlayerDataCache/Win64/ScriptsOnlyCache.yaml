@@ -74,6 +74,8 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    Unity.Timeline.Editor.dll:
+    - TimelineProjectSettings
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -885,7 +887,7 @@ ScriptsOnlyBuild:
     className: ChromaticAberration
   - hash:
       serializedVersion: 2
-      Hash: f8101a816935e3afedbe560c4ec6abcf
+      Hash: 952ab5614d918b9203c9d8943c06fff9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GarageControll
@@ -1227,7 +1229,7 @@ ScriptsOnlyBuild:
     className: Entity
   - hash:
       serializedVersion: 2
-      Hash: 6fd33ee3249fbeed22fd69c0ff42cd16
+      Hash: 66b84ba66035d8818523692b167cdee4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CarCollider
@@ -1583,4 +1585,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/NooraScene.unity
   - Assets/Scenes/CameplayScene.unity
-  playerPath: E:/ProjectsBuilds/CRAZYCRASH-RALLY-DRIVE_build9/CRAZYCRASH-RALLY-DRIVE.exe
+  playerPath: E:/ProjectsBuilds/CRAZYCRASH-RALLY-DRIVE_build10/CRAZYCRASH-RALLY-DRIVE.exe
