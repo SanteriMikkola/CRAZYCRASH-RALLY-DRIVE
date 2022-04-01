@@ -45,7 +45,7 @@ public class CarController : MonoBehaviour
 
     private GameObject leftFrontWheelGameOb, rightFrontWheelGameOb;
     private Transform leftFrontWheel, rightFrontWheel;
-    public float wheelTurn = 25f;
+    public float wheelTurn = 30f;
 
     public bool maxTurn = false;
     public bool IsThatFirstStart = true;

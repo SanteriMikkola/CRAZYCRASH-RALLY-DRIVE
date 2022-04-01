@@ -99,7 +99,7 @@ public class GarageControll : MonoBehaviour
             if (index == 0)
             {
                 index++;
-                Cars[index].SetActive(true);
+                //Cars[index].SetActive(true);
                 ChangeChoose();
             }
 
@@ -110,7 +110,7 @@ public class GarageControll : MonoBehaviour
             if (index >= 1)
             {
                 index--;
-                Cars[index].SetActive(true);
+                //Cars[index].SetActive(true);
                 ChangeChoose();
             }
 
@@ -130,14 +130,14 @@ public class GarageControll : MonoBehaviour
                         playerColor.changeNcolor = false;
                         changeCarColor = true;
 
-                        playerMF.mesh = defaultMF;
+                        /*playerMF.mesh = defaultMF;
                         playerRenderer.material = defaultCarMat;
 
                         PlayersChild.transform.position = new Vector3(0f, 0.93f, -1.4f);
 
                         Debug.Log("defaltcar");
 
-                        PlayersChild.transform.Rotate(0f, 0f, 180f);
+                        PlayersChild.transform.Rotate(0f, 0f, 180f);*/
 
                         /*PlayersChild.SetActive(false);
                         Player.transform.DetachChildren();
@@ -162,14 +162,14 @@ public class GarageControll : MonoBehaviour
                         playerColor.changeNormalcolor = false;
                         changeCarColor = true;
 
-                        playerMF.mesh = oldMF;
+                        /*playerMF.mesh = oldMF;
                         playerRenderer.material = oldCarMat;
 
                         PlayersChild.transform.position = new Vector3(0f, 1f, -0.32f);
 
                         Debug.Log("oldcar");
 
-                        PlayersChild.transform.Rotate(0f, 0f, -180f);
+                        PlayersChild.transform.Rotate(0f, 0f, -180f);*/
 
                         /*PlayersChild.SetActive(false);
                         Player.transform.DetachChildren();
@@ -232,7 +232,7 @@ public class GarageControll : MonoBehaviour
 
     public void PressedRightA()
     {
-        Cars[index].SetActive(false);
+        //Cars[index].SetActive(false);
         pressedRight = true;
         pressedLeft = false;
         indexBLock = false;
@@ -240,7 +240,7 @@ public class GarageControll : MonoBehaviour
 
     public void PressedLeftA()
     {
-        Cars[index].SetActive(false);
+        //Cars[index].SetActive(false);
         pressedLeft = true;
         pressedRight = false;
         indexBLock = true;
