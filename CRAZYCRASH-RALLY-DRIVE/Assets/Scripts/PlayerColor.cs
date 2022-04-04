@@ -70,17 +70,17 @@ public class PlayerColor : MonoBehaviour
 
     void Update()
     {
-        /*if (garageControll.changeCarColor == false)
+        if (garageControll.changeCarColor == false)
         {
             Player = GameObject.FindGameObjectWithTag("EquippedCar");
-        }*/
+        }
         playerRenderer = Player.GetComponent<MeshRenderer>();
 
         if (garageControll.isThatOldCar == true && changeNormalcolor == false)  //oldC
         {
-            Rn = 0.149f;
-            Gn = 0.164f;
-            Bn = 0.560f;
+            Rn = 1f;
+            Gn = 1f;
+            Bn = 1f;
             An = 1f;
 
             var block = new MaterialPropertyBlock();

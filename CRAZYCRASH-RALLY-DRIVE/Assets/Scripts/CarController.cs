@@ -311,8 +311,17 @@ public class CarController : MonoBehaviour
             }*/
         }
 
-        leftFrontWheel.localRotation = Quaternion.Euler(leftFrontWheel.localRotation.eulerAngles.x, (turnInput * wheelTurn), leftFrontWheel.localRotation.eulerAngles.z);
-        rightFrontWheel.localRotation = Quaternion.Euler(rightFrontWheel.localRotation.eulerAngles.x, (turnInput * wheelTurn), rightFrontWheel.localRotation.eulerAngles.z);
+        if (garageControll.isThatOldCar == false)
+        {
+            leftFrontWheel.localRotation = Quaternion.Euler(leftFrontWheel.localRotation.eulerAngles.x, (turnInput * wheelTurn), leftFrontWheel.localRotation.eulerAngles.z);
+            rightFrontWheel.localRotation = Quaternion.Euler(rightFrontWheel.localRotation.eulerAngles.x, (turnInput * wheelTurn), rightFrontWheel.localRotation.eulerAngles.z);
+        }
+        if (garageControll.isThatOldCar == true)
+        {
+            leftFrontWheel.localRotation = Quaternion.Euler(leftFrontWheel.localRotation.eulerAngles.x, ((turnInput * wheelTurn) + 90f), leftFrontWheel.localRotation.eulerAngles.z);
+            rightFrontWheel.localRotation = Quaternion.Euler(rightFrontWheel.localRotation.eulerAngles.x, ((turnInput * wheelTurn) + 90f), rightFrontWheel.localRotation.eulerAngles.z);
+        }
+
 
 
     }
