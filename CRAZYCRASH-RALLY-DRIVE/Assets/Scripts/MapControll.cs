@@ -25,6 +25,12 @@ public class MapControll : MonoBehaviour
     public GameObject[] Reback_JerryCans;
     public GameObject[] Reback_A_JerryCans;
 
+    private GameObject[] Grass;
+    private GameObject[] A_Grass;
+
+    public GameObject[] Reback_Grass;
+    public GameObject[] Reback_A_Grass;
+
 
     public GameObject[] Trees;
     private GameObject[] startTrees;
@@ -86,10 +92,12 @@ public class MapControll : MonoBehaviour
     private Vector3[] Obs_vectors;
     private Vector3[] TB_vectors;
     private Vector3[] Jerry_vectors;
+    public Vector3[] Grass_vectors;
 
     public Vector3[] A_Obs_vectors;
     public Vector3[] A_TB_vectors;
     public Vector3[] A_Jerry_vectors;
+    public Vector3[] A_Grass_vectors;
 
     //public GameObject[] PickedObjects;
 
@@ -129,6 +137,10 @@ public class MapControll : MonoBehaviour
         Reback_A_ToolBoxes = GameObject.FindGameObjectsWithTag("A_ToolBox");
         Reback_JerryCans = GameObject.FindGameObjectsWithTag("JerryCan");
         Reback_A_JerryCans = GameObject.FindGameObjectsWithTag("A_JerryCan");
+
+        Reback_Grass = GameObject.FindGameObjectsWithTag("Grass");
+        Reback_A_Grass = GameObject.FindGameObjectsWithTag("A_Crass");
+
         Trees = GameObject.FindGameObjectsWithTag("TreeWithMesh");
         startTrees = GameObject.FindGameObjectsWithTag("StartTrees");
 
@@ -145,6 +157,8 @@ public class MapControll : MonoBehaviour
         A_ToolBoxes = GameObject.FindGameObjectsWithTag("A_ToolBox");
         JerryCans = GameObject.FindGameObjectsWithTag("JerryCan");
         A_JerryCans = GameObject.FindGameObjectsWithTag("A_JerryCan");
+        Grass = GameObject.FindGameObjectsWithTag("Grass");
+        A_Grass = GameObject.FindGameObjectsWithTag("A_Crass");
 
         if (startButtonS.IsGameStarted == true && pauseSetup == true)
         {
@@ -318,6 +332,15 @@ public class MapControll : MonoBehaviour
                 //esteComponent.activateMesh = true;
                 treeControlComponent.ActiveTrees();
             }
+            for (int i = 0; i < Reback_Grass.Length; i++)
+            {
+                Reback_Grass[i].SetActive(true);
+
+                var GrassComponent = Reback_Grass[i].gameObject.GetComponent<CrassControll>();
+
+                //esteComponent.activateMesh = true;
+                GrassComponent.rebackGrass = true;
+            }
             /*for (int i = 0; i < startTrees.Length; i++)
             {
                 startTrees[i].SetActive(true);
@@ -330,6 +353,7 @@ public class MapControll : MonoBehaviour
             Esteet = GameObject.FindGameObjectsWithTag("Este");
             JerryCans = GameObject.FindGameObjectsWithTag("JerryCan");
             ToolBoxes = GameObject.FindGameObjectsWithTag("ToolBox");
+            Grass = GameObject.FindGameObjectsWithTag("Grass");
             //carCollider.reback_Obs = false;
             //return;
         }
@@ -383,9 +407,19 @@ public class MapControll : MonoBehaviour
                 //esteComponent.activateMesh = true;
                 treeControlComponent.ActiveTrees();
             }
+            for (int i = 0; i < Reback_A_Grass.Length; i++)
+            {
+                Reback_A_Grass[i].SetActive(true);
+
+                var GrassComponent = Reback_A_Grass[i].gameObject.GetComponent<CrassControll>();
+
+                //esteComponent.activateMesh = true;
+                GrassComponent.rebackGrass = true;
+            }
             AavikonEsteet = GameObject.FindGameObjectsWithTag("AavikonEste");
             A_JerryCans = GameObject.FindGameObjectsWithTag("A_JerryCan");
             A_ToolBoxes = GameObject.FindGameObjectsWithTag("A_ToolBox");
+            A_Grass = GameObject.FindGameObjectsWithTag("A_Crass");
             //carCollider.reback_Obs = false;
         }
 
@@ -454,6 +488,7 @@ public class MapControll : MonoBehaviour
         Obs_vectors = new Vector3[Esteet.Length];
         TB_vectors = new Vector3[ToolBoxes.Length];
         Jerry_vectors = new Vector3[JerryCans.Length];
+        Grass_vectors = new Vector3[Grass.Length];
 
         //Debug.Log("GameStartForMapControll!");
 
@@ -550,6 +585,36 @@ public class MapControll : MonoBehaviour
                 }
             }
 
+            for (int i = 0; i < Grass.Length; i++)
+            {
+                Grass_vectors[i].Set(Grass[i].transform.position.x, Grass[i].transform.position.y, Grass[i].transform.position.z);
+
+                if (Grass_vectors[i].z > AreaVector1.z && Grass_vectors[i].z < AreaVector2.z)
+                {
+                    //ii++;
+                    //PickedObjects = new GameObject[ii];
+
+                    var esteComponent = Grass[i].gameObject.GetComponent<CrassControll>();
+
+                    esteComponent.activeGrass = true;
+
+                    /*var objecti = Esteet[i];
+
+                    //Debug.Log(objecti);
+                    Debug.Log(Testi.Length);
+
+                    PickedObjects.SetValue(objecti, iii);*/
+
+                    //objecti = null;
+                    /*
+                    System.Array.Copy(Esteet, i, PickedObjects, iii, 1);
+                    Debug.Log(PickedObjects);
+                    //System.Array.ConstrainedCopy(PickedObjects, iii, Esteet, ii, 1);
+                    iii++;*/
+                    //Esteet.CopyTo(PickedObjects, ii);
+                }
+            }
+
             isObjectsPicked = true;
         }
         playerCollidedFcollider = false;
@@ -578,6 +643,7 @@ public class MapControll : MonoBehaviour
         A_Obs_vectors = new Vector3[AavikonEsteet.Length];
         A_TB_vectors = new Vector3[A_ToolBoxes.Length];
         A_Jerry_vectors = new Vector3[A_JerryCans.Length];
+        A_Grass_vectors = new Vector3[A_Grass.Length];
 
         //Debug.Log(A_Obs_vectors.Length);
 
@@ -656,6 +722,36 @@ public class MapControll : MonoBehaviour
                     var esteComponent = A_JerryCans[i].gameObject.GetComponent<JerryCan>();
 
                     esteComponent.activeJerryCan = true;
+
+                    /*var objecti = Esteet[i];
+
+                    //Debug.Log(objecti);
+                    Debug.Log(Testi.Length);
+
+                    PickedObjects.SetValue(objecti, iii);*/
+
+                    //objecti = null;
+                    /*
+                    System.Array.Copy(Esteet, i, PickedObjects, iii, 1);
+                    Debug.Log(PickedObjects);
+                    //System.Array.ConstrainedCopy(PickedObjects, iii, Esteet, ii, 1);
+                    iii++;*/
+                    //Esteet.CopyTo(PickedObjects, ii);
+                }
+            }
+
+            for (int i = 0; i < A_Grass.Length; i++)
+            {
+                A_Grass_vectors[i].Set(A_Grass[i].transform.position.x, A_Grass[i].transform.position.y, A_Grass[i].transform.position.z);
+
+                if (A_Grass_vectors[i].z > A_AreaVector1.z && A_Grass_vectors[i].z < A_AreaVector2.z)
+                {
+                    //ii++;
+                    //PickedObjects = new GameObject[ii];
+
+                    var esteComponent = A_Grass[i].gameObject.GetComponent<CrassControll>();
+
+                    esteComponent.activeGrass = true;
 
                     /*var objecti = Esteet[i];
 

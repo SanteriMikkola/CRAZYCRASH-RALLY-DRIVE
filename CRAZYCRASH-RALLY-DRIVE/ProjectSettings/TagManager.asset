@@ -24,7 +24,6 @@ TagManager:
   - HighWay
   - StartRocks
   - Grass
-  - LittleRock
   - Car
   - EquippedCar
   - RightFrontWheel
@@ -32,6 +31,7 @@ TagManager:
   - Wheel
   - RotateHelper
   - fuelHelper
+  - A_Crass
   layers:
   - Default
   - TransparentFX
