@@ -239,7 +239,7 @@ public class CarController : MonoBehaviour
             //rb.AddForce(stuckForce, ForceMode.Impulse);
         }
 
-        if (turnLock == true && IsTutorialEnded == false)
+        if (/*turnLock == true &&*/ IsTutorialEnded == false)
         {
             turnInput = 0;
             /*if (transform.localRotation.eulerAngles.y != 0f)
@@ -339,9 +339,9 @@ public class CarController : MonoBehaviour
             }
             if (Player.transform.position.z >= aavikonLoppu.z && Player.transform.position.y >= aavikonLoppu.y)
             {
-                turnLock = true;
-                Vector3 targetPoint = (playerRotateF_A.transform.position);
-                Player.transform.LookAt(targetPoint);
+                //turnLock = true;
+                //Vector3 targetPoint = (playerRotateF_A.transform.position);
+                //Player.transform.LookAt(targetPoint);
             }
         }
     }
