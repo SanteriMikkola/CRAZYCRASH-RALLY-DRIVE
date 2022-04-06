@@ -32,6 +32,8 @@ TagManager:
   - RotateHelper
   - fuelHelper
   - A_Crass
+  - Safe
+  - A_Safe
   layers:
   - Default
   - TransparentFX

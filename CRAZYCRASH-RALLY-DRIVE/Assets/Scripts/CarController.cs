@@ -110,7 +110,7 @@ public class CarController : MonoBehaviour
     {
         if (garageControll.changeCarColor == false && wheelsReady == false)
         {
-            
+
             leftFrontWheelGameOb = GameObject.Find("LeftFrontWheel");
             rightFrontWheelGameOb = GameObject.Find("RightFrontWheel");
             leftFrontWheel = leftFrontWheelGameOb.GetComponent<Transform>();
@@ -129,6 +129,53 @@ public class CarController : MonoBehaviour
         {
             Player.transform.position = new Vector3(0f, 0.6529999f, -1.024994f);
         }*/
+
+        if (carCollider.isPlayerDead)
+        {
+            mapControll.PressedGiveUp();
+            turnInput = 0f;
+            carCollider.isEstePosRandomized = false;
+            carCollider.reback_Obs = true;
+            carCollider.isThatLevel2 = false;
+            carCollider.isThatMT = false;
+            //Debug.Log("toimiiko?");
+            PposChanget = false;
+            var boxCol = fuelHelper.GetComponent<BoxCollider>();
+            boxCol.enabled = true;
+            Player.transform.position = new Vector3(0f, 0.6529999f, -1.024994f);
+            carCollider.playersBoxCollider.enabled = true;
+            IsTutorialEnded = false;
+            /*Vector3 targetPoint = (playerRotateF.transform.position);
+            Player.transform.LookAt(targetPoint);*/
+            rB.transform.position = new Vector3(0f, 0.6059999f, 0.4799957f);
+            Kamera.transform.position = new Vector3(rB.position.x, rB.position.y + 5.310003f, rB.position.z - 8.23f);
+
+            if (transform.localRotation.eulerAngles.y != 0f)
+            {
+                /*if (convertedTinput == false)
+                {
+                    turnInput = turnInput * -1f;
+                    convertedTinput = true;
+                }*/
+
+                Player.transform.Rotate(0, (transform.localRotation.eulerAngles.y * -1), 0f);
+                //transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, (transform.localRotation.eulerAngles.y * -1) * Time.deltaTime, 0f));
+            }
+            Vector3 targetPoint = (playerRotateF.transform.position);
+            Player.transform.LookAt(targetPoint);
+
+            //startButtonS.GameStartForMapControll = true;
+            resetPposChanget = true;
+            startTreesS.ActiveS_Rocks();
+            startTreesS.ActiveS_Trees();
+            scoreControll.numBer = 0;
+            StartCoroutine(fuelControll.JerryCanReverseFullHealth());
+            hpControll.HealthPointsScrollBar.value = 0f;
+            carCollider.osuma = 0;
+            startButtonS.GiveUp();
+            mapControll.isGiveUp = false;
+            carCollider.isPlayerDead = false;
+        }
 
         if (mapControll.isGamePaused == true)
         {
