@@ -39,6 +39,7 @@ public class CarController : MonoBehaviour
     private GarageControll garageControll;
 
     public float forwardSpeed = 2f;
+    public float targetSpeed = 2f;
     //public float maxSpeed = 50f;
     public float turnStrenght = 90f;
     public float turnInput;
@@ -117,7 +118,7 @@ public class CarController : MonoBehaviour
             wheelsReady = true;
         }
 
-        forwardSpeed = 2f;
+        forwardSpeed = targetSpeed;
         Kamera.transform.position = new Vector3(rB.position.x, rB.position.y + 5.310003f, rB.position.z - 8.23f);
         //Kamera.transform.Translate(Vector3.forward * Time.deltaTime * 3.6f, Space.World);
         maxinumRotationL = 322f;
@@ -235,7 +236,7 @@ public class CarController : MonoBehaviour
         {
             carCollider.isPlayerMoving = false;
             //playerGotL = true;
-            forwardSpeed = forwardSpeed - 1f;
+            forwardSpeed = forwardSpeed / 2f;
             //rb.AddForce(stuckForce, ForceMode.Impulse);
         }
 

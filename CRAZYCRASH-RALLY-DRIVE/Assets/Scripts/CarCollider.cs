@@ -173,6 +173,10 @@ public class CarCollider : MonoBehaviour
             isThatLevel2 = false;
             reback_Obs = false;
             isThatMT = true;
+
+            //RaiseSpeed
+            carController.targetSpeed++;
+
             /*reback_Obs = false;
             isThatLevel2 = true;*/
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -188,6 +192,10 @@ public class CarCollider : MonoBehaviour
             reback_Obs = true;
             isThatLevel2 = false;
             isThatMT = false;
+
+            //RaiseSpeed
+            carController.targetSpeed++;
+
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
             //startButtonS.StartLevel2();
