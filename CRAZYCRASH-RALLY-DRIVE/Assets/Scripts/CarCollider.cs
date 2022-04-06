@@ -27,11 +27,17 @@ public class CarCollider : MonoBehaviour
     public bool isPlayerMoving = true;
     public bool toolBoxPicked = false;
     public bool jerryCanPicked = false;
+    public bool safePicked = false;
+    [HideInInspector]
     public bool isThatFullHealthReverse;
+    [HideInInspector]
     public bool isThatLevel2 = false;
+    [HideInInspector]
     public bool reback_Obs = false;
+    [HideInInspector]
     public bool isThatMT = false;
 
+    [HideInInspector]
     public bool isEstePosRandomized = false;
 
     public int osuma = 0;
@@ -39,6 +45,16 @@ public class CarCollider : MonoBehaviour
     public float fuel = 100f;
 
     public int maxOsumat = 5;
+
+    public int safesPicked = 0;
+
+    public int money = 0;
+
+    public int moneyRandomer;
+
+    private int index = 0;
+
+    private bool moneyRandomized = false;
 
     private Vector3 playerPos_4z;
 
@@ -70,6 +86,11 @@ public class CarCollider : MonoBehaviour
             carController.forwardSpeed = carController.forwardSpeed - 1f;
             //rb.AddForce(stuckForce, ForceMode.Impulse);
         }*/
+
+        if (isPlayerDead == true)
+        {
+            MoneyRandomize();
+        }
     }
 
     public void OnCollisionEnter(Collision collider)
@@ -111,9 +132,10 @@ public class CarCollider : MonoBehaviour
         if (osuma == maxOsumat)
         {
             isPlayerDead = true;
-            gameObject.SetActive(false);
-            Kamera.SetActive(false);
+            /*gameObject.SetActive(false);
+            Kamera.SetActive(false);*/
             playerCollide = false;
+            moneyRandomized = false;
         }
 
         if (collider.gameObject.CompareTag("ToolBox") && toolBoxPicked == false)
@@ -174,7 +196,6 @@ public class CarCollider : MonoBehaviour
             reback_Obs = false;
             isThatMT = true;
 
-            //RaiseSpeed
             carController.targetSpeed++;
 
             /*reback_Obs = false;
@@ -187,13 +208,12 @@ public class CarCollider : MonoBehaviour
 
         if (collider.gameObject.CompareTag("LevelEnd2"))
         {
-            Debug.Log("osuko?");
+            //Debug.Log("osuko?");
             isEstePosRandomized = false;
             reback_Obs = true;
             isThatLevel2 = false;
             isThatMT = false;
 
-            //RaiseSpeed
             carController.targetSpeed++;
 
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -227,6 +247,12 @@ public class CarCollider : MonoBehaviour
 
             boxCol.enabled = false;
         }
+
+        if (collider.gameObject.CompareTag("Safe"))
+        {
+            safePicked = true;
+            safesPicked++;
+        }
     }
 
     IEnumerator PlayerColliderOn()
@@ -249,5 +275,47 @@ public class CarCollider : MonoBehaviour
         var block = new MaterialPropertyBlock();
         block.SetColor("_BaseColor", playerColor.playerNormalColor);
         playerColor.playerRenderer.SetPropertyBlock(block);
+    }
+
+    private void MoneyRandomize()
+    {
+        if (!moneyRandomized)
+        {
+            while (index != safesPicked)
+            {
+                moneyRandomer = Random.Range(0, 101);
+
+                if (moneyRandomer >= 0 && moneyRandomer <= 35)
+                {
+                    money += 500;
+                    Debug.Log("500");
+                }
+                else if (moneyRandomer >= 36 && moneyRandomer <= 55)
+                {
+                    money += 750;
+                    Debug.Log("750");
+                }
+                else if (moneyRandomer >= 56 && moneyRandomer <= 75)
+                {
+                    money += 1000;
+                    Debug.Log("1000");
+                }
+                else if (moneyRandomer >= 76 && moneyRandomer <= 90)
+                {
+                    money += 1250;
+                    Debug.Log("1250");
+                }
+                else if (moneyRandomer >= 91 && moneyRandomer <= 100)
+                {
+                    money += 1500;
+                    Debug.Log("1500");
+                }
+
+                index++;
+            }
+            moneyRandomized = true;
+        }
+        safesPicked = 0;
+        index = 0;
     }
 }
