@@ -51,6 +51,7 @@ public class StartButton : MonoBehaviour
         IsGameStarted = true;
         GameStartForMapControll = true;
         playerRB.isKinematic = false;
+        carCollider.deadOrNot = false;
         //Kamera.SetActive(true);
         //StartMenuKamera.SetActive(false);
     }

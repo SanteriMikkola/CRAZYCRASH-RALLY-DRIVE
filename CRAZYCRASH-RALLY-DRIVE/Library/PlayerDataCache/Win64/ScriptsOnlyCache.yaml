@@ -4,20 +4,24 @@ ScriptsOnlyBuild:
     - CameraControll
     - CarCollider
     - CarController
+    - CrassControll
     - Este
     - FenceControll
     - FewRocksControll
     - Fuel_Controll
     - GarageControll
     - HP_Controll
+    - ItemsEffect
     - JerryCan
     - MapControll
     - MapControll_V2
     - MenuController
+    - MoneyScreen
     - NooraButton
     - ObstacleRandomizePosOffset
     - PlayerColor
     - RockControll
+    - Safe
     - ScoreControll
     - StartButton
     - StartTrees
@@ -166,55 +170,63 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4062}
     - Class: 114
-      Script: {instanceID: 4294}
+      Script: {instanceID: 4210}
     - Class: 114
-      Script: {instanceID: 4426}
+      Script: {instanceID: 4296}
     - Class: 114
-      Script: {instanceID: 4770}
+      Script: {instanceID: 4428}
     - Class: 114
-      Script: {instanceID: 4966}
+      Script: {instanceID: 4772}
     - Class: 114
-      Script: {instanceID: 4978}
+      Script: {instanceID: 4968}
     - Class: 114
-      Script: {instanceID: 5392}
+      Script: {instanceID: 4980}
     - Class: 114
-      Script: {instanceID: 5454}
+      Script: {instanceID: 5394}
     - Class: 114
-      Script: {instanceID: 5652}
+      Script: {instanceID: 5456}
     - Class: 114
-      Script: {instanceID: 5776}
+      Script: {instanceID: 5654}
     - Class: 114
-      Script: {instanceID: 6026}
+      Script: {instanceID: 5778}
     - Class: 114
-      Script: {instanceID: 6172}
+      Script: {instanceID: 6028}
     - Class: 114
-      Script: {instanceID: 6332}
+      Script: {instanceID: 6174}
     - Class: 114
-      Script: {instanceID: 6352}
+      Script: {instanceID: 6334}
     - Class: 114
-      Script: {instanceID: 6396}
+      Script: {instanceID: 6354}
     - Class: 114
-      Script: {instanceID: 6424}
+      Script: {instanceID: 6398}
     - Class: 114
-      Script: {instanceID: 6532}
+      Script: {instanceID: 6426}
     - Class: 114
-      Script: {instanceID: 6544}
+      Script: {instanceID: 6464}
     - Class: 114
-      Script: {instanceID: 6788}
+      Script: {instanceID: 6536}
     - Class: 114
-      Script: {instanceID: 6840}
+      Script: {instanceID: 6548}
     - Class: 114
-      Script: {instanceID: 6866}
+      Script: {instanceID: 6792}
     - Class: 114
-      Script: {instanceID: 7994}
+      Script: {instanceID: 6844}
     - Class: 114
-      Script: {instanceID: 8112}
+      Script: {instanceID: 6870}
     - Class: 114
-      Script: {instanceID: 8168}
+      Script: {instanceID: 6890}
     - Class: 114
-      Script: {instanceID: 8192}
+      Script: {instanceID: 7498}
     - Class: 114
-      Script: {instanceID: 8386}
+      Script: {instanceID: 8002}
+    - Class: 114
+      Script: {instanceID: 8120}
+    - Class: 114
+      Script: {instanceID: 8176}
+    - Class: 114
+      Script: {instanceID: 8200}
+    - Class: 114
+      Script: {instanceID: 8394}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -255,8 +267,6 @@ ScriptsOnlyBuild:
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -301,61 +311,61 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4180}
     - Class: 114
-      Script: {instanceID: 4310}
+      Script: {instanceID: 4312}
     - Class: 114
-      Script: {instanceID: 4478}
+      Script: {instanceID: 4480}
     - Class: 114
-      Script: {instanceID: 4582}
+      Script: {instanceID: 4584}
     - Class: 114
-      Script: {instanceID: 5296}
+      Script: {instanceID: 5298}
     - Class: 114
-      Script: {instanceID: 5326}
+      Script: {instanceID: 5328}
     - Class: 114
-      Script: {instanceID: 5342}
+      Script: {instanceID: 5344}
     - Class: 114
-      Script: {instanceID: 5392}
+      Script: {instanceID: 5394}
     - Class: 114
-      Script: {instanceID: 5398}
-    - Class: 114
-      Script: {instanceID: 5612}
+      Script: {instanceID: 5400}
     - Class: 114
       Script: {instanceID: 5614}
     - Class: 114
-      Script: {instanceID: 5632}
+      Script: {instanceID: 5616}
     - Class: 114
-      Script: {instanceID: 5896}
+      Script: {instanceID: 5634}
     - Class: 114
-      Script: {instanceID: 6026}
+      Script: {instanceID: 5898}
     - Class: 114
-      Script: {instanceID: 6162}
+      Script: {instanceID: 6028}
     - Class: 114
-      Script: {instanceID: 6250}
+      Script: {instanceID: 6164}
     - Class: 114
-      Script: {instanceID: 6256}
+      Script: {instanceID: 6252}
     - Class: 114
-      Script: {instanceID: 6364}
+      Script: {instanceID: 6258}
     - Class: 114
-      Script: {instanceID: 6406}
+      Script: {instanceID: 6366}
     - Class: 114
-      Script: {instanceID: 6454}
+      Script: {instanceID: 6408}
     - Class: 114
-      Script: {instanceID: 6532}
+      Script: {instanceID: 6456}
     - Class: 114
-      Script: {instanceID: 6544}
+      Script: {instanceID: 6536}
     - Class: 114
-      Script: {instanceID: 6654}
+      Script: {instanceID: 6548}
     - Class: 114
-      Script: {instanceID: 6816}
+      Script: {instanceID: 6658}
     - Class: 114
-      Script: {instanceID: 6948}
+      Script: {instanceID: 6820}
     - Class: 114
-      Script: {instanceID: 7008}
+      Script: {instanceID: 6954}
     - Class: 114
-      Script: {instanceID: 7700}
+      Script: {instanceID: 7014}
     - Class: 114
-      Script: {instanceID: 8030}
+      Script: {instanceID: 7708}
     - Class: 114
-      Script: {instanceID: 8284}
+      Script: {instanceID: 8038}
+    - Class: 114
+      Script: {instanceID: 8292}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -825,6 +835,12 @@ ScriptsOnlyBuild:
     className: TMP_ColorGradient
   - hash:
       serializedVersion: 2
+      Hash: 2a86cbd193d32039f2846cc487ec3216
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CrassControll
+  - hash:
+      serializedVersion: 2
       Hash: 908b3077da284d11de0450423ca1808e
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1083,7 +1099,7 @@ ScriptsOnlyBuild:
     className: ChannelMixer
   - hash:
       serializedVersion: 2
-      Hash: 39e16a0545e78c6225153e55f0b7dcd2
+      Hash: bb9ce337b554a322bcb9f35854898d7b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MapControll
@@ -1227,7 +1243,7 @@ ScriptsOnlyBuild:
     className: Entity
   - hash:
       serializedVersion: 2
-      Hash: 66b84ba66035d8818523692b167cdee4
+      Hash: c834544da4ef5d5e5f7f1b5a024ef5a8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CarCollider
@@ -1239,7 +1255,7 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerIndirectFloatField
   - hash:
       serializedVersion: 2
-      Hash: e8bc7df3de1326e6b1327537697d4a3e
+      Hash: 140fa00e588ebbfa65b83d53773886d7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CarController
@@ -1249,6 +1265,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerBitField
+  - hash:
+      serializedVersion: 2
+      Hash: 3aa1a1e014edeecc9f05d70cee7f07c4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Safe
   - hash:
       serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
@@ -1365,6 +1387,12 @@ ScriptsOnlyBuild:
     className: FilmGrain
   - hash:
       serializedVersion: 2
+      Hash: f6d9ba6994a65782d49c63e9c8949f00
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MoneyScreen
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1447,6 +1475,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 151559d64184c6274c423e8de96c7c7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ItemsEffect
   - hash:
       serializedVersion: 2
       Hash: 48982140c520cbca517d0f96b60a0ba9
@@ -1583,4 +1617,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/NooraScene.unity
   - Assets/Scenes/CameplayScene.unity
-  playerPath: E:/ProjectsBuilds/CRAZYCRASH-RALLY-DRIVE_build12/CRAZYCRASH-RALLY-DRIVE.exe
+  playerPath: E:/GitRepos_v2/CRAZYCRASH-RALLY-DRIVE/ProjectBuilds/Build1/CRAZYCRASH-RALLY-DRIVE.exe

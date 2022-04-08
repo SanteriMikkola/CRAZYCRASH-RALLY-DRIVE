@@ -16,8 +16,8 @@ public class ItemsEffect : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        upperPos = new Vector3(transform.position.x, 1.15f, transform.position.z);
-        downPos = new Vector3(transform.position.x, 0.85f, transform.position.z);
+        upperPos = new Vector3(transform.position.x, transform.position.y + 0.3f, transform.position.z);   //1.15f
+        downPos = new Vector3(transform.position.x, transform.position.y - 0.3f, transform.position.z);
 
         targetPos = upperPos;
 
