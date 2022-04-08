@@ -117,7 +117,7 @@ public class PlayerColor : MonoBehaviour
         {
             Change();
         }*/
-        if (carCollider.playerCollide == true)
+        if (carCollider.playerCollide == true && carCollider.isPlayerDead == false)
         {
             Change();
         }

@@ -137,11 +137,12 @@ public class CarController : MonoBehaviour
 
         if (carCollider.isPlayerDead)
         {
+            carCollider.playersBoxCollider.enabled = false;
             turnInput = 0f;
             forwardSpeed = 0f;
-            moneyScreenS.M_ScreenOpen();
+            //moneyScreenS.M_ScreenOpen();
 
-            if (moneyScreenS.screenOpened == true)
+            if (moneyScreenS.CloseScreen == true)
             {
                 mapControll.PressedGiveUp();
                 //turnInput = 0f;
@@ -182,11 +183,12 @@ public class CarController : MonoBehaviour
                 scoreControll.numBer = 0;
                 StartCoroutine(fuelControll.JerryCanReverseFullHealth());
                 hpControll.HealthPointsScrollBar.value = 0f;
-                carCollider.osuma = 0;
+                //carCollider.osuma = 0;
                 startButtonS.GiveUp();
                 mapControll.isGiveUp = false;
-                carCollider.isPlayerDead = false;
-                moneyScreenS.screenOpened = false;
+                //carCollider.isPlayerDead = false;
+                carCollider.AfterPlayerDead();
+                moneyScreenS.CloseScreen = false;
             }
 
         }
@@ -293,7 +295,7 @@ public class CarController : MonoBehaviour
             PposChanget = true;
         }
 
-        if (carCollider.playerCollide == true)
+        if (carCollider.playerCollide == true && carCollider.isPlayerDead == false)
         {
             carCollider.isPlayerMoving = false;
             //playerGotL = true;

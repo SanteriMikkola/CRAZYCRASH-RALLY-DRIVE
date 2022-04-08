@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CarCollider : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class CarCollider : MonoBehaviour
     private Fuel_Controll fuelControll;
 
     private GameObject fuelHelper;
+
+    private GameObject startMenuMoneyT;
+    private TextMeshProUGUI startMenuMoneyT_Text;
 
     [HideInInspector]
     public BoxCollider playersBoxCollider;
@@ -50,13 +54,22 @@ public class CarCollider : MonoBehaviour
 
     public int money = 0;
 
+    [HideInInspector]
+    public int moneyInSafe = 0;
+
+    [HideInInspector]
+    public int moneyPerRound = 0;
+
     public int moneyRandomer;
 
-    private int index = 0;
+    [HideInInspector]
+    public int index = 0;
 
     private bool moneyRandomized = false;
 
     private Vector3 playerPos_4z;
+
+    public bool deadOrNot = false;
 
     // Start is called before the first frame update
     void Start()
@@ -74,11 +87,15 @@ public class CarCollider : MonoBehaviour
 
         playerColor = Player.GetComponent<PlayerColor>();
         Kamera = GameObject.Find("Main Camera");
+
+        startMenuMoneyT = GameObject.Find("startMenuMoneyT");
+        startMenuMoneyT_Text = startMenuMoneyT.GetComponent<TextMeshProUGUI>();
+
     }
 
     public void Update()
     {
-
+        startMenuMoneyT_Text.text = money.ToString();
         /*if (playerCollide == true)
         {
             isPlayerMoving = false;
@@ -110,7 +127,35 @@ public class CarCollider : MonoBehaviour
             //StartCoroutine(CollidersOff());
             //transform.Translate(lowSpeed * Time.deltaTime * Vector3.forward, Space.World);
             //StartCoroutine(CollidersOn());
-            StartCoroutine(PlayerColliderOn());
+            if (osuma == maxOsumat)
+            {
+                isPlayerDead = true;
+                /*gameObject.SetActive(false);
+                Kamera.SetActive(false);*/
+                playerCollide = false;
+                moneyRandomized = false;
+            }
+
+            if (osuma != maxOsumat && deadOrNot == false)
+            {
+                StartCoroutine(PlayerColliderOn());
+            }
+
+
+            /*if (isPlayerDead)
+            {
+                playerCollide = false;
+                playersBoxCollider.enabled = true;
+
+                SphereCollider.enabled = true;
+                isPlayerMoving = true;
+
+                var block = new MaterialPropertyBlock();
+                block.SetColor("_BaseColor", playerColor.playerNormalColor);
+                playerColor.playerRenderer.SetPropertyBlock(block);
+                isPlayerDead = false;
+            }*/
+
         }
         if (collider.gameObject.CompareTag("AavikonEste") && playerCollide == false)
         {
@@ -127,16 +172,41 @@ public class CarCollider : MonoBehaviour
             //StartCoroutine(CollidersOff());
             //transform.Translate(lowSpeed * Time.deltaTime * Vector3.forward, Space.World);
             //StartCoroutine(CollidersOn());
-            StartCoroutine(PlayerColliderOn());
+            if (osuma == maxOsumat)
+            {
+                isPlayerDead = true;
+                /*gameObject.SetActive(false);
+                Kamera.SetActive(false);*/
+                playerCollide = false;
+                moneyRandomized = false;
+            }
+
+            if (osuma != maxOsumat && deadOrNot == false)
+            {
+                StartCoroutine(PlayerColliderOn());
+            }
+            /*if (isPlayerDead)
+            {
+                playerCollide = false;
+                playersBoxCollider.enabled = true;
+
+                SphereCollider.enabled = true;
+                isPlayerMoving = true;
+
+                var block = new MaterialPropertyBlock();
+                block.SetColor("_BaseColor", playerColor.playerNormalColor);
+                playerColor.playerRenderer.SetPropertyBlock(block);
+                isPlayerDead = false;
+            }*/
         }
-        if (osuma == maxOsumat)
+        /*if (osuma == maxOsumat)
         {
             isPlayerDead = true;
-            /*gameObject.SetActive(false);
-            Kamera.SetActive(false);*/
+            gameObject.SetActive(false);
+            Kamera.SetActive(false);
             playerCollide = false;
             moneyRandomized = false;
-        }
+        }*/
 
         if (collider.gameObject.CompareTag("ToolBox") && toolBoxPicked == false)
         {
@@ -281,33 +351,39 @@ public class CarCollider : MonoBehaviour
     {
         if (!moneyRandomized)
         {
+            moneyPerRound = 0;
             while (index != safesPicked)
             {
                 moneyRandomer = Random.Range(0, 101);
 
                 if (moneyRandomer >= 0 && moneyRandomer <= 35)
                 {
-                    money += 500;
+                    moneyInSafe = 500;
+                    moneyPerRound += moneyInSafe;
                     Debug.Log("500");
                 }
                 else if (moneyRandomer >= 36 && moneyRandomer <= 55)
                 {
-                    money += 750;
+                    moneyInSafe = 750;
+                    moneyPerRound += moneyInSafe;
                     Debug.Log("750");
                 }
                 else if (moneyRandomer >= 56 && moneyRandomer <= 75)
                 {
-                    money += 1000;
+                    moneyInSafe = 1000;
+                    moneyPerRound += moneyInSafe;
                     Debug.Log("1000");
                 }
                 else if (moneyRandomer >= 76 && moneyRandomer <= 90)
                 {
-                    money += 1250;
+                    moneyInSafe = 1250;
+                    moneyPerRound += moneyInSafe;
                     Debug.Log("1250");
                 }
                 else if (moneyRandomer >= 91 && moneyRandomer <= 100)
                 {
-                    money += 1500;
+                    moneyInSafe = 1500;
+                    moneyPerRound += moneyInSafe;
                     Debug.Log("1500");
                 }
 
@@ -315,7 +391,29 @@ public class CarCollider : MonoBehaviour
             }
             moneyRandomized = true;
         }
-        safesPicked = 0;
-        index = 0;
+        //safesPicked = 0;
+        //index = 0;
+    }
+
+
+    public void AfterPlayerDead()
+    {
+        playersBoxCollider.enabled = true;
+        /*WheelColliders[0].enabled = true;
+        WheelColliders[1].enabled = true;
+        WheelColliders[2].enabled = true;
+        WheelColliders[3].enabled = true;*/
+        SphereCollider.enabled = true;
+        isPlayerMoving = true;
+        //playerColor.playerRenderer.material.color = playerColor.playerNormalColor;
+        //playerColor.playerRenderer.material = playerColor.playerNormalColorMaterial;
+        //playerColor.playerRenderer.material.SetColor("_BaseColor", playerColor.playerNormalColor);
+        var block = new MaterialPropertyBlock();
+        block.SetColor("_BaseColor", playerColor.playerNormalColor);
+        playerColor.playerRenderer.SetPropertyBlock(block);
+        deadOrNot = true;
+        isPlayerDead = false;
+        playerCollide = false;
+        osuma = 0;
     }
 }
