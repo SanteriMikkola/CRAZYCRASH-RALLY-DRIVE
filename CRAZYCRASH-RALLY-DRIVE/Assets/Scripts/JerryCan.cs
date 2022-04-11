@@ -12,6 +12,8 @@ public class JerryCan : MonoBehaviour
     public bool activeJerryCan = false;
     public bool rebackJerry = false;
 
+    public bool disableJerryCan = false;
+
     private int i = 0;
 
     private void Start()
@@ -48,13 +50,25 @@ public class JerryCan : MonoBehaviour
             rebackJerry = false;
         }
 
-        if (activeJerryCan == true)
+        if (activeJerryCan == true && disableJerryCan == false)
         {
             gameObject.SetActive(true);
 
             while (i != meshRenderer.Length)
             {
                 meshRenderer[i].enabled = true;
+
+                i++;
+            }
+            i = 0;
+        }
+        if (activeJerryCan == false && disableJerryCan == true)
+        {
+            gameObject.SetActive(false);
+
+            while (i != meshRenderer.Length)
+            {
+                meshRenderer[i].enabled = false;
 
                 i++;
             }

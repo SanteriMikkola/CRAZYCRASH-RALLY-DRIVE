@@ -19,6 +19,8 @@ public class Este : MonoBehaviour
     public bool activateMesh = false;
     public bool reActivate = false;
 
+    public bool disableMesh = false;
+
     private GameObject[] Esteet;
 
 
@@ -32,10 +34,16 @@ public class Este : MonoBehaviour
     {
         Esteet = GameObject.FindGameObjectsWithTag("Este");
 
-        if (activateMesh == true)
+        if (activateMesh == true && disableMesh == false)
         {
             gameObject.SetActive(true);
             isColliderUnActive = false;
+        }
+
+        if (disableMesh == true && activateMesh == false)
+        {
+            gameObject.SetActive(false);
+            isColliderUnActive = true;
         }
 
     }
