@@ -13,6 +13,8 @@ public class Safe : MonoBehaviour
 
     public bool reBackSafe = false;
 
+    public bool disableSafe = false;
+
     private void Start()
     {
         meshRenderer = gameObject.GetComponent<MeshRenderer>();
@@ -33,10 +35,15 @@ public class Safe : MonoBehaviour
             reBackSafe = false;
         }
 
-        if (activeSafe == true)
+        if (activeSafe == true && disableSafe == false)
         {
             gameObject.SetActive(true);
             meshRenderer.enabled = true;
+        }
+        if (activeSafe == false && disableSafe == true)
+        {
+            gameObject.SetActive(false);
+            meshRenderer.enabled = false;
         }
     }
 

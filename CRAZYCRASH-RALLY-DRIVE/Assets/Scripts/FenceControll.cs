@@ -18,10 +18,16 @@ public class FenceControll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (esteS.activateMesh == true)
+        if (esteS.activateMesh == true && esteS.disableMesh == false)
         {
             gameObject.SetActive(true);
             meshRenderer.enabled = true;
+            //Destroy(gameObject);
+        }
+        if (esteS.activateMesh == false && esteS.disableMesh == true)
+        {
+            gameObject.SetActive(false);
+            meshRenderer.enabled = false;
             //Destroy(gameObject);
         }
 

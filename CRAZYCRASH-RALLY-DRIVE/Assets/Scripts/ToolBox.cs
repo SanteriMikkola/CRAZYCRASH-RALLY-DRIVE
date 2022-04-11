@@ -13,6 +13,8 @@ public class ToolBox : MonoBehaviour
 
     public bool reBackTB = false;
 
+    public bool disableToolBox = false;
+
     private void Start()
     {
         meshRenderer = gameObject.GetComponent<MeshRenderer>();
@@ -33,10 +35,15 @@ public class ToolBox : MonoBehaviour
             reBackTB = false;
         }
 
-        if (activeToolBox == true)
+        if (activeToolBox == true && disableToolBox == false)
         {
             gameObject.SetActive(true);
             meshRenderer.enabled = true;
+        }
+        if (activeToolBox == false && disableToolBox == true)
+        {
+            gameObject.SetActive(false);
+            meshRenderer.enabled = false;
         }
     }
 

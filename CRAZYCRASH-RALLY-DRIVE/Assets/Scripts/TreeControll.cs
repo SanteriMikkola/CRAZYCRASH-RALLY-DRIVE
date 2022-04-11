@@ -20,13 +20,13 @@ public class TreeControll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (esteS.reActivate == true)
+        if (esteS.reActivate == true)
         {
-            Debug.Log("Lol");   //kokeile treewithmesh tageillä!
+            //Debug.Log("Lol");   
             gameObject.SetActive(true);
             meshRenderer.enabled = true;
-            trunks.SetTrunkActive();
-        }*/
+            //trunks.SetTrunkActive();
+        }
 
         if (esteS.isColliderUnActive == true && esteS.reActivate == false)
         {
@@ -49,6 +49,13 @@ public class TreeControll : MonoBehaviour
         meshRenderer.enabled = false;
         //trunks.TrunkReset();
         esteS.reActivate = false;
+    }
+
+    public void DisableTrees()
+    {
+        gameObject.SetActive(false);
+        //meshRenderer.enabled = false;
+        //trunks.TrunkReset();
     }
 
     public void ActiveSTrees()

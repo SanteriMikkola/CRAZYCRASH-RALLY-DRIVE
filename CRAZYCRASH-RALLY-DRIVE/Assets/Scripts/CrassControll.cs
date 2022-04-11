@@ -13,6 +13,8 @@ public class CrassControll : MonoBehaviour
     public bool activeGrass = false;
     public bool rebackGrass = false;
 
+    public bool disableGrass = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,10 +36,15 @@ public class CrassControll : MonoBehaviour
             rebackGrass = false;
         }
 
-        if (activeGrass == true)
+        if (activeGrass == true && disableGrass == false)
         {
             gameObject.SetActive(true);
             meshRenderer.enabled = true;
+        }
+        if (activeGrass == false && disableGrass == true)
+        {
+            gameObject.SetActive(false);
+            meshRenderer.enabled = false;
         }
     }
 
