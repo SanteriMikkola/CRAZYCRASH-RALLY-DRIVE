@@ -34,6 +34,7 @@ TagManager:
   - A_Crass
   - Safe
   - A_Safe
+  - HighwayEste
   layers:
   - Default
   - TransparentFX
