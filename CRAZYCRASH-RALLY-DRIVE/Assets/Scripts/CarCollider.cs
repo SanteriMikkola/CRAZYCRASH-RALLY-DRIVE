@@ -15,6 +15,9 @@ public class CarCollider : MonoBehaviour
     public GameObject FuelMeter;
     private Fuel_Controll fuelControll;
 
+    public GameObject ScoreNumText;
+    private ScoreControll scoreControll;
+
     private GameObject fuelHelper;
 
     private GameObject startMenuMoneyT;
@@ -62,6 +65,8 @@ public class CarCollider : MonoBehaviour
 
     [HideInInspector]
     public int moneyPerRound = 0;
+    [HideInInspector]
+    public int moneyPerRound2 = 0;
 
     public int moneyRandomer;
 
@@ -74,6 +79,8 @@ public class CarCollider : MonoBehaviour
 
     public bool deadOrNot = false;
 
+    private bool scoreGet = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -85,6 +92,8 @@ public class CarCollider : MonoBehaviour
         playersBoxCollider = Player.GetComponent<BoxCollider>();
         SphereCollider = SpheRe.GetComponent<SphereCollider>();
         fuelControll = FuelMeter.GetComponent<Fuel_Controll>();
+
+        scoreControll = ScoreNumText.GetComponent<ScoreControll>();
 
         fuelHelper = GameObject.FindGameObjectWithTag("fuelHelper");
 
@@ -113,6 +122,7 @@ public class CarCollider : MonoBehaviour
         if (isPlayerDead == true)
         {
             MoneyRandomize();
+            ScoreMoney();
         }
     }
 
@@ -140,6 +150,7 @@ public class CarCollider : MonoBehaviour
                 Kamera.SetActive(false);*/
                 playerCollide = false;
                 moneyRandomized = false;
+                scoreGet = false;
             }
 
             if (osuma != maxOsumat && deadOrNot == false)
@@ -274,7 +285,7 @@ public class CarCollider : MonoBehaviour
 
             mapControllS.highwayIdentifier = true;
 
-            carController.targetSpeed++;
+            //carController.targetSpeed++;
 
             /*reback_Obs = false;
             isThatLevel2 = true;*/
@@ -294,7 +305,7 @@ public class CarCollider : MonoBehaviour
 
             mapControllS.highwayIdentifier = false;
 
-            carController.targetSpeed++;
+            carController.targetSpeed += 0.5f;
 
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
@@ -408,6 +419,21 @@ public class CarCollider : MonoBehaviour
         //index = 0;
     }
 
+    private void ScoreMoney()
+    {
+        if (!scoreGet)
+        {
+            moneyPerRound2 = 0;
+
+            int scoreMoney = (scoreControll.numBer / 50);
+
+            Debug.Log(scoreControll.numBer);
+
+            moneyPerRound2 += scoreMoney;
+
+            scoreGet = true;
+        }
+    }
 
     public void AfterPlayerDead()
     {

@@ -1357,4 +1357,197 @@ public class MapControll : MonoBehaviour
             GiveUp_images[i].enabled = true;
         }
     }
+
+    public void GiveUpMapController()
+    {
+        for (int i = 0; i < Esteet.Length; i++)
+        {
+            var esteComponent = Esteet[i].gameObject.GetComponent<Este>();
+
+            esteComponent.activateMesh = true;
+            esteComponent.disableMesh = false;
+        }
+        for (int i = 0; i < ToolBoxes.Length; i++)
+        {
+            var Component = ToolBoxes[i].gameObject.GetComponent<ToolBox>();
+
+            Component.activeToolBox = true;
+            Component.disableToolBox = false;
+        }
+        for (int i = 0; i < JerryCans.Length; i++)
+        {
+            var Component = JerryCans[i].gameObject.GetComponent<JerryCan>();
+
+            Component.activeJerryCan = true;
+            Component.disableJerryCan = false;
+        }
+        /*for (int i = 0; i < Trees.Length; i++)
+        {
+            var Component = Trees[i].gameObject.GetComponent<TreeControll>();
+
+            Component.DisableTrees();
+        }*/
+        for (int i = 0; i < Grass.Length; i++)
+        {
+            var Component = Grass[i].gameObject.GetComponent<CrassControll>();
+
+            Component.activeGrass = true;
+            Component.disableGrass = false;
+        }
+        for (int i = 0; i < Safe.Length; i++)
+        {
+            var Component = Safe[i].gameObject.GetComponent<Safe>();
+
+            Component.activeSafe = true;
+            Component.disableSafe = false;
+        }
+
+        for (int i = 0; i < AavikonEsteet.Length; i++)
+        {
+            var esteComponent = AavikonEsteet[i].gameObject.GetComponent<Este>();
+
+            esteComponent.activateMesh = true;
+            esteComponent.disableMesh = false;
+        }
+        for (int i = 0; i < A_ToolBoxes.Length; i++)
+        {
+            var Component = A_ToolBoxes[i].gameObject.GetComponent<ToolBox>();
+
+            Component.activeToolBox = true;
+            Component.disableToolBox = false;
+        }
+        for (int i = 0; i < A_JerryCans.Length; i++)
+        {
+            var Component = A_JerryCans[i].gameObject.GetComponent<JerryCan>();
+
+            Component.activeJerryCan = true;
+            Component.disableJerryCan = false;
+        }
+        for (int i = 0; i < A_Grass.Length; i++)
+        {
+            var Component = A_Grass[i].gameObject.GetComponent<CrassControll>();
+
+            Component.activeGrass = true;
+            Component.disableGrass = false;
+        }
+        for (int i = 0; i < A_Safe.Length; i++)
+        {
+            var Component = A_Safe[i].gameObject.GetComponent<Safe>();
+
+            Component.activeSafe = true;
+            Component.disableSafe = false;
+        }
+
+        for (int i = 0; i < HighwayEsteet.Length; i++)
+        {
+            var esteComponent = HighwayEsteet[i].gameObject.GetComponent<Este>();
+
+            esteComponent.activateMesh = true;
+            esteComponent.disableMesh = false;
+        }
+
+        fCollider.transform.position = new Vector3(0, 3.18f, 5f);
+        AreaVector1 = new Vector3(0f, 3.18f, 5f);
+        AreaVector2 = new Vector3(0f, 3.18f, 57f);
+        AreaVectorKesk = new Vector3(0f, 3.18f, 28.5f);
+
+        Esteet = GameObject.FindGameObjectsWithTag("Este");
+        AavikonEsteet = GameObject.FindGameObjectsWithTag("AavikonEste");
+        HighwayEsteet = GameObject.FindGameObjectsWithTag("HighwayEste");
+        ToolBoxes = GameObject.FindGameObjectsWithTag("ToolBox");
+        A_ToolBoxes = GameObject.FindGameObjectsWithTag("A_ToolBox");
+        JerryCans = GameObject.FindGameObjectsWithTag("JerryCan");
+        A_JerryCans = GameObject.FindGameObjectsWithTag("A_JerryCan");
+        Grass = GameObject.FindGameObjectsWithTag("Grass");
+        A_Grass = GameObject.FindGameObjectsWithTag("A_Crass");
+        Safe = GameObject.FindGameObjectsWithTag("Safe");
+        A_Safe = GameObject.FindGameObjectsWithTag("A_Safe");
+
+
+        for (int i = 0; i < Esteet.Length; i++)
+        {
+            var esteComponent = Esteet[i].gameObject.GetComponent<Este>();
+
+            esteComponent.activateMesh = false;
+            esteComponent.disableMesh = true;
+        }
+        for (int i = 0; i < ToolBoxes.Length; i++)
+        {
+            var Component = ToolBoxes[i].gameObject.GetComponent<ToolBox>();
+
+            Component.activeToolBox = false;
+            Component.disableToolBox = true;
+        }
+        for (int i = 0; i < JerryCans.Length; i++)
+        {
+            var Component = JerryCans[i].gameObject.GetComponent<JerryCan>();
+
+            Component.activeJerryCan = false;
+            Component.disableJerryCan = true;
+        }
+        /*for (int i = 0; i < Trees.Length; i++)
+        {
+            var Component = Trees[i].gameObject.GetComponent<TreeControll>();
+
+            Component.DisableTrees();
+        }*/
+        for (int i = 0; i < Grass.Length; i++)
+        {
+            var Component = Grass[i].gameObject.GetComponent<CrassControll>();
+
+            Component.activeGrass = false;
+            Component.disableGrass = true;
+        }
+        for (int i = 0; i < Safe.Length; i++)
+        {
+            var Component = Safe[i].gameObject.GetComponent<Safe>();
+
+            Component.activeSafe = false;
+            Component.disableSafe = true;
+        }
+
+        for (int i = 0; i < AavikonEsteet.Length; i++)
+        {
+            var esteComponent = AavikonEsteet[i].gameObject.GetComponent<Este>();
+
+            esteComponent.activateMesh = false;
+            esteComponent.disableMesh = true;
+        }
+        for (int i = 0; i < A_ToolBoxes.Length; i++)
+        {
+            var Component = A_ToolBoxes[i].gameObject.GetComponent<ToolBox>();
+
+            Component.activeToolBox = false;
+            Component.disableToolBox = true;
+        }
+        for (int i = 0; i < A_JerryCans.Length; i++)
+        {
+            var Component = A_JerryCans[i].gameObject.GetComponent<JerryCan>();
+
+            Component.activeJerryCan = false;
+            Component.disableJerryCan = true;
+        }
+        for (int i = 0; i < A_Grass.Length; i++)
+        {
+            var Component = A_Grass[i].gameObject.GetComponent<CrassControll>();
+
+            Component.activeGrass = false;
+            Component.disableGrass = true;
+        }
+        for (int i = 0; i < A_Safe.Length; i++)
+        {
+            var Component = A_Safe[i].gameObject.GetComponent<Safe>();
+
+            Component.activeSafe = false;
+            Component.disableSafe = true;
+        }
+
+        for (int i = 0; i < HighwayEsteet.Length; i++)
+        {
+            var esteComponent = HighwayEsteet[i].gameObject.GetComponent<Este>();
+
+            esteComponent.activateMesh = false;
+            esteComponent.disableMesh = true;
+        }
+    }
 }
