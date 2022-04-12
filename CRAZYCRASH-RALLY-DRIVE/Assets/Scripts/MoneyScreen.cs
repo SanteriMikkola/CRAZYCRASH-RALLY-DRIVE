@@ -29,12 +29,33 @@ public class MoneyScreen : MonoBehaviour
 
     private GameObject DownPanel;
 
+    private GameObject ScoreNumText;
+    public GameObject ScoreNumText2;
+    private Text ScoreNumText_Text;
+    private Text ScoreNumText2_Text;
+
+    private GameObject MoneyAddedScoreText;
+    private Text MoneyAddedScoreText_Text;
+
+    private Vector3 targetPos;
+    private Vector3 originalPos;
+
+    private float ScoreNumTextSpeed = 155f;
+
+    private bool ScoreNumTextOnTargetPos = false;
+
+
     private bool setUp = true;
 
     public float time = 0f;
     public float timeDelay = 3f;
+    public float timeDelay2 = 2f;
+    public float timeDelay3 = 2f;
 
-    private bool activateMoneyT = false;
+    public bool activateMoneyT = false;
+    public bool activateMoneyST = false;
+    public bool disableMoneyST = false;
+    private bool pickScoreNum = true;
 
     private bool moneyScreenActivated = false;
 
@@ -53,6 +74,10 @@ public class MoneyScreen : MonoBehaviour
         carCollider = Player.GetComponent<CarCollider>();
 
         Safe_money.SetActive(false);
+
+        //1007.9f - x 766f - y
+        targetPos = new Vector3(1007.9f, 766f, 0f);
+        originalPos = new Vector3(140f, 1035f, 0f);
     }
 
     void Update()
@@ -66,7 +91,10 @@ public class MoneyScreen : MonoBehaviour
             MoneyText_Image = GameObject.Find("MoneyText_Image");
             MoneyText_Image_Image = GameObject.Find("MoneyText_Image_Image");
             MoneyAddedText = GameObject.Find("MoneyAddedText");
+            //MoneyAddedScoreText = GameObject.Find("MoneyAddedScoreText");
             DownPanel = GameObject.Find("DownPanel");
+
+            ScoreNumText = GameObject.Find("ScoreNumText");
 
             DownPanel.SetActive(false);
 
@@ -74,6 +102,12 @@ public class MoneyScreen : MonoBehaviour
             MoneyText_Image_Text = MoneyText_Image.GetComponent<TextMeshProUGUI>();
             MoneyText_Image_Image_Image = MoneyText_Image_Image.GetComponent<Image>();
             MoneyAddedText_Text = MoneyAddedText.GetComponent<Text>();
+            //MoneyAddedScoreText_Text = MoneyAddedScoreText.GetComponent<Text>();
+
+            ScoreNumText_Text = ScoreNumText.GetComponent<Text>();
+            ScoreNumText2_Text = ScoreNumText2.GetComponent<Text>();
+
+            ScoreNumText2_Text.text = ScoreNumText_Text.text;
 
             setUp = false;
         }
@@ -82,37 +116,98 @@ public class MoneyScreen : MonoBehaviour
 
         if (carCollider.isPlayerDead && moneyScreenActivated == false)
         {
-            activateMoneyT = false;
+            if (pickScoreNum == true)
+            {
+                ScoreNumText2_Text.alignment = TextAnchor.MiddleLeft;
+                ScoreNumText2_Text.text = ScoreNumText_Text.text;
+                ScoreNumText2_Text.enabled = true;
+                activateMoneyT = false;
+                activateMoneyST = false;
+                disableMoneyST = false;
+                ScoreNumTextOnTargetPos = false;
+                pickScoreNum = false;
+            }
+            
             moneyScreen.SetActive(true);
             MoneyBackground.SetActive(true);
             MoneyText_Image.SetActive(true);
             MoneyText_Image_Image.SetActive(true);
             MoneyAddedText.SetActive(true);
+            //MoneyAddedScoreText.SetActive(true);
             DownPanel.SetActive(true);
-
+            ScoreNumText2.SetActive(true);
+            
             MoneyBackground_Image.enabled = true;
-            MoneyText_Image_Text.enabled = true;
-            MoneyText_Image_Image_Image.enabled = true;
 
-            Safe_money.SetActive(true);
-            time = time + 1f * Time.deltaTime;
 
-            MoneyAddedText_Text.text = carCollider.moneyPerRound.ToString();
-
-            if (time >= timeDelay && activateMoneyT == false)
+            if (!ScoreNumTextOnTargetPos)
             {
-                MoneyAddedText_Text.enabled = true;
-                Debug.Log("KEKE");
+                ScoreNumText2.transform.position = Vector3.MoveTowards(ScoreNumText2.transform.position, targetPos, ScoreNumTextSpeed * Time.deltaTime);
+                if (ScoreNumText2.transform.position == targetPos)
+                {
+                    time = time + 1f * Time.deltaTime;
 
-                carCollider.money += carCollider.moneyPerRound;
+                    //MoneyAddedScoreText_Text.text = carCollider.moneyPerRound2.ToString();
 
-                moneyScreenActivated = true;
-                carCollider.index = 0;
-                carCollider.safesPicked = 0;
 
-                activateMoneyT = true;
-                time = 0;
+                    if (time >= timeDelay3 && activateMoneyST == false)
+                    {
+
+                        MoneyText_Image_Text.enabled = true;
+                        MoneyText_Image_Image_Image.enabled = true;
+
+                        ScoreNumText2_Text.alignment = TextAnchor.MiddleCenter;
+
+                        ScoreNumText2_Text.text = carCollider.moneyPerRound2.ToString();
+
+                        //MoneyAddedScoreText_Text.enabled = true;
+
+                        carCollider.money += carCollider.moneyPerRound2;
+
+                        activateMoneyST = true;
+                        time = 0;
+                    }
+
+                    if (time >= timeDelay2 && disableMoneyST == false)
+                    {
+
+                        ScoreNumText2_Text.enabled = false;
+
+                        disableMoneyST = true;
+                        time = 0;
+                        ScoreNumTextOnTargetPos = true;
+                    }
+                }
             }
+
+
+
+
+            if (ScoreNumTextOnTargetPos)
+            {
+                Safe_money.SetActive(true);
+                time = time + 1f * Time.deltaTime;
+
+                MoneyAddedText_Text.text = carCollider.moneyPerRound.ToString();
+
+                if (time >= timeDelay && activateMoneyT == false)
+                {
+                    MoneyAddedText_Text.enabled = true;
+                    //Debug.Log("KEKE");
+
+                    carCollider.money += carCollider.moneyPerRound;
+
+                    moneyScreenActivated = true;
+                    pickScoreNum = true;
+                    carCollider.index = 0;
+                    carCollider.safesPicked = 0;
+                    ScoreNumText2.transform.position = new Vector3(originalPos.x, originalPos.y, originalPos.z);
+
+                    activateMoneyT = true;
+                    time = 0;
+                }
+            }
+
 
             //time = time + 1f * Time.deltaTime;
             /*if (time >= timeDelay && activateMoneyT == true)
@@ -141,6 +236,7 @@ public class MoneyScreen : MonoBehaviour
                 }
             }*/
             //StartCoroutine(SafeOpen());
+            //ScoreNumTextOnTargetPos = false;
         }
 
     }
@@ -165,7 +261,7 @@ public class MoneyScreen : MonoBehaviour
             if (time >= timeDelay)      //!
             {
                 MoneyAddedText_Text.enabled = true;
-                Debug.Log("KEKE");
+                //Debug.Log("KEKE");
             }
 
             time = 0;
@@ -173,7 +269,7 @@ public class MoneyScreen : MonoBehaviour
             if (time >= timeDelay)
             {
                 MoneyAddedText_Text.enabled = false;
-                Debug.Log("KAKA");
+                //Debug.Log("KAKA");
             }
         }
         //StartCoroutine(SafeOpen());

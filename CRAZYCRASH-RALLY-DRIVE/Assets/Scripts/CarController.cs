@@ -207,6 +207,7 @@ public class CarController : MonoBehaviour
             carCollider.reback_Obs = true;
             carCollider.isThatLevel2 = false;
             carCollider.isThatMT = false;
+            mapControll.GiveUpMapController();
             //Debug.Log("toimiiko?");
             PposChanget = false;
             var boxCol = fuelHelper.GetComponent<BoxCollider>();
