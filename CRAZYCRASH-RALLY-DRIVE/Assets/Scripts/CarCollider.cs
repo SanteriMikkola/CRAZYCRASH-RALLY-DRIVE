@@ -20,6 +20,9 @@ public class CarCollider : MonoBehaviour
     private GameObject startMenuMoneyT;
     private TextMeshProUGUI startMenuMoneyT_Text;
 
+    private GameObject fMapCollider;
+    private MapControll mapControllS;
+
     [HideInInspector]
     public BoxCollider playersBoxCollider;
     //public CapsuleCollider[] WheelColliders;
@@ -90,6 +93,9 @@ public class CarCollider : MonoBehaviour
 
         startMenuMoneyT = GameObject.Find("startMenuMoneyT");
         startMenuMoneyT_Text = startMenuMoneyT.GetComponent<TextMeshProUGUI>();
+
+        fMapCollider = GameObject.Find("FrontCollider");
+        mapControllS = fMapCollider.GetComponent<MapControll>();
 
     }
 
@@ -266,6 +272,8 @@ public class CarCollider : MonoBehaviour
             reback_Obs = false;
             isThatMT = true;
 
+            mapControllS.highwayIdentifier = true;
+
             carController.targetSpeed++;
 
             /*reback_Obs = false;
@@ -284,6 +292,8 @@ public class CarCollider : MonoBehaviour
             isThatLevel2 = false;
             isThatMT = false;
 
+            mapControllS.highwayIdentifier = false;
+
             carController.targetSpeed++;
 
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -298,6 +308,9 @@ public class CarCollider : MonoBehaviour
             reback_Obs = false;
             isThatLevel2 = true;
             isThatMT = false;
+
+            mapControllS.highwayIdentifier = false;
+
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
             //startButtonS.StartLevel2();

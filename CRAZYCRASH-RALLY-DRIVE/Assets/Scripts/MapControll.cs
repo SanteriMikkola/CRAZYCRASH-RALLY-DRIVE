@@ -109,7 +109,7 @@ public class MapControll : MonoBehaviour
     public Vector3[] A_Grass_vectors;
     public Vector3[] A_Safe_vectors;
 
-    private Vector3[] H_Obs_vectors;
+    public Vector3[] H_Obs_vectors;
 
     //public GameObject[] PickedObjects;
 
@@ -130,6 +130,8 @@ public class MapControll : MonoBehaviour
 
     //[HideInInspector]
     public bool CposChanget = false;
+    //[HideInInspector]
+    public bool highwayIdentifier = false;
 
     // Start is called before the first frame update
     void Start()
@@ -254,6 +256,14 @@ public class MapControll : MonoBehaviour
             Component.disableSafe = true;
         }
 
+        for (int i = 0; i < HighwayEsteet.Length; i++)
+        {
+            var esteComponent = HighwayEsteet[i].gameObject.GetComponent<Este>();
+
+            esteComponent.activateMesh = false;
+            esteComponent.disableMesh = true;
+        }
+
         bCollider.transform.parent = null;
         fCollider.transform.parent = null;
     }
@@ -333,7 +343,7 @@ public class MapControll : MonoBehaviour
             GamePaused();
         }
 
-        if (carCollider.reback_Obs == false && carCollider.isThatLevel2 == false && CposChanget == false && carCollider.isThatMT == true)
+        if (carCollider.reback_Obs == false && carCollider.isThatLevel2 == false && CposChanget == false && carCollider.isThatMT == true && highwayIdentifier == true)
         {
             //fBoxCollider.enabled = false;
             bCollider.transform.position = new Vector3(0, 802.6f, -40.06f);
@@ -343,8 +353,29 @@ public class MapControll : MonoBehaviour
             AreaVectorKesk = new Vector3(0f, 802.6f, 28.5f);
             startButtonS.GameStartForMapControll = true;
             CposChanget = false;
-            carCollider.isThatMT = false;
+            highwayIdentifier = false;
 
+            for (int i = 0; i < Reback_H_Obs.Length; i++)
+            {
+                Reback_H_Obs[i].SetActive(true);
+
+                var esteComponent = Reback_H_Obs[i].gameObject.GetComponent<Este>();
+
+                //esteComponent.activateMesh = true;
+                esteComponent.isColliderUnActive = false;
+                esteComponent.reActivate = true;
+            }
+            for (int i = 0; i < Trees.Length; i++)
+            {
+                Trees[i].SetActive(true);
+
+                var treeControlComponent = Trees[i].gameObject.GetComponent<TreeControll>();
+
+                //esteComponent.activateMesh = true;
+                treeControlComponent.ActiveTrees();
+            }
+
+            HighwayEsteet = GameObject.FindGameObjectsWithTag("HighwayEste");
 
             //carCollider.reback_Obs = false;
             //return;
@@ -517,8 +548,29 @@ public class MapControll : MonoBehaviour
         //Debug.Log(frontColliders.Length);
         if (startButtonS.GameStartForMapControll == true && carCollider.isThatLevel2 == false && carCollider.isThatMT == true || playerCollidedFcollider == true && carCollider.isThatLevel2 == false && carCollider.isThatMT == true)
         {
+            for (int i = 0; i < Reback_H_Obs.Length; i++)
+            {
+                Reback_H_Obs[i].SetActive(true);
+
+                var esteComponent = Reback_H_Obs[i].gameObject.GetComponent<Este>();
+
+                esteComponent.disableMesh = false;
+                esteComponent.isColliderUnActive = false;
+                esteComponent.activateMesh = true;
+            }
+            for (int i = 0; i < Trees.Length; i++)
+            {
+                Trees[i].SetActive(true);
+
+                var treeControlComponent = Trees[i].gameObject.GetComponent<TreeControll>();
+
+                //esteComponent.activateMesh = true;
+                treeControlComponent.ActiveTrees();
+            }
+
             Esteet = GameObject.FindGameObjectsWithTag("Este");
             AavikonEsteet = GameObject.FindGameObjectsWithTag("AavikonEste");
+            HighwayEsteet = GameObject.FindGameObjectsWithTag("HighwayEste");
             ToolBoxes = GameObject.FindGameObjectsWithTag("ToolBox");
             A_ToolBoxes = GameObject.FindGameObjectsWithTag("A_ToolBox");
             JerryCans = GameObject.FindGameObjectsWithTag("JerryCan");
@@ -592,6 +644,7 @@ public class MapControll : MonoBehaviour
 
             Esteet = GameObject.FindGameObjectsWithTag("Este");
             AavikonEsteet = GameObject.FindGameObjectsWithTag("AavikonEste");
+            HighwayEsteet = GameObject.FindGameObjectsWithTag("HighwayEste");
             ToolBoxes = GameObject.FindGameObjectsWithTag("ToolBox");
             A_ToolBoxes = GameObject.FindGameObjectsWithTag("A_ToolBox");
             JerryCans = GameObject.FindGameObjectsWithTag("JerryCan");
@@ -665,6 +718,7 @@ public class MapControll : MonoBehaviour
 
             Esteet = GameObject.FindGameObjectsWithTag("Este");
             AavikonEsteet = GameObject.FindGameObjectsWithTag("AavikonEste");
+            HighwayEsteet = GameObject.FindGameObjectsWithTag("HighwayEste");
             ToolBoxes = GameObject.FindGameObjectsWithTag("ToolBox");
             A_ToolBoxes = GameObject.FindGameObjectsWithTag("A_ToolBox");
             JerryCans = GameObject.FindGameObjectsWithTag("JerryCan");
@@ -1155,10 +1209,48 @@ public class MapControll : MonoBehaviour
 
     private void MoottoriTiePositionCheck()
     {
+        H_Obs_vectors = new Vector3[HighwayEsteet.Length];
 
         if (!isObjectsPicked)
         {
+            for (int i = 0; i < HighwayEsteet.Length; i++)
+            {
+                H_Obs_vectors[i].Set(HighwayEsteet[i].transform.position.x, HighwayEsteet[i].transform.position.y, HighwayEsteet[i].transform.position.z);
 
+                if (H_Obs_vectors[i].z > AreaVector1.z && H_Obs_vectors[i].z < AreaVector2.z)
+                {
+                    //ii++;
+                    //PickedObjects = new GameObject[ii];
+
+                    var esteComponent = HighwayEsteet[i].gameObject.GetComponent<Este>();
+
+                    esteComponent.activateMesh = true;
+                    esteComponent.disableMesh = false;
+                    //activeToolBox = true;
+
+                    /*var objecti = Esteet[i];
+
+                    //Debug.Log(objecti);
+                    Debug.Log(Testi.Length);
+
+                    PickedObjects.SetValue(objecti, iii);*/
+
+                    //objecti = null;
+                    /*
+                    System.Array.Copy(Esteet, i, PickedObjects, iii, 1);
+                    Debug.Log(PickedObjects);
+                    //System.Array.ConstrainedCopy(PickedObjects, iii, Esteet, ii, 1);
+                    iii++;*/
+                    //Esteet.CopyTo(PickedObjects, ii);
+                }
+                else
+                {
+                    var esteComponent = HighwayEsteet[i].gameObject.GetComponent<Este>();
+
+                    esteComponent.activateMesh = false;
+                    esteComponent.disableMesh = true;
+                }
+            }
 
             isObjectsPicked = true;
         }
