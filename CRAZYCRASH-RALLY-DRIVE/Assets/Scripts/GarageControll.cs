@@ -13,6 +13,7 @@ public class GarageControll : MonoBehaviour
     private GameObject Wheels;
     private GameObject playerRotateF;
     private GameObject garageCar2;
+    private GameObject garageCar3;
 
     private GameObject Player;
     private GameObject Level1;
@@ -45,6 +46,9 @@ public class GarageControll : MonoBehaviour
     public bool isThatOldCar = false;
 
     [HideInInspector]
+    public bool isThatCar3 = false;
+
+    [HideInInspector]
     public bool changeCarColor = false;
 
     void Start()
@@ -52,6 +56,7 @@ public class GarageControll : MonoBehaviour
         Player = GameObject.Find("Player");
         Level1 = GameObject.Find("Level1");
         garageCar2 = GameObject.Find("GarageCar2");
+        garageCar3 = GameObject.Find("GarageCar3");
 
         carController = Player.GetComponent<CarController>();
         playerColor = Player.GetComponent<PlayerColor>();
@@ -69,13 +74,14 @@ public class GarageControll : MonoBehaviour
         pressedHatB = false;
 
         garageCar2.SetActive(false);
+        garageCar3.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (Cars.Length >= 2)
+        if (Cars.Length >= 3)
         {
             carsFinded = true;
         }
@@ -96,7 +102,7 @@ public class GarageControll : MonoBehaviour
 
         if (pressedRight == true && pressedLeft == false && indexBLock == false)
         {
-            if (index == 0)
+            if (index >= 0)
             {
                 index++;
                 //Cars[index].SetActive(true);
@@ -127,6 +133,7 @@ public class GarageControll : MonoBehaviour
                 case 0: //defaltcar
                     {
                         isThatOldCar = false;
+                        isThatCar3 = false;
                         playerColor.changeNcolor = false;
                         changeCarColor = true;
 
@@ -159,6 +166,39 @@ public class GarageControll : MonoBehaviour
                 case 1: //oldcar
                     {
                         isThatOldCar = true;
+                        isThatCar3 = false;
+                        playerColor.changeNormalcolor = false;
+                        changeCarColor = true;
+
+                        /*playerMF.mesh = oldMF;
+                        playerRenderer.material = oldCarMat;
+
+                        PlayersChild.transform.position = new Vector3(0f, 1f, -0.32f);
+
+                        Debug.Log("oldcar");
+
+                        PlayersChild.transform.Rotate(0f, 0f, -180f);*/
+
+                        /*PlayersChild.SetActive(false);
+                        Player.transform.DetachChildren();
+                        Player.transform.SetParent(gameObject.transform);
+                        Player.transform.position = new Vector3(5.036f, 0.796f, -1.247f);
+                        Cars[index].transform.tag = "EquippedCar";
+                        Cars[index].transform.SetParent(Player.transform);
+                        Player.transform.SetParent(Level1.transform);
+                        Player.transform.position = new Vector3(0f, 0.6529999f, -1.024994f);
+                        Cars[index].transform.position = new Vector3(0f, 1f, -0.5f);  // 0.271f   -0.365f
+                        Vector3 targetPoint = (playerRotateF.transform.position);
+                        Cars[index].transform.LookAt(targetPoint);
+                        Cars[index].transform.Rotate(-90f, 0f, -180f);*/
+                        changeCarColor = false;
+                        carController.wheelsReady = false;
+                    }
+                    break;
+                case 2: //car3
+                    {
+                        isThatOldCar = false;
+                        isThatCar3 = true;
                         playerColor.changeNormalcolor = false;
                         changeCarColor = true;
 
@@ -230,7 +270,7 @@ public class GarageControll : MonoBehaviour
         pressedPaintB = false;
     }
 
-    public void PressedRightA()
+    public void PressedRightACar1()
     {
         //Cars[index].SetActive(false);
         pressedRight = true;
@@ -238,7 +278,23 @@ public class GarageControll : MonoBehaviour
         indexBLock = false;
     }
 
-    public void PressedLeftA()
+    public void PressedLeftACar2()
+    {
+        //Cars[index].SetActive(false);
+        pressedLeft = true;
+        pressedRight = false;
+        indexBLock = true;
+    }
+
+    public void PressedRightACar2()
+    {
+        //Cars[index].SetActive(false);
+        pressedRight = true;
+        pressedLeft = false;
+        indexBLock = false;
+    }
+
+    public void PressedLeftACar3()
     {
         //Cars[index].SetActive(false);
         pressedLeft = true;
