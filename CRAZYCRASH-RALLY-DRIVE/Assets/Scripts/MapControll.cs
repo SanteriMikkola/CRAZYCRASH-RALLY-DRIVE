@@ -338,7 +338,7 @@ public class MapControll : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape) && isGamePaused == false && pauseSetup == false && carCollider.playerCollide == false)
+        if ((Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.JoystickButton7)) && isGamePaused == false && pauseSetup == false && carCollider.playerCollide == false)
         {
             GamePaused();
         }
