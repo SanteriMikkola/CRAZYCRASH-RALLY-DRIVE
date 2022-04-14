@@ -60,12 +60,12 @@ public class Fuel_Controll : MonoBehaviour
             carCollider.playerCollide = false;
         }
 
-        if (carCollider.jerryCanPicked == true)
+        if (carCollider.jerryCanPicked == true || carCollider.isThatMT == true)
         {
             StartCoroutine(JerryCanReverseFullHealth());
         }
 
-        if (carController.IsTutorialEnded == true && carCollider.playerCollide == false && carCollider.isPlayerDead == false && carCollider.jerryCanPicked == false)
+        if (carController.IsTutorialEnded == true && carCollider.playerCollide == false && carCollider.isPlayerDead == false && carCollider.jerryCanPicked == false && carCollider.isThatMT == false)
         {
             if (rotationZ < 83f)
             {
