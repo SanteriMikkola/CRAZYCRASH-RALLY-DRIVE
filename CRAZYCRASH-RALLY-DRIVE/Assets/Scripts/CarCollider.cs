@@ -283,9 +283,11 @@ public class CarCollider : MonoBehaviour
             reback_Obs = false;
             isThatMT = true;
 
+            //StartCoroutine(fuelControll.JerryCanReverseFullHealth());
+
             mapControllS.highwayIdentifier = true;
 
-            //carController.targetSpeed++;
+            carController.targetSpeed += 0.25f;
 
             /*reback_Obs = false;
             isThatLevel2 = true;*/
@@ -305,7 +307,7 @@ public class CarCollider : MonoBehaviour
 
             mapControllS.highwayIdentifier = false;
 
-            carController.targetSpeed += 0.5f;
+            carController.targetSpeed += 0.25f;
 
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
@@ -321,6 +323,8 @@ public class CarCollider : MonoBehaviour
             isThatMT = false;
 
             mapControllS.highwayIdentifier = false;
+
+            carController.targetSpeed += 0.25f;
 
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
