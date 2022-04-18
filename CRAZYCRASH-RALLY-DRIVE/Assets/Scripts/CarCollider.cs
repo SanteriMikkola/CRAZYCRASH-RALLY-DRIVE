@@ -73,7 +73,8 @@ public class CarCollider : MonoBehaviour
     [HideInInspector]
     public int index = 0;
 
-    private bool moneyRandomized = false;
+    [HideInInspector]
+    public bool moneyRandomized = false;
 
     private Vector3 playerPos_4z;
 
@@ -431,7 +432,7 @@ public class CarCollider : MonoBehaviour
 
             int scoreMoney = (scoreControll.numBer / 50);
 
-            Debug.Log(scoreControll.numBer);
+            //Debug.Log(scoreControll.numBer);
 
             moneyPerRound2 += scoreMoney;
 

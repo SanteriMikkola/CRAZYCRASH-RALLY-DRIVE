@@ -27,14 +27,18 @@ public class MoneyScreen : MonoBehaviour
     private GameObject Safe_money;
 
     private GameObject MoneyAddedText;
+    public GameObject MoneyAddedT_Money_Image;
     private Text MoneyAddedText_Text;
+    private Image MoneyAddedT_Money_Image_Image;
 
     private GameObject DownPanel;
 
     private GameObject ScoreNumText;
     public GameObject ScoreNumText2;
+    public GameObject ScoreNum_Money_Image;
     private Text ScoreNumText_Text;
     private Text ScoreNumText2_Text;
+    private Image ScoreNum_Money_Image_Image;
 
     private GameObject MoneyAddedScoreText;
     private Text MoneyAddedScoreText_Text;
@@ -42,7 +46,7 @@ public class MoneyScreen : MonoBehaviour
     private Vector3 targetPos;
     private Vector3 originalPos;
 
-    private float ScoreNumTextSpeed = 185f;
+    private float ScoreNumTextSpeed = 220f;
 
     private bool ScoreNumTextOnTargetPos = false;
 
@@ -78,7 +82,8 @@ public class MoneyScreen : MonoBehaviour
         Safe_money.SetActive(false);
 
         //1007.9f - x 766f - y
-        targetPos = new Vector3(1007.9f, 766f, 0f);
+        targetPos = new Vector3(Screen.width / 2, (Screen.height / 2) + 100f, 0f);
+        //140f - x 1035f - y
         originalPos = new Vector3(140f, 1035f, 0f);
     }
 
@@ -106,10 +111,12 @@ public class MoneyScreen : MonoBehaviour
             MoneyText_Image_Text = MoneyText_Image.GetComponent<TextMeshProUGUI>();
             MoneyText_Image_Image_Image = MoneyText_Image_Image.GetComponent<Image>();
             MoneyAddedText_Text = MoneyAddedText.GetComponent<Text>();
+            MoneyAddedT_Money_Image_Image = MoneyAddedT_Money_Image.GetComponent<Image>();
             //MoneyAddedScoreText_Text = MoneyAddedScoreText.GetComponent<Text>();
 
             ScoreNumText_Text = ScoreNumText.GetComponent<Text>();
             ScoreNumText2_Text = ScoreNumText2.GetComponent<Text>();
+            ScoreNum_Money_Image_Image = ScoreNum_Money_Image.GetComponent<Image>();
 
             ScoreNumText2_Text.text = ScoreNumText_Text.text;
 
@@ -122,7 +129,7 @@ public class MoneyScreen : MonoBehaviour
         {
             if (pickScoreNum == true)
             {
-                ScoreNumText2_Text.alignment = TextAnchor.MiddleLeft;
+                ScoreNumText2_Text.alignment = TextAnchor.MiddleCenter;
                 ScoreNumText2_Text.text = ScoreNumText_Text.text;
                 ScoreNumText2_Text.enabled = true;
                 activateMoneyT = false;
@@ -164,6 +171,8 @@ public class MoneyScreen : MonoBehaviour
 
                         ScoreNumText2_Text.text = carCollider.moneyPerRound2.ToString();
 
+                        ScoreNum_Money_Image_Image.enabled = true;
+
                         //MoneyAddedScoreText_Text.enabled = true;
 
                         carCollider.money += carCollider.moneyPerRound2;
@@ -176,6 +185,7 @@ public class MoneyScreen : MonoBehaviour
                     {
 
                         ScoreNumText2_Text.enabled = false;
+                        ScoreNum_Money_Image_Image.enabled = false;
 
                         MoneyBackground2_Image.enabled = false;
 
@@ -199,6 +209,7 @@ public class MoneyScreen : MonoBehaviour
                 if (time >= timeDelay && activateMoneyT == false)
                 {
                     MoneyAddedText_Text.enabled = true;
+                    MoneyAddedT_Money_Image_Image.enabled = true;
                     //Debug.Log("KEKE");
 
                     carCollider.money += carCollider.moneyPerRound;
@@ -208,6 +219,7 @@ public class MoneyScreen : MonoBehaviour
                     carCollider.index = 0;
                     carCollider.safesPicked = 0;
                     ScoreNumText2.transform.position = new Vector3(originalPos.x, originalPos.y, originalPos.z);
+                    ScoreNumText2.SetActive(false);
 
                     activateMoneyT = true;
                     time = 0;
@@ -303,6 +315,7 @@ public class MoneyScreen : MonoBehaviour
         MoneyText_Image_Text.enabled = false;
         MoneyText_Image_Image_Image.enabled = false;
         MoneyAddedText_Text.enabled = false;
+        MoneyAddedT_Money_Image_Image.enabled = false;
         Safe_money.SetActive(false);
         DownPanel.SetActive(false);
 

@@ -55,8 +55,9 @@ public class Fuel_Controll : MonoBehaviour
         if (carCollider.fuel <= 0 && rotationZ >= 83f)
         {
             carCollider.isPlayerDead = true;
-            Player.SetActive(false);
-            Kamera.SetActive(false);
+            /*Player.SetActive(false);
+            Kamera.SetActive(false);*/
+            carCollider.moneyRandomized = false;
             carCollider.playerCollide = false;
         }
 
