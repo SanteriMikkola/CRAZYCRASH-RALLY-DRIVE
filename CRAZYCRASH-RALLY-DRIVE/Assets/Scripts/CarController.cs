@@ -138,6 +138,7 @@ public class CarController : MonoBehaviour
         if (carCollider.isPlayerDead)
         {
             carCollider.playersBoxCollider.enabled = false;
+            targetSpeed = 2f;
             turnInput = 0f;
             forwardSpeed = 0f;
             //moneyScreenS.M_ScreenOpen();
