@@ -138,7 +138,7 @@ public class MoneyScreen : MonoBehaviour
                 ScoreNumTextOnTargetPos = false;
                 pickScoreNum = false;
             }
-            
+
             moneyScreen.SetActive(true);
             MoneyBackground.SetActive(true);
             MoneyBackground2.SetActive(true);

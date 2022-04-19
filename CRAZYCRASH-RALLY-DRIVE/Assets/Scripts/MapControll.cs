@@ -351,7 +351,11 @@ public class MapControll : MonoBehaviour
             AreaVector1 = new Vector3(0f, 802.6f, 5f);
             AreaVector2 = new Vector3(0f, 802.6f, 57f);
             AreaVectorKesk = new Vector3(0f, 802.6f, 28.5f);
-            startButtonS.GameStartForMapControll = true;
+
+            /*var test = new Vector3(0f, 802.6f, 28.5f);
+            AreaVectorKesk.Set(test.x, test.y, test.z);*/
+
+            //startButtonS.GameStartForMapControll = true;
             CposChanget = false;
             highwayIdentifier = false;
 
@@ -377,6 +381,11 @@ public class MapControll : MonoBehaviour
 
             HighwayEsteet = GameObject.FindGameObjectsWithTag("HighwayEste");
 
+
+            isObjectsPicked = false;
+            Reback_M_Esteet();
+
+
             //carCollider.reback_Obs = false;
             //return;
         }
@@ -390,7 +399,7 @@ public class MapControll : MonoBehaviour
             AreaVector1 = new Vector3(0f, 3.18f, 5f);
             AreaVector2 = new Vector3(0f, 3.18f, 57f);
             AreaVectorKesk = new Vector3(0f, 3.18f, 28.5f);
-            startButtonS.GameStartForMapControll = true;
+            //startButtonS.GameStartForMapControll = true;
             CposChanget = false;
 
             for (int i = 0; i < Reback_Obs.Length; i++)
@@ -462,6 +471,11 @@ public class MapControll : MonoBehaviour
             ToolBoxes = GameObject.FindGameObjectsWithTag("ToolBox");
             Grass = GameObject.FindGameObjectsWithTag("Grass");
             Safe = GameObject.FindGameObjectsWithTag("Safe");
+
+
+            isObjectsPicked = false;
+            RebackEsteet();
+
             //carCollider.reback_Obs = false;
             //return;
         }
@@ -476,7 +490,7 @@ public class MapControll : MonoBehaviour
             AreaVectorKesk = new Vector3(0f, 402.81f, 28.5f);
             A_AreaVector1 = new Vector3(0f, 3.18f, 5f);
             A_AreaVector2 = new Vector3(0f, 3.18f, 57f);
-            startButtonS.GameStartForMapControll = true;
+            //startButtonS.GameStartForMapControll = true;
             CposChanget = true;
 
             for (int i = 0; i < Reback_A_Obs.Length; i++)
@@ -540,6 +554,11 @@ public class MapControll : MonoBehaviour
             A_Grass = GameObject.FindGameObjectsWithTag("A_Crass");
             A_Safe = GameObject.FindGameObjectsWithTag("A_Safe");
             //carCollider.reback_Obs = false;
+
+            isObjectsPicked = false;
+            Reback_A_Esteet();
+
+
         }
 
         //StartThings();
@@ -1548,6 +1567,469 @@ public class MapControll : MonoBehaviour
 
             esteComponent.activateMesh = false;
             esteComponent.disableMesh = true;
+        }
+    }
+
+    private void RebackEsteet()
+    {
+        Obs_vectors = new Vector3[Esteet.Length];
+        TB_vectors = new Vector3[ToolBoxes.Length];
+        Jerry_vectors = new Vector3[JerryCans.Length];
+        Grass_vectors = new Vector3[Grass.Length];
+        Safe_vectors = new Vector3[Safe.Length];
+
+        //Debug.Log("GameStartForMapControll!");
+
+        if (!isObjectsPicked)
+        {
+            for (int i = 0; i < Esteet.Length; i++)
+            {
+                Obs_vectors[i].Set(Esteet[i].transform.position.x, Esteet[i].transform.position.y, Esteet[i].transform.position.z);
+
+                if (Obs_vectors[i].z > AreaVector1.z && Obs_vectors[i].z < AreaVector2.z)
+                {
+                    //ii++;
+                    //PickedObjects = new GameObject[ii];
+
+                    var esteComponent = Esteet[i].gameObject.GetComponent<Este>();
+
+                    esteComponent.activateMesh = true;
+                    esteComponent.disableMesh = false;
+                    //activeToolBox = true;
+
+                    /*var objecti = Esteet[i];
+
+                    //Debug.Log(objecti);
+                    Debug.Log(Testi.Length);
+
+                    PickedObjects.SetValue(objecti, iii);*/
+
+                    //objecti = null;
+                    /*
+                    System.Array.Copy(Esteet, i, PickedObjects, iii, 1);
+                    Debug.Log(PickedObjects);
+                    //System.Array.ConstrainedCopy(PickedObjects, iii, Esteet, ii, 1);
+                    iii++;*/
+                    //Esteet.CopyTo(PickedObjects, ii);
+                }
+                else
+                {
+                    var esteComponent = Esteet[i].gameObject.GetComponent<Este>();
+
+                    esteComponent.activateMesh = false;
+                    esteComponent.disableMesh = true;
+                }
+            }
+
+            for (int i = 0; i < ToolBoxes.Length; i++)
+            {
+                TB_vectors[i].Set(ToolBoxes[i].transform.position.x, ToolBoxes[i].transform.position.y, ToolBoxes[i].transform.position.z);
+
+                if (TB_vectors[i].z > AreaVector1.z && TB_vectors[i].z < AreaVector2.z)
+                {
+                    //ii++;
+                    //PickedObjects = new GameObject[ii];
+
+                    var Component = ToolBoxes[i].gameObject.GetComponent<ToolBox>();
+
+                    Component.activeToolBox = true;
+                    Component.disableToolBox = false;
+
+                    /*var objecti = Esteet[i];
+
+                    //Debug.Log(objecti);
+                    Debug.Log(Testi.Length);
+
+                    PickedObjects.SetValue(objecti, iii);*/
+
+                    //objecti = null;
+                    /*
+                    System.Array.Copy(Esteet, i, PickedObjects, iii, 1);
+                    Debug.Log(PickedObjects);
+                    //System.Array.ConstrainedCopy(PickedObjects, iii, Esteet, ii, 1);
+                    iii++;*/
+                    //Esteet.CopyTo(PickedObjects, ii);
+                }
+                else
+                {
+                    var Component = ToolBoxes[i].gameObject.GetComponent<ToolBox>();
+
+                    Component.activeToolBox = false;
+                    Component.disableToolBox = true;
+                }
+            }
+
+            for (int i = 0; i < JerryCans.Length; i++)
+            {
+                Jerry_vectors[i].Set(JerryCans[i].transform.position.x, JerryCans[i].transform.position.y, JerryCans[i].transform.position.z);
+
+                if (Jerry_vectors[i].z > AreaVector1.z && Jerry_vectors[i].z < AreaVector2.z)
+                {
+                    //ii++;
+                    //PickedObjects = new GameObject[ii];
+
+                    var Component = JerryCans[i].gameObject.GetComponent<JerryCan>();
+
+                    Component.activeJerryCan = true;
+                    Component.disableJerryCan = false;
+
+                    /*var objecti = Esteet[i];
+
+                    //Debug.Log(objecti);
+                    Debug.Log(Testi.Length);
+
+                    PickedObjects.SetValue(objecti, iii);*/
+
+                    //objecti = null;
+                    /*
+                    System.Array.Copy(Esteet, i, PickedObjects, iii, 1);
+                    Debug.Log(PickedObjects);
+                    //System.Array.ConstrainedCopy(PickedObjects, iii, Esteet, ii, 1);
+                    iii++;*/
+                    //Esteet.CopyTo(PickedObjects, ii);
+                }
+                else
+                {
+                    var Component = JerryCans[i].gameObject.GetComponent<JerryCan>();
+
+                    Component.activeJerryCan = false;
+                    Component.disableJerryCan = true;
+                }
+            }
+
+            for (int i = 0; i < Grass.Length; i++)
+            {
+                Grass_vectors[i].Set(Grass[i].transform.position.x, Grass[i].transform.position.y, Grass[i].transform.position.z);
+
+                if (Grass_vectors[i].z > AreaVector1.z && Grass_vectors[i].z < AreaVector2.z)
+                {
+                    //ii++;
+                    //PickedObjects = new GameObject[ii];
+
+                    var Component = Grass[i].gameObject.GetComponent<CrassControll>();
+
+                    Component.activeGrass = true;
+                    Component.disableGrass = false;
+
+                    /*var objecti = Esteet[i];
+
+                    //Debug.Log(objecti);
+                    Debug.Log(Testi.Length);
+
+                    PickedObjects.SetValue(objecti, iii);*/
+
+                    //objecti = null;
+                    /*
+                    System.Array.Copy(Esteet, i, PickedObjects, iii, 1);
+                    Debug.Log(PickedObjects);
+                    //System.Array.ConstrainedCopy(PickedObjects, iii, Esteet, ii, 1);
+                    iii++;*/
+                    //Esteet.CopyTo(PickedObjects, ii);
+                }
+                else
+                {
+                    var Component = Grass[i].gameObject.GetComponent<CrassControll>();
+
+                    Component.activeGrass = false;
+                    Component.disableGrass = true;
+                }
+            }
+
+            for (int i = 0; i < Safe.Length; i++)
+            {
+                Safe_vectors[i].Set(Safe[i].transform.position.x, Safe[i].transform.position.y, Safe[i].transform.position.z);
+
+                if (Safe_vectors[i].z > AreaVector1.z && Safe_vectors[i].z < AreaVector2.z)
+                {
+                    //ii++;
+                    //PickedObjects = new GameObject[ii];
+
+                    var Component = Safe[i].gameObject.GetComponent<Safe>();
+
+                    Component.activeSafe = true;
+                    Component.disableSafe = false;
+
+                    /*var objecti = Esteet[i];
+
+                    //Debug.Log(objecti);
+                    Debug.Log(Testi.Length);
+
+                    PickedObjects.SetValue(objecti, iii);*/
+
+                    //objecti = null;
+                    /*
+                    System.Array.Copy(Esteet, i, PickedObjects, iii, 1);
+                    Debug.Log(PickedObjects);
+                    //System.Array.ConstrainedCopy(PickedObjects, iii, Esteet, ii, 1);
+                    iii++;*/
+                    //Esteet.CopyTo(PickedObjects, ii);
+                }
+                else
+                {
+                    var Component = Safe[i].gameObject.GetComponent<Safe>();
+
+                    Component.activeSafe = false;
+                    Component.disableSafe = true;
+                }
+            }
+
+            isObjectsPicked = true;
+        }
+    }
+
+    private void Reback_A_Esteet()
+    {
+        A_Obs_vectors = new Vector3[AavikonEsteet.Length];
+        A_TB_vectors = new Vector3[A_ToolBoxes.Length];
+        A_Jerry_vectors = new Vector3[A_JerryCans.Length];
+        A_Grass_vectors = new Vector3[A_Grass.Length];
+        A_Safe_vectors = new Vector3[A_Safe.Length];
+
+        //Debug.Log(A_Obs_vectors.Length);
+
+        if (!isObjectsPicked)
+        {
+            for (int i = 0; i < AavikonEsteet.Length; i++)
+            {
+                A_Obs_vectors[i].Set(AavikonEsteet[i].transform.position.x, AavikonEsteet[i].transform.position.y, AavikonEsteet[i].transform.position.z);
+
+                if (A_Obs_vectors[i].z > A_AreaVector1.z && A_Obs_vectors[i].z < A_AreaVector2.z)
+                {
+                    //ii++;
+                    //PickedObjects = new GameObject[ii];
+
+                    var esteComponent = AavikonEsteet[i].gameObject.GetComponent<Este>();
+
+                    esteComponent.activateMesh = true;
+                    esteComponent.disableMesh = false;
+                    //activeToolBox = true;
+
+                    /*var objecti = Esteet[i];
+
+                    //Debug.Log(objecti);
+                    Debug.Log(Testi.Length);
+
+                    PickedObjects.SetValue(objecti, iii);*/
+
+                    //objecti = null;
+                    /*
+                    System.Array.Copy(Esteet, i, PickedObjects, iii, 1);
+                    Debug.Log(PickedObjects);
+                    //System.Array.ConstrainedCopy(PickedObjects, iii, Esteet, ii, 1);
+                    iii++;*/
+                    //Esteet.CopyTo(PickedObjects, ii);
+                }
+                else
+                {
+                    var esteComponent = AavikonEsteet[i].gameObject.GetComponent<Este>();
+
+                    esteComponent.activateMesh = false;
+                    esteComponent.disableMesh = true;
+                }
+            }
+
+            for (int i = 0; i < A_ToolBoxes.Length; i++)
+            {
+                A_TB_vectors[i].Set(A_ToolBoxes[i].transform.position.x, A_ToolBoxes[i].transform.position.y, A_ToolBoxes[i].transform.position.z);
+
+                if (A_TB_vectors[i].z > A_AreaVector1.z && A_TB_vectors[i].z < A_AreaVector2.z)
+                {
+                    //ii++;
+                    //PickedObjects = new GameObject[ii];
+
+                    var Component = A_ToolBoxes[i].gameObject.GetComponent<ToolBox>();
+
+                    Component.activeToolBox = true;
+                    Component.disableToolBox = false;
+
+                    /*var objecti = Esteet[i];
+
+                    //Debug.Log(objecti);
+                    Debug.Log(Testi.Length);
+
+                    PickedObjects.SetValue(objecti, iii);*/
+
+                    //objecti = null;
+                    /*
+                    System.Array.Copy(Esteet, i, PickedObjects, iii, 1);
+                    Debug.Log(PickedObjects);
+                    //System.Array.ConstrainedCopy(PickedObjects, iii, Esteet, ii, 1);
+                    iii++;*/
+                    //Esteet.CopyTo(PickedObjects, ii);
+                }
+                else
+                {
+                    var Component = A_ToolBoxes[i].gameObject.GetComponent<ToolBox>();
+
+                    Component.activeToolBox = false;
+                    Component.disableToolBox = true;
+                }
+            }
+
+            for (int i = 0; i < A_JerryCans.Length; i++)
+            {
+                A_Jerry_vectors[i].Set(A_JerryCans[i].transform.position.x, A_JerryCans[i].transform.position.y, A_JerryCans[i].transform.position.z);
+
+                if (A_Jerry_vectors[i].z > A_AreaVector1.z && A_Jerry_vectors[i].z < A_AreaVector2.z)
+                {
+                    //ii++;
+                    //PickedObjects = new GameObject[ii];
+
+                    var Component = A_JerryCans[i].gameObject.GetComponent<JerryCan>();
+
+                    Component.activeJerryCan = true;
+                    Component.disableJerryCan = false;
+
+                    /*var objecti = Esteet[i];
+
+                    //Debug.Log(objecti);
+                    Debug.Log(Testi.Length);
+
+                    PickedObjects.SetValue(objecti, iii);*/
+
+                    //objecti = null;
+                    /*
+                    System.Array.Copy(Esteet, i, PickedObjects, iii, 1);
+                    Debug.Log(PickedObjects);
+                    //System.Array.ConstrainedCopy(PickedObjects, iii, Esteet, ii, 1);
+                    iii++;*/
+                    //Esteet.CopyTo(PickedObjects, ii);
+                }
+                else
+                {
+                    var Component = A_JerryCans[i].gameObject.GetComponent<JerryCan>();
+
+                    Component.activeJerryCan = false;
+                    Component.disableJerryCan = true;
+                }
+            }
+
+            for (int i = 0; i < A_Grass.Length; i++)
+            {
+                A_Grass_vectors[i].Set(A_Grass[i].transform.position.x, A_Grass[i].transform.position.y, A_Grass[i].transform.position.z);
+
+                if (A_Grass_vectors[i].z > A_AreaVector1.z && A_Grass_vectors[i].z < A_AreaVector2.z)
+                {
+                    //ii++;
+                    //PickedObjects = new GameObject[ii];
+
+                    var Component = A_Grass[i].gameObject.GetComponent<CrassControll>();
+
+                    Component.activeGrass = true;
+                    Component.disableGrass = false;
+
+                    /*var objecti = Esteet[i];
+
+                    //Debug.Log(objecti);
+                    Debug.Log(Testi.Length);
+
+                    PickedObjects.SetValue(objecti, iii);*/
+
+                    //objecti = null;
+                    /*
+                    System.Array.Copy(Esteet, i, PickedObjects, iii, 1);
+                    Debug.Log(PickedObjects);
+                    //System.Array.ConstrainedCopy(PickedObjects, iii, Esteet, ii, 1);
+                    iii++;*/
+                    //Esteet.CopyTo(PickedObjects, ii);
+                }
+                else
+                {
+                    var Component = A_Grass[i].gameObject.GetComponent<CrassControll>();
+
+                    Component.activeGrass = false;
+                    Component.disableGrass = true;
+                }
+            }
+
+            for (int i = 0; i < A_Safe.Length; i++)
+            {
+                A_Safe_vectors[i].Set(A_Safe[i].transform.position.x, A_Safe[i].transform.position.y, A_Safe[i].transform.position.z);
+
+                if (A_Safe_vectors[i].z > A_AreaVector1.z && A_Safe_vectors[i].z < A_AreaVector2.z)
+                {
+                    //ii++;
+                    //PickedObjects = new GameObject[ii];
+
+                    var Component = A_Safe[i].gameObject.GetComponent<Safe>();
+
+                    Component.activeSafe = true;
+                    Component.disableSafe = false;
+
+                    /*var objecti = Esteet[i];
+
+                    //Debug.Log(objecti);
+                    Debug.Log(Testi.Length);
+
+                    PickedObjects.SetValue(objecti, iii);*/
+
+                    //objecti = null;
+                    /*
+                    System.Array.Copy(Esteet, i, PickedObjects, iii, 1);
+                    Debug.Log(PickedObjects);
+                    //System.Array.ConstrainedCopy(PickedObjects, iii, Esteet, ii, 1);
+                    iii++;*/
+                    //Esteet.CopyTo(PickedObjects, ii);
+                }
+                else
+                {
+                    var Component = A_Safe[i].gameObject.GetComponent<Safe>();
+
+                    Component.activeSafe = false;
+                    Component.disableSafe = true;
+                }
+            }
+
+            isObjectsPicked = true;
+        }
+    }
+
+    private void Reback_M_Esteet()
+    {
+        H_Obs_vectors = new Vector3[HighwayEsteet.Length];
+
+        if (!isObjectsPicked)
+        {
+            for (int i = 0; i < HighwayEsteet.Length; i++)
+            {
+                H_Obs_vectors[i].Set(HighwayEsteet[i].transform.position.x, HighwayEsteet[i].transform.position.y, HighwayEsteet[i].transform.position.z);
+
+                if (H_Obs_vectors[i].z > AreaVector1.z && H_Obs_vectors[i].z < AreaVector2.z)
+                {
+                    //ii++;
+                    //PickedObjects = new GameObject[ii];
+
+                    var esteComponent = HighwayEsteet[i].gameObject.GetComponent<Este>();
+
+                    esteComponent.activateMesh = true;
+                    esteComponent.disableMesh = false;
+                    //activeToolBox = true;
+
+                    /*var objecti = Esteet[i];
+
+                    //Debug.Log(objecti);
+                    Debug.Log(Testi.Length);
+
+                    PickedObjects.SetValue(objecti, iii);*/
+
+                    //objecti = null;
+                    /*
+                    System.Array.Copy(Esteet, i, PickedObjects, iii, 1);
+                    Debug.Log(PickedObjects);
+                    //System.Array.ConstrainedCopy(PickedObjects, iii, Esteet, ii, 1);
+                    iii++;*/
+                    //Esteet.CopyTo(PickedObjects, ii);
+                }
+                else
+                {
+                    var esteComponent = HighwayEsteet[i].gameObject.GetComponent<Este>();
+
+                    esteComponent.activateMesh = false;
+                    esteComponent.disableMesh = true;
+                }
+            }
+
+            isObjectsPicked = true;
         }
     }
 }
