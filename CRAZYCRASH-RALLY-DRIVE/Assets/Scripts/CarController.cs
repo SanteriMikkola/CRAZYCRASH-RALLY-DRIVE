@@ -382,16 +382,34 @@ public class CarController : MonoBehaviour
         {
             leftFrontWheel.localRotation = Quaternion.Euler(leftFrontWheel.localRotation.eulerAngles.x, (turnInput * wheelTurn), leftFrontWheel.localRotation.eulerAngles.z);
             rightFrontWheel.localRotation = Quaternion.Euler(rightFrontWheel.localRotation.eulerAngles.x, (turnInput * wheelTurn), rightFrontWheel.localRotation.eulerAngles.z);
+
+            var defaultSize = new Vector3(0.9104571f, 0.6673748f, 2.708558f);
+            carCollider.playersBoxCollider.size = new Vector3(defaultSize.x, defaultSize.y, defaultSize.z);
+
+            var defaultCenter = new Vector3(0.0009245872f, 0.5299164f, 0.26f);
+            carCollider.playersBoxCollider.center = new Vector3(defaultCenter.x, defaultCenter.y, defaultCenter.z);
         }
         if (garageControll.isThatOldCar == true && garageControll.isThatCar3 == false)
         {
             leftFrontWheel.localRotation = Quaternion.Euler(leftFrontWheel.localRotation.eulerAngles.x, ((turnInput * wheelTurn) + 90f), leftFrontWheel.localRotation.eulerAngles.z);
             rightFrontWheel.localRotation = Quaternion.Euler(rightFrontWheel.localRotation.eulerAngles.x, ((turnInput * wheelTurn) + 90f), rightFrontWheel.localRotation.eulerAngles.z);
+
+            var car2Size = new Vector3(0.9104571f, 0.6829547f, 2.432917f);
+            carCollider.playersBoxCollider.size = new Vector3(car2Size.x, car2Size.y, car2Size.z);
+
+            var car2Center = new Vector3(0.0009245872f, 0.5221265f, 0.3230453f);
+            carCollider.playersBoxCollider.center = new Vector3(car2Center.x, car2Center.y, car2Center.z);
         }
         if (garageControll.isThatOldCar == false && garageControll.isThatCar3 == true)
         {
             leftFrontWheel.localRotation = Quaternion.Euler((turnInput * (wheelTurn * -1f)), leftFrontWheel.localRotation.eulerAngles.y, leftFrontWheel.localRotation.eulerAngles.z);
             rightFrontWheel.localRotation = Quaternion.Euler((turnInput * wheelTurn), rightFrontWheel.localRotation.eulerAngles.y, rightFrontWheel.localRotation.eulerAngles.z);
+
+            var car3Size = new Vector3(0.7489346f, 0.5150772f, 1.597193f);
+            carCollider.playersBoxCollider.size = new Vector3(car3Size.x, car3Size.y, car3Size.z);
+
+            var car3Center = new Vector3(-0.003241241f, 0.3841397f, 0.625173f);
+            carCollider.playersBoxCollider.center = new Vector3(car3Center.x, car3Center.y, car3Center.z);
         }
 
 
