@@ -84,7 +84,7 @@ public class MoneyScreen : MonoBehaviour
         //1007.9f - x 766f - y
         targetPos = new Vector3(Screen.width / 2, (Screen.height / 2) + 100f, 0f);
         //140f - x 1035f - y
-        originalPos = new Vector3(140f, 1035f, 0f);
+        originalPos = new Vector3(0f, Screen.height, 0f);
     }
 
     void Update()
