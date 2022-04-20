@@ -25,9 +25,9 @@ public class PlayerColor : MonoBehaviour
     [SerializeField]
     private float Rn = 1f;
     [SerializeField]
-    private float Gn = 1f;
+    private float Gn = 0f;
     [SerializeField]
-    private float Bn = 1f;
+    private float Bn = 0f;
     [SerializeField]
     private float An = 1f;
 
@@ -66,6 +66,9 @@ public class PlayerColor : MonoBehaviour
         carCollider = MainPlayer.GetComponent<CarCollider>();
         Player = GameObject.FindGameObjectWithTag("EquippedCar");
         garageControll = Garage.GetComponent<GarageControll>();
+
+        playerNormalColor = new Color(Rn, Gn, Bn, An);
+        playerNewColor = new Color(R, G, B, A);
     }
 
     void Update()
@@ -76,19 +79,36 @@ public class PlayerColor : MonoBehaviour
         }
         playerRenderer = Player.GetComponent<MeshRenderer>();
 
-        if (garageControll.isThatOldCar == true && changeNormalcolor == false)  //oldC
+        /*if (garageControll.isThatOldCar == false && changeNormalcolor == false && garageControll.isThatCar3 == true)  //car3
         {
-            Rn = 1f;
-            Gn = 1f;
-            Bn = 1f;
+            Rn = 0.04313726f;
+            Gn = 0.3490196f;
+            Bn = 0.4745098f;
             An = 1f;
 
             var block = new MaterialPropertyBlock();
 
-            playerNormalColor = new Color(Rn, Gn, Bn, An);
+            //playerNormalColor = garageControll.garageCarMeshRenderer.material.color;
             playerNewColor = new Color(R, G, B, A);
 
-            block.SetColor("_BaseColor", playerNormalColor);
+            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", playerNormalColor);
+            playerRenderer.SetPropertyBlock(block);
+
+            changeNormalcolor = true;
+        }
+        if (garageControll.isThatOldCar == true && changeNormalcolor == false && garageControll.isThatCar3 == false)  //car2
+        {
+            Rn = 0.03137255f;
+            Gn = 0.4117647f;
+            Bn = 0.1490196f;
+            An = 1f;
+
+            var block = new MaterialPropertyBlock();
+
+            //playerNormalColor = garageControll.garageCarMeshRenderer.material.color;
+            playerNewColor = new Color(R, G, B, A);
+
+            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", playerNormalColor);
             playerRenderer.SetPropertyBlock(block);
 
             changeNormalcolor = true;
@@ -96,27 +116,26 @@ public class PlayerColor : MonoBehaviour
         if (garageControll.isThatOldCar == false && changeNcolor == false)  //defaultC
         {
             Rn = 1f;
-            Gn = 1f;
-            Bn = 1f;
+            Gn = 0f;
+            Bn = 0f;
             An = 1f;
 
             var block = new MaterialPropertyBlock();
 
-            playerNormalColor = new Color(Rn, Gn, Bn, An);
+            //playerNormalColor = garageControll.garageCarMeshRenderer.material.color;
             playerNewColor = new Color(R, G, B, A);
 
-            block.SetColor("_BaseColor", playerNormalColor);
+            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", playerNormalColor);
             playerRenderer.SetPropertyBlock(block);
             changeNcolor = true;
-        }
-
-        playerNormalColor = new Color(Rn, Gn, Bn, An);
-        playerNewColor = new Color(R, G, B, A);
+        }*/
 
         /*if (playerMove.playerCollideWithOsb == true)
         {
             Change();
         }*/
+
+
         if (carCollider.playerCollide == true && carCollider.isPlayerDead == false)
         {
             Change();
@@ -153,7 +172,7 @@ public class PlayerColor : MonoBehaviour
 
             if (IsThatNormalColor == false)
             {
-                block.SetColor("_BaseColor", playerNewColor);
+                block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", playerNewColor);
                 playerRenderer.SetPropertyBlock(block);
                 //playerRenderer.material.SetColor("_BaseColor", playerNewColor);
                 //playerRenderer.material = playerNewColorMaterial;
@@ -161,7 +180,7 @@ public class PlayerColor : MonoBehaviour
             }
             if (IsThatNormalColor == true)
             {
-                block.SetColor("_BaseColor", playerNormalColor);
+                block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", playerNormalColor);
                 playerRenderer.SetPropertyBlock(block);
                 //playerRenderer.material.SetColor("_BaseColor", playerNormalColor);
                 //playerRenderer.material = playerNormalColorMaterial;

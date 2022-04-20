@@ -30,13 +30,23 @@ public class GarageControll : MonoBehaviour
     public Mesh oldMF;
 
     public int index = 0;
+    public int colorIndex = 0;
     public int a = 0;
 
     public bool pressedRight, pressedLeft,
                 pressedCarB, pressedPaintB,
                 pressedHatB;
 
-    private bool indexBLock = false;
+    public GameObject[] PaintArrow;
+    public GameObject[] CarArrow;
+
+    private MeshRenderer garageCarMeshRenderer;
+
+    public Color colorOfCar1;
+    public Color colorOfCar2;
+    public Color colorOfCar3;
+
+    public bool indexBLock = false;
 
     private bool matSetUp = true;
 
@@ -65,6 +75,8 @@ public class GarageControll : MonoBehaviour
         Wheels = GameObject.FindGameObjectWithTag("Wheel");
         PlayersChild = GameObject.FindGameObjectWithTag("EquippedCar");
 
+        playerRenderer = PlayersChild.GetComponent<MeshRenderer>();
+
         playerRotateF = GameObject.Find("playerRotationF");
 
         pressedRight = false;
@@ -75,6 +87,13 @@ public class GarageControll : MonoBehaviour
 
         garageCar2.SetActive(false);
         garageCar3.SetActive(false);
+
+
+        colorOfCar1 = new Color(1, 0, 0, 1);
+        //colorOfCar2 = new Color(1, 0, 0, 1);
+        //colorOfCar3 = new Color(1, 0, 0, 1);
+        colorOfCar2 = new Color(0.03137255f, 0.4117647f, 0.1490196f, 1);
+        colorOfCar3 = new Color(0.04313726f, 0.3490196f, 0.4745098f, 1);
     }
 
     // Update is called once per frame
@@ -100,7 +119,8 @@ public class GarageControll : MonoBehaviour
             matSetUp = false;
         }
 
-        if (pressedRight == true && pressedLeft == false && indexBLock == false)
+        // Change cars
+        if (pressedRight == true && pressedLeft == false && indexBLock == false && pressedCarB == true && pressedPaintB == false && pressedHatB == false)
         {
             if (index >= 0)
             {
@@ -111,11 +131,36 @@ public class GarageControll : MonoBehaviour
 
             indexBLock = true;
         }
-        if (pressedRight == false && pressedLeft == true && indexBLock == true)
+        if (pressedRight == false && pressedLeft == true && indexBLock == true && pressedCarB == true && pressedPaintB == false && pressedHatB == false)
         {
             if (index >= 1)
             {
                 index--;
+                //Cars[index].SetActive(true);
+                ChangeChoose();
+            }
+
+            indexBLock = false;
+        }
+
+        // Change colors
+        if (pressedRight == true && pressedLeft == false && indexBLock == false && pressedCarB == false && pressedPaintB == true && pressedHatB == false)
+        {
+            if (colorIndex >= 0 && colorIndex < 11)
+            {
+                colorIndex++;
+                //Cars[index].SetActive(true);
+                
+                ChangeChoose();
+            }
+
+            indexBLock = true;
+        }
+        if (pressedRight == false && pressedLeft == true && indexBLock == true && pressedCarB == false && pressedPaintB == true && pressedHatB == false)
+        {
+            if (colorIndex >= 1)
+            {
+                colorIndex--;
                 //Cars[index].SetActive(true);
                 ChangeChoose();
             }
@@ -132,6 +177,8 @@ public class GarageControll : MonoBehaviour
             {
                 case 0: //defaltcar
                     {
+                        playerColor.playerNormalColor = colorOfCar1;
+
                         isThatOldCar = false;
                         isThatCar3 = false;
                         playerColor.changeNcolor = false;
@@ -159,12 +206,16 @@ public class GarageControll : MonoBehaviour
                         Vector3 targetPoint = (playerRotateF.transform.position);
                         Cars[index].transform.LookAt(targetPoint);
                         Cars[index].transform.Rotate(-90f, 0f, 0f);*/
+                        PlayersChild = GameObject.FindGameObjectWithTag("EquippedCar");
+                        playerRenderer = PlayersChild.GetComponent<MeshRenderer>();
                         changeCarColor = false;
                         carController.wheelsReady = false;
                     }
                     break;
-                case 1: //oldcar
+                case 1: //car2
                     {
+                        playerColor.playerNormalColor = colorOfCar2;
+
                         isThatOldCar = true;
                         isThatCar3 = false;
                         playerColor.changeNormalcolor = false;
@@ -191,12 +242,17 @@ public class GarageControll : MonoBehaviour
                         Vector3 targetPoint = (playerRotateF.transform.position);
                         Cars[index].transform.LookAt(targetPoint);
                         Cars[index].transform.Rotate(-90f, 0f, -180f);*/
+                        PlayersChild = GameObject.FindGameObjectWithTag("EquippedCar");
+                        playerRenderer = PlayersChild.GetComponent<MeshRenderer>();
                         changeCarColor = false;
                         carController.wheelsReady = false;
                     }
                     break;
                 case 2: //car3
                     {
+                        playerColor.playerNormalColor = colorOfCar3;
+
+
                         isThatOldCar = false;
                         isThatCar3 = true;
                         playerColor.changeNormalcolor = false;
@@ -223,6 +279,8 @@ public class GarageControll : MonoBehaviour
                         Vector3 targetPoint = (playerRotateF.transform.position);
                         Cars[index].transform.LookAt(targetPoint);
                         Cars[index].transform.Rotate(-90f, 0f, -180f);*/
+                        PlayersChild = GameObject.FindGameObjectWithTag("EquippedCar");
+                        playerRenderer = PlayersChild.GetComponent<MeshRenderer>();
                         changeCarColor = false;
                         carController.wheelsReady = false;
                     }
@@ -233,7 +291,420 @@ public class GarageControll : MonoBehaviour
         }
         if (pressedCarB == false && pressedPaintB == true && pressedHatB == false)
         {
+            switch (index)
+            {
+                case 0: //defaltcar
+                    {
+                        garageCarMeshRenderer = Cars[index].GetComponent<MeshRenderer>();
 
+                        PaintArrow[0].SetActive(true);
+                        PaintArrow[1].SetActive(true);
+
+                        PaintArrow[2].SetActive(false);
+                        PaintArrow[3].SetActive(false);
+                        PaintArrow[4].SetActive(false);
+                        PaintArrow[5].SetActive(false);
+
+                        if (colorIndex == 0)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+
+
+                        }
+                        else if (colorIndex == 1)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+
+                            
+                        }
+                        else if (colorIndex == 2)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+
+                            
+                        }
+                        else if (colorIndex == 3)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+
+                            
+                        }
+                        else if (colorIndex == 4)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+
+                            
+                        }
+                        else if (colorIndex == 5)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+
+                            
+                        }
+                        else if (colorIndex == 6)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+
+                            
+                        }
+                        else if (colorIndex == 7)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 8)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 9)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 10)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 11)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+
+                        colorOfCar1 = Colors[colorIndex];
+                        playerColor.playerNormalColor = colorOfCar1;
+                    }
+                    break;
+                case 1: //car2
+                    {
+                        garageCarMeshRenderer = Cars[index].GetComponent<MeshRenderer>();
+
+                        PaintArrow[2].SetActive(true);
+                        PaintArrow[3].SetActive(true);
+
+                        PaintArrow[0].SetActive(false);
+                        PaintArrow[1].SetActive(false);
+                        PaintArrow[4].SetActive(false);
+                        PaintArrow[5].SetActive(false);
+
+                        if (colorIndex == 0)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 1)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 2)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 3)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 4)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 5)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 6)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 7)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 8)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 9)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 10)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 11)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+
+                        colorOfCar2 = Colors[colorIndex];
+                        playerColor.playerNormalColor = colorOfCar2;
+                    }
+                    break;
+                case 2: //car3
+                    {
+                        garageCarMeshRenderer = Cars[index].GetComponent<MeshRenderer>();
+
+                        PaintArrow[4].SetActive(true);
+                        PaintArrow[5].SetActive(true);
+
+                        PaintArrow[0].SetActive(false);
+                        PaintArrow[1].SetActive(false);
+                        PaintArrow[2].SetActive(false);
+                        PaintArrow[3].SetActive(false);
+
+                        if (colorIndex == 0)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 1)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 2)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 3)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 4)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 5)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 6)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 7)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 8)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 9)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 10)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+                        else if (colorIndex == 11)
+                        {
+                            var block = new MaterialPropertyBlock();
+
+                            block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[colorIndex]);
+                            playerRenderer.SetPropertyBlock(block);
+
+                            garageCarMeshRenderer.SetPropertyBlock(block);
+                            
+                        }
+
+                        colorOfCar3 = Colors[colorIndex];
+                        playerColor.playerNormalColor = colorOfCar3;
+                    }
+                    break;
+            }
         }
         if (pressedCarB == false && pressedPaintB == false && pressedHatB == true)
         {
@@ -254,6 +725,49 @@ public class GarageControll : MonoBehaviour
         pressedCarB = true;
         pressedPaintB = false;
         pressedHatB = false;
+
+        PlayersChild = GameObject.FindGameObjectWithTag("EquippedCar");
+        playerRenderer = PlayersChild.GetComponent<MeshRenderer>();
+
+        switch (index)
+        {
+            case 0: //defaltcar
+                {
+
+                    CarArrow[0].SetActive(true);
+                    CarArrow[1].SetActive(true);
+
+                    CarArrow[2].SetActive(false);
+                    CarArrow[3].SetActive(false);
+                    CarArrow[4].SetActive(false);
+                    CarArrow[5].SetActive(false);
+                }
+                break;
+            case 1: //car2
+                {
+
+                    CarArrow[2].SetActive(true);
+                    CarArrow[3].SetActive(true);
+
+                    CarArrow[0].SetActive(false);
+                    CarArrow[1].SetActive(false);
+                    CarArrow[4].SetActive(false);
+                    CarArrow[5].SetActive(false);
+                }
+                break;
+            case 2: //car3
+                {
+
+                    CarArrow[4].SetActive(true);
+                    CarArrow[5].SetActive(true);
+
+                    CarArrow[0].SetActive(false);
+                    CarArrow[1].SetActive(false);
+                    CarArrow[2].SetActive(false);
+                    CarArrow[3].SetActive(false);
+                }
+                break;
+        }
     }
 
     public void PressedPaintB()
@@ -261,6 +775,49 @@ public class GarageControll : MonoBehaviour
         pressedPaintB = true;
         pressedCarB = false;
         pressedHatB = false;
+
+        switch (index)
+        {
+            case 0: //defaltcar
+                {
+                    garageCarMeshRenderer = Cars[index].GetComponent<MeshRenderer>();
+
+                    PaintArrow[0].SetActive(true);
+                    PaintArrow[1].SetActive(true);
+
+                    PaintArrow[2].SetActive(false);
+                    PaintArrow[3].SetActive(false);
+                    PaintArrow[4].SetActive(false);
+                    PaintArrow[5].SetActive(false);
+                }
+                break;
+            case 1: //car2
+                {
+                    garageCarMeshRenderer = Cars[index].GetComponent<MeshRenderer>();
+
+                    PaintArrow[2].SetActive(true);
+                    PaintArrow[3].SetActive(true);
+
+                    PaintArrow[0].SetActive(false);
+                    PaintArrow[1].SetActive(false);
+                    PaintArrow[4].SetActive(false);
+                    PaintArrow[5].SetActive(false);
+                }
+                break;
+            case 2: //car3
+                {
+                    garageCarMeshRenderer = Cars[index].GetComponent<MeshRenderer>();
+
+                    PaintArrow[4].SetActive(true);
+                    PaintArrow[5].SetActive(true);
+
+                    PaintArrow[0].SetActive(false);
+                    PaintArrow[1].SetActive(false);
+                    PaintArrow[2].SetActive(false);
+                    PaintArrow[3].SetActive(false);
+                }
+                break;
+        }
     }
 
     public void PressedHatB()
@@ -299,6 +856,52 @@ public class GarageControll : MonoBehaviour
         //Cars[index].SetActive(false);
         pressedLeft = true;
         pressedRight = false;
+        indexBLock = true;
+    }
+
+    // ColorArrows
+    public void PressedRightColorACar1()
+    {
+        //Cars[index].SetActive(false);
+        pressedRight = true;
+        pressedLeft = false;
+        indexBLock = false;
+    }
+    public void PressedLeftColorACar1()
+    {
+        //Cars[index].SetActive(false);
+        pressedRight = false;
+        pressedLeft = true;
+        indexBLock = true;
+    }
+
+    public void PressedRightColorACar2()
+    {
+        //Cars[index].SetActive(false);
+        pressedRight = true;
+        pressedLeft = false;
+        indexBLock = false;
+    }
+    public void PressedLeftColorACar2()
+    {
+        //Cars[index].SetActive(false);
+        pressedRight = false;
+        pressedLeft = true;
+        indexBLock = true;
+    }
+
+    public void PressedRightColorACar3()
+    {
+        //Cars[index].SetActive(false);
+        pressedRight = true;
+        pressedLeft = false;
+        indexBLock = false;
+    }
+    public void PressedLeftColorACar3()
+    {
+        //Cars[index].SetActive(false);
+        pressedRight = false;
+        pressedLeft = true;
         indexBLock = true;
     }
 }
