@@ -372,7 +372,7 @@ public class CarCollider : MonoBehaviour
         //playerColor.playerRenderer.material = playerColor.playerNormalColorMaterial;
         //playerColor.playerRenderer.material.SetColor("_BaseColor", playerColor.playerNormalColor);
         var block = new MaterialPropertyBlock();
-        block.SetColor("_BaseColor", playerColor.playerNormalColor);
+        block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", playerColor.playerNormalColor);
         playerColor.playerRenderer.SetPropertyBlock(block);
     }
 
@@ -453,7 +453,7 @@ public class CarCollider : MonoBehaviour
         //playerColor.playerRenderer.material = playerColor.playerNormalColorMaterial;
         //playerColor.playerRenderer.material.SetColor("_BaseColor", playerColor.playerNormalColor);
         var block = new MaterialPropertyBlock();
-        block.SetColor("_BaseColor", playerColor.playerNormalColor);
+        block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", playerColor.playerNormalColor);
         playerColor.playerRenderer.SetPropertyBlock(block);
         deadOrNot = true;
         isPlayerDead = false;
