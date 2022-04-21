@@ -72,6 +72,8 @@ public class CarController : MonoBehaviour
     private Vector3 aloitusTienLoppu;
     private Vector3 aavikonLoppu;
 
+    //private float 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -244,6 +246,7 @@ public class CarController : MonoBehaviour
             StartCoroutine(fuelControll.JerryCanReverseFullHealth());
             hpControll.HealthPointsScrollBar.value = 0f;
             carCollider.osuma = 0;
+            carCollider.safesPicked = 0;
             startButtonS.GiveUp();
             mapControll.isGiveUp = false;
         }
@@ -433,5 +436,10 @@ public class CarController : MonoBehaviour
                 //Player.transform.LookAt(targetPoint);
             }
         }
+    }
+
+    private void PlayerPosCheck()
+    {
+
     }
 }

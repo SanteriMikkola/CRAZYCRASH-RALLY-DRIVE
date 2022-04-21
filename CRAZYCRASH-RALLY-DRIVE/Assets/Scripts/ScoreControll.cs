@@ -24,7 +24,7 @@ public class ScoreControll : MonoBehaviour
         mapControll = fCfrontCol.GetComponent<MapControll>();
         numBer = 000;
     }
-    void Update()
+    void FixedUpdate()
     {
         IsplayerDead();
         if (carCollider.playerCollide == false && carCollider.isPlayerMoving == true && mapControll.isGamePaused == false)

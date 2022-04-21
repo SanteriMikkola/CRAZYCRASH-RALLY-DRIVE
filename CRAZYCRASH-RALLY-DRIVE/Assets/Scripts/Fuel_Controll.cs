@@ -66,6 +66,31 @@ public class Fuel_Controll : MonoBehaviour
             StartCoroutine(JerryCanReverseFullHealth());
         }
 
+        /*if (carController.IsTutorialEnded == true && carCollider.playerCollide == false && carCollider.isPlayerDead == false && carCollider.jerryCanPicked == false && carCollider.isThatMT == false)
+        {
+            if (rotationZ < 83f)
+            {
+                StartCoroutine(DecreaseFuel());
+            }
+            else
+            {
+                carCollider.fuel = 0;
+            }
+        }*/
+
+        /*if (carCollider.jerryCanPicked == false)
+        {
+            healed = false;
+        }*/
+        if (carCollider.isPlayerDead == true)
+        {
+            rotationZ = 82f;
+            FuelMeterArrow.transform.rotation = Quaternion.Euler(0f, 0f, rotationZ);
+        }
+    }
+
+    private void FixedUpdate()
+    {
         if (carController.IsTutorialEnded == true && carCollider.playerCollide == false && carCollider.isPlayerDead == false && carCollider.jerryCanPicked == false && carCollider.isThatMT == false)
         {
             if (rotationZ < 83f)
@@ -76,16 +101,6 @@ public class Fuel_Controll : MonoBehaviour
             {
                 carCollider.fuel = 0;
             }
-        }
-
-        /*if (carCollider.jerryCanPicked == false)
-        {
-            healed = false;
-        }*/
-        if (carCollider.isPlayerDead == true)
-        {
-            rotationZ = 82f;
-            FuelMeterArrow.transform.rotation = Quaternion.Euler(0f, 0f, rotationZ);
         }
     }
 
