@@ -14,12 +14,14 @@ public class Fuel_Controll : MonoBehaviour
 
     private bool deCreased = false;
     private bool inCreased = false;
-    private float decreaseValue = 0.06f;
-    private float decreaseFuel = 0.0096f;
+    public float decreaseValue = 0.32f;
+    //[HideInInspector]
+    private float decreaseFuel = 0.1976f;
     private float increaseValue = 4f;
     private float increaseFuel = 100f;
 
-    private float rotationZ = -80.5f;
+    [HideInInspector]
+    public float rotationZ = -80.5f;
 
     public Vector3 fuelDecreaseDelay;
 
@@ -91,7 +93,7 @@ public class Fuel_Controll : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (carController.IsTutorialEnded == true && carCollider.playerCollide == false && carCollider.isPlayerDead == false && carCollider.jerryCanPicked == false && carCollider.isThatMT == false)
+        /*if (carController.IsTutorialEnded == true && carCollider.playerCollide == false && carCollider.isPlayerDead == false && carCollider.jerryCanPicked == false && carCollider.isThatMT == false)
         {
             if (rotationZ < 83f)
             {
@@ -101,10 +103,10 @@ public class Fuel_Controll : MonoBehaviour
             {
                 carCollider.fuel = 0;
             }
-        }
+        }*/
     }
 
-    IEnumerator DecreaseFuel()
+    public IEnumerator DecreaseFuel()
     {
         carCollider.fuel -= decreaseFuel;
 

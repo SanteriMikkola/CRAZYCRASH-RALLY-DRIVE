@@ -27,14 +27,14 @@ public class ScoreControll : MonoBehaviour
     void FixedUpdate()
     {
         IsplayerDead();
-        if (carCollider.playerCollide == false && carCollider.isPlayerMoving == true && mapControll.isGamePaused == false)
+        /*if (carCollider.playerCollide == false && carCollider.isPlayerMoving == true && mapControll.isGamePaused == false)
         {
             IncreaseScore();
         }
         else
         {
             StartCoroutine(OdotaHetki());
-        }
+        }*/
 
         /*if (playerMove.playerCollideWithOsb == false && playerMove.playerMoving == true)
         {
@@ -46,14 +46,14 @@ public class ScoreControll : MonoBehaviour
         }*/
     }
 
-    private void IncreaseScore()
+    public void IncreaseScore()
     {
         /*if (IsThatStart == true)
         {
             numBer++;
         }*/
-        numBer++;
-        //numBer++;
+
+        numBer += 5;
         ScoreNumText.text = numBer.ToString();
     }
 
