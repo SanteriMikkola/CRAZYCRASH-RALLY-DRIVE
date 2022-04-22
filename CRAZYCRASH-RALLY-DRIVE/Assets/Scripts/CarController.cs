@@ -72,7 +72,7 @@ public class CarController : MonoBehaviour
     private Vector3 aloitusTienLoppu;
     private Vector3 aavikonLoppu;
 
-    //private float 
+    public float targetPosz = 0.25f;
 
     // Start is called before the first frame update
     void Start()
@@ -143,6 +143,7 @@ public class CarController : MonoBehaviour
             targetSpeed = 2f;
             turnInput = 0f;
             forwardSpeed = 0f;
+            IsTutorialEnded = false;
             //moneyScreenS.M_ScreenOpen();
 
             if (moneyScreenS.CloseScreen == true)
@@ -159,11 +160,15 @@ public class CarController : MonoBehaviour
                 boxCol.enabled = true;
                 Player.transform.position = new Vector3(0f, 0.6529999f, -1.024994f);
                 carCollider.playersBoxCollider.enabled = true;
-                IsTutorialEnded = false;
+
                 /*Vector3 targetPoint = (playerRotateF.transform.position);
                 Player.transform.LookAt(targetPoint);*/
                 rB.transform.position = new Vector3(0f, 0.6059999f, 0.4799957f);
                 Kamera.transform.position = new Vector3(rB.position.x, rB.position.y + 5.310003f, rB.position.z - 8.23f);
+
+                targetPosz = -0.774994f;
+
+                fuelControll.decreaseValue = 0.32f;
 
                 if (transform.localRotation.eulerAngles.y != 0f)
                 {
@@ -206,6 +211,7 @@ public class CarController : MonoBehaviour
         if (mapControll.isGiveUp == true)
         {
             turnInput = 0f;
+            targetSpeed = 2f;
             carCollider.isEstePosRandomized = false;
             carCollider.reback_Obs = true;
             carCollider.isThatLevel2 = false;
@@ -223,6 +229,10 @@ public class CarController : MonoBehaviour
             Player.transform.LookAt(targetPoint);*/
             rB.transform.position = new Vector3(0f, 0.6059999f, 0.4799957f);
             Kamera.transform.position = new Vector3(rB.position.x, rB.position.y + 5.310003f, rB.position.z - 8.23f);
+
+            targetPosz = -0.774994f;
+
+            fuelControll.decreaseValue = 0.32f;
 
             if (transform.localRotation.eulerAngles.y != 0f)
             {
@@ -256,6 +266,9 @@ public class CarController : MonoBehaviour
             Player.transform.position = new Vector3(0f, 800.986f, -212.5f);
             rB.transform.position = new Vector3(0f, 800.948f, -31f);
             Kamera.transform.position = new Vector3(rB.position.x, rB.position.y + 5.310003f, rB.position.z - 8.23f);
+
+            targetPosz = -31.55f;
+
             //startButtonS.GameStartForMapControll = true;
             PposChanget = false;
             resetPposChanget = false;
@@ -267,6 +280,9 @@ public class CarController : MonoBehaviour
             Player.transform.position = new Vector3(0f, 400.633f, -1.024994f);
             rB.transform.position = new Vector3(0f, 400.595f, 0.4799957f);
             Kamera.transform.position = new Vector3(rB.position.x, rB.position.y + 5.310003f, rB.position.z - 8.23f);
+
+            targetPosz = -0.774994f;
+
             //startButtonS.GameStartForMapControll = true;
             PposChanget = true;
         }
@@ -280,6 +296,8 @@ public class CarController : MonoBehaviour
             Player.transform.LookAt(targetPoint);*/
             rB.transform.position = new Vector3(0f, 0.6059999f, 0.4799957f);
             Kamera.transform.position = new Vector3(rB.position.x, rB.position.y + 5.310003f, rB.position.z - 8.23f);
+
+            targetPosz = -0.774994f;
 
             if (transform.localRotation.eulerAngles.y != 0f)
             {
@@ -424,6 +442,7 @@ public class CarController : MonoBehaviour
         {
             rB.AddForce(transform.forward * forwardSpeed * 1000f);
             transform.position = rB.transform.position;
+            PlayerPosCheck();
             if (Player.transform.position.z >= aloitusTienLoppu.z && Player.transform.position.y < aavikonLoppu.y)
             {
                 IsTutorialEnded = true;
@@ -440,6 +459,22 @@ public class CarController : MonoBehaviour
 
     private void PlayerPosCheck()
     {
-
+        if (Player.transform.position.z >= targetPosz && mapControll.isGamePaused == false && carCollider.isPlayerDead == false)
+        {
+            //Debug.Log("");
+            scoreControll.IncreaseScore();
+            if (IsTutorialEnded == true && carCollider.isPlayerDead == false && carCollider.jerryCanPicked == false && carCollider.isThatMT == false)
+            {
+                if (fuelControll.rotationZ < 83f)
+                {
+                    StartCoroutine(fuelControll.DecreaseFuel());
+                }
+                else
+                {
+                    carCollider.fuel = 0;
+                }
+            }
+            targetPosz += 0.25f;
+        }
     }
 }

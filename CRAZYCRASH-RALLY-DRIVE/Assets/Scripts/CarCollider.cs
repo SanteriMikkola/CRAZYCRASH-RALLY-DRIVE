@@ -289,6 +289,7 @@ public class CarCollider : MonoBehaviour
             mapControllS.highwayIdentifier = true;
 
             carController.targetSpeed += 0.25f;
+            fuelControll.decreaseValue += 0.025f;
 
             /*reback_Obs = false;
             isThatLevel2 = true;*/
@@ -309,6 +310,7 @@ public class CarCollider : MonoBehaviour
             mapControllS.highwayIdentifier = false;
 
             carController.targetSpeed += 0.25f;
+            fuelControll.decreaseValue += 0.025f;
 
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
@@ -326,6 +328,7 @@ public class CarCollider : MonoBehaviour
             mapControllS.highwayIdentifier = false;
 
             carController.targetSpeed += 0.25f;
+            fuelControll.decreaseValue += 0.025f;
 
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
