@@ -58,7 +58,7 @@ public class CarCollider : MonoBehaviour
 
     public int safesPicked = 0;
 
-    public int money = 0;
+    public int money = 2000;
 
     [HideInInspector]
     public int moneyInSafe = 0;
@@ -68,6 +68,7 @@ public class CarCollider : MonoBehaviour
     [HideInInspector]
     public int moneyPerRound2 = 0;
 
+    [HideInInspector]
     public int moneyRandomer;
 
     [HideInInspector]
@@ -78,13 +79,30 @@ public class CarCollider : MonoBehaviour
 
     private Vector3 playerPos_4z;
 
+    [HideInInspector]
     public bool deadOrNot = false;
 
     private bool scoreGet = false;
 
+    [HideInInspector]
+    public bool dataFileCreated;
+
+    public bool RESET_ALL_DATA = false;
+
+
     // Start is called before the first frame update
     void Start()
     {
+        LoadData();
+        if (!dataFileCreated)
+        {
+            SaveData();
+            dataFileCreated = true;
+            SaveData();
+            LoadData();
+        }
+
+        LoadData();
         Player = GameObject.Find("Player");
         //Wheels = GameObject.FindGameObjectsWithTag("Wheel");
         SpheRe = GameObject.Find("Sphere");
@@ -109,6 +127,21 @@ public class CarCollider : MonoBehaviour
 
     }
 
+
+    public void SaveData()
+    {
+        SaveSystem.SaveData(this);
+    }
+
+    public void LoadData()
+    {
+        GameData data = SaveSystem.LoadData();
+
+        money = data.money;
+        dataFileCreated = data.dataFileCreated;
+    }
+
+
     public void Update()
     {
         startMenuMoneyT_Text.text = money.ToString();
@@ -125,6 +158,14 @@ public class CarCollider : MonoBehaviour
             MoneyRandomize();
             ScoreMoney();
         }
+
+        if (RESET_ALL_DATA)
+        {
+            ResetAll();
+        }
+
+        SaveData();
+        LoadData();
     }
 
     public void OnCollisionEnter(Collision collider)
@@ -462,5 +503,26 @@ public class CarCollider : MonoBehaviour
         isPlayerDead = false;
         playerCollide = false;
         osuma = 0;
+    }
+
+    public void AddSafeMoney()
+    {
+        money += moneyPerRound;
+        SaveData();
+        LoadData();
+    }
+    public void AddScoreMoney()
+    {
+        money += moneyPerRound2;
+        SaveData();
+        LoadData();
+    }
+
+    private void ResetAll()
+    {
+        money = 2000;
+        RESET_ALL_DATA = false;
+        SaveData();
+        LoadData();
     }
 }

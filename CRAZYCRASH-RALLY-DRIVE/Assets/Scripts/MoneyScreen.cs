@@ -175,7 +175,9 @@ public class MoneyScreen : MonoBehaviour
 
                         //MoneyAddedScoreText_Text.enabled = true;
 
-                        carCollider.money += carCollider.moneyPerRound2;
+                        carCollider.AddScoreMoney();
+
+                        //carCollider.money += carCollider.moneyPerRound2;
 
                         activateMoneyST = true;
                         time = 0;
@@ -212,7 +214,9 @@ public class MoneyScreen : MonoBehaviour
                     MoneyAddedT_Money_Image_Image.enabled = true;
                     //Debug.Log("KEKE");
 
-                    carCollider.money += carCollider.moneyPerRound;
+                    carCollider.AddSafeMoney();
+
+                    //carCollider.money += carCollider.moneyPerRound;
 
                     moneyScreenActivated = true;
                     pickScoreNum = true;
