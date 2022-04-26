@@ -50,6 +50,10 @@ public class CarCollider : MonoBehaviour
     [HideInInspector]
     public bool isEstePosRandomized = false;
 
+    public Rigidbody rb;
+
+    private Vector3 stuckForce = new Vector3(0f, 0f, -1000f);
+
     public int osuma = 0;
 
     public float fuel = 100f;
@@ -238,6 +242,7 @@ public class CarCollider : MonoBehaviour
                 Kamera.SetActive(false);*/
                 playerCollide = false;
                 moneyRandomized = false;
+                scoreGet = false;
             }
 
             if (osuma != maxOsumat && deadOrNot == false)
@@ -395,6 +400,22 @@ public class CarCollider : MonoBehaviour
         {
             safePicked = true;
             safesPicked++;
+        }
+
+        if (collider.gameObject.CompareTag("HighWay"))
+        {
+            stuckForce = new Vector3(0f, 0f, -1000f);
+            rb.AddForce(stuckForce, ForceMode.Impulse);
+        }
+        if (collider.gameObject.CompareTag("Fence_high_R"))
+        {
+            stuckForce = new Vector3(-800f, 0f, 0f);
+            rb.AddForce(stuckForce, ForceMode.Impulse);
+        }
+        if (collider.gameObject.CompareTag("Fence_high_L"))
+        {
+            stuckForce = new Vector3(800f, 0f, 0f);
+            rb.AddForce(stuckForce, ForceMode.Impulse);
         }
     }
 

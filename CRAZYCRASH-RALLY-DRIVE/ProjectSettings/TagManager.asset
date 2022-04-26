@@ -35,6 +35,8 @@ TagManager:
   - Safe
   - A_Safe
   - HighwayEste
+  - Fence_high_R
+  - Fence_high_L
   layers:
   - Default
   - TransparentFX
