@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1349
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -310,9 +310,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 367f0000
+      m_SelectedIDs: 38d60000
       m_LastClickedID: 0
-      m_ExpandedIDs: 6afbffffa8bb000006cf0000
+      m_ExpandedIDs: 20a3feffb2a4fefff0a6feff3c15ffffb230ffff8859ffff4c5bffff0696ffff44b5fffff2bdffff6afbffff2aad0000a8bb0000a4280f00
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -372,9 +372,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -51.877113, y: 813.6657, z: 8.843178}
+    m_Target: {x: 26.2752, y: -11.046322, z: 96.1952}
     speed: 2
-    m_Value: {x: -51.877113, y: 813.6657, z: 8.843178}
+    m_Value: {x: 26.2752, y: -11.046322, z: 96.1952}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -421,20 +421,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.09085581, y: -0.17476442, z: 0.016091825, w: -0.9803087}
+    m_Target: {x: 0.17943299, y: 0.1908535, z: -0.03532407, w: 0.9645053}
     speed: 2
-    m_Value: {x: -0.09085301, y: -0.17475905, z: 0.01609133, w: -0.98027855}
+    m_Value: {x: 0.18086693, y: 0.19078699, z: -0.035607904, w: 0.96416783}
   m_Size:
-    m_Target: 32.19839
+    m_Target: 89.91344
     speed: 2
-    m_Value: 32.19839
+    m_Value: 94.15019
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 0.76061994
-    m_SpeedNormalized: 0.37999997
+    m_Speed: 0.40079993
+    m_SpeedNormalized: 0.19999996
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -510,7 +510,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -640,22 +640,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 72
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: 72
   m_LastProjectPath: E:\GitRepos_v2\CRAZYCRASH-RALLY-DRIVE\CRAZYCRASH-RALLY-DRIVE
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b0d80000
-    m_LastClickedID: 55472
-    m_ExpandedIDs: 000000004ed8000050d8000052d8000054d80000b0d8000000ca9a3b
+    m_SelectedIDs: aed80000
+    m_LastClickedID: 55470
+    m_ExpandedIDs: 000000004ed8000050d8000052d8000054d8000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
