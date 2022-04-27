@@ -12,6 +12,7 @@ public class GameData
     public bool c_isThatOldCar;
     public bool c_isThatCar3;
     public int colorIndex;
+    public int carIndex;
 
     public int colorIndexOfCar1;
     public int colorIndexOfCar2;
@@ -20,7 +21,6 @@ public class GameData
     public GameData(CarCollider carCollider)
     {
         money = carCollider.money;
-        dataFileCreated = carCollider.dataFileCreated;
         PickedCar = carCollider.PickedCar;
         c_isThatOldCar = carCollider.c_isThatOldCar;
         c_isThatCar3 = carCollider.c_isThatCar3;
@@ -28,5 +28,6 @@ public class GameData
         colorIndexOfCar1 = carCollider.colorIndexOfCar1;
         colorIndexOfCar2 = carCollider.colorIndexOfCar2;
         colorIndexOfCar3 = carCollider.colorIndexOfCar3;
+        carIndex = carCollider.carIndex;
     }
 }

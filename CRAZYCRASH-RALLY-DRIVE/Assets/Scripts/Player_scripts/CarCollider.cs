@@ -89,8 +89,6 @@ public class CarCollider : MonoBehaviour
     private bool scoreGet = false;
 
     [HideInInspector]
-    public bool dataFileCreated;
-    [HideInInspector]
     public int PickedCar = 0;
     [HideInInspector]
     public bool c_isThatOldCar = false;
@@ -98,6 +96,8 @@ public class CarCollider : MonoBehaviour
     public bool c_isThatCar3 = false;
     [HideInInspector]
     public int colorIndex = 0;
+    [HideInInspector]
+    public int carIndex = 0;
 
     [HideInInspector]
     public int colorIndexOfCar1 = 0;
@@ -112,14 +112,7 @@ public class CarCollider : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        LoadData();
-        if (!dataFileCreated)
-        {
-            SaveData();
-            dataFileCreated = true;
-            SaveData();
-            LoadData();
-        }
+        GenerateSaveFile();
 
         LoadData();
         Player = GameObject.Find("Player");
@@ -157,16 +150,20 @@ public class CarCollider : MonoBehaviour
         GameData data = SaveSystem.LoadData();
 
         money = data.money;
-        dataFileCreated = data.dataFileCreated;
         PickedCar = data.PickedCar;
         c_isThatOldCar = data.c_isThatOldCar;
         c_isThatCar3 = data.c_isThatCar3;
         colorIndex = data.colorIndex;
+        carIndex = data.carIndex;
         colorIndexOfCar1 = data.colorIndexOfCar1;
         colorIndexOfCar2 = data.colorIndexOfCar2;
         colorIndexOfCar3 = data.colorIndexOfCar3;
     }
 
+    private void GenerateSaveFile()
+    {
+        SaveSystem.GenerateSaveFile(this);
+    }
 
     public void Update()
     {
@@ -570,6 +567,7 @@ public class CarCollider : MonoBehaviour
         c_isThatOldCar = false;
         c_isThatCar3 = false;
         colorIndex = 0;
+        carIndex = 0;
         colorIndexOfCar1 = 0;
         colorIndexOfCar2 = 4;
         colorIndexOfCar3 = 8;

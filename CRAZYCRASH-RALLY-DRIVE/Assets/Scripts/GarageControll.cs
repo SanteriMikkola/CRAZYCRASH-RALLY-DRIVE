@@ -1316,7 +1316,7 @@ public class GarageControll : MonoBehaviour
         PlayersChild = GameObject.FindGameObjectWithTag("EquippedCar");
         playerRenderer = PlayersChild.GetComponent<MeshRenderer>();
 
-        switch (index)
+        switch (carCollider.PickedCar)
         {
             case 0: //defaltcar
                 {
