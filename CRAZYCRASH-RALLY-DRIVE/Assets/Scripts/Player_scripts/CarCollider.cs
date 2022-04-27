@@ -90,6 +90,21 @@ public class CarCollider : MonoBehaviour
 
     [HideInInspector]
     public bool dataFileCreated;
+    [HideInInspector]
+    public int PickedCar = 0;
+    [HideInInspector]
+    public bool c_isThatOldCar = false;
+    [HideInInspector]
+    public bool c_isThatCar3 = false;
+    [HideInInspector]
+    public int colorIndex = 0;
+
+    [HideInInspector]
+    public int colorIndexOfCar1 = 0;
+    [HideInInspector]
+    public int colorIndexOfCar2 = 4;
+    [HideInInspector]
+    public int colorIndexOfCar3 = 8;
 
     public bool RESET_ALL_DATA = false;
 
@@ -143,6 +158,13 @@ public class CarCollider : MonoBehaviour
 
         money = data.money;
         dataFileCreated = data.dataFileCreated;
+        PickedCar = data.PickedCar;
+        c_isThatOldCar = data.c_isThatOldCar;
+        c_isThatCar3 = data.c_isThatCar3;
+        colorIndex = data.colorIndex;
+        colorIndexOfCar1 = data.colorIndexOfCar1;
+        colorIndexOfCar2 = data.colorIndexOfCar2;
+        colorIndexOfCar3 = data.colorIndexOfCar3;
     }
 
 
@@ -156,6 +178,8 @@ public class CarCollider : MonoBehaviour
             carController.forwardSpeed = carController.forwardSpeed - 1f;
             //rb.AddForce(stuckForce, ForceMode.Impulse);
         }*/
+
+
 
         if (isPlayerDead == true)
         {
@@ -542,6 +566,13 @@ public class CarCollider : MonoBehaviour
     private void ResetAll()
     {
         money = 2000;
+        PickedCar = 0;
+        c_isThatOldCar = false;
+        c_isThatCar3 = false;
+        colorIndex = 0;
+        colorIndexOfCar1 = 0;
+        colorIndexOfCar2 = 4;
+        colorIndexOfCar3 = 8;
         RESET_ALL_DATA = false;
         SaveData();
         LoadData();
