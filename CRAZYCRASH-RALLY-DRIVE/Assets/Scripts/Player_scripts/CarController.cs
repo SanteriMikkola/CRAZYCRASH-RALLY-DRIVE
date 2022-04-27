@@ -74,6 +74,8 @@ public class CarController : MonoBehaviour
 
     public float targetPosz = 0.25f;
 
+    private bool loadData = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -115,6 +117,11 @@ public class CarController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (loadData == true)
+        {
+            carCollider.LoadData();
+            loadData = false;
+        }
         if (garageControll.changeCarColor == false && wheelsReady == false)
         {
 
@@ -399,7 +406,7 @@ public class CarController : MonoBehaviour
             }*/
         }
 
-        if (garageControll.isThatOldCar == false && garageControll.isThatCar3 == false)
+        if (carCollider.c_isThatOldCar == false && carCollider.c_isThatCar3 == false)
         {
             leftFrontWheel.localRotation = Quaternion.Euler(leftFrontWheel.localRotation.eulerAngles.x, (turnInput * wheelTurn), leftFrontWheel.localRotation.eulerAngles.z);
             rightFrontWheel.localRotation = Quaternion.Euler(rightFrontWheel.localRotation.eulerAngles.x, (turnInput * wheelTurn), rightFrontWheel.localRotation.eulerAngles.z);
@@ -410,7 +417,7 @@ public class CarController : MonoBehaviour
             var defaultCenter = new Vector3(0.0009245872f, 0.5299164f, 0.26f);
             carCollider.playersBoxCollider.center = new Vector3(defaultCenter.x, defaultCenter.y, defaultCenter.z);
         }
-        if (garageControll.isThatOldCar == true && garageControll.isThatCar3 == false)
+        if (carCollider.c_isThatOldCar == true && carCollider.c_isThatCar3 == false)
         {
             leftFrontWheel.localRotation = Quaternion.Euler(leftFrontWheel.localRotation.eulerAngles.x, ((turnInput * wheelTurn) + 90f), leftFrontWheel.localRotation.eulerAngles.z);
             rightFrontWheel.localRotation = Quaternion.Euler(rightFrontWheel.localRotation.eulerAngles.x, ((turnInput * wheelTurn) + 90f), rightFrontWheel.localRotation.eulerAngles.z);
@@ -421,7 +428,7 @@ public class CarController : MonoBehaviour
             var car2Center = new Vector3(0.0009245872f, 0.5221265f, 0.3230453f);
             carCollider.playersBoxCollider.center = new Vector3(car2Center.x, car2Center.y, car2Center.z);
         }
-        if (garageControll.isThatOldCar == false && garageControll.isThatCar3 == true)
+        if (carCollider.c_isThatOldCar == false && carCollider.c_isThatCar3 == true)
         {
             leftFrontWheel.localRotation = Quaternion.Euler((turnInput * (wheelTurn * -1f)), leftFrontWheel.localRotation.eulerAngles.y, leftFrontWheel.localRotation.eulerAngles.z);
             rightFrontWheel.localRotation = Quaternion.Euler((turnInput * wheelTurn), rightFrontWheel.localRotation.eulerAngles.y, rightFrontWheel.localRotation.eulerAngles.z);
