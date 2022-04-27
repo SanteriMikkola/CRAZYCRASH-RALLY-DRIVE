@@ -5,6 +5,21 @@ using System.Runtime.Serialization.Formatters.Binary;
 public static class SaveSystem
 {
 
+    public static void GenerateSaveFile(CarCollider carCollider)
+    {
+        if (!File.Exists(Application.persistentDataPath + "/data.saved"))
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            string path = Application.persistentDataPath + "/data.saved";
+            FileStream stream = new FileStream(path, FileMode.Create);
+
+            GameData data = new GameData(carCollider);
+
+            formatter.Serialize(stream, data);
+            stream.Close();
+        }
+    }
+
     public static void SaveData(CarCollider carCollider)
     {
         BinaryFormatter formatter = new BinaryFormatter();
