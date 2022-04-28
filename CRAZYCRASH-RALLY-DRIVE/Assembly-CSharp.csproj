@@ -91,6 +91,7 @@
     <Compile Include="Assets\Scripts\GameplayControlling_scripts\ScoreControll.cs" />
     <Compile Include="Assets\Scripts\Obs_scripts\RockControll.cs" />
     <Compile Include="Assets\Scripts\Menu_scripts\StartButton.cs" />
+    <Compile Include="Assets\Scripts\ItemRandomGeneration.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -48,6 +48,9 @@ public class CarCollider : MonoBehaviour
     public bool isThatMT = false;
 
     [HideInInspector]
+    public bool changeItemsPos = false;
+
+    [HideInInspector]
     public bool isEstePosRandomized = false;
 
     public Rigidbody rb;
@@ -358,6 +361,8 @@ public class CarCollider : MonoBehaviour
             carController.targetSpeed += 0.25f;
             fuelControll.decreaseValue += 0.025f;
 
+            changeItemsPos = true;
+
             /*reback_Obs = false;
             isThatLevel2 = true;*/
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -379,6 +384,8 @@ public class CarCollider : MonoBehaviour
             carController.targetSpeed += 0.25f;
             fuelControll.decreaseValue += 0.025f;
 
+            changeItemsPos = true;
+
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
             //startButtonS.StartLevel2();
@@ -396,6 +403,8 @@ public class CarCollider : MonoBehaviour
 
             carController.targetSpeed += 0.25f;
             fuelControll.decreaseValue += 0.025f;
+
+            changeItemsPos = true;
 
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 

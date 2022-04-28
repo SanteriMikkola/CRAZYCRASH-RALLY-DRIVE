@@ -5,7 +5,8 @@ using UnityEngine;
 public class ItemsEffect : MonoBehaviour
 {
 
-    private Vector3 targetPos, upperPos,
+    [HideInInspector]
+    public Vector3 targetPos, upperPos,
                     downPos;
 
     private float speed = 0.15f;
@@ -36,6 +37,7 @@ public class ItemsEffect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (transform.position == upperPos)
         {
             targetPos = downPos;
