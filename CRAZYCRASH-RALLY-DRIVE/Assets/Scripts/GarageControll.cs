@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GarageControll : MonoBehaviour
 {
-    public GameObject[] Cars;
+    //public GameObject[] Cars;
     public Color[] Colors;
     public GameObject[] Hats;
 
@@ -19,6 +19,12 @@ public class GarageControll : MonoBehaviour
     private GameObject p_Car1;
     private GameObject p_Car2;
     private GameObject p_Car3;
+
+    public GameObject[] G_carColors;
+
+    public GameObject garageCar1_Color1;
+    public GameObject garageCar2_Color1;
+    public GameObject garageCar3_Color1;
 
     private GameObject Player;
     private GameObject Level1;
@@ -88,7 +94,7 @@ public class GarageControll : MonoBehaviour
         carController = Player.GetComponent<CarController>();
         playerColor = Player.GetComponent<PlayerColor>();
         carCollider = Player.GetComponent<CarCollider>();
-        Cars = GameObject.FindGameObjectsWithTag("Car");
+        //Cars = GameObject.FindGameObjectsWithTag("Car");
 
         Wheels = GameObject.FindGameObjectWithTag("Wheel");
         PlayersChild = GameObject.FindGameObjectWithTag("EquippedCar");
@@ -131,6 +137,10 @@ public class GarageControll : MonoBehaviour
                 garageCar2.SetActive(false);
                 garageCar3.SetActive(false);
 
+                garageCar1_Color1.SetActive(false);
+                garageCar2_Color1.SetActive(false);
+                garageCar3_Color1.SetActive(false);
+
                 CarArrow[0].SetActive(true);
                 CarArrow[1].SetActive(true);
                 CarArrow[2].SetActive(false);
@@ -147,13 +157,15 @@ public class GarageControll : MonoBehaviour
                 changeCarColor = false;
                 carController.wheelsReady = false;
 
-                garageCarMeshRenderer = Cars[0].GetComponent<MeshRenderer>();
+                //garageCarMeshRenderer = Cars[0].GetComponent<MeshRenderer>();
 
                 var block = new MaterialPropertyBlock();
 
                 block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndexOfCar1]);
                 playerRenderer.SetPropertyBlock(block);
-                garageCarMeshRenderer.SetPropertyBlock(block);
+                //garageCarMeshRenderer.SetPropertyBlock(block);
+
+                G_carColors[carCollider.colorIndexOfCar1].SetActive(true);
 
                 colorOfCar1 = Colors[carCollider.colorIndexOfCar1];
                 colorOfCar2 = Colors[carCollider.colorIndexOfCar2];
@@ -169,6 +181,10 @@ public class GarageControll : MonoBehaviour
                 garageCar1.SetActive(false);
                 garageCar2.SetActive(true);
                 garageCar3.SetActive(false);
+
+                garageCar1_Color1.SetActive(false);
+                garageCar2_Color1.SetActive(false);
+                garageCar3_Color1.SetActive(false);
 
                 CarArrow[0].SetActive(false);
                 CarArrow[1].SetActive(false);
@@ -186,13 +202,15 @@ public class GarageControll : MonoBehaviour
                 changeCarColor = false;
                 carController.wheelsReady = false;
 
-                garageCarMeshRenderer = Cars[1].GetComponent<MeshRenderer>();
+                //garageCarMeshRenderer = Cars[1].GetComponent<MeshRenderer>();
 
                 var block = new MaterialPropertyBlock();
 
                 block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndexOfCar2]);
                 playerRenderer.SetPropertyBlock(block);
-                garageCarMeshRenderer.SetPropertyBlock(block);
+                //garageCarMeshRenderer.SetPropertyBlock(block);
+
+                G_carColors[carCollider.colorIndexOfCar2].SetActive(true);
 
                 colorOfCar1 = Colors[carCollider.colorIndexOfCar1];
                 colorOfCar2 = Colors[carCollider.colorIndexOfCar2];
@@ -208,6 +226,10 @@ public class GarageControll : MonoBehaviour
                 garageCar1.SetActive(false);
                 garageCar2.SetActive(false);
                 garageCar3.SetActive(true);
+
+                garageCar1_Color1.SetActive(false);
+                garageCar2_Color1.SetActive(false);
+                garageCar3_Color1.SetActive(false);
 
                 CarArrow[0].SetActive(false);
                 CarArrow[1].SetActive(false);
@@ -225,13 +247,15 @@ public class GarageControll : MonoBehaviour
                 changeCarColor = false;
                 carController.wheelsReady = false;
 
-                garageCarMeshRenderer = Cars[2].GetComponent<MeshRenderer>();
+                //garageCarMeshRenderer = Cars[2].GetComponent<MeshRenderer>();
 
                 var block = new MaterialPropertyBlock();
 
                 block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndexOfCar3]);
                 playerRenderer.SetPropertyBlock(block);
-                garageCarMeshRenderer.SetPropertyBlock(block);
+                //garageCarMeshRenderer.SetPropertyBlock(block);
+
+                G_carColors[carCollider.colorIndexOfCar3].SetActive(true);
 
                 colorOfCar1 = Colors[carCollider.colorIndexOfCar1];
                 colorOfCar2 = Colors[carCollider.colorIndexOfCar2];
@@ -264,9 +288,9 @@ public class GarageControll : MonoBehaviour
         // Change cars
         if (pressedRight == true && pressedLeft == false && indexBLock == false && pressedCarB == true && pressedPaintB == false && pressedHatB == false)
         {
-            if (index >= 0)
+            if (carCollider.PickedCar >= 0)
             {
-                index++;
+                carCollider.PickedCar++;
                 //Cars[index].SetActive(true);
                 ChangeChoose();
             }
@@ -275,9 +299,9 @@ public class GarageControll : MonoBehaviour
         }
         if (pressedRight == false && pressedLeft == true && indexBLock == true && pressedCarB == true && pressedPaintB == false && pressedHatB == false)
         {
-            if (index >= 1)
+            if (carCollider.PickedCar >= 1)
             {
-                index--;
+                carCollider.PickedCar--;
                 //Cars[index].SetActive(true);
                 ChangeChoose();
             }
@@ -315,7 +339,7 @@ public class GarageControll : MonoBehaviour
     {
         if (pressedCarB == true && pressedPaintB == false && pressedHatB == false)
         {
-            switch (index)
+            switch (carCollider.PickedCar)
             {
                 case 0: //defaltcar
                     {
@@ -1458,13 +1482,13 @@ public class GarageControll : MonoBehaviour
         colorIndex = 1;
         carCollider.colorIndex = 1;
 
-        garageCarMeshRenderer = Cars[0].GetComponent<MeshRenderer>();
+        //garageCarMeshRenderer = Cars[0].GetComponent<MeshRenderer>();
 
         var block = new MaterialPropertyBlock();
 
         block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
         playerRenderer.SetPropertyBlock(block);
-        garageCarMeshRenderer.SetPropertyBlock(block);
+        //garageCarMeshRenderer.SetPropertyBlock(block);
 
         carCollider.colorIndexOfCar1 = colorIndex;
 
@@ -1484,13 +1508,10 @@ public class GarageControll : MonoBehaviour
         colorIndex = 0;
         carCollider.colorIndex = 0;
 
-        garageCarMeshRenderer = Cars[0].GetComponent<MeshRenderer>();
-
         var block = new MaterialPropertyBlock();
 
         block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
         playerRenderer.SetPropertyBlock(block);
-        garageCarMeshRenderer.SetPropertyBlock(block);
 
         carCollider.colorIndexOfCar1 = colorIndex;
 
@@ -1510,13 +1531,10 @@ public class GarageControll : MonoBehaviour
         colorIndex = 2;
         carCollider.colorIndex = 2;
 
-        garageCarMeshRenderer = Cars[0].GetComponent<MeshRenderer>();
-
         var block = new MaterialPropertyBlock();
 
         block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
         playerRenderer.SetPropertyBlock(block);
-        garageCarMeshRenderer.SetPropertyBlock(block);
 
         carCollider.colorIndexOfCar1 = colorIndex;
 
@@ -1536,13 +1554,10 @@ public class GarageControll : MonoBehaviour
         colorIndex = 0;
         carCollider.colorIndex = 0;
 
-        garageCarMeshRenderer = Cars[0].GetComponent<MeshRenderer>();
-
         var block = new MaterialPropertyBlock();
 
         block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
         playerRenderer.SetPropertyBlock(block);
-        garageCarMeshRenderer.SetPropertyBlock(block);
 
         carCollider.colorIndexOfCar1 = colorIndex;
 
@@ -1562,13 +1577,10 @@ public class GarageControll : MonoBehaviour
         colorIndex = 3;
         carCollider.colorIndex = 3;
 
-        garageCarMeshRenderer = Cars[0].GetComponent<MeshRenderer>();
-
         var block = new MaterialPropertyBlock();
 
         block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
         playerRenderer.SetPropertyBlock(block);
-        garageCarMeshRenderer.SetPropertyBlock(block);
 
         carCollider.colorIndexOfCar1 = colorIndex;
 
@@ -1588,13 +1600,10 @@ public class GarageControll : MonoBehaviour
         colorIndex = 1;
         carCollider.colorIndex = 1;
 
-        garageCarMeshRenderer = Cars[0].GetComponent<MeshRenderer>();
-
         var block = new MaterialPropertyBlock();
 
         block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
         playerRenderer.SetPropertyBlock(block);
-        garageCarMeshRenderer.SetPropertyBlock(block);
 
         carCollider.colorIndexOfCar1 = colorIndex;
 
@@ -1614,13 +1623,10 @@ public class GarageControll : MonoBehaviour
         colorIndex = 4;
         carCollider.colorIndex = 4;
 
-        garageCarMeshRenderer = Cars[0].GetComponent<MeshRenderer>();
-
         var block = new MaterialPropertyBlock();
 
         block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
         playerRenderer.SetPropertyBlock(block);
-        garageCarMeshRenderer.SetPropertyBlock(block);
 
         carCollider.colorIndexOfCar1 = colorIndex;
 
@@ -1640,13 +1646,10 @@ public class GarageControll : MonoBehaviour
         colorIndex = 2;
         carCollider.colorIndex = 2;
 
-        garageCarMeshRenderer = Cars[0].GetComponent<MeshRenderer>();
-
         var block = new MaterialPropertyBlock();
 
         block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
         playerRenderer.SetPropertyBlock(block);
-        garageCarMeshRenderer.SetPropertyBlock(block);
 
         carCollider.colorIndexOfCar1 = colorIndex;
 
@@ -1672,13 +1675,10 @@ public class GarageControll : MonoBehaviour
         colorIndex = 5;
         carCollider.colorIndex = 5;
 
-        garageCarMeshRenderer = Cars[1].GetComponent<MeshRenderer>();
-
         var block = new MaterialPropertyBlock();
 
         block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
         playerRenderer.SetPropertyBlock(block);
-        garageCarMeshRenderer.SetPropertyBlock(block);
 
         carCollider.colorIndexOfCar2 = colorIndex;
 
@@ -1698,13 +1698,10 @@ public class GarageControll : MonoBehaviour
         colorIndex = 4;
         carCollider.colorIndex = 4;
 
-        garageCarMeshRenderer = Cars[1].GetComponent<MeshRenderer>();
-
         var block = new MaterialPropertyBlock();
 
         block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
         playerRenderer.SetPropertyBlock(block);
-        garageCarMeshRenderer.SetPropertyBlock(block);
 
         carCollider.colorIndexOfCar2 = colorIndex;
 
@@ -1724,13 +1721,10 @@ public class GarageControll : MonoBehaviour
         colorIndex = 6;
         carCollider.colorIndex = 6;
 
-        garageCarMeshRenderer = Cars[1].GetComponent<MeshRenderer>();
-
         var block = new MaterialPropertyBlock();
 
         block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
         playerRenderer.SetPropertyBlock(block);
-        garageCarMeshRenderer.SetPropertyBlock(block);
 
         carCollider.colorIndexOfCar2 = colorIndex;
 
@@ -1750,13 +1744,10 @@ public class GarageControll : MonoBehaviour
         colorIndex = 4;
         carCollider.colorIndex = 4;
 
-        garageCarMeshRenderer = Cars[1].GetComponent<MeshRenderer>();
-
         var block = new MaterialPropertyBlock();
 
         block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
         playerRenderer.SetPropertyBlock(block);
-        garageCarMeshRenderer.SetPropertyBlock(block);
 
         carCollider.colorIndexOfCar2 = colorIndex;
 
@@ -1776,13 +1767,10 @@ public class GarageControll : MonoBehaviour
         colorIndex = 7;
         carCollider.colorIndex = 7;
 
-        garageCarMeshRenderer = Cars[1].GetComponent<MeshRenderer>();
-
         var block = new MaterialPropertyBlock();
 
         block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
         playerRenderer.SetPropertyBlock(block);
-        garageCarMeshRenderer.SetPropertyBlock(block);
 
         carCollider.colorIndexOfCar2 = colorIndex;
 
@@ -1802,13 +1790,10 @@ public class GarageControll : MonoBehaviour
         colorIndex = 5;
         carCollider.colorIndex = 5;
 
-        garageCarMeshRenderer = Cars[1].GetComponent<MeshRenderer>();
-
         var block = new MaterialPropertyBlock();
 
         block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
         playerRenderer.SetPropertyBlock(block);
-        garageCarMeshRenderer.SetPropertyBlock(block);
 
         carCollider.colorIndexOfCar2 = colorIndex;
 
@@ -1848,13 +1833,10 @@ public class GarageControll : MonoBehaviour
         colorIndex = 6;
         carCollider.colorIndex = 6;
 
-        garageCarMeshRenderer = Cars[1].GetComponent<MeshRenderer>();
-
         var block = new MaterialPropertyBlock();
 
         block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
         playerRenderer.SetPropertyBlock(block);
-        garageCarMeshRenderer.SetPropertyBlock(block);
 
         carCollider.colorIndexOfCar2 = colorIndex;
 
@@ -1880,13 +1862,10 @@ public class GarageControll : MonoBehaviour
         colorIndex = 9;
         carCollider.colorIndex = 9;
 
-        garageCarMeshRenderer = Cars[2].GetComponent<MeshRenderer>();
-
         var block = new MaterialPropertyBlock();
 
         block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
         playerRenderer.SetPropertyBlock(block);
-        garageCarMeshRenderer.SetPropertyBlock(block);
 
         carCollider.colorIndexOfCar3 = colorIndex;
 
@@ -1906,13 +1885,10 @@ public class GarageControll : MonoBehaviour
         colorIndex = 8;
         carCollider.colorIndex = 8;
 
-        garageCarMeshRenderer = Cars[2].GetComponent<MeshRenderer>();
-
         var block = new MaterialPropertyBlock();
 
         block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
         playerRenderer.SetPropertyBlock(block);
-        garageCarMeshRenderer.SetPropertyBlock(block);
 
         carCollider.colorIndexOfCar3 = colorIndex;
 
@@ -1932,13 +1908,10 @@ public class GarageControll : MonoBehaviour
         colorIndex = 10;
         carCollider.colorIndex = 10;
 
-        garageCarMeshRenderer = Cars[2].GetComponent<MeshRenderer>();
-
         var block = new MaterialPropertyBlock();
 
         block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
         playerRenderer.SetPropertyBlock(block);
-        garageCarMeshRenderer.SetPropertyBlock(block);
 
         carCollider.colorIndexOfCar3 = colorIndex;
 
@@ -1958,13 +1931,10 @@ public class GarageControll : MonoBehaviour
         colorIndex = 8;
         carCollider.colorIndex = 8;
 
-        garageCarMeshRenderer = Cars[2].GetComponent<MeshRenderer>();
-
         var block = new MaterialPropertyBlock();
 
         block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
         playerRenderer.SetPropertyBlock(block);
-        garageCarMeshRenderer.SetPropertyBlock(block);
 
         carCollider.colorIndexOfCar3 = colorIndex;
 
@@ -1984,13 +1954,10 @@ public class GarageControll : MonoBehaviour
         colorIndex = 11;
         carCollider.colorIndex = 11;
 
-        garageCarMeshRenderer = Cars[2].GetComponent<MeshRenderer>();
-
         var block = new MaterialPropertyBlock();
 
         block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
         playerRenderer.SetPropertyBlock(block);
-        garageCarMeshRenderer.SetPropertyBlock(block);
 
         carCollider.colorIndexOfCar3 = colorIndex;
 
@@ -2010,13 +1977,10 @@ public class GarageControll : MonoBehaviour
         colorIndex = 9;
         carCollider.colorIndex = 9;
 
-        garageCarMeshRenderer = Cars[2].GetComponent<MeshRenderer>();
-
         var block = new MaterialPropertyBlock();
 
         block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
         playerRenderer.SetPropertyBlock(block);
-        garageCarMeshRenderer.SetPropertyBlock(block);
 
         carCollider.colorIndexOfCar3 = colorIndex;
 
@@ -2036,13 +2000,10 @@ public class GarageControll : MonoBehaviour
         colorIndex = 11;
         carCollider.colorIndex = 11;
 
-        garageCarMeshRenderer = Cars[2].GetComponent<MeshRenderer>();
-
         var block = new MaterialPropertyBlock();
 
         block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
         playerRenderer.SetPropertyBlock(block);
-        garageCarMeshRenderer.SetPropertyBlock(block);
 
         carCollider.colorIndexOfCar3 = colorIndex;
 
@@ -2062,13 +2023,10 @@ public class GarageControll : MonoBehaviour
         colorIndex = 10;
         carCollider.colorIndex = 10;
 
-        garageCarMeshRenderer = Cars[2].GetComponent<MeshRenderer>();
-
         var block = new MaterialPropertyBlock();
 
         block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
         playerRenderer.SetPropertyBlock(block);
-        garageCarMeshRenderer.SetPropertyBlock(block);
 
         carCollider.colorIndexOfCar3 = colorIndex;
 

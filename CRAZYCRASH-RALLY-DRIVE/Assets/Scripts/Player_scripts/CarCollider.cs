@@ -102,11 +102,11 @@ public class CarCollider : MonoBehaviour
     [HideInInspector]
     public int carIndex = 0;
 
-    [HideInInspector]
+    //[HideInInspector]
     public int colorIndexOfCar1 = 0;
-    [HideInInspector]
+    //[HideInInspector]
     public int colorIndexOfCar2 = 4;
-    [HideInInspector]
+    //[HideInInspector]
     public int colorIndexOfCar3 = 8;
 
     public bool RESET_ALL_DATA = false;
@@ -427,6 +427,11 @@ public class CarCollider : MonoBehaviour
         }
 
         if (collider.gameObject.CompareTag("Safe"))
+        {
+            safePicked = true;
+            safesPicked++;
+        }
+        if (collider.gameObject.CompareTag("A_Safe"))
         {
             safePicked = true;
             safesPicked++;
