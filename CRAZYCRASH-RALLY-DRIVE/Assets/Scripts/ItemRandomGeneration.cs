@@ -14,6 +14,11 @@ public class ItemRandomGeneration : MonoBehaviour
 
     private int randomNum = 0;
 
+    private int i = 0;
+
+    [SerializeField]
+    private bool changePosition = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,12 +28,25 @@ public class ItemRandomGeneration : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (carCollider.changeItemsPos == true)
+        if (i >= 9)
         {
-            RandomizePos();
             carCollider.changeItemsPos = false;
+            i = 0;
+        }
+
+        if (carCollider.changeItemsPos)
+        {
+            changePosition = true;
+            //carCollider.changeItemsPos = false;
+        }
+
+        if (changePosition)
+        {
+            Debug.Log(".");
+            RandomizePos();
+            i++;
         }
     }
 
@@ -56,6 +74,7 @@ public class ItemRandomGeneration : MonoBehaviour
                     }
 
                     randomNum = 0;
+                    changePosition = false;
                 }
                 break;
             case 3:
@@ -84,6 +103,7 @@ public class ItemRandomGeneration : MonoBehaviour
                     }
 
                     randomNum = 0;
+                    changePosition = false;
                 }
                 break;
         }
