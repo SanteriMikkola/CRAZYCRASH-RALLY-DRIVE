@@ -116,12 +116,12 @@ public class MapControll : MonoBehaviour
     //public GameObject[] Testi;
 
     public Vector3 AreaVector1 = new Vector3(0f, 3.18f, 5f);
-    public Vector3 AreaVector2 = new Vector3(0f, 3.18f, 57f);
+    public Vector3 AreaVector2 = new Vector3(0f, 3.18f, 63f);
 
     public Vector3 A_AreaVector1 = new Vector3(0f, 3.18f, 5f);
-    public Vector3 A_AreaVector2 = new Vector3(0f, 3.18f, 57f);
+    public Vector3 A_AreaVector2 = new Vector3(0f, 3.18f, 63f);
 
-    public Vector3 AreaVectorKesk = new Vector3(0f, 3.18f, 28.5f);
+    public Vector3 AreaVectorKesk = new Vector3(0f, 3.18f, 31.5f);
 
     private bool isObjectsPicked = false;
 
@@ -349,10 +349,10 @@ public class MapControll : MonoBehaviour
             bCollider.transform.position = new Vector3(0, 802.6f, -40.06f);
             fCollider.transform.position = new Vector3(0, 802.6f, 5f);
             AreaVector1 = new Vector3(0f, 802.6f, 5f);
-            AreaVector2 = new Vector3(0f, 802.6f, 57f);
-            AreaVectorKesk = new Vector3(0f, 802.6f, 28.5f);
+            AreaVector2 = new Vector3(0f, 802.6f, 63f);
+            AreaVectorKesk = new Vector3(0f, 802.6f, 31.5f);
 
-            /*var test = new Vector3(0f, 802.6f, 28.5f);
+            /*var test = new Vector3(0f, 802.6f, 31.5f);
             AreaVectorKesk.Set(test.x, test.y, test.z);*/
 
             //startButtonS.GameStartForMapControll = true;
@@ -397,8 +397,8 @@ public class MapControll : MonoBehaviour
             bCollider.transform.position = new Vector3(0, 0, -8.069992f);
             fCollider.transform.position = new Vector3(0, 3.18f, 5f);
             AreaVector1 = new Vector3(0f, 3.18f, 5f);
-            AreaVector2 = new Vector3(0f, 3.18f, 57f);
-            AreaVectorKesk = new Vector3(0f, 3.18f, 28.5f);
+            AreaVector2 = new Vector3(0f, 3.18f, 63f);
+            AreaVectorKesk = new Vector3(0f, 3.18f, 31.5f);
             //startButtonS.GameStartForMapControll = true;
             CposChanget = false;
 
@@ -486,10 +486,10 @@ public class MapControll : MonoBehaviour
             bCollider.transform.position = new Vector3(0, 402.06f, -8.069992f);
             fCollider.transform.position = new Vector3(0, 402.81f, 5f);
             AreaVector1 = new Vector3(0f, 402.81f, 5f);
-            AreaVector2 = new Vector3(0f, 402.81f, 57f);
-            AreaVectorKesk = new Vector3(0f, 402.81f, 28.5f);
+            AreaVector2 = new Vector3(0f, 402.81f, 63f);
+            AreaVectorKesk = new Vector3(0f, 402.81f, 31.5f);
             A_AreaVector1 = new Vector3(0f, 3.18f, 5f);
-            A_AreaVector2 = new Vector3(0f, 3.18f, 57f);
+            A_AreaVector2 = new Vector3(0f, 3.18f, 63f);
             //startButtonS.GameStartForMapControll = true;
             CposChanget = true;
 
@@ -1467,8 +1467,8 @@ public class MapControll : MonoBehaviour
 
         fCollider.transform.position = new Vector3(0, 3.18f, 5f);
         AreaVector1 = new Vector3(0f, 3.18f, 5f);
-        AreaVector2 = new Vector3(0f, 3.18f, 57f);
-        AreaVectorKesk = new Vector3(0f, 3.18f, 28.5f);
+        AreaVector2 = new Vector3(0f, 3.18f, 63f);
+        AreaVectorKesk = new Vector3(0f, 3.18f, 31.5f);
 
         Esteet = GameObject.FindGameObjectsWithTag("Este");
         AavikonEsteet = GameObject.FindGameObjectsWithTag("AavikonEste");
