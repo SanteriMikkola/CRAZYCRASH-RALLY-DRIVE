@@ -44,7 +44,7 @@ public class ItemRandomGeneration : MonoBehaviour
 
         if (changePosition)
         {
-            Debug.Log(".");
+            //Debug.Log(".");
             RandomizePos();
             i++;
         }
