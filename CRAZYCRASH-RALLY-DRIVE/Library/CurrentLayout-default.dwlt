@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 2560
     height: 1349
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 2560
     height: 1349
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 64
+  controlID: 40
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 65
+  controlID: 41
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 66
+  controlID: 42
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -310,9 +310,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 408a0000
+      m_SelectedIDs: 3a450200
       m_LastClickedID: 0
-      m_ExpandedIDs: 6afbffff32ab0000f4c4000006ee0000fcf20000fef20000
+      m_ExpandedIDs: eec4feff04dbffff6afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -372,9 +372,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 24.184689, y: -25.74479, z: 79.67067}
+    m_Target: {x: 300.39398, y: 498.81058, z: 456.47522}
     speed: 2
-    m_Value: {x: 24.184689, y: -25.74479, z: 79.67067}
+    m_Value: {x: 300.39398, y: 498.81058, z: 456.47522}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -421,13 +421,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.19341421, y: 0.16370586, z: -0.032589454, w: 0.96693057}
+    m_Target: {x: -0.23230714, y: -0.28595653, z: 0.07120429, w: -0.9270614}
     speed: 2
-    m_Value: {x: 0.1932938, y: 0.16658714, z: -0.033165812, w: 0.96632624}
+    m_Value: {x: -0.23238456, y: -0.28452998, z: 0.07084688, w: -0.9273731}
   m_Size:
-    m_Target: 47.925922
+    m_Target: 337.84286
     speed: 2
-    m_Value: 47.925922
+    m_Value: 337.84286
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -640,22 +640,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Collectible_scripts
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 72
   m_LastFolders:
-  - Assets/Scripts/Collectible_scripts
+  - Assets
   m_LastFoldersGridSize: 72
   m_LastProjectPath: E:\GitRepos_v2\CRAZYCRASH-RALLY-DRIVE\CRAZYCRASH-RALLY-DRIVE
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 64f80000
-    m_LastClickedID: 63588
-    m_ExpandedIDs: 0000000012f8000014f8000016f8000018f8000058f8000000ca9a3b
+    m_SelectedIDs: 8cf80000
+    m_LastClickedID: 63628
+    m_ExpandedIDs: 0000000086f8000088f800008af800008cf8000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -683,7 +683,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000012f8000014f8000016f8000018f80000
+    m_ExpandedIDs: 0000000086f8000088f800008af800008cf80000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
