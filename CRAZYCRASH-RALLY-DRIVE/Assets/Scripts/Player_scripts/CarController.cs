@@ -270,8 +270,8 @@ public class CarController : MonoBehaviour
 
         if (carCollider.isThatMT == true && PposChanget == true && carCollider.isThatLevel2 == false && carCollider.reback_Obs == false)
         {
-            Player.transform.position = new Vector3(0f, 800.986f, -212.5f);
-            rB.transform.position = new Vector3(0f, 800.948f, -31f);
+            Player.transform.position = new Vector3(0f, 800.986f, -264.6f);     //-212.5f -264.6f
+            rB.transform.position = new Vector3(0f, 800.948f, -83.1f);        //-31f -83.1f
             Kamera.transform.position = new Vector3(rB.position.x, rB.position.y + 5.310003f, rB.position.z - 8.23f);
 
             targetPosz = -31.55f;
