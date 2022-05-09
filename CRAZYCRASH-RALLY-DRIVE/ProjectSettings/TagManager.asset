@@ -37,6 +37,8 @@ TagManager:
   - HighwayEste
   - Fence_high_R
   - Fence_high_L
+  - ObsCar_L
+  - ObsCar_R
   layers:
   - Default
   - TransparentFX
