@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1349
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -273,8 +273,8 @@ MonoBehaviour:
     y: 0
     width: 387
     height: 1299
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -310,23 +310,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c68b0000
-      m_LastClickedID: 35782
-      m_ExpandedIDs: 6afbffffa25700009293000012a7000082ac0000e4b0000008b200006cc600005aca00008cd7000036e00000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: f436feff023bfeff6a3cfeff46e8feff6afbffffba60000016b2000048e00000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: NPC_Car2 (1)
-        m_OriginalName: NPC_Car2 (1)
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 42770
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -372,9 +372,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.2162118, y: 795.7279, z: -62.103653}
+    m_Target: {x: -1.822109, y: 719.64667, z: 112.74054}
     speed: 2
-    m_Value: {x: 1.2162118, y: 795.7279, z: -62.103653}
+    m_Value: {x: -1.822109, y: 719.64667, z: 112.74054}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -421,13 +421,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.17401369, y: -0.0014713341, z: 0.000293841, w: 0.9847749}
+    m_Target: {x: 0.20053722, y: 0.0014765107, z: -0.00026981725, w: 0.97972214}
     speed: 2
-    m_Value: {x: 0.17400807, y: -0.0014712866, z: 0.00029383152, w: 0.98474306}
+    m_Value: {x: 0.20053008, y: 0.0000069259995, z: 0.00003098766, w: 0.9796875}
   m_Size:
-    m_Target: 13.96914
+    m_Target: 108.874054
     speed: 2
-    m_Value: 13.96914
+    m_Value: 108.874054
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -489,9 +489,9 @@ MonoBehaviour:
   m_RenderIMGUI: 1
   m_MaximizeOnPlay: 0
   m_UseMipMap: 0
-  m_VSyncEnabled: 0
+  m_VSyncEnabled: 1
   m_Gizmos: 0
-  m_Stats: 1
+  m_Stats: 0
   m_SelectedSizes: 03000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
@@ -640,22 +640,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 72
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: 72
   m_LastProjectPath: E:\GitRepos_v2\CRAZYCRASH-RALLY-DRIVE\CRAZYCRASH-RALLY-DRIVE
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2afc0000
-    m_LastClickedID: 64554
-    m_ExpandedIDs: 00000000d2fb0000d4fb0000d6fb0000d8fb000026fc00002afc000000ca9a3b
+    m_SelectedIDs: 50fc0000
+    m_LastClickedID: 64592
+    m_ExpandedIDs: 00000000e4fb0000e6fb0000e8fb0000eafb000052fc000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -683,7 +683,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d2fb0000d4fb0000d6fb0000d8fb0000
+    m_ExpandedIDs: 00000000e4fb0000e6fb0000e8fb0000eafb0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
