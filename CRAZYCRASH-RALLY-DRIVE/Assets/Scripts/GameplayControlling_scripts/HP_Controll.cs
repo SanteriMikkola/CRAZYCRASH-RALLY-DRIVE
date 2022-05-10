@@ -27,7 +27,7 @@ public class HP_Controll : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         HitValueCheck();
         if (carCollider.isThatFullHealthReverse == true)
