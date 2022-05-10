@@ -54,6 +54,9 @@ public class CarCollider : MonoBehaviour
     public bool start_ObsCarsMove = false;
 
     [HideInInspector]
+    public bool changeObsCarsPos = false;
+
+    [HideInInspector]
     public bool isEstePosRandomized = false;
 
     public Rigidbody rb;
@@ -369,6 +372,8 @@ public class CarCollider : MonoBehaviour
             fuelControll.decreaseValue += 0.025f;
 
             changeItemsPos = true;
+
+            changeObsCarsPos = true;
 
             start_ObsCarsMove = true;
 
