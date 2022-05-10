@@ -605,6 +605,7 @@ public class MapControll : MonoBehaviour
 
         if (startButtonS.GameStartForMapControll == true && carCollider.isThatLevel2 == false && carCollider.isThatMT == false || playerCollidedFcollider == true && carCollider.isThatLevel2 == false && carCollider.isThatMT == false)
         {
+            //Debug.Log("#");
             for (int i = 0; i < Reback_Obs.Length; i++)
             {
                 Reback_Obs[i].SetActive(true);

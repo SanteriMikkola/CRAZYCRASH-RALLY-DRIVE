@@ -301,6 +301,7 @@ public class CarCollider : MonoBehaviour
 
         if (collider.gameObject.CompareTag("ToolBox") && toolBoxPicked == false)
         {
+            Debug.Log("tools");
             toolBoxPicked = true;
             if (isThatFullHealthReverse == true)
             {
@@ -320,6 +321,7 @@ public class CarCollider : MonoBehaviour
         }
         if (collider.gameObject.CompareTag("A_ToolBox") && toolBoxPicked == false)
         {
+            Debug.Log("A_tools");
             toolBoxPicked = true;
             if (isThatFullHealthReverse == true)
             {
@@ -340,12 +342,14 @@ public class CarCollider : MonoBehaviour
 
         if (collider.gameObject.CompareTag("JerryCan") && jerryCanPicked == false)
         {
+            Debug.Log("jerry");
             jerryCanPicked = true;
 
             //fuel = 100f;
         }
         if (collider.gameObject.CompareTag("A_JerryCan") && jerryCanPicked == false)
         {
+            Debug.Log("A_jerry");
             jerryCanPicked = true;
 
             //fuel = 100f;
@@ -435,11 +439,13 @@ public class CarCollider : MonoBehaviour
 
         if (collider.gameObject.CompareTag("Safe"))
         {
+            Debug.Log("safe");
             safePicked = true;
             safesPicked++;
         }
         if (collider.gameObject.CompareTag("A_Safe"))
         {
+            Debug.Log("A_safe");
             safePicked = true;
             safesPicked++;
         }
@@ -490,7 +496,7 @@ public class CarCollider : MonoBehaviour
                 StartCoroutine(PlayerColliderOn());
             }
 
-            stuckForce = new Vector3(800f, 0f, 0f);
+            stuckForce = new Vector3(800f, 0f, 300f);
             rb.AddForce(stuckForce, ForceMode.Impulse);
         }
         if (collider.gameObject.CompareTag("ObsCar_R"))
@@ -523,7 +529,7 @@ public class CarCollider : MonoBehaviour
                 StartCoroutine(PlayerColliderOn());
             }
 
-            stuckForce = new Vector3(-800f, 0f, 0f);
+            stuckForce = new Vector3(-800f, 0f, 300f);
             rb.AddForce(stuckForce, ForceMode.Impulse);
         }
     }
