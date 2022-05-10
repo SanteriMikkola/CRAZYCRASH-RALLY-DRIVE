@@ -30,7 +30,7 @@ public class ItemRandomGeneration : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (i >= 9)
+        if (i >= 30)
         {
             carCollider.changeItemsPos = false;
             i = 0;
