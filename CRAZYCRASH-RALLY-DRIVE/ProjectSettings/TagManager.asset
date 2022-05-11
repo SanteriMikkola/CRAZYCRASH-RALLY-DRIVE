@@ -39,6 +39,8 @@ TagManager:
   - Fence_high_L
   - ObsCar_L
   - ObsCar_R
+  - H_ToolBox
+  - H_Safe
   layers:
   - Default
   - TransparentFX
