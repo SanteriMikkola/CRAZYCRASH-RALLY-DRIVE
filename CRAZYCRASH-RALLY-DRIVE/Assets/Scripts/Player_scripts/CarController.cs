@@ -224,6 +224,7 @@ public class CarController : MonoBehaviour
             carCollider.isThatLevel2 = false;
             carCollider.isThatMT = false;
             mapControll.CposChanget = true;
+            carCollider.start_ObsCarsMove = false;
             //mapControll.GiveUpMapController();
             //Debug.Log("toimiiko?");
             PposChanget = false;
@@ -444,10 +445,10 @@ public class CarController : MonoBehaviour
             leftFrontWheel.localRotation = Quaternion.Euler(leftFrontWheel.localRotation.eulerAngles.x, (turnInput * wheelTurn), leftFrontWheel.localRotation.eulerAngles.z);
             rightFrontWheel.localRotation = Quaternion.Euler(rightFrontWheel.localRotation.eulerAngles.x, (turnInput * wheelTurn), rightFrontWheel.localRotation.eulerAngles.z);
 
-            var car4Size = new Vector3(0.7489346f, 0.5150772f, 1.597193f);
+            var car4Size = new Vector3(1.011325f, 0.6673748f, 2.745308f);
             carCollider.playersBoxCollider.size = new Vector3(car4Size.x, car4Size.y, car4Size.z);
 
-            var car4Center = new Vector3(-0.003241241f, 0.3841397f, 0.625173f);
+            var car4Center = new Vector3(-0.004364967f, 0.5299164f, 0.2052773f);
             carCollider.playersBoxCollider.center = new Vector3(car4Center.x, car4Center.y, car4Center.z);
         }
 

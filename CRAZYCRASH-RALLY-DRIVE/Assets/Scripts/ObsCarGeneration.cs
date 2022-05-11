@@ -36,7 +36,7 @@ public class ObsCarGeneration : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (i >= 19)
+        if (i >= 32)
         {
             carCollider.changeObsCarsPos = false;
             i = 0;
