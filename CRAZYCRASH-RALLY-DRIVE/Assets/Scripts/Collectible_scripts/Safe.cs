@@ -65,7 +65,7 @@ public class Safe : MonoBehaviour
             {
                 meshRenderer.enabled = true;
             }
-            
+
         }
         if (activeSafe == false && disableSafe == true)
         {

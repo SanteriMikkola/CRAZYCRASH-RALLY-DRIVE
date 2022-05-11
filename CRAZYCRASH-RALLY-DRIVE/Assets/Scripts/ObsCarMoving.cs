@@ -6,6 +6,8 @@ public class ObsCarMoving : MonoBehaviour
 {
     private GameObject Player;
     private CarCollider carCollider;
+    private GameObject frontCcollider;
+    private MapControll mapControll;
 
     public Vector3 endPos;
 
@@ -21,6 +23,8 @@ public class ObsCarMoving : MonoBehaviour
     {
         Player = GameObject.Find("Player");
         carCollider = Player.GetComponent<CarCollider>();
+        frontCcollider = GameObject.Find("FrontCollider");
+        mapControll = frontCcollider.GetComponent<MapControll>();
 
         startPos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
 
@@ -30,7 +34,7 @@ public class ObsCarMoving : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (carCollider.start_ObsCarsMove)
+        if (carCollider.start_ObsCarsMove && !mapControll.isGamePaused)
         {
             if (!i)
             {

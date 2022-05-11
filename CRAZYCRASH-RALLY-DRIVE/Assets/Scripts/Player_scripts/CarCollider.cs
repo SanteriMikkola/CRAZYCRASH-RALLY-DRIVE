@@ -104,6 +104,8 @@ public class CarCollider : MonoBehaviour
     [HideInInspector]
     public bool c_isThatCar3 = false;
     [HideInInspector]
+    public bool c_isThatCar4 = false;
+    [HideInInspector]
     public int colorIndex = 0;
     [HideInInspector]
     public int carIndex = 0;
@@ -114,6 +116,9 @@ public class CarCollider : MonoBehaviour
     public int colorIndexOfCar2 = 4;
     //[HideInInspector]
     public int colorIndexOfCar3 = 8;
+    //[HideInInspector]
+    public int colorIndexOfCar4 = 12;
+
 
     public bool RESET_ALL_DATA = false;
 
@@ -162,11 +167,13 @@ public class CarCollider : MonoBehaviour
         PickedCar = data.PickedCar;
         c_isThatOldCar = data.c_isThatOldCar;
         c_isThatCar3 = data.c_isThatCar3;
+        c_isThatCar4 = data.c_isThatCar4;
         colorIndex = data.colorIndex;
         carIndex = data.carIndex;
         colorIndexOfCar1 = data.colorIndexOfCar1;
         colorIndexOfCar2 = data.colorIndexOfCar2;
         colorIndexOfCar3 = data.colorIndexOfCar3;
+        colorIndexOfCar4 = data.colorIndexOfCar4;
     }
 
     private void GenerateSaveFile()
@@ -373,8 +380,6 @@ public class CarCollider : MonoBehaviour
 
             changeItemsPos = true;
 
-            changeObsCarsPos = true;
-
             start_ObsCarsMove = true;
 
             /*reback_Obs = false;
@@ -419,6 +424,8 @@ public class CarCollider : MonoBehaviour
             fuelControll.decreaseValue += 0.025f;
 
             changeItemsPos = true;
+
+            changeObsCarsPos = true;
 
             start_ObsCarsMove = false;
 
@@ -665,11 +672,13 @@ public class CarCollider : MonoBehaviour
         PickedCar = 0;
         c_isThatOldCar = false;
         c_isThatCar3 = false;
+        c_isThatCar4 = false;
         colorIndex = 0;
         carIndex = 0;
         colorIndexOfCar1 = 0;
         colorIndexOfCar2 = 4;
         colorIndexOfCar3 = 8;
+        colorIndexOfCar4 = 12;
         RESET_ALL_DATA = false;
         SaveData();
         LoadData();

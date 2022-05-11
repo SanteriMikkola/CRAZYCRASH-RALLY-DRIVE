@@ -53,6 +53,7 @@ public class StartButton : MonoBehaviour
         playerRB.isKinematic = false;
         carCollider.deadOrNot = false;
         carCollider.changeItemsPos = true;
+        carCollider.changeObsCarsPos = true;
         //Kamera.SetActive(true);
         //StartMenuKamera.SetActive(false);
     }

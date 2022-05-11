@@ -15,16 +15,19 @@ public class GarageControll : MonoBehaviour
     private GameObject garageCar1;
     private GameObject garageCar2;
     private GameObject garageCar3;
+    private GameObject garageCar4;
 
     private GameObject p_Car1;
     private GameObject p_Car2;
     private GameObject p_Car3;
+    private GameObject p_Car4;
 
     public GameObject[] G_carColors;
 
     public GameObject garageCar1_Color1;
     public GameObject garageCar2_Color1;
     public GameObject garageCar3_Color1;
+    public GameObject garageCar4_Color1;
 
     private GameObject Player;
     private GameObject Level1;
@@ -58,6 +61,7 @@ public class GarageControll : MonoBehaviour
     public Color colorOfCar1;
     public Color colorOfCar2;
     public Color colorOfCar3;
+    public Color colorOfCar4;
 
     public bool indexBLock = false;
 
@@ -83,13 +87,16 @@ public class GarageControll : MonoBehaviour
         garageCar1 = GameObject.Find("G_Car1");
         garageCar2 = GameObject.Find("G_Car2");
         garageCar3 = GameObject.Find("G_Car3");
+        garageCar4 = GameObject.Find("G_Car4");
 
         p_Car1 = GameObject.Find("Car");
         p_Car2 = GameObject.Find("Car2");
         p_Car3 = GameObject.Find("Car3");
+        p_Car4 = GameObject.Find("Car4");
 
         p_Car2.SetActive(false);
         p_Car3.SetActive(false);
+        p_Car4.SetActive(false);
 
         carController = Player.GetComponent<CarController>();
         playerColor = Player.GetComponent<PlayerColor>();
@@ -111,13 +118,13 @@ public class GarageControll : MonoBehaviour
 
         garageCar2.SetActive(false);
         garageCar3.SetActive(false);
+        garageCar4.SetActive(false);
 
 
         colorOfCar1 = new Color(1, 0, 0, 1);
-        //colorOfCar2 = new Color(1, 0, 0, 1);
-        //colorOfCar3 = new Color(1, 0, 0, 1);
         colorOfCar2 = new Color(0.03137255f, 0.4117647f, 0.1490196f, 1);
         colorOfCar3 = new Color(0.04313726f, 0.3490196f, 0.4745098f, 1);
+        colorOfCar4 = new Color(0.51f, 0.51f, 0.51f, 1);
     }
 
     // Update is called once per frame
@@ -132,14 +139,17 @@ public class GarageControll : MonoBehaviour
                 p_Car1.SetActive(true);
                 p_Car2.SetActive(false);
                 p_Car3.SetActive(false);
+                p_Car4.SetActive(false);
 
                 garageCar1.SetActive(true);
                 garageCar2.SetActive(false);
                 garageCar3.SetActive(false);
+                garageCar4.SetActive(false);
 
                 garageCar1_Color1.SetActive(false);
                 garageCar2_Color1.SetActive(false);
                 garageCar3_Color1.SetActive(false);
+                garageCar4_Color1.SetActive(false);
 
                 CarArrow[0].SetActive(true);
                 CarArrow[1].SetActive(true);
@@ -147,10 +157,13 @@ public class GarageControll : MonoBehaviour
                 CarArrow[3].SetActive(false);
                 CarArrow[4].SetActive(false);
                 CarArrow[5].SetActive(false);
+                CarArrow[6].SetActive(false);
+                CarArrow[7].SetActive(false);
 
                 ColorButtons[0].SetActive(true);
                 ColorButtons[1].SetActive(false);
                 ColorButtons[2].SetActive(false);
+                ColorButtons[3].SetActive(false);
 
                 PlayersChild = GameObject.FindGameObjectWithTag("EquippedCar");
                 playerRenderer = PlayersChild.GetComponent<MeshRenderer>();
@@ -170,6 +183,7 @@ public class GarageControll : MonoBehaviour
                 colorOfCar1 = Colors[carCollider.colorIndexOfCar1];
                 colorOfCar2 = Colors[carCollider.colorIndexOfCar2];
                 colorOfCar3 = Colors[carCollider.colorIndexOfCar3];
+                colorOfCar4 = Colors[carCollider.colorIndexOfCar4];
                 playerColor.playerNormalColor = colorOfCar1;
             }
             else if (carCollider.PickedCar == 1)
@@ -177,14 +191,17 @@ public class GarageControll : MonoBehaviour
                 p_Car1.SetActive(false);
                 p_Car2.SetActive(true);
                 p_Car3.SetActive(false);
+                p_Car4.SetActive(false);
 
                 garageCar1.SetActive(false);
                 garageCar2.SetActive(true);
                 garageCar3.SetActive(false);
+                garageCar4.SetActive(false);
 
                 garageCar1_Color1.SetActive(false);
                 garageCar2_Color1.SetActive(false);
                 garageCar3_Color1.SetActive(false);
+                garageCar4_Color1.SetActive(false);
 
                 CarArrow[0].SetActive(false);
                 CarArrow[1].SetActive(false);
@@ -192,10 +209,13 @@ public class GarageControll : MonoBehaviour
                 CarArrow[3].SetActive(true);
                 CarArrow[4].SetActive(false);
                 CarArrow[5].SetActive(false);
+                CarArrow[6].SetActive(false);
+                CarArrow[7].SetActive(false);
 
                 ColorButtons[0].SetActive(false);
                 ColorButtons[1].SetActive(true);
                 ColorButtons[2].SetActive(false);
+                ColorButtons[3].SetActive(false);
 
                 PlayersChild = GameObject.FindGameObjectWithTag("EquippedCar");
                 playerRenderer = PlayersChild.GetComponent<MeshRenderer>();
@@ -215,6 +235,7 @@ public class GarageControll : MonoBehaviour
                 colorOfCar1 = Colors[carCollider.colorIndexOfCar1];
                 colorOfCar2 = Colors[carCollider.colorIndexOfCar2];
                 colorOfCar3 = Colors[carCollider.colorIndexOfCar3];
+                colorOfCar4 = Colors[carCollider.colorIndexOfCar4];
                 playerColor.playerNormalColor = colorOfCar2;
             }
             else if (carCollider.PickedCar == 2)
@@ -222,14 +243,17 @@ public class GarageControll : MonoBehaviour
                 p_Car1.SetActive(false);
                 p_Car2.SetActive(false);
                 p_Car3.SetActive(true);
+                p_Car4.SetActive(false);
 
                 garageCar1.SetActive(false);
                 garageCar2.SetActive(false);
                 garageCar3.SetActive(true);
+                garageCar4.SetActive(false);
 
                 garageCar1_Color1.SetActive(false);
                 garageCar2_Color1.SetActive(false);
                 garageCar3_Color1.SetActive(false);
+                garageCar4_Color1.SetActive(false);
 
                 CarArrow[0].SetActive(false);
                 CarArrow[1].SetActive(false);
@@ -237,10 +261,13 @@ public class GarageControll : MonoBehaviour
                 CarArrow[3].SetActive(false);
                 CarArrow[4].SetActive(true);
                 CarArrow[5].SetActive(true);
+                CarArrow[6].SetActive(false);
+                CarArrow[7].SetActive(false);
 
                 ColorButtons[0].SetActive(false);
                 ColorButtons[1].SetActive(false);
                 ColorButtons[2].SetActive(true);
+                ColorButtons[3].SetActive(false);
 
                 PlayersChild = GameObject.FindGameObjectWithTag("EquippedCar");
                 playerRenderer = PlayersChild.GetComponent<MeshRenderer>();
@@ -260,7 +287,60 @@ public class GarageControll : MonoBehaviour
                 colorOfCar1 = Colors[carCollider.colorIndexOfCar1];
                 colorOfCar2 = Colors[carCollider.colorIndexOfCar2];
                 colorOfCar3 = Colors[carCollider.colorIndexOfCar3];
+                colorOfCar4 = Colors[carCollider.colorIndexOfCar4];
                 playerColor.playerNormalColor = colorOfCar3;
+            }
+            else if (carCollider.PickedCar == 3)
+            {
+                p_Car1.SetActive(false);
+                p_Car2.SetActive(false);
+                p_Car3.SetActive(false);
+                p_Car4.SetActive(true);
+
+                garageCar1.SetActive(false);
+                garageCar2.SetActive(false);
+                garageCar3.SetActive(false);
+                garageCar4.SetActive(true);
+
+                garageCar1_Color1.SetActive(false);
+                garageCar2_Color1.SetActive(false);
+                garageCar3_Color1.SetActive(false);
+                garageCar4_Color1.SetActive(true);
+
+                CarArrow[0].SetActive(false);
+                CarArrow[1].SetActive(false);
+                CarArrow[2].SetActive(false);
+                CarArrow[3].SetActive(false);
+                CarArrow[4].SetActive(false);
+                CarArrow[5].SetActive(false);
+                CarArrow[6].SetActive(true);
+                CarArrow[7].SetActive(true);
+
+                ColorButtons[0].SetActive(false);
+                ColorButtons[1].SetActive(false);
+                ColorButtons[2].SetActive(false);
+                ColorButtons[3].SetActive(true);
+
+                PlayersChild = GameObject.FindGameObjectWithTag("EquippedCar");
+                playerRenderer = PlayersChild.GetComponent<MeshRenderer>();
+                changeCarColor = false;
+                carController.wheelsReady = false;
+
+                //garageCarMeshRenderer = Cars[2].GetComponent<MeshRenderer>();
+
+                var block = new MaterialPropertyBlock();
+
+                block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndexOfCar4]);
+                playerRenderer.SetPropertyBlock(block);
+                //garageCarMeshRenderer.SetPropertyBlock(block);
+
+                G_carColors[carCollider.colorIndexOfCar4].SetActive(true);
+
+                colorOfCar1 = Colors[carCollider.colorIndexOfCar1];
+                colorOfCar2 = Colors[carCollider.colorIndexOfCar2];
+                colorOfCar3 = Colors[carCollider.colorIndexOfCar3];
+                colorOfCar4 = Colors[carCollider.colorIndexOfCar4];
+                playerColor.playerNormalColor = colorOfCar4;
             }
 
             loadData = false;
@@ -353,6 +433,7 @@ public class GarageControll : MonoBehaviour
                         carCollider.PickedCar = 0;
                         carCollider.c_isThatOldCar = false;
                         carCollider.c_isThatCar3 = false;
+                        carCollider.c_isThatCar4 = false;
 
                         carCollider.SaveData();
                         carCollider.LoadData();
@@ -400,6 +481,7 @@ public class GarageControll : MonoBehaviour
                         carCollider.PickedCar = 1;
                         carCollider.c_isThatOldCar = true;
                         carCollider.c_isThatCar3 = false;
+                        carCollider.c_isThatCar4 = false;
 
                         carCollider.SaveData();
                         carCollider.LoadData();
@@ -447,6 +529,7 @@ public class GarageControll : MonoBehaviour
                         carCollider.PickedCar = 2;
                         carCollider.c_isThatOldCar = false;
                         carCollider.c_isThatCar3 = true;
+                        carCollider.c_isThatCar4 = false;
 
                         carCollider.SaveData();
                         carCollider.LoadData();
@@ -472,6 +555,34 @@ public class GarageControll : MonoBehaviour
                         Vector3 targetPoint = (playerRotateF.transform.position);
                         Cars[index].transform.LookAt(targetPoint);
                         Cars[index].transform.Rotate(-90f, 0f, -180f);*/
+                        PlayersChild = GameObject.FindGameObjectWithTag("EquippedCar");
+                        playerRenderer = PlayersChild.GetComponent<MeshRenderer>();
+
+                        loadData = true;
+
+                        changeCarColor = false;
+                        carController.wheelsReady = false;
+                    }
+                    break;
+                case 3: //car4
+                    {
+                        playerColor.playerNormalColor = colorOfCar4;
+
+
+                        isThatOldCar = false;
+                        isThatCar3 = true;
+                        playerColor.changeNormalcolor = false;
+                        changeCarColor = true;
+
+                        carCollider.PickedCar = 3;
+                        carCollider.c_isThatOldCar = false;
+                        carCollider.c_isThatCar3 = false;
+                        carCollider.c_isThatCar4 = true;
+
+                        carCollider.SaveData();
+                        carCollider.LoadData();
+
+
                         PlayersChild = GameObject.FindGameObjectWithTag("EquippedCar");
                         playerRenderer = PlayersChild.GetComponent<MeshRenderer>();
 
@@ -1352,6 +1463,8 @@ public class GarageControll : MonoBehaviour
                     CarArrow[3].SetActive(false);
                     CarArrow[4].SetActive(false);
                     CarArrow[5].SetActive(false);
+                    CarArrow[6].SetActive(false);
+                    CarArrow[7].SetActive(false);
                 }
                 break;
             case 1: //car2
@@ -1364,6 +1477,8 @@ public class GarageControll : MonoBehaviour
                     CarArrow[1].SetActive(false);
                     CarArrow[4].SetActive(false);
                     CarArrow[5].SetActive(false);
+                    CarArrow[6].SetActive(false);
+                    CarArrow[7].SetActive(false);
                 }
                 break;
             case 2: //car3
@@ -1376,8 +1491,24 @@ public class GarageControll : MonoBehaviour
                     CarArrow[1].SetActive(false);
                     CarArrow[2].SetActive(false);
                     CarArrow[3].SetActive(false);
+                    CarArrow[6].SetActive(false);
+                    CarArrow[7].SetActive(false);
                 }
                 break;
+                case 3: //car4
+                    {
+
+                        CarArrow[6].SetActive(true);
+                        CarArrow[7].SetActive(true);
+
+                        CarArrow[0].SetActive(false);
+                        CarArrow[1].SetActive(false);
+                        CarArrow[2].SetActive(false);
+                        CarArrow[3].SetActive(false);
+                        CarArrow[4].SetActive(false);
+                        CarArrow[5].SetActive(false);
+                    }
+                    break;
         }
     }
 
@@ -1464,6 +1595,20 @@ public class GarageControll : MonoBehaviour
     }
 
     public void PressedLeftACar3()
+    {
+        //Cars[index].SetActive(false);
+        pressedLeft = true;
+        pressedRight = false;
+        indexBLock = true;
+    }
+    public void PressedRightACar3()
+    {
+        //Cars[index].SetActive(false);
+        pressedRight = true;
+        pressedLeft = false;
+        indexBLock = false;
+    }
+    public void PressedLeftACar4()
     {
         //Cars[index].SetActive(false);
         pressedLeft = true;

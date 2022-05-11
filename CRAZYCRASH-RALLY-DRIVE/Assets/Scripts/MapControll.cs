@@ -17,9 +17,11 @@ public class MapControll : MonoBehaviour
 
     private GameObject[] ToolBoxes;
     private GameObject[] A_ToolBoxes;
+    private GameObject[] H_ToolBoxes;
 
     public GameObject[] Reback_ToolBoxes;
     public GameObject[] Reback_A_ToolBoxes;
+    public GameObject[] Reback_H_ToolBoxes;
 
     private GameObject[] JerryCans;
     private GameObject[] A_JerryCans;
@@ -35,9 +37,11 @@ public class MapControll : MonoBehaviour
 
     private GameObject[] Safe;
     private GameObject[] A_Safe;
+    private GameObject[] H_Safe;
 
     private GameObject[] Reback_Safe;
     private GameObject[] Reback_A_Safe;
+    private GameObject[] Reback_H_Safe;
 
 
     public GameObject[] Trees;
@@ -110,6 +114,8 @@ public class MapControll : MonoBehaviour
     public Vector3[] A_Safe_vectors;
 
     public Vector3[] H_Obs_vectors;
+    public Vector3[] H_TB_vectors;
+    public Vector3[] H_Safe_vectors;
 
     //public GameObject[] PickedObjects;
 
@@ -153,6 +159,7 @@ public class MapControll : MonoBehaviour
 
         Reback_ToolBoxes = GameObject.FindGameObjectsWithTag("ToolBox");
         Reback_A_ToolBoxes = GameObject.FindGameObjectsWithTag("A_ToolBox");
+        Reback_H_ToolBoxes = GameObject.FindGameObjectsWithTag("H_ToolBox");
 
         Reback_JerryCans = GameObject.FindGameObjectsWithTag("JerryCan");
         Reback_A_JerryCans = GameObject.FindGameObjectsWithTag("A_JerryCan");
@@ -162,6 +169,7 @@ public class MapControll : MonoBehaviour
 
         Reback_Safe = GameObject.FindGameObjectsWithTag("Safe");
         Reback_A_Safe = GameObject.FindGameObjectsWithTag("A_Safe");
+        Reback_H_Safe = GameObject.FindGameObjectsWithTag("H_Safe");
 
         Trees = GameObject.FindGameObjectsWithTag("TreeWithMesh");
         startTrees = GameObject.FindGameObjectsWithTag("StartTrees");
@@ -171,12 +179,14 @@ public class MapControll : MonoBehaviour
         HighwayEsteet = GameObject.FindGameObjectsWithTag("HighwayEste");
         ToolBoxes = GameObject.FindGameObjectsWithTag("ToolBox");
         A_ToolBoxes = GameObject.FindGameObjectsWithTag("A_ToolBox");
+        H_ToolBoxes = GameObject.FindGameObjectsWithTag("H_ToolBox");
         JerryCans = GameObject.FindGameObjectsWithTag("JerryCan");
         A_JerryCans = GameObject.FindGameObjectsWithTag("A_JerryCan");
         Grass = GameObject.FindGameObjectsWithTag("Grass");
         A_Grass = GameObject.FindGameObjectsWithTag("A_Crass");
         Safe = GameObject.FindGameObjectsWithTag("Safe");
         A_Safe = GameObject.FindGameObjectsWithTag("A_Safe");
+        H_Safe = GameObject.FindGameObjectsWithTag("H_Safe");
         //PositionCheck();
         for (int i = 0; i < Esteet.Length; i++)
         {
@@ -262,6 +272,20 @@ public class MapControll : MonoBehaviour
 
             esteComponent.activateMesh = false;
             esteComponent.disableMesh = true;
+        }
+        for (int i = 0; i < H_ToolBoxes.Length; i++)
+        {
+            var Component = H_ToolBoxes[i].gameObject.GetComponent<ToolBox>();
+
+            Component.activeToolBox = false;
+            Component.disableToolBox = true;
+        }
+        for (int i = 0; i < H_Safe.Length; i++)
+        {
+            var Component = H_Safe[i].gameObject.GetComponent<Safe>();
+
+            Component.activeSafe = false;
+            Component.disableSafe = true;
         }
 
         bCollider.transform.parent = null;
@@ -378,9 +402,28 @@ public class MapControll : MonoBehaviour
                 //esteComponent.activateMesh = true;
                 treeControlComponent.ActiveTrees();
             }
+            for (int i = 0; i < Reback_H_ToolBoxes.Length; i++)
+            {
+                Reback_H_ToolBoxes[i].SetActive(true);
+
+                var TBComponent = Reback_H_ToolBoxes[i].gameObject.GetComponent<ToolBox>();
+
+                //esteComponent.activateMesh = true;
+                TBComponent.reBackTB = true;
+            }
+            for (int i = 0; i < Reback_H_Safe.Length; i++)
+            {
+                Reback_H_Safe[i].SetActive(true);
+
+                var SafeComponent = Reback_H_Safe[i].gameObject.GetComponent<Safe>();
+
+                //esteComponent.activateMesh = true;
+                SafeComponent.reBackSafe = true;
+            }
 
             HighwayEsteet = GameObject.FindGameObjectsWithTag("HighwayEste");
-
+            H_ToolBoxes = GameObject.FindGameObjectsWithTag("H_ToolBox");
+            H_Safe = GameObject.FindGameObjectsWithTag("H_Safe");
 
             isObjectsPicked = false;
             Reback_M_Esteet();
@@ -586,18 +629,38 @@ public class MapControll : MonoBehaviour
                 //esteComponent.activateMesh = true;
                 treeControlComponent.ActiveTrees();
             }
+            for (int i = 0; i < Reback_H_ToolBoxes.Length; i++)
+            {
+                Reback_H_ToolBoxes[i].SetActive(true);
+
+                var TBComponent = Reback_H_ToolBoxes[i].gameObject.GetComponent<ToolBox>();
+
+                //esteComponent.activateMesh = true;
+                TBComponent.reBackTB = true;
+            }
+            for (int i = 0; i < Reback_H_Safe.Length; i++)
+            {
+                Reback_H_Safe[i].SetActive(true);
+
+                var SafeComponent = Reback_H_Safe[i].gameObject.GetComponent<Safe>();
+
+                //esteComponent.activateMesh = true;
+                SafeComponent.reBackSafe = true;
+            }
 
             Esteet = GameObject.FindGameObjectsWithTag("Este");
             AavikonEsteet = GameObject.FindGameObjectsWithTag("AavikonEste");
             HighwayEsteet = GameObject.FindGameObjectsWithTag("HighwayEste");
             ToolBoxes = GameObject.FindGameObjectsWithTag("ToolBox");
             A_ToolBoxes = GameObject.FindGameObjectsWithTag("A_ToolBox");
+            H_ToolBoxes = GameObject.FindGameObjectsWithTag("H_ToolBox");
             JerryCans = GameObject.FindGameObjectsWithTag("JerryCan");
             A_JerryCans = GameObject.FindGameObjectsWithTag("A_JerryCan");
             Grass = GameObject.FindGameObjectsWithTag("Grass");
             A_Grass = GameObject.FindGameObjectsWithTag("A_Crass");
             Safe = GameObject.FindGameObjectsWithTag("Safe");
             A_Safe = GameObject.FindGameObjectsWithTag("A_Safe");
+            H_Safe = GameObject.FindGameObjectsWithTag("H_Safe");
             isObjectsPicked = false;
             MoottoriTiePositionCheck();
             startButtonS.GameStartForMapControll = false;
@@ -667,12 +730,14 @@ public class MapControll : MonoBehaviour
             HighwayEsteet = GameObject.FindGameObjectsWithTag("HighwayEste");
             ToolBoxes = GameObject.FindGameObjectsWithTag("ToolBox");
             A_ToolBoxes = GameObject.FindGameObjectsWithTag("A_ToolBox");
+            H_ToolBoxes = GameObject.FindGameObjectsWithTag("H_ToolBox");
             JerryCans = GameObject.FindGameObjectsWithTag("JerryCan");
             A_JerryCans = GameObject.FindGameObjectsWithTag("A_JerryCan");
             Grass = GameObject.FindGameObjectsWithTag("Grass");
             A_Grass = GameObject.FindGameObjectsWithTag("A_Crass");
             Safe = GameObject.FindGameObjectsWithTag("Safe");
             A_Safe = GameObject.FindGameObjectsWithTag("A_Safe");
+            H_Safe = GameObject.FindGameObjectsWithTag("H_Safe");
             isObjectsPicked = false;
             PositionCheck();
             startButtonS.GameStartForMapControll = false;
@@ -741,12 +806,14 @@ public class MapControll : MonoBehaviour
             HighwayEsteet = GameObject.FindGameObjectsWithTag("HighwayEste");
             ToolBoxes = GameObject.FindGameObjectsWithTag("ToolBox");
             A_ToolBoxes = GameObject.FindGameObjectsWithTag("A_ToolBox");
+            H_ToolBoxes = GameObject.FindGameObjectsWithTag("H_ToolBox");
             JerryCans = GameObject.FindGameObjectsWithTag("JerryCan");
             A_JerryCans = GameObject.FindGameObjectsWithTag("A_JerryCan");
             Grass = GameObject.FindGameObjectsWithTag("Grass");
             A_Grass = GameObject.FindGameObjectsWithTag("A_Crass");
             Safe = GameObject.FindGameObjectsWithTag("Safe");
             A_Safe = GameObject.FindGameObjectsWithTag("A_Safe");
+            H_Safe = GameObject.FindGameObjectsWithTag("H_Safe");
             isObjectsPicked = false;
             AavikkoPositionCheck();
             startButtonS.GameStartForMapControll = false;
@@ -1230,6 +1297,8 @@ public class MapControll : MonoBehaviour
     private void MoottoriTiePositionCheck()
     {
         H_Obs_vectors = new Vector3[HighwayEsteet.Length];
+        H_TB_vectors = new Vector3[H_ToolBoxes.Length];
+        H_Safe_vectors = new Vector3[H_Safe.Length];
 
         if (!isObjectsPicked)
         {
@@ -1269,6 +1338,82 @@ public class MapControll : MonoBehaviour
 
                     esteComponent.activateMesh = false;
                     esteComponent.disableMesh = true;
+                }
+            }
+
+            for (int i = 0; i < H_ToolBoxes.Length; i++)
+            {
+                H_TB_vectors[i].Set(H_ToolBoxes[i].transform.position.x, H_ToolBoxes[i].transform.position.y, H_ToolBoxes[i].transform.position.z);
+
+                if (H_TB_vectors[i].z > AreaVector1.z && H_TB_vectors[i].z < AreaVector2.z)
+                {
+                    //ii++;
+                    //PickedObjects = new GameObject[ii];
+
+                    var Component = H_ToolBoxes[i].gameObject.GetComponent<ToolBox>();
+
+                    Component.activeToolBox = true;
+                    Component.disableToolBox = false;
+
+                    /*var objecti = Esteet[i];
+
+                    //Debug.Log(objecti);
+                    Debug.Log(Testi.Length);
+
+                    PickedObjects.SetValue(objecti, iii);*/
+
+                    //objecti = null;
+                    /*
+                    System.Array.Copy(Esteet, i, PickedObjects, iii, 1);
+                    Debug.Log(PickedObjects);
+                    //System.Array.ConstrainedCopy(PickedObjects, iii, Esteet, ii, 1);
+                    iii++;*/
+                    //Esteet.CopyTo(PickedObjects, ii);
+                }
+                else
+                {
+                    var Component = H_ToolBoxes[i].gameObject.GetComponent<ToolBox>();
+
+                    Component.activeToolBox = false;
+                    Component.disableToolBox = true;
+                }
+            }
+
+            for (int i = 0; i < H_Safe.Length; i++)
+            {
+                H_Safe_vectors[i].Set(H_Safe[i].transform.position.x, H_Safe[i].transform.position.y, H_Safe[i].transform.position.z);
+
+                if (H_Safe_vectors[i].z > AreaVector1.z && H_Safe_vectors[i].z < AreaVector2.z)
+                {
+                    //ii++;
+                    //PickedObjects = new GameObject[ii];
+
+                    var Component = H_Safe[i].gameObject.GetComponent<Safe>();
+
+                    Component.activeSafe = true;
+                    Component.disableSafe = false;
+
+                    /*var objecti = Esteet[i];
+
+                    //Debug.Log(objecti);
+                    Debug.Log(Testi.Length);
+
+                    PickedObjects.SetValue(objecti, iii);*/
+
+                    //objecti = null;
+                    /*
+                    System.Array.Copy(Esteet, i, PickedObjects, iii, 1);
+                    Debug.Log(PickedObjects);
+                    //System.Array.ConstrainedCopy(PickedObjects, iii, Esteet, ii, 1);
+                    iii++;*/
+                    //Esteet.CopyTo(PickedObjects, ii);
+                }
+                else
+                {
+                    var Component = H_Safe[i].gameObject.GetComponent<Safe>();
+
+                    Component.activeSafe = false;
+                    Component.disableSafe = true;
                 }
             }
 
@@ -1465,6 +1610,20 @@ public class MapControll : MonoBehaviour
             esteComponent.activateMesh = true;
             esteComponent.disableMesh = false;
         }
+        for (int i = 0; i < H_ToolBoxes.Length; i++)
+        {
+            var Component = H_ToolBoxes[i].gameObject.GetComponent<ToolBox>();
+
+            Component.activeToolBox = true;
+            Component.disableToolBox = false;
+        }
+        for (int i = 0; i < H_Safe.Length; i++)
+        {
+            var Component = H_Safe[i].gameObject.GetComponent<Safe>();
+
+            Component.activeSafe = true;
+            Component.disableSafe = false;
+        }
 
         fCollider.transform.position = new Vector3(0, 3.18f, 5f);
         AreaVector1 = new Vector3(0f, 3.18f, 5f);
@@ -1476,12 +1635,14 @@ public class MapControll : MonoBehaviour
         HighwayEsteet = GameObject.FindGameObjectsWithTag("HighwayEste");
         ToolBoxes = GameObject.FindGameObjectsWithTag("ToolBox");
         A_ToolBoxes = GameObject.FindGameObjectsWithTag("A_ToolBox");
+        H_ToolBoxes = GameObject.FindGameObjectsWithTag("H_ToolBox");
         JerryCans = GameObject.FindGameObjectsWithTag("JerryCan");
         A_JerryCans = GameObject.FindGameObjectsWithTag("A_JerryCan");
         Grass = GameObject.FindGameObjectsWithTag("Grass");
         A_Grass = GameObject.FindGameObjectsWithTag("A_Crass");
         Safe = GameObject.FindGameObjectsWithTag("Safe");
         A_Safe = GameObject.FindGameObjectsWithTag("A_Safe");
+        H_Safe = GameObject.FindGameObjectsWithTag("H_Safe");
 
 
         for (int i = 0; i < Esteet.Length; i++)
@@ -1568,6 +1729,20 @@ public class MapControll : MonoBehaviour
 
             esteComponent.activateMesh = false;
             esteComponent.disableMesh = true;
+        }
+        for (int i = 0; i < H_ToolBoxes.Length; i++)
+        {
+            var Component = H_ToolBoxes[i].gameObject.GetComponent<ToolBox>();
+
+            Component.activeToolBox = false;
+            Component.disableToolBox = true;
+        }
+        for (int i = 0; i < H_Safe.Length; i++)
+        {
+            var Component = H_Safe[i].gameObject.GetComponent<Safe>();
+
+            Component.activeSafe = false;
+            Component.disableSafe = true;
         }
     }
 
@@ -1988,6 +2163,8 @@ public class MapControll : MonoBehaviour
     private void Reback_M_Esteet()
     {
         H_Obs_vectors = new Vector3[HighwayEsteet.Length];
+        H_TB_vectors = new Vector3[H_ToolBoxes.Length];
+        H_Safe_vectors = new Vector3[H_Safe.Length];
 
         if (!isObjectsPicked)
         {
@@ -2027,6 +2204,82 @@ public class MapControll : MonoBehaviour
 
                     esteComponent.activateMesh = false;
                     esteComponent.disableMesh = true;
+                }
+            }
+
+            for (int i = 0; i < H_ToolBoxes.Length; i++)
+            {
+                H_TB_vectors[i].Set(H_ToolBoxes[i].transform.position.x, H_ToolBoxes[i].transform.position.y, H_ToolBoxes[i].transform.position.z);
+
+                if (H_TB_vectors[i].z > AreaVector1.z && H_TB_vectors[i].z < AreaVector2.z)
+                {
+                    //ii++;
+                    //PickedObjects = new GameObject[ii];
+
+                    var Component = H_ToolBoxes[i].gameObject.GetComponent<ToolBox>();
+
+                    Component.activeToolBox = true;
+                    Component.disableToolBox = false;
+
+                    /*var objecti = Esteet[i];
+
+                    //Debug.Log(objecti);
+                    Debug.Log(Testi.Length);
+
+                    PickedObjects.SetValue(objecti, iii);*/
+
+                    //objecti = null;
+                    /*
+                    System.Array.Copy(Esteet, i, PickedObjects, iii, 1);
+                    Debug.Log(PickedObjects);
+                    //System.Array.ConstrainedCopy(PickedObjects, iii, Esteet, ii, 1);
+                    iii++;*/
+                    //Esteet.CopyTo(PickedObjects, ii);
+                }
+                else
+                {
+                    var Component = H_ToolBoxes[i].gameObject.GetComponent<ToolBox>();
+
+                    Component.activeToolBox = false;
+                    Component.disableToolBox = true;
+                }
+            }
+
+            for (int i = 0; i < H_Safe.Length; i++)
+            {
+                H_Safe_vectors[i].Set(H_Safe[i].transform.position.x, H_Safe[i].transform.position.y, H_Safe[i].transform.position.z);
+
+                if (H_Safe_vectors[i].z > AreaVector1.z && H_Safe_vectors[i].z < AreaVector2.z)
+                {
+                    //ii++;
+                    //PickedObjects = new GameObject[ii];
+
+                    var Component = H_Safe[i].gameObject.GetComponent<Safe>();
+
+                    Component.activeSafe = true;
+                    Component.disableSafe = false;
+
+                    /*var objecti = Esteet[i];
+
+                    //Debug.Log(objecti);
+                    Debug.Log(Testi.Length);
+
+                    PickedObjects.SetValue(objecti, iii);*/
+
+                    //objecti = null;
+                    /*
+                    System.Array.Copy(Esteet, i, PickedObjects, iii, 1);
+                    Debug.Log(PickedObjects);
+                    //System.Array.ConstrainedCopy(PickedObjects, iii, Esteet, ii, 1);
+                    iii++;*/
+                    //Esteet.CopyTo(PickedObjects, ii);
+                }
+                else
+                {
+                    var Component = H_Safe[i].gameObject.GetComponent<Safe>();
+
+                    Component.activeSafe = false;
+                    Component.disableSafe = true;
                 }
             }
 
