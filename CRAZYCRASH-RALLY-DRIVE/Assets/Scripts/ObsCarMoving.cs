@@ -53,6 +53,11 @@ public class ObsCarMoving : MonoBehaviour
 
             transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
         }
+        else if (carCollider.start_ObsCarsMove && mapControll.isGamePaused)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+
+        }
         else
         {
             transform.position = new Vector3(startPos.x, startPos.y, startPos.z);
