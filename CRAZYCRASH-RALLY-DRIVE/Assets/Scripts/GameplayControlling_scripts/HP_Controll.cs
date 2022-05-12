@@ -38,6 +38,7 @@ public class HP_Controll : MonoBehaviour
         {
             ToolBoxReverse2Health();
         }
+
         if (carCollider.playerCollide == true)
         {
             DecreaseHP();
@@ -46,6 +47,7 @@ public class HP_Controll : MonoBehaviour
         {
             hitted = false;
         }
+
         if (carCollider.toolBoxPicked == false)
         {
             healed = false;
