@@ -67,7 +67,7 @@ public class ObsCarMoving : MonoBehaviour
                 }
                 activateObs = false;
             }*/
-
+            activateObs = true;
             if (!mapControll.isGamePaused)
             {
                 if (!i)
@@ -95,7 +95,13 @@ public class ObsCarMoving : MonoBehaviour
         }
         else
         {
-            transform.position = new Vector3(startPos.x, startPos.y, startPos.z);
+            if (activateObs)
+            {
+                gameObject.SetActive(true);
+                transform.position = new Vector3(startPos.x, startPos.y, startPos.z);
+                activateObs = false;
+            }
+            
 
             i = false;
             //activateObs = true;
@@ -123,7 +129,7 @@ public class ObsCarMoving : MonoBehaviour
             isColliderUnActive = false;
         }
 
-        if (disableMesh == true && activateMesh == false && carCollider.start_ObsCarsMove/* && activateObs == false*/)
+        if (disableMesh == true && activateMesh == false && activateObs == false/* && carCollider.start_ObsCarsMove/* && activateObs == false*/)
         {
             gameObject.SetActive(false);
             isColliderUnActive = true;

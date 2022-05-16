@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 1299
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 678, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 26
+  controlID: 61
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 27
+  controlID: 114
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 28
+  controlID: 115
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -273,8 +273,8 @@ MonoBehaviour:
     y: 0
     width: 549
     height: 1299
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -310,23 +310,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a0fa1100
-      m_LastClickedID: 1178272
-      m_ExpandedIDs: 6446fffff650ffff388efffff491ffffaae3ffffd0e5ffffaae9ffff66ebffff6afbffff9c700000987d0000ce8300009e9000008ae70000820c020060170200f61c0200d668020076940200b2950200aea2020068dd020078f80200a00c030052150300eab60400fee004005ee10400dceb040072f10400d4470500246a05002c6e05000c6f0500fe6f050090720500268a0500e09205002c970500a0b40500c0b8050088c805003cdb0500c4e90500b8ee0500546a0f00320c1000ae3210008e33100062571000ae5b100022791000be9f10003ab31000ecd710003c201100ec791100d27d1100b08d1100e8991100b09e1100a2a2110060b711003ebc1100d4bf1100a8c3110044c9110040cd1100aece110086d61100e4e61100a8e71100daeb1100b8f01100bcfa1100eefc110068021200a202120008051200901212009c121200b21912003c1d12003c221200662e1200
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 68fbffffa0c80000aecc0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: NPC_Car3 (4)
-        m_OriginalName: NPC_Car3 (4)
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 1189700
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -372,9 +372,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 225.69551, y: 650.5809, z: 215.07733}
+    m_Target: {x: 271.2045, y: 594.23895, z: 242.28047}
     speed: 2
-    m_Value: {x: 225.69551, y: 650.5809, z: 215.07733}
+    m_Value: {x: 271.2045, y: 594.23895, z: 242.28047}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -421,13 +421,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.21886672, y: -0.542347, z: 0.14890243, w: -0.7974056}
+    m_Target: {x: -0.24673158, y: -0.4721852, z: 0.13958926, w: -0.8347638}
     speed: 2
-    m_Value: {x: -0.21863541, y: -0.5435233, z: 0.14922531, w: -0.796563}
+    m_Value: {x: -0.24692203, y: -0.47089693, z: 0.1392085, w: -0.83540803}
   m_Size:
-    m_Target: 183.09442
+    m_Target: 222.59296
     speed: 2
-    m_Value: 175.20998
+    m_Value: 222.59296
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -640,22 +640,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Collectible_scripts
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 72
   m_LastFolders:
-  - Assets/Scripts/Collectible_scripts
+  - Assets
   m_LastFoldersGridSize: 72
   m_LastProjectPath: E:\GitRepos_v2\CRAZYCRASH-RALLY-DRIVE\CRAZYCRASH-RALLY-DRIVE
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 700d0100
-    m_LastClickedID: 68976
-    m_ExpandedIDs: 00000000720b0100740b0100760b0100780b01007a0b01007c0b0100580c010000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 900a0100
+    m_LastClickedID: 68240
+    m_ExpandedIDs: 000000008a0a01008c0a01008e0a0100900a0100920a0100940a010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -683,7 +683,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000720b0100740b0100760b0100780b01007a0b01007c0b0100
+    m_ExpandedIDs: 000000008a0a01008c0a01008e0a0100900a0100920a0100940a0100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -710,7 +710,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000560a0100866f00006c6500002c7100009efa000032800000a493000030041c006ccd0000a4c9000000000000ae950000c6260000d8260000cc260000c0950000f2950000040c0100f80b0100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
