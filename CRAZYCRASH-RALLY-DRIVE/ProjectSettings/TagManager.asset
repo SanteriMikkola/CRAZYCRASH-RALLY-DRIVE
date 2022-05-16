@@ -41,6 +41,8 @@ TagManager:
   - ObsCar_R
   - H_ToolBox
   - H_Safe
+  - ObsCarStart_L
+  - ObsCarStart_R
   layers:
   - Default
   - TransparentFX

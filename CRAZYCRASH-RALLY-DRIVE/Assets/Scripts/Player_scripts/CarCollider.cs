@@ -53,7 +53,7 @@ public class CarCollider : MonoBehaviour
     [HideInInspector]
     public bool start_ObsCarsMove = false;
 
-    [HideInInspector]
+    //[HideInInspector]
     public bool changeObsCarsPos = false;
 
     [HideInInspector]
@@ -512,6 +512,73 @@ public class CarCollider : MonoBehaviour
             rb.AddForce(stuckForce, ForceMode.Impulse);
         }
         if (collider.gameObject.CompareTag("ObsCar_R"))
+        {
+            playerCollide = true;
+            playersBoxCollider.enabled = false;
+            /*WheelColliders[0].enabled = false;
+            WheelColliders[1].enabled = false;
+            WheelColliders[2].enabled = false;
+            WheelColliders[3].enabled = false;*/
+            SphereCollider.enabled = false;
+            osuma++;
+            Debug.Log("Osuma");
+            //StartCoroutine(PlayerColorBlink());
+            //StartCoroutine(CollidersOff());
+            //transform.Translate(lowSpeed * Time.deltaTime * Vector3.forward, Space.World);
+            //StartCoroutine(CollidersOn());
+            if (osuma == maxOsumat)
+            {
+                isPlayerDead = true;
+                /*gameObject.SetActive(false);
+                Kamera.SetActive(false);*/
+                playerCollide = false;
+                moneyRandomized = false;
+                scoreGet = false;
+            }
+
+            if (osuma != maxOsumat && deadOrNot == false)
+            {
+                StartCoroutine(PlayerColliderOn());
+            }
+
+            stuckForce = new Vector3(-800f, 0f, 300f);
+            rb.AddForce(stuckForce, ForceMode.Impulse);
+        }
+
+        if (collider.gameObject.CompareTag("ObsCarStart_L"))
+        {
+            playerCollide = true;
+            playersBoxCollider.enabled = false;
+            /*WheelColliders[0].enabled = false;
+            WheelColliders[1].enabled = false;
+            WheelColliders[2].enabled = false;
+            WheelColliders[3].enabled = false;*/
+            SphereCollider.enabled = false;
+            osuma++;
+            Debug.Log("Osuma");
+            //StartCoroutine(PlayerColorBlink());
+            //StartCoroutine(CollidersOff());
+            //transform.Translate(lowSpeed * Time.deltaTime * Vector3.forward, Space.World);
+            //StartCoroutine(CollidersOn());
+            if (osuma == maxOsumat)
+            {
+                isPlayerDead = true;
+                /*gameObject.SetActive(false);
+                Kamera.SetActive(false);*/
+                playerCollide = false;
+                moneyRandomized = false;
+                scoreGet = false;
+            }
+
+            if (osuma != maxOsumat && deadOrNot == false)
+            {
+                StartCoroutine(PlayerColliderOn());
+            }
+
+            stuckForce = new Vector3(800f, 0f, 300f);
+            rb.AddForce(stuckForce, ForceMode.Impulse);
+        }
+        if (collider.gameObject.CompareTag("ObsCarStart_R"))
         {
             playerCollide = true;
             playersBoxCollider.enabled = false;
