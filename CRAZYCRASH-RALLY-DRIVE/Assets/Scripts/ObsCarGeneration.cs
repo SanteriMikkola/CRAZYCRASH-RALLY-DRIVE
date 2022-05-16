@@ -31,6 +31,7 @@ public class ObsCarGeneration : MonoBehaviour
         obsCarMoving = gameObject.GetComponent<ObsCarMoving>();
 
         endPos.Set(obsCarMoving.endPos.x, obsCarMoving.endPos.y, obsCarMoving.endPos.z);
+
     }
 
     // Update is called once per frame
@@ -40,6 +41,7 @@ public class ObsCarGeneration : MonoBehaviour
         {
             carCollider.changeObsCarsPos = false;
             i = 0;
+            obsCarMoving.deactiveObs = true;
         }
 
         if (carCollider.changeObsCarsPos)
