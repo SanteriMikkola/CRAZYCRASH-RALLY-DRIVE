@@ -43,6 +43,7 @@ TagManager:
   - H_Safe
   - ObsCarStart_L
   - ObsCarStart_R
+  - Accident_L
   layers:
   - Default
   - TransparentFX

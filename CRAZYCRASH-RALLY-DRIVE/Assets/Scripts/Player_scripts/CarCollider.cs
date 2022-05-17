@@ -469,12 +469,17 @@ public class CarCollider : MonoBehaviour
         }
         if (collider.gameObject.CompareTag("Fence_high_R"))
         {
-            stuckForce = new Vector3(-800f, 0f, -450f);
+            stuckForce = new Vector3(-800f, 0f, -550f);
             rb.AddForce(stuckForce, ForceMode.Impulse);
         }
         if (collider.gameObject.CompareTag("Fence_high_L"))
         {
-            stuckForce = new Vector3(800f, 0f, -450f);
+            stuckForce = new Vector3(800f, 0f, -550f);
+            rb.AddForce(stuckForce, ForceMode.Impulse);
+        }
+        if (collider.gameObject.CompareTag("Accident_L"))
+        {
+            stuckForce = new Vector3(1250f, 0f, -1000f);
             rb.AddForce(stuckForce, ForceMode.Impulse);
         }
 
