@@ -2181,4 +2181,195 @@ public class GarageControll : MonoBehaviour
         carCollider.SaveData();
         carCollider.LoadData();
     }
+
+
+
+
+
+
+
+    public void Pressed_R_A_C4_Color1()
+    {
+        //Cars[index].SetActive(false);
+        pressedRight = true;
+        pressedLeft = false;
+        indexBLock = false;
+
+        colorIndex = 13;
+        carCollider.colorIndex = 13;
+
+        var block = new MaterialPropertyBlock();
+
+        block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
+        playerRenderer.SetPropertyBlock(block);
+
+        carCollider.colorIndexOfCar4 = colorIndex;
+
+        colorOfCar4 = Colors[colorIndex];
+        playerColor.playerNormalColor = colorOfCar4;
+
+        carCollider.SaveData();
+        carCollider.LoadData();
+    }
+    public void Pressed_L_A_C4_Color1()
+    {
+        //Cars[index].SetActive(false);
+        pressedRight = false;
+        pressedLeft = true;
+        indexBLock = true;
+
+        colorIndex = 12;
+        carCollider.colorIndex = 12;
+
+        var block = new MaterialPropertyBlock();
+
+        block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
+        playerRenderer.SetPropertyBlock(block);
+
+        carCollider.colorIndexOfCar4 = colorIndex;
+
+        colorOfCar4 = Colors[colorIndex];
+        playerColor.playerNormalColor = colorOfCar4;
+
+        carCollider.SaveData();
+        carCollider.LoadData();
+    }
+    public void Pressed_R_A_C4_Color2()
+    {
+        //Cars[index].SetActive(false);
+        pressedRight = true;
+        pressedLeft = false;
+        indexBLock = false;
+
+        colorIndex = 14;
+        carCollider.colorIndex = 14;
+
+        var block = new MaterialPropertyBlock();
+
+        block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
+        playerRenderer.SetPropertyBlock(block);
+
+        carCollider.colorIndexOfCar4 = colorIndex;
+
+        colorOfCar4 = Colors[colorIndex];
+        playerColor.playerNormalColor = colorOfCar4;
+
+        carCollider.SaveData();
+        carCollider.LoadData();
+    }
+    public void Pressed_L_A_C4_Color2()
+    {
+        //Cars[index].SetActive(false);
+        pressedRight = false;
+        pressedLeft = true;
+        indexBLock = true;
+
+        colorIndex = 12;
+        carCollider.colorIndex = 12;
+
+        var block = new MaterialPropertyBlock();
+
+        block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
+        playerRenderer.SetPropertyBlock(block);
+
+        carCollider.colorIndexOfCar4 = colorIndex;
+
+        colorOfCar4 = Colors[colorIndex];
+        playerColor.playerNormalColor = colorOfCar4;
+
+        carCollider.SaveData();
+        carCollider.LoadData();
+    }
+    public void Pressed_R_A_C4_Color3()
+    {
+        //Cars[index].SetActive(false);
+        pressedRight = true;
+        pressedLeft = false;
+        indexBLock = false;
+
+        colorIndex = 15;
+        carCollider.colorIndex = 15;
+
+        var block = new MaterialPropertyBlock();
+
+        block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
+        playerRenderer.SetPropertyBlock(block);
+
+        carCollider.colorIndexOfCar4 = colorIndex;
+
+        colorOfCar4 = Colors[colorIndex];
+        playerColor.playerNormalColor = colorOfCar4;
+
+        carCollider.SaveData();
+        carCollider.LoadData();
+    }
+    public void Pressed_L_A_C4_Color3()
+    {
+        //Cars[index].SetActive(false);
+        pressedRight = false;
+        pressedLeft = true;
+        indexBLock = true;
+
+        colorIndex = 13;
+        carCollider.colorIndex = 13;
+
+        var block = new MaterialPropertyBlock();
+
+        block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
+        playerRenderer.SetPropertyBlock(block);
+
+        carCollider.colorIndexOfCar4 = colorIndex;
+
+        colorOfCar4 = Colors[colorIndex];
+        playerColor.playerNormalColor = colorOfCar4;
+
+        carCollider.SaveData();
+        carCollider.LoadData();
+    }
+    public void Pressed_R_A_C4_Color4()
+    {
+        //Cars[index].SetActive(false);
+        pressedRight = true;
+        pressedLeft = false;
+        indexBLock = false;
+
+        colorIndex = 15;
+        carCollider.colorIndex = 15;
+
+        var block = new MaterialPropertyBlock();
+
+        block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
+        playerRenderer.SetPropertyBlock(block);
+
+        carCollider.colorIndexOfCar4 = colorIndex;
+
+        colorOfCar4 = Colors[colorIndex];
+        playerColor.playerNormalColor = colorOfCar4;
+
+        carCollider.SaveData();
+        carCollider.LoadData();
+    }
+    public void Pressed_L_A_C4_Color4()
+    {
+        //Cars[index].SetActive(false);
+        pressedRight = false;
+        pressedLeft = true;
+        indexBLock = true;
+
+        colorIndex = 14;
+        carCollider.colorIndex = 14;
+
+        var block = new MaterialPropertyBlock();
+
+        block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndex]);
+        playerRenderer.SetPropertyBlock(block);
+
+        carCollider.colorIndexOfCar4 = colorIndex;
+
+        colorOfCar4 = Colors[colorIndex];
+        playerColor.playerNormalColor = colorOfCar4;
+
+        carCollider.SaveData();
+        carCollider.LoadData();
+    }
 }
