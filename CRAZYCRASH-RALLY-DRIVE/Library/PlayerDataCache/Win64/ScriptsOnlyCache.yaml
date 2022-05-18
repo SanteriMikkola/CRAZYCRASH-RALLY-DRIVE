@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CameraControll
+    - CarBuySystem
     - CarCollider
     - CarController
     - CrassControll
@@ -242,6 +243,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 8236}
     - Class: 114
       Script: {instanceID: 8416}
+    - Class: 114
+      Script: {instanceID: 305476}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -942,7 +945,7 @@ ScriptsOnlyBuild:
     className: ChromaticAberration
   - hash:
       serializedVersion: 2
-      Hash: aafb73391503e8169a390d5d935739b3
+      Hash: d6219adaf4c44e3b5e2bc8910358b078
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GarageControll
@@ -1284,7 +1287,7 @@ ScriptsOnlyBuild:
     className: Entity
   - hash:
       serializedVersion: 2
-      Hash: ad7e4ead921427985be0d5304019f443
+      Hash: 4066848e477675713f3926595f934c10
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CarCollider
@@ -1666,8 +1669,14 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: a8bebf1811fa72b880e99b793f2cc07c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CarBuySystem
   platform: 19
   scenePathNames:
   - Assets/Scenes/NooraScene.unity
   - Assets/Scenes/CameplayScene.unity
-  playerPath: E:/GitRepos_v2/CRAZYCRASH-RALLY-DRIVE/ProjectBuilds/Build15/CRAZYCRASH-RALLY-DRIVE.exe
+  playerPath: E:/GitRepos_v2/CRAZYCRASH-RALLY-DRIVE/ProjectBuilds/Build16/CRAZYCRASH-RALLY-DRIVE.exe

@@ -94,6 +94,7 @@
     <Compile Include="Assets\Scripts\Obs_scripts\RockControll.cs" />
     <Compile Include="Assets\Scripts\ObsCarMoving.cs" />
     <Compile Include="Assets\Scripts\Menu_scripts\StartButton.cs" />
+    <Compile Include="Assets\Scripts\CarBuySystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
