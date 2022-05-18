@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\GarageControll.cs" />
     <Compile Include="Assets\Scripts\Old_scripts\MapControll_V2.cs" />
     <Compile Include="Assets\Scripts\Player_scripts\PlayerColor.cs" />
+    <Compile Include="Assets\Scripts\CarBuySystem.cs" />
     <Compile Include="Assets\Scripts\SaveSys_scripts\SaveSystem.cs" />
     <Compile Include="Assets\Scripts\Menu_scripts\NooraButton.cs" />
     <Compile Include="Assets\Scripts\MapControll.cs" />
@@ -94,7 +95,6 @@
     <Compile Include="Assets\Scripts\Obs_scripts\RockControll.cs" />
     <Compile Include="Assets\Scripts\ObsCarMoving.cs" />
     <Compile Include="Assets\Scripts\Menu_scripts\StartButton.cs" />
-    <Compile Include="Assets\Scripts\CarBuySystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
