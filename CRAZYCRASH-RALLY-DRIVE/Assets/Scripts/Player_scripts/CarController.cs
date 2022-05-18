@@ -191,6 +191,12 @@ public class CarController : MonoBehaviour
                 Vector3 targetPoint = (playerRotateF.transform.position);
                 Player.transform.LookAt(targetPoint);
 
+                carCollider.F_forceL = 800f;
+                carCollider.F_forceR = -800f;
+                carCollider.F_forceBack = -550f;
+                carCollider.A_forceL = 1250f;
+                carCollider.A_forceBack = -1000f;
+
                 //startButtonS.GameStartForMapControll = true;
                 resetPposChanget = true;
                 startTreesS.ActiveS_Rocks();
@@ -256,6 +262,13 @@ public class CarController : MonoBehaviour
             Vector3 targetPoint = (playerRotateF.transform.position);
             Player.transform.LookAt(targetPoint);
 
+            carCollider.F_forceL = 800f;
+            carCollider.F_forceR = -800f;
+            carCollider.F_forceBack = -550f;
+            carCollider.A_forceL = 1250f;
+            carCollider.A_forceBack = -1000f;
+
+
             //startButtonS.GameStartForMapControll = true;
             resetPposChanget = true;
             startTreesS.ActiveS_Rocks();
@@ -275,7 +288,7 @@ public class CarController : MonoBehaviour
             rB.transform.position = new Vector3(0f, 800.948f, -83.1f);        //-31f -83.1f
             Kamera.transform.position = new Vector3(rB.position.x, rB.position.y + 5.310003f, rB.position.z - 8.23f);
 
-            targetPosz = -31.55f;
+            targetPosz = -81.55f;
 
             //startButtonS.GameStartForMapControll = true;
             PposChanget = false;

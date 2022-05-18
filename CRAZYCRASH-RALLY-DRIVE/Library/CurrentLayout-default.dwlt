@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 1299
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 678, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 97
+  controlID: 63
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 98
+  controlID: 92
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 99
+  controlID: 93
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -273,8 +273,8 @@ MonoBehaviour:
     y: 0
     width: 617
     height: 1299
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -312,7 +312,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 6c82fdffe882fdffa684fdffac84fdff108bfdff8c8bfdff4a8dfdff508dfdff68dbfdffe4dbfdffa2ddfdffa8ddfdff328bfeff666dffffe26dffffa06fffffa66fffff60c4ffff9ac5ffffc2f7ffff68fbffff9a700000a87d00002ee8000046830b00888b0b00d6a90b00b0110c00f82e0c00f4610c005e7c0c00ae691f00ca8a1f00d2911f0060941f0014991f00689f1f0068b61f001cd41f006ae91f00b4022000d4032000900c2000dcc85500de125600482d5600
+      m_ExpandedIDs: a210fbff52cafbff5acdfbffd6cdfbff94cffbff9acffbfffcd4fbff78d5fbffd8d5fbffdcd5fbff36dafbffb2dafbff70dcfbff76dcfbffbef1fbff3af2fbfff8f3fbfffef3fbff62fdfbffdefdfbff9cfffbffa2fffbff68fbffffd4770000307e0000e2860000ea960000229f0000a0b800006aef00002af10000f45e5c002e975c002eae5f0028f65f00622e60009adb6600
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -372,9 +372,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1124.6514, y: -161.02368, z: 1262.4261}
+    m_Target: {x: 27.679699, y: -11.662895, z: 22.885109}
     speed: 2
-    m_Value: {x: 1124.6514, y: -161.02368, z: 1262.4261}
+    m_Value: {x: 27.679699, y: -11.662895, z: 22.885109}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -421,13 +421,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.23470676, y: 0.30433133, z: -0.078112535, w: 0.92012185}
+    m_Target: {x: -0.16497128, y: -0.35451436, z: 0.06419258, w: -0.9184786}
     speed: 2
-    m_Value: {x: 0.23465624, y: 0.30426583, z: -0.07809572, w: 0.9199238}
+    m_Value: {x: -0.16482376, y: -0.3557815, z: 0.06442001, w: -0.9176616}
   m_Size:
-    m_Target: 1451.793
+    m_Target: 24.386673
     speed: 2
-    m_Value: 1451.793
+    m_Value: 23.336529
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -640,22 +640,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/GameplayControlling_scripts
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 72
   m_LastFolders:
-  - Assets/Scripts/GameplayControlling_scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: 72
   m_LastProjectPath: E:\GitRepos_v2\CRAZYCRASH-RALLY-DRIVE\CRAZYCRASH-RALLY-DRIVE
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 43}
-    m_SelectedIDs: 36a90400
-    m_LastClickedID: 305462
-    m_ExpandedIDs: 000000004a0c01004c0c01004e0c0100500c0100520c0100540c0100c40c010000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: ac0c0100
+    m_LastClickedID: 68780
+    m_ExpandedIDs: 00000000920c0100940c0100960c0100980c01009a0c01009c0c010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -683,7 +683,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004a0c01004c0c01004e0c0100500c0100520c0100540c0100
+    m_ExpandedIDs: 00000000920c0100940c0100960c0100980c01009a0c01009c0c0100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -710,7 +710,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000560a0100866f00006c6500002c7100009efa000032800000a493000030041c006ccd0000a4c9000000000000ae950000c6260000d8260000cc260000c0950000f2950000040c0100f80b0100
     m_RenameOverlay:
       m_UserAcceptedRename: 0

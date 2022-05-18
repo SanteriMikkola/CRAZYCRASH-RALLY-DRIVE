@@ -63,6 +63,9 @@ public class CarCollider : MonoBehaviour
 
     private Vector3 stuckForce = new Vector3(0f, 0f, -1000f);
 
+    [HideInInspector]
+    public float F_forceL, F_forceR, F_forceBack, A_forceL, A_forceBack;
+
     public int osuma = 0;
 
     public float fuel = 100f;
@@ -157,6 +160,12 @@ public class CarCollider : MonoBehaviour
 
         fMapCollider = GameObject.Find("FrontCollider");
         mapControllS = fMapCollider.GetComponent<MapControll>();
+
+        F_forceL = 800f;
+        F_forceR = -800f;
+        F_forceBack = -550f;
+        A_forceL = 1250f;
+        A_forceBack = -1000f;
 
     }
 
@@ -389,6 +398,12 @@ public class CarCollider : MonoBehaviour
             carController.targetSpeed += 0.25f;
             fuelControll.decreaseValue += 0.025f;
 
+            F_forceL += 50f;
+            F_forceR -= 50f;
+            F_forceBack -= 50f;
+            A_forceL += 50f;
+            A_forceBack -= 50f;
+
             changeItemsPos = true;
 
             start_ObsCarsMove = true;
@@ -414,6 +429,12 @@ public class CarCollider : MonoBehaviour
             carController.targetSpeed += 0.25f;
             fuelControll.decreaseValue += 0.025f;
 
+            F_forceL += 50f;
+            F_forceR -= 50f;
+            F_forceBack -= 50f;
+            A_forceL += 50f;
+            A_forceBack -= 50f;
+
             changeItemsPos = true;
 
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -433,6 +454,12 @@ public class CarCollider : MonoBehaviour
 
             carController.targetSpeed += 0.25f;
             fuelControll.decreaseValue += 0.025f;
+
+            F_forceL += 50f;
+            F_forceR -= 50f;
+            F_forceBack -= 50f;
+            A_forceL += 50f;
+            A_forceBack -= 50f;
 
             changeItemsPos = true;
 
@@ -480,17 +507,27 @@ public class CarCollider : MonoBehaviour
         }
         if (collider.gameObject.CompareTag("Fence_high_R"))
         {
-            stuckForce = new Vector3(-800f, 0f, -550f);
+            stuckForce = new Vector3(F_forceR, 0f, F_forceBack);
             rb.AddForce(stuckForce, ForceMode.Impulse);
         }
         if (collider.gameObject.CompareTag("Fence_high_L"))
         {
-            stuckForce = new Vector3(800f, 0f, -550f);
+            stuckForce = new Vector3(F_forceL, 0f, F_forceBack);
             rb.AddForce(stuckForce, ForceMode.Impulse);
         }
         if (collider.gameObject.CompareTag("Accident_L"))
         {
-            stuckForce = new Vector3(1250f, 0f, -1000f);
+            stuckForce = new Vector3(A_forceL, 0f, A_forceBack);
+            rb.AddForce(stuckForce, ForceMode.Impulse);
+        }
+        if (collider.gameObject.CompareTag("F_h_R_BigF"))
+        {
+            stuckForce = new Vector3(F_forceR - 400f, 0f, F_forceBack - 400f);
+            rb.AddForce(stuckForce, ForceMode.Impulse);
+        }
+        if (collider.gameObject.CompareTag("F_h_L_BigF"))
+        {
+            stuckForce = new Vector3(F_forceL + 400f, 0f, F_forceBack - 400f);
             rb.AddForce(stuckForce, ForceMode.Impulse);
         }
 

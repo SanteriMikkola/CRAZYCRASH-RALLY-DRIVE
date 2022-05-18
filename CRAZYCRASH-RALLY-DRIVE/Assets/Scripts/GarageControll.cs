@@ -44,6 +44,9 @@ public class GarageControll : MonoBehaviour
     public Mesh defaultMF;
     public Mesh oldMF;
 
+    public GameObject BuyButtons;
+    private CarBuySystem carBuySystem;
+
     public int index = 0;
     public int colorIndex = 0;
     public int a = 0;
@@ -110,6 +113,8 @@ public class GarageControll : MonoBehaviour
         playerRenderer = PlayersChild.GetComponent<MeshRenderer>();
 
         playerRotateF = GameObject.Find("playerRotationF");
+
+        carBuySystem = gameObject.GetComponent<CarBuySystem>();
 
         pressedRight = false;
         pressedLeft = false;
@@ -193,6 +198,8 @@ public class GarageControll : MonoBehaviour
             }
             else if (carCollider.PickedCar == 1)
             {
+                carBuySystem.CarButton2();
+
                 if (carCollider.c2_unlocked)
                 {
                     p_Car1.SetActive(false);
@@ -270,6 +277,8 @@ public class GarageControll : MonoBehaviour
             }
             else if (carCollider.PickedCar == 2)
             {
+                carBuySystem.CarButton3();
+
                 if (carCollider.c3_unlocked)
                 {
                     p_Car1.SetActive(false);
@@ -348,6 +357,8 @@ public class GarageControll : MonoBehaviour
             }
             else if (carCollider.PickedCar == 3)
             {
+                carBuySystem.CarButton4();
+
                 if (carCollider.c4_unlocked)
                 {
                     p_Car1.SetActive(false);

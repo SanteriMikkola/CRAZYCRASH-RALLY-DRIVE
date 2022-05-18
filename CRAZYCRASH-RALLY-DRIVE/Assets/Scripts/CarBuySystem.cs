@@ -26,6 +26,8 @@ public class CarBuySystem : MonoBehaviour
 
     private Button[] CB_buttons;
 
+    public GameObject[] LockedCars;
+
     private int car2_prize = 200;
     private int car3_prize = 300;
     private int car4_prize = 400;
@@ -69,6 +71,10 @@ public class CarBuySystem : MonoBehaviour
             PlayerCars[3].SetActive(false);
 
             CB_buttons[1].interactable = false;
+
+            LockedCars[0].SetActive(true);
+            LockedCars[1].SetActive(false);
+            LockedCars[2].SetActive(false);
         }
         else
         {
@@ -78,6 +84,10 @@ public class CarBuySystem : MonoBehaviour
             PlayerCars[3].SetActive(false);
 
             CB_buttons[1].interactable = true;
+
+            LockedCars[0].SetActive(false);
+            LockedCars[1].SetActive(false);
+            LockedCars[2].SetActive(false);
         }
     }
     public void CarButton3()
@@ -95,6 +105,10 @@ public class CarBuySystem : MonoBehaviour
             PlayerCars[3].SetActive(false);
 
             CB_buttons[2].interactable = false;
+
+            LockedCars[1].SetActive(true);
+            LockedCars[0].SetActive(false);
+            LockedCars[2].SetActive(false);
         }
         else
         {
@@ -104,6 +118,10 @@ public class CarBuySystem : MonoBehaviour
             PlayerCars[3].SetActive(false);
 
             CB_buttons[2].interactable = true;
+
+            LockedCars[0].SetActive(false);
+            LockedCars[1].SetActive(false);
+            LockedCars[2].SetActive(false);
         }
     }
     public void CarButton4()
@@ -121,6 +139,10 @@ public class CarBuySystem : MonoBehaviour
             PlayerCars[3].SetActive(false);
 
             CB_buttons[3].interactable = false;
+
+            LockedCars[2].SetActive(true);
+            LockedCars[0].SetActive(false);
+            LockedCars[1].SetActive(false);
         }
         else
         {
@@ -130,6 +152,10 @@ public class CarBuySystem : MonoBehaviour
             PlayerCars[2].SetActive(false);
 
             CB_buttons[3].interactable = true;
+
+            LockedCars[0].SetActive(false);
+            LockedCars[1].SetActive(false);
+            LockedCars[2].SetActive(false);
         }
     }
 
@@ -149,6 +175,8 @@ public class CarBuySystem : MonoBehaviour
             PlayerCars[3].SetActive(false);
 
             CB_buttons[1].interactable = true;
+
+            LockedCars[0].SetActive(false);
 
             garageControll.loadData = true;
 
@@ -172,6 +200,8 @@ public class CarBuySystem : MonoBehaviour
 
             CB_buttons[2].interactable = true;
 
+            LockedCars[1].SetActive(false);
+
             garageControll.loadData = true;
 
             carCollider.SaveData();
@@ -193,6 +223,8 @@ public class CarBuySystem : MonoBehaviour
             PlayerCars[2].SetActive(false);
 
             CB_buttons[3].interactable = true;
+
+            LockedCars[2].SetActive(false);
 
             garageControll.loadData = true;
 
