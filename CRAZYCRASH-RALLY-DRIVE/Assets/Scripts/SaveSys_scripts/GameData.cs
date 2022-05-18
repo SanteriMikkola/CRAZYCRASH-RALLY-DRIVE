@@ -20,6 +20,10 @@ public class GameData
     public int colorIndexOfCar3;
     public int colorIndexOfCar4;
 
+    public bool c2_unlocked;
+    public bool c3_unlocked;
+    public bool c4_unlocked;
+
     public GameData(CarCollider carCollider)
     {
         money = carCollider.money;
@@ -33,5 +37,9 @@ public class GameData
         colorIndexOfCar3 = carCollider.colorIndexOfCar3;
         colorIndexOfCar4 = carCollider.colorIndexOfCar4;
         carIndex = carCollider.carIndex;
+
+        c2_unlocked = carCollider.c2_unlocked;
+        c3_unlocked = carCollider.c3_unlocked;
+        c4_unlocked = carCollider.c4_unlocked;
     }
 }

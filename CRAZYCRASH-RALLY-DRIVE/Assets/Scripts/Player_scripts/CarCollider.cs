@@ -119,6 +119,13 @@ public class CarCollider : MonoBehaviour
     //[HideInInspector]
     public int colorIndexOfCar4 = 12;
 
+    [HideInInspector]
+    public bool c2_unlocked = false;
+    [HideInInspector]
+    public bool c3_unlocked = false;
+    [HideInInspector]
+    public bool c4_unlocked = false;
+
 
     public bool RESET_ALL_DATA = false;
 
@@ -174,6 +181,10 @@ public class CarCollider : MonoBehaviour
         colorIndexOfCar2 = data.colorIndexOfCar2;
         colorIndexOfCar3 = data.colorIndexOfCar3;
         colorIndexOfCar4 = data.colorIndexOfCar4;
+
+        c2_unlocked = data.c2_unlocked;
+        c3_unlocked = data.c3_unlocked;
+        c4_unlocked = data.c4_unlocked;
     }
 
     private void GenerateSaveFile()
@@ -751,6 +762,11 @@ public class CarCollider : MonoBehaviour
         colorIndexOfCar2 = 4;
         colorIndexOfCar3 = 8;
         colorIndexOfCar4 = 12;
+
+        c2_unlocked = false;
+        c3_unlocked = false;
+        c4_unlocked = false;
+
         RESET_ALL_DATA = false;
         SaveData();
         LoadData();
