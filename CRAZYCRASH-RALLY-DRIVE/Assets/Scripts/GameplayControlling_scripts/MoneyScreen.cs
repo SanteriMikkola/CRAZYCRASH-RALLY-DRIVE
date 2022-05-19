@@ -46,7 +46,7 @@ public class MoneyScreen : MonoBehaviour
     private Vector3 targetPos;
     private Vector3 originalPos;
 
-    private float ScoreNumTextSpeed = 220f;
+    private float ScoreNumTextSpeed = 420f;
 
     private bool ScoreNumTextOnTargetPos = false;
 
