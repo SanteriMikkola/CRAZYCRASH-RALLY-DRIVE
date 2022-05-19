@@ -28,9 +28,9 @@ public class CarBuySystem : MonoBehaviour
 
     public GameObject[] LockedCars;
 
-    private int car2_prize = 200;
-    private int car3_prize = 300;
-    private int car4_prize = 400;
+    private int car2_prize = 20000;
+    private int car3_prize = 30000;
+    private int car4_prize = 50000;
 
     // Start is called before the first frame update
     void Start()

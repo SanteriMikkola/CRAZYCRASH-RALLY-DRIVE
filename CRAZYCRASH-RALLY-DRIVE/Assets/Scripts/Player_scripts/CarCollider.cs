@@ -161,11 +161,11 @@ public class CarCollider : MonoBehaviour
         fMapCollider = GameObject.Find("FrontCollider");
         mapControllS = fMapCollider.GetComponent<MapControll>();
 
-        F_forceL = 800f;
-        F_forceR = -800f;
-        F_forceBack = -550f;
-        A_forceL = 1250f;
-        A_forceBack = -1000f;
+        F_forceL = 1150f;
+        F_forceR = -1150f;
+        F_forceBack = -700f;
+        A_forceL = 1700f;
+        A_forceBack = -1300f;
 
     }
 
