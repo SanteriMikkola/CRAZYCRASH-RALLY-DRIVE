@@ -171,9 +171,9 @@ public class HP_Controll : MonoBehaviour
                             {
                                 HealthPointsScrollBar.value -= 0.2f;
                             }
-                            else if (HealthPointsScrollBar.value == 0.1f)
+                            else if (HealthPointsScrollBar.value <= 0.2f)
                             {
-                                HealthPointsScrollBar.value -= 0.1f;
+                                HealthPointsScrollBar.value = 0f;
                             }
                             healed = true;
                         }

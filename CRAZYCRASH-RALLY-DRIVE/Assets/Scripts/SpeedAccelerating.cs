@@ -22,7 +22,7 @@ public class SpeedAccelerating : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            carController.targetSpeed += 0.083f;
+            carController.targetSpeed += 0.1f;
             collider.enabled = false;
             gameObject.SetActive(false);
         }

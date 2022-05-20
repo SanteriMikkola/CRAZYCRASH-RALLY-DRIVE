@@ -50,6 +50,9 @@ public class CarController : MonoBehaviour
     public float turnStrenght = 90f;
     public float turnInput;
 
+    [HideInInspector]
+    public bool changeCarSpeed = false;
+
     private GameObject leftFrontWheelGameOb, rightFrontWheelGameOb;
     private Transform leftFrontWheel, rightFrontWheel;
     public float wheelTurn = 30f;
@@ -263,6 +266,8 @@ public class CarController : MonoBehaviour
             rB.transform.position = new Vector3(0f, 0.6059999f, 0.4799957f);
             Kamera.transform.position = new Vector3(rB.position.x, rB.position.y + 5.310003f, rB.position.z - 8.23f);
 
+            changeCarSpeed = true;
+
             targetPosz = -0.774994f;
 
             fuelControll.decreaseValue = 0.32f;
@@ -313,10 +318,10 @@ public class CarController : MonoBehaviour
         if (carCollider.isThatMT == true && PposChanget == true && carCollider.isThatLevel2 == false && carCollider.reback_Obs == false)
         {
             Player.transform.position = new Vector3(0f, 800.986f, -264.6f);     //-212.5f -264.6f
-            rB.transform.position = new Vector3(0f, 800.948f, -83.1f);        //-31f -83.1f
+            rB.transform.position = new Vector3(0f, 800.948f, -112f);        //-31f -83.1f
             Kamera.transform.position = new Vector3(rB.position.x, rB.position.y + 5.310003f, rB.position.z - 8.23f);
 
-            targetPosz = -81.55f;
+            targetPosz = -112.55f;
 
             //startButtonS.GameStartForMapControll = true;
             PposChanget = false;
@@ -458,6 +463,19 @@ public class CarController : MonoBehaviour
 
             var defaultCenter = new Vector3(-0.0004236996f, 0.5091288f, 0.3891389f);
             carCollider.playersBoxCollider.center = new Vector3(defaultCenter.x, defaultCenter.y, defaultCenter.z);
+
+            if (changeCarSpeed)
+            {
+                targetSpeed = 2f;
+
+                fuelControll.decreaseFuel = 0.1976f;
+
+                carCollider.maxOsumat = 4;
+
+                Debug.Log(targetSpeed);
+
+                changeCarSpeed = false;
+            }
         }
         if (carCollider.c_isThatOldCar == true && carCollider.c_isThatCar3 == false && carCollider.c_isThatCar4 == false)
         {
@@ -469,6 +487,19 @@ public class CarController : MonoBehaviour
 
             var car2Center = new Vector3(-0.001453549f, 0.5221265f, 0.2798442f);
             carCollider.playersBoxCollider.center = new Vector3(car2Center.x, car2Center.y, car2Center.z);
+
+            if (changeCarSpeed)
+            {
+                targetSpeed = 1.875f;
+
+                fuelControll.decreaseFuel = 0.1976f;
+
+                carCollider.maxOsumat = 5;
+
+                Debug.Log(targetSpeed);
+
+                changeCarSpeed = false;
+            }
         }
         if (carCollider.c_isThatOldCar == false && carCollider.c_isThatCar3 == true && carCollider.c_isThatCar4 == false)
         {
@@ -480,6 +511,19 @@ public class CarController : MonoBehaviour
 
             var car3Center = new Vector3(-0.003561765f, 0.4514288f, 0.6327262f);
             carCollider.playersBoxCollider.center = new Vector3(car3Center.x, car3Center.y, car3Center.z);
+
+            if (changeCarSpeed)
+            {
+                targetSpeed = 2.4f;
+
+                fuelControll.decreaseFuel = 0.1715f;
+
+                carCollider.maxOsumat = 2;
+
+                Debug.Log(targetSpeed);
+
+                changeCarSpeed = false;
+            }
         }
         if (carCollider.c_isThatOldCar == false && carCollider.c_isThatCar3 == false && carCollider.c_isThatCar4 == true)
         {
@@ -491,6 +535,19 @@ public class CarController : MonoBehaviour
 
             var car4Center = new Vector3(-0.002982616f, 0.543448f, 0.2052773f);
             carCollider.playersBoxCollider.center = new Vector3(car4Center.x, car4Center.y, car4Center.z);
+
+            if (changeCarSpeed)
+            {
+                targetSpeed = 1.7f;
+
+                fuelControll.decreaseFuel = 0.1976f;
+
+                carCollider.maxOsumat = 10;
+
+                Debug.Log(targetSpeed);
+
+                changeCarSpeed = false;
+            }
         }
 
 

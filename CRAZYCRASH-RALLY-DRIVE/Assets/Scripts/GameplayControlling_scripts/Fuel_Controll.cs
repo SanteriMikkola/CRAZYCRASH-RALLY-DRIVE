@@ -15,8 +15,8 @@ public class Fuel_Controll : MonoBehaviour
     private bool deCreased = false;
     private bool inCreased = false;
     public float decreaseValue = 0.32f;
-    //[HideInInspector]
-    private float decreaseFuel = 0.1976f;
+    [HideInInspector]
+    public float decreaseFuel = 0.1976f;
     private float increaseValue = 4f;
     private float increaseFuel = 100f;
 
