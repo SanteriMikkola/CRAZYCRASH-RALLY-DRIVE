@@ -45,7 +45,7 @@ public class JerryCan : MonoBehaviour
 
     private void Update()
     {
-        if (enable_ColMesh == false)
+        if (enable_ColMesh == false)        ///Kun pelaaja on osunut jerryCanin collideriin, tulee 2 sekuntin delay. Minkä jälkeen jerryCanin peliobjektin collider aktivoidaan ja meshrenderer aktivoidaan.
         {
             time = time + 1f * Time.deltaTime;
 
@@ -64,7 +64,7 @@ public class JerryCan : MonoBehaviour
             }
         }
 
-        if (rebackJerry == true)
+        if (rebackJerry == true)        ///Aktivoi jerryCanin peliobjectin, mutta epäaktivoi meshrendererin
         {
             gameObject.SetActive(true);
 
@@ -78,7 +78,7 @@ public class JerryCan : MonoBehaviour
             rebackJerry = false;
         }
 
-        if (activeJerryCan == true && disableJerryCan == false)
+        if (activeJerryCan == true && disableJerryCan == false)       ///Aktivoi jerryCanin peliobjectin ja sen meshrendererin
         {
             gameObject.SetActive(true);
 
@@ -93,7 +93,7 @@ public class JerryCan : MonoBehaviour
                 i = 0;
             }
         }
-        if (activeJerryCan == false && disableJerryCan == true)
+        if (activeJerryCan == false && disableJerryCan == true)         ///Epäaktivoi jerryCanin peliobjectin ja sen meshrendererin
         {
             gameObject.SetActive(false);
 
@@ -109,7 +109,7 @@ public class JerryCan : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))      ///Jos jerryCanin collider osuu pelaajan collideriin
         {
             while (i != meshRenderer.Length)
             {
@@ -124,7 +124,7 @@ public class JerryCan : MonoBehaviour
 
         }
 
-        if (collision.gameObject.CompareTag("MapCback"))
+        if (collision.gameObject.CompareTag("MapCback"))        ///Jos jerryCanin collider osuu MapControllerin BackCollideriin
         {
             while (i != meshRenderer.Length)
             {

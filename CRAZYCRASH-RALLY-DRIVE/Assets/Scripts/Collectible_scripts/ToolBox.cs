@@ -37,7 +37,7 @@ public class ToolBox : MonoBehaviour
 
     private void Update()
     {
-        if (enable_ColMesh == false)
+        if (enable_ColMesh == false)        ///Kun pelaaja on osunut toolboxin collideriin, tulee 2 sekuntin delay. Minkä jälkeen toolboxin peliobjektin collider aktivoidaan ja meshrenderer aktivoidaan.
         {
             time = time + 1f * Time.deltaTime;
 
@@ -50,14 +50,14 @@ public class ToolBox : MonoBehaviour
             }
         }
 
-        if (reBackTB == true)
+        if (reBackTB == true)       ///Aktivoi toolboxin peliobjectin, mutta epäaktivoi meshrendererin
         {
             gameObject.SetActive(true);
             meshRenderer.enabled = false;
             reBackTB = false;
         }
 
-        if (activeToolBox == true && disableToolBox == false)
+        if (activeToolBox == true && disableToolBox == false)       ///Aktivoi toolboxin peliobjectin ja sen meshrendererin
         {
             gameObject.SetActive(true);
 
@@ -66,7 +66,7 @@ public class ToolBox : MonoBehaviour
                 meshRenderer.enabled = true;
             }
         }
-        if (activeToolBox == false && disableToolBox == true)
+        if (activeToolBox == false && disableToolBox == true)       ///Epäaktivoi toolboxin peliobjectin ja sen meshrendererin
         {
             gameObject.SetActive(false);
             meshRenderer.enabled = false;
@@ -75,7 +75,7 @@ public class ToolBox : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))      ///Jos toolboxin collider osuu pelaajan collideriin
         {
             meshRenderer.enabled = false;
             col.enabled = false;
@@ -84,7 +84,7 @@ public class ToolBox : MonoBehaviour
 
         }
 
-        if (collision.gameObject.CompareTag("MapCback"))
+        if (collision.gameObject.CompareTag("MapCback"))        ///Jos toolboxin collider osuu MapControllerin BackCollideriin
         {
             meshRenderer.enabled = false;
             gameObject.SetActive(false);
@@ -92,10 +92,5 @@ public class ToolBox : MonoBehaviour
             activeToolBox = false;
             //isColliderUnActive = true;
         }
-        /*if (collision.gameObject.CompareTag("MapCfront"))
-        {
-            gameObject.SetActive(true);
-            meshRenderer.enabled = true;
-        }*/
     }
 }

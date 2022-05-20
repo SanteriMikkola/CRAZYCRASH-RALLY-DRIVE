@@ -41,8 +41,11 @@ public class CarController : MonoBehaviour
     public GameObject Garage;
     private GarageControll garageControll;
 
-    public float forwardSpeed = 2f;
-    public float targetSpeed = 2f;
+    private GameObject[] InCreaseSpeed;
+    private BoxCollider[] speedInCreaseCol;
+
+    public float forwardSpeed = 2f;   //2f
+    public float targetSpeed = 2f;    //2f
     //public float maxSpeed = 50f;
     public float turnStrenght = 90f;
     public float turnInput;
@@ -107,6 +110,13 @@ public class CarController : MonoBehaviour
         MenuController = GameObject.Find("MenuController");
         menuController = MenuController.GetComponent<MenuController>();
         garageControll = Garage.GetComponent<GarageControll>();
+
+        InCreaseSpeed = GameObject.FindGameObjectsWithTag("InCreaseSpeed");
+        speedInCreaseCol = new BoxCollider[InCreaseSpeed.Length];
+        for (int i = 0; i < InCreaseSpeed.Length; i++)
+        {
+            speedInCreaseCol[i] = InCreaseSpeed[i].GetComponent<BoxCollider>();
+        }
 
         rB.transform.parent = null;
 
@@ -176,6 +186,15 @@ public class CarController : MonoBehaviour
                 targetPosz = -0.774994f;
 
                 fuelControll.decreaseValue = 0.32f;
+
+                for (int i = 0; i < InCreaseSpeed.Length; i++)
+                {
+                    InCreaseSpeed[i].SetActive(true);
+                }
+                for (int i = 0; i < speedInCreaseCol.Length; i++)
+                {
+                    speedInCreaseCol[i].enabled = true;
+                }
 
                 if (transform.localRotation.eulerAngles.y != 0f)
                 {
@@ -247,6 +266,15 @@ public class CarController : MonoBehaviour
             targetPosz = -0.774994f;
 
             fuelControll.decreaseValue = 0.32f;
+
+            for (int i = 0; i < InCreaseSpeed.Length; i++)
+            {
+                InCreaseSpeed[i].SetActive(true);
+            }
+            for (int i = 0; i < speedInCreaseCol.Length; i++)
+            {
+                speedInCreaseCol[i].enabled = true;
+            }
 
             if (transform.localRotation.eulerAngles.y != 0f)
             {
