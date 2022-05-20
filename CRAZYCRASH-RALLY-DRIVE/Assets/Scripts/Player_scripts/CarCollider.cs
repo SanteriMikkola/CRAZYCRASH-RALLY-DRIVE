@@ -395,8 +395,8 @@ public class CarCollider : MonoBehaviour
 
             mapControllS.highwayIdentifier = true;
 
-            carController.targetSpeed += 0.25f;
-            fuelControll.decreaseValue += 0.025f;
+            carController.targetSpeed += 0.15f;     //0.25f
+            fuelControll.decreaseValue += 0.015f;   //0.025f
 
             F_forceL += 50f;
             F_forceR -= 50f;
@@ -426,8 +426,8 @@ public class CarCollider : MonoBehaviour
 
             mapControllS.highwayIdentifier = false;
 
-            carController.targetSpeed += 0.25f;
-            fuelControll.decreaseValue += 0.025f;
+            carController.targetSpeed += 0.15f;     //0.25f
+            fuelControll.decreaseValue += 0.015f;   //0.025f
 
             F_forceL += 50f;
             F_forceR -= 50f;
@@ -452,8 +452,8 @@ public class CarCollider : MonoBehaviour
 
             mapControllS.highwayIdentifier = false;
 
-            carController.targetSpeed += 0.25f;
-            fuelControll.decreaseValue += 0.025f;
+            carController.targetSpeed += 0.15f;     //0.25f
+            fuelControll.decreaseValue += 0.015f;   //0.025f
 
             F_forceL += 50f;
             F_forceR -= 50f;

@@ -37,7 +37,7 @@ public class Safe : MonoBehaviour
 
     private void Update()
     {
-        if (enable_ColMesh == false)
+        if (enable_ColMesh == false)      ///Kun pelaaja on osunut kassakaapin collideriin, tulee 2 sekuntin delay. Minkä jälkeen kassakaapin peliobjektin collider aktivoidaan ja meshrenderer aktivoidaan.
         {
             time = time + 1f * Time.deltaTime;
 
@@ -50,14 +50,14 @@ public class Safe : MonoBehaviour
             }
         }
 
-        if (reBackSafe == true)
+        if (reBackSafe == true)       ///Aktivoi kassakaapin peliobjectin, mutta epäaktivoi meshrendererin
         {
             gameObject.SetActive(true);
             meshRenderer.enabled = false;
             reBackSafe = false;
         }
 
-        if (activeSafe == true && disableSafe == false)
+        if (activeSafe == true && disableSafe == false)       ///Aktivoi kassakaapin peliobjectin ja sen meshrendererin
         {
             gameObject.SetActive(true);
 
@@ -67,7 +67,7 @@ public class Safe : MonoBehaviour
             }
 
         }
-        if (activeSafe == false && disableSafe == true)
+        if (activeSafe == false && disableSafe == true)        ///Epäaktivoi kassakaapin peliobjectin ja sen meshrendererin
         {
             gameObject.SetActive(false);
             meshRenderer.enabled = false;
@@ -76,7 +76,7 @@ public class Safe : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))        ///Jos kassakaapin collider osuu pelaajan collideriin
         {
             meshRenderer.enabled = false;
             col.enabled = false;
@@ -85,7 +85,7 @@ public class Safe : MonoBehaviour
 
         }
 
-        if (collision.gameObject.CompareTag("MapCback"))
+        if (collision.gameObject.CompareTag("MapCback"))     ///Jos kassakaapin collider osuu MapControllerin BackCollideriin
         {
             meshRenderer.enabled = false;
             gameObject.SetActive(false);
@@ -93,10 +93,5 @@ public class Safe : MonoBehaviour
             activeSafe = false;
             //isColliderUnActive = true;
         }
-        /*if (collision.gameObject.CompareTag("MapCfront"))
-        {
-            gameObject.SetActive(true);
-            meshRenderer.enabled = true;
-        }*/
     }
 }
