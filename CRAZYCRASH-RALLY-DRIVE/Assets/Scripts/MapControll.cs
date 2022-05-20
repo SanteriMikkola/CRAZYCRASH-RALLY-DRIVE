@@ -399,7 +399,7 @@ public class MapControll : MonoBehaviour
         if (carCollider.reback_Obs == false && carCollider.isThatLevel2 == false && CposChanget == false && carCollider.isThatMT == true && highwayIdentifier == true)
         {
             //fBoxCollider.enabled = false;
-            bCollider.transform.position = new Vector3(0, 802.6f, -92.16f);     //-40.06f -92.16f
+            bCollider.transform.position = new Vector3(0, 802.6f, -121.06f);     //-40.06f -92.16f
             fCollider.transform.position = new Vector3(0, 802.6f, 5f);      //0, 802.6f, 5f
             AreaVector1 = new Vector3(0f, 802.6f, 5f);      //0f, 802.6f, 5f
             AreaVector2 = new Vector3(0f, 802.6f, 63f);     //0f, 802.6f, 63f

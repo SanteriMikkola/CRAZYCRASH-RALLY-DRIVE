@@ -182,6 +182,8 @@ public class GarageControll : MonoBehaviour
                 carCollider.c_isThatCar3 = false;
                 carCollider.c_isThatCar4 = false;
 
+                carController.changeCarSpeed = true;
+
                 var block = new MaterialPropertyBlock();
 
                 block.SetColor("Color_845fccdf533d42afac1da2a53c1f0dda", Colors[carCollider.colorIndexOfCar1]);
@@ -249,6 +251,8 @@ public class GarageControll : MonoBehaviour
                 carCollider.c_isThatOldCar = false;
                 carCollider.c_isThatCar3 = false;
                 carCollider.c_isThatCar4 = false;
+
+                carController.changeCarSpeed = true;
 
                 if (carCollider.c2_unlocked == true)
                 {
@@ -330,6 +334,8 @@ public class GarageControll : MonoBehaviour
                 carCollider.c_isThatCar3 = false;
                 carCollider.c_isThatCar4 = false;
 
+                carController.changeCarSpeed = true;
+
                 if (carCollider.c3_unlocked == true)
                 {
                     carCollider.c_isThatOldCar = false;
@@ -409,6 +415,8 @@ public class GarageControll : MonoBehaviour
                 carCollider.c_isThatOldCar = false;
                 carCollider.c_isThatCar3 = false;
                 carCollider.c_isThatCar4 = false;
+
+                carController.changeCarSpeed = true;
 
                 if (carCollider.c4_unlocked == true)
                 {
@@ -532,6 +540,8 @@ public class GarageControll : MonoBehaviour
                         carCollider.c_isThatCar3 = false;
                         carCollider.c_isThatCar4 = false;
 
+                        carController.changeCarSpeed = true;
+
                         carCollider.SaveData();
                         carCollider.LoadData();
 
@@ -582,6 +592,8 @@ public class GarageControll : MonoBehaviour
                             carCollider.c_isThatOldCar = true;
                             carCollider.c_isThatCar3 = false;
                             carCollider.c_isThatCar4 = false;
+
+                            carController.changeCarSpeed = true;
 
                             carCollider.SaveData();
                             carCollider.LoadData();
@@ -634,6 +646,8 @@ public class GarageControll : MonoBehaviour
                             carCollider.c_isThatCar3 = true;
                             carCollider.c_isThatCar4 = false;
 
+                            carController.changeCarSpeed = true;
+
                             carCollider.SaveData();
                             carCollider.LoadData();
 
@@ -666,6 +680,8 @@ public class GarageControll : MonoBehaviour
                             carCollider.c_isThatOldCar = false;
                             carCollider.c_isThatCar3 = false;
                             carCollider.c_isThatCar4 = true;
+
+                            carController.changeCarSpeed = true;
 
                             carCollider.SaveData();
                             carCollider.LoadData();
