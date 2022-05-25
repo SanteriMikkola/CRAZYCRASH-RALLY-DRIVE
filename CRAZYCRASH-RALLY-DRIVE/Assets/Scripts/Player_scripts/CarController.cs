@@ -453,7 +453,7 @@ public class CarController : MonoBehaviour
             }*/
         }
 
-        if (carCollider.c_isThatOldCar == false && carCollider.c_isThatCar3 == false && carCollider.c_isThatCar4 == false)
+        if (carCollider.c_isThatOldCar == false && carCollider.c_isThatCar3 == false && carCollider.c_isThatCar4 == false)      ///Defaultcar valittuna. 
         {
             leftFrontWheel.localRotation = Quaternion.Euler(leftFrontWheel.localRotation.eulerAngles.x, (turnInput * wheelTurn), leftFrontWheel.localRotation.eulerAngles.z);
             rightFrontWheel.localRotation = Quaternion.Euler(rightFrontWheel.localRotation.eulerAngles.x, (turnInput * wheelTurn), rightFrontWheel.localRotation.eulerAngles.z);
@@ -464,7 +464,9 @@ public class CarController : MonoBehaviour
             var defaultCenter = new Vector3(-0.0004236996f, 0.5091288f, 0.3891389f);
             carCollider.playersBoxCollider.center = new Vector3(defaultCenter.x, defaultCenter.y, defaultCenter.z);
 
-            if (changeCarSpeed)
+                    ///Pelaajan collider mukautetaan defaultauton kokoon.^
+
+            if (changeCarSpeed)     ///Muutetaan pelaajan nopeutta ja maksimi osumam‰‰r‰‰ auton mukaan.
             {
                 targetSpeed = 2f;
 
@@ -477,7 +479,7 @@ public class CarController : MonoBehaviour
                 changeCarSpeed = false;
             }
         }
-        if (carCollider.c_isThatOldCar == true && carCollider.c_isThatCar3 == false && carCollider.c_isThatCar4 == false)
+        if (carCollider.c_isThatOldCar == true && carCollider.c_isThatCar3 == false && carCollider.c_isThatCar4 == false)       ///Car2 valittuna.
         {
             leftFrontWheel.localRotation = Quaternion.Euler(leftFrontWheel.localRotation.eulerAngles.x, (turnInput * wheelTurn), leftFrontWheel.localRotation.eulerAngles.z);
             rightFrontWheel.localRotation = Quaternion.Euler(rightFrontWheel.localRotation.eulerAngles.x, (turnInput * wheelTurn), rightFrontWheel.localRotation.eulerAngles.z);
@@ -488,7 +490,9 @@ public class CarController : MonoBehaviour
             var car2Center = new Vector3(-0.001453549f, 0.5221265f, 0.2798442f);
             carCollider.playersBoxCollider.center = new Vector3(car2Center.x, car2Center.y, car2Center.z);
 
-            if (changeCarSpeed)
+            ///Pelaajan collider mukautetaan auto2 kokoon.^
+
+            if (changeCarSpeed)     ///Muutetaan pelaajan nopeutta ja maksimi osumam‰‰r‰‰ auton mukaan.
             {
                 targetSpeed = 1.875f;
 
@@ -501,7 +505,7 @@ public class CarController : MonoBehaviour
                 changeCarSpeed = false;
             }
         }
-        if (carCollider.c_isThatOldCar == false && carCollider.c_isThatCar3 == true && carCollider.c_isThatCar4 == false)
+        if (carCollider.c_isThatOldCar == false && carCollider.c_isThatCar3 == true && carCollider.c_isThatCar4 == false)       ///Car3 valittuna.
         {
             leftFrontWheel.localRotation = Quaternion.Euler(leftFrontWheel.localRotation.eulerAngles.x, (turnInput * wheelTurn), leftFrontWheel.localRotation.eulerAngles.z);
             rightFrontWheel.localRotation = Quaternion.Euler(rightFrontWheel.localRotation.eulerAngles.x, (turnInput * wheelTurn), rightFrontWheel.localRotation.eulerAngles.z);
@@ -512,7 +516,9 @@ public class CarController : MonoBehaviour
             var car3Center = new Vector3(-0.003561765f, 0.4514288f, 0.6327262f);
             carCollider.playersBoxCollider.center = new Vector3(car3Center.x, car3Center.y, car3Center.z);
 
-            if (changeCarSpeed)
+            ///Pelaajan collider mukautetaan auto3 kokoon.^
+
+            if (changeCarSpeed)     ///Muutetaan pelaajan nopeutta ja maksimi osumam‰‰r‰‰ auton mukaan.
             {
                 targetSpeed = 2.4f;
 
@@ -525,7 +531,7 @@ public class CarController : MonoBehaviour
                 changeCarSpeed = false;
             }
         }
-        if (carCollider.c_isThatOldCar == false && carCollider.c_isThatCar3 == false && carCollider.c_isThatCar4 == true)
+        if (carCollider.c_isThatOldCar == false && carCollider.c_isThatCar3 == false && carCollider.c_isThatCar4 == true)       ///Car4 valittuna.
         {
             leftFrontWheel.localRotation = Quaternion.Euler(leftFrontWheel.localRotation.eulerAngles.x, (turnInput * wheelTurn), leftFrontWheel.localRotation.eulerAngles.z);
             rightFrontWheel.localRotation = Quaternion.Euler(rightFrontWheel.localRotation.eulerAngles.x, (turnInput * wheelTurn), rightFrontWheel.localRotation.eulerAngles.z);
@@ -536,7 +542,9 @@ public class CarController : MonoBehaviour
             var car4Center = new Vector3(-0.002982616f, 0.543448f, 0.2052773f);
             carCollider.playersBoxCollider.center = new Vector3(car4Center.x, car4Center.y, car4Center.z);
 
-            if (changeCarSpeed)
+            ///Pelaajan collider mukautetaan auto4 kokoon.^
+
+            if (changeCarSpeed)     ///Muutetaan pelaajan nopeutta ja maksimi osumam‰‰r‰‰ auton mukaan.
             {
                 targetSpeed = 1.7f;
 

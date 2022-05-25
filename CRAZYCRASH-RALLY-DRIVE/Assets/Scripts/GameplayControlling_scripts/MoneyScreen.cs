@@ -46,7 +46,11 @@ public class MoneyScreen : MonoBehaviour
     private Vector3 targetPos;
     private Vector3 originalPos;
 
-    private float ScoreNumTextSpeed = 420f;
+    [SerializeField]
+    private float ScoreNumTextSpeed = 250f;
+
+    public GameObject SpeedUpButton;
+
 
     private bool ScoreNumTextOnTargetPos = false;
 
@@ -68,7 +72,7 @@ public class MoneyScreen : MonoBehaviour
     [HideInInspector]
     public bool CloseScreen = false;
 
-    void Start()
+    void Start()        ///Starttisetup
     {
         Kamera = GameObject.Find("Main Camera");
         Safe_money = GameObject.Find("Safe_money");
@@ -91,7 +95,7 @@ public class MoneyScreen : MonoBehaviour
     {
         Safe_money.transform.position = new Vector3(Kamera.transform.position.x, Kamera.transform.position.y - 1.5f, Kamera.transform.position.z + 1f);
 
-        if (startButtonS.IsGameStarted == true && setUp == true)
+        if (startButtonS.IsGameStarted == true && setUp == true)        ///Starttinapin painamisen jälkeen tuleva setup. Samankaltainen kuin Starttisetup, mutta alkaa vaan starttinapin painamisen jälkeen.
         {
             moneyScreen = GameObject.Find("MoneyScreen");
             MoneyBackground = GameObject.Find("MoneyBackground");
@@ -125,9 +129,9 @@ public class MoneyScreen : MonoBehaviour
 
         MoneyText_Image_Text.text = carCollider.money.ToString();
 
-        if (carCollider.isPlayerDead && moneyScreenActivated == false)
+        if (carCollider.isPlayerDead && moneyScreenActivated == false)          ///Mitä tapahtuu, kun pelaaja kuolee ja rahanantoruutua ei olla vielä aktivoitu.
         {
-            if (pickScoreNum == true)
+            if (pickScoreNum == true)           ///Taas pientä "setuppausta", jotta saadaan oikeat arvot tietylle muuttujille sekä aktivoitua muutama objecti/componentti.
             {
                 ScoreNumText2_Text.alignment = TextAnchor.MiddleCenter;
                 ScoreNumText2_Text.text = ScoreNumText_Text.text;
@@ -136,6 +140,8 @@ public class MoneyScreen : MonoBehaviour
                 activateMoneyST = false;
                 disableMoneyST = false;
                 ScoreNumTextOnTargetPos = false;
+                ScoreNumTextSpeed = 250f;
+                SpeedUpButton.SetActive(true);
                 pickScoreNum = false;
             }
 
@@ -146,7 +152,6 @@ public class MoneyScreen : MonoBehaviour
             MoneyText_Image_Image.SetActive(true);
             MoneyAddedText.SetActive(true);
             //MoneyAddedScoreText.SetActive(true);
-            DownPanel.SetActive(true);
             ScoreNumText2.SetActive(true);
 
 
@@ -154,14 +159,14 @@ public class MoneyScreen : MonoBehaviour
             {
                 MoneyBackground2_Image.enabled = true;
                 ScoreNumText2.transform.position = Vector3.MoveTowards(ScoreNumText2.transform.position, targetPos, ScoreNumTextSpeed * Time.deltaTime);
-                if (ScoreNumText2.transform.position == targetPos)
+                if (ScoreNumText2.transform.position == targetPos)          ///Tässä odotetaan liikkuvaa scorenumeroa. Odotetaan niin kauan, kunnes se on saapunut "päätepysäkille"
                 {
                     time = time + 1f * Time.deltaTime;
 
                     //MoneyAddedScoreText_Text.text = carCollider.moneyPerRound2.ToString();
 
 
-                    if (time >= timeDelay3 && activateMoneyST == false)
+                    if (time >= timeDelay3 && activateMoneyST == false)         ///Tässä odotetaan pieni delay, jonka jälkeen scorenumeron teksti muuttuu rahamääräksi, jonka saat scoremäärästä.
                     {
 
                         MoneyText_Image_Text.enabled = true;
@@ -183,13 +188,14 @@ public class MoneyScreen : MonoBehaviour
                         time = 0;
                     }
 
-                    if (time >= timeDelay2 && disableMoneyST == false)
+                    if (time >= timeDelay2 && disableMoneyST == false)          ///Tässä odotetaan pieni delay, jonka jälkeen scoremäärästä siirrytään rahaboksien kimppuun.
                     {
 
                         ScoreNumText2_Text.enabled = false;
                         ScoreNum_Money_Image_Image.enabled = false;
 
                         MoneyBackground2_Image.enabled = false;
+                        SpeedUpButton.SetActive(false);
 
                         disableMoneyST = true;
                         time = 0;
@@ -208,13 +214,15 @@ public class MoneyScreen : MonoBehaviour
 
                 MoneyAddedText_Text.text = carCollider.moneyPerRound.ToString();
 
-                if (time >= timeDelay && activateMoneyT == false)
+                if (time >= timeDelay && activateMoneyT == false)       ///Tässä odotetaan pieni delay, koska kassakaapin avausanimaatio ei ole vielä loppunut. Delayn jälkeen kerrotaan rahabokseista saatu summa.
                 {
                     MoneyAddedText_Text.enabled = true;
                     MoneyAddedT_Money_Image_Image.enabled = true;
                     //Debug.Log("KEKE");
 
                     carCollider.AddSafeMoney();
+
+                    DownPanel.SetActive(true);
 
                     //carCollider.money += carCollider.moneyPerRound;
 
@@ -320,6 +328,7 @@ public class MoneyScreen : MonoBehaviour
         MoneyText_Image_Image_Image.enabled = false;
         MoneyAddedText_Text.enabled = false;
         MoneyAddedT_Money_Image_Image.enabled = false;
+        SpeedUpButton.SetActive(false);
         Safe_money.SetActive(false);
         DownPanel.SetActive(false);
 
@@ -330,5 +339,11 @@ public class MoneyScreen : MonoBehaviour
         MoneyBackground.SetActive(false);
         MoneyText_Image.SetActive(false);
         MoneyText_Image_Image.SetActive(false);*/
+    }
+
+    public void M_ScreenSpeedUp()
+    {
+        ScoreNumText2.transform.position = new Vector3(targetPos.x, targetPos.y, targetPos.z);
+        time += 2f;
     }
 }
