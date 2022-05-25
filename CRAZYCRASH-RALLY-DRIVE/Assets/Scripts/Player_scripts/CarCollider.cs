@@ -503,6 +503,12 @@ public class CarCollider : MonoBehaviour
             safePicked = true;
             safesPicked++;
         }
+        if (collider.gameObject.CompareTag("H_Safe"))
+        {
+            Debug.Log("H_safe");
+            safePicked = true;
+            safesPicked++;
+        }
 
         if (collider.gameObject.CompareTag("HighWay"))
         {
