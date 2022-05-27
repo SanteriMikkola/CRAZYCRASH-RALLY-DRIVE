@@ -24,6 +24,9 @@ public class GameData
     public bool c3_unlocked;
     public bool c4_unlocked;
 
+    public int screenRes;
+    public bool fullscreen;
+
     public GameData(CarCollider carCollider)
     {
         money = carCollider.money;
@@ -41,5 +44,8 @@ public class GameData
         c2_unlocked = carCollider.c2_unlocked;
         c3_unlocked = carCollider.c3_unlocked;
         c4_unlocked = carCollider.c4_unlocked;
+
+        screenRes = carCollider.screenRes;
+        fullscreen = carCollider.fullscreen;
     }
 }

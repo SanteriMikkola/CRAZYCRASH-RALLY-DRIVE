@@ -129,6 +129,10 @@ public class CarCollider : MonoBehaviour
     [HideInInspector]
     public bool c4_unlocked = false;
 
+    [HideInInspector]
+    public int screenRes = 2;
+    [HideInInspector]
+    public bool fullscreen = true;
 
     public bool RESET_ALL_DATA = false;
 
@@ -195,6 +199,9 @@ public class CarCollider : MonoBehaviour
         c2_unlocked = data.c2_unlocked;
         c3_unlocked = data.c3_unlocked;
         c4_unlocked = data.c4_unlocked;
+
+        screenRes = data.screenRes;
+        fullscreen = data.fullscreen;
     }
 
     private void GenerateSaveFile()
@@ -813,6 +820,9 @@ public class CarCollider : MonoBehaviour
         c2_unlocked = false;
         c3_unlocked = false;
         c4_unlocked = false;
+
+        screenRes = 2;
+        fullscreen = true;
 
         RESET_ALL_DATA = false;
         SaveData();
