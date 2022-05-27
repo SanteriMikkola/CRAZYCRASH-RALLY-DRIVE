@@ -23,6 +23,7 @@ ScriptsOnlyBuild:
     - ObsCarGeneration
     - ObsCarMoving
     - ObstacleRandomizePosOffset
+    - OptionsControl
     - PlayerColor
     - RockControll
     - Safe
@@ -102,6 +103,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.ContentSizeFitter
+    - UnityEngine.UI.Dropdown
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
@@ -155,6 +157,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1644}
     - Class: 114
       Script: {instanceID: 1646}
     - Class: 114
@@ -234,9 +238,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6908}
     - Class: 114
+      Script: {instanceID: 7388}
+    - Class: 114
       Script: {instanceID: 7516}
     - Class: 114
       Script: {instanceID: 7656}
+    - Class: 114
+      Script: {instanceID: 7726}
     - Class: 114
       Script: {instanceID: 7948}
     - Class: 114
@@ -251,6 +259,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 8240}
     - Class: 114
       Script: {instanceID: 8420}
+    - Class: 114
+      Script: {instanceID: 878386}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -399,11 +409,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7032}
     - Class: 114
+      Script: {instanceID: 7388}
+    - Class: 114
       Script: {instanceID: 7726}
     - Class: 114
       Script: {instanceID: 8058}
     - Class: 114
       Script: {instanceID: 8316}
+    - Class: 114
+      Script: {instanceID: 878386}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1305,7 +1319,7 @@ ScriptsOnlyBuild:
     className: Entity
   - hash:
       serializedVersion: 2
-      Hash: 588a5835a9deb2e362f78f7210570e18
+      Hash: b8c417836e690a8a6b188f7a43974993
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CarCollider
@@ -1449,7 +1463,7 @@ ScriptsOnlyBuild:
     className: FilmGrain
   - hash:
       serializedVersion: 2
-      Hash: 128afd4fb48b17b1c8b41e097cb1c5e9
+      Hash: 99a5536b4c5c04bdef9cc668462b5367
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MoneyScreen
@@ -1687,8 +1701,14 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: a9a058e8f45441f8eaf89ea5e0b1d829
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OptionsControl
   platform: 19
   scenePathNames:
   - Assets/Scenes/NooraScene.unity
   - Assets/Scenes/CameplayScene.unity
-  playerPath: E:/GitRepos_v2/CRAZYCRASH-RALLY-DRIVE/ProjectBuilds/Build18/CRAZYCRASH-RALLY-DRIVE.exe
+  playerPath: E:/GitRepos_v2/CRAZYCRASH-RALLY-DRIVE/ProjectBuilds/Build19/CRAZYCRASH-RALLY-DRIVE.exe
