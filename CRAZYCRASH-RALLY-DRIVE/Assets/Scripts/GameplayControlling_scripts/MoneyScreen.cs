@@ -14,6 +14,9 @@ public class MoneyScreen : MonoBehaviour
     private GameObject Player;
     private CarCollider carCollider;
 
+    private GameObject MenuController;
+    private MenuNavigation menuNavigation;
+
     private GameObject moneyScreen;
     private GameObject MoneyBackground;
     private GameObject MoneyBackground2;
@@ -83,6 +86,9 @@ public class MoneyScreen : MonoBehaviour
         Player = GameObject.Find("Player");
         carCollider = Player.GetComponent<CarCollider>();
 
+        MenuController = GameObject.Find("MenuController");
+        menuNavigation = MenuController.GetComponent<MenuNavigation>();
+
         Safe_money.SetActive(false);
 
         //1007.9f - x 766f - y
@@ -142,6 +148,7 @@ public class MoneyScreen : MonoBehaviour
                 ScoreNumTextOnTargetPos = false;
                 ScoreNumTextSpeed = 250f;
                 SpeedUpButton.SetActive(true);
+                menuNavigation.PlayerDead();
                 pickScoreNum = false;
             }
 
@@ -223,6 +230,8 @@ public class MoneyScreen : MonoBehaviour
                     carCollider.AddSafeMoney();
 
                     DownPanel.SetActive(true);
+
+                    menuNavigation.SpeedUPMoneyGive();
 
                     //carCollider.money += carCollider.moneyPerRound;
 

@@ -11,8 +11,8 @@ public class OptionsControl : MonoBehaviour
 
     public Toggle FullscreenToggle;
 
-    List<int> widths = new List<int>() { 2560, 1920, 1920, 1600, 1600, 1400, 1280, 1280, 1280, 1280, 1024, 800, 720, 640 };
-    List<int> heights = new List<int>() { 1440, 1440, 1080, 1200, 1024, 900, 1024, 960, 800, 720, 768, 600, 480, 480 };
+    List<int> widths = new List<int>() { 2560, 1920, 1600, 1600, 1280, 1280, 1024, 800, 720 };
+    List<int> heights = new List<int>() { 1440, 1080, 1200, 1024, 1024, 720, 768, 600, 480 };
 
 
     void Start()

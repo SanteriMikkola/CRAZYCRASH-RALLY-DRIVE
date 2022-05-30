@@ -15,6 +15,8 @@ public class CarBuySystem : MonoBehaviour
     public GameObject garageMenuMoneyT;
     private TextMeshProUGUI garageMenuMoneyT_Text;
 
+    private GameObject MenuControll;
+    private MenuNavigation menuNavigation;
 
     public GameObject[] BuyButtons;
 
@@ -24,7 +26,8 @@ public class CarBuySystem : MonoBehaviour
 
     public GameObject[] ColorButtons;
 
-    private Button[] CB_buttons;
+    [HideInInspector]
+    public Button[] CB_buttons;
 
     public GameObject[] LockedCars;
 
@@ -39,6 +42,10 @@ public class CarBuySystem : MonoBehaviour
         carCollider = Player.GetComponent<CarCollider>();
         garageControll = Garage.GetComponent<GarageControll>();
         garageMenuMoneyT_Text = garageMenuMoneyT.GetComponent<TextMeshProUGUI>();
+
+        MenuControll = GameObject.Find("MenuController");
+        menuNavigation = MenuControll.GetComponent<MenuNavigation>();
+
         CB_buttons = new Button[ColorButtons.Length];
 
         for (int i = 0; i < ColorButtons.Length; i++)
@@ -178,6 +185,9 @@ public class CarBuySystem : MonoBehaviour
 
             LockedCars[0].SetActive(false);
 
+            menuNavigation.Car2Bought();
+            menuNavigation.ChangeCar2();
+
             garageControll.loadData = true;
 
             carCollider.SaveData();
@@ -202,6 +212,9 @@ public class CarBuySystem : MonoBehaviour
 
             LockedCars[1].SetActive(false);
 
+            menuNavigation.Car3Bought();
+            menuNavigation.ChangeCar3();
+
             garageControll.loadData = true;
 
             carCollider.SaveData();
@@ -225,6 +238,9 @@ public class CarBuySystem : MonoBehaviour
             CB_buttons[3].interactable = true;
 
             LockedCars[2].SetActive(false);
+
+            menuNavigation.Car4Bought();
+            menuNavigation.ChangeCar4();
 
             garageControll.loadData = true;
 

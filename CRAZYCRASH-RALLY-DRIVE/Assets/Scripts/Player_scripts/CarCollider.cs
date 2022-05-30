@@ -100,7 +100,7 @@ public class CarCollider : MonoBehaviour
 
     private bool scoreGet = false;
 
-    [HideInInspector]
+    //[HideInInspector]
     public int PickedCar = 0;
     [HideInInspector]
     public bool c_isThatOldCar = false;
@@ -130,7 +130,7 @@ public class CarCollider : MonoBehaviour
     public bool c4_unlocked = false;
 
     [HideInInspector]
-    public int screenRes = 2;
+    public int screenRes = 1;
     [HideInInspector]
     public bool fullscreen = true;
 
@@ -821,7 +821,7 @@ public class CarCollider : MonoBehaviour
         c3_unlocked = false;
         c4_unlocked = false;
 
-        screenRes = 2;
+        screenRes = 1;
         fullscreen = true;
 
         RESET_ALL_DATA = false;
