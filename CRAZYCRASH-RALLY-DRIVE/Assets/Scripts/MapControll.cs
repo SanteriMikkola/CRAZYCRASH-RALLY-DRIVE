@@ -91,6 +91,10 @@ public class MapControll : MonoBehaviour
     public bool isGamePaused = false;
     public bool isGiveUp = false;
 
+    private GameObject MenuControll;
+    private MenuNavigation menuNavigation;
+
+
     private int i = 0, ii = 0, iii = 0;
 
     private GameObject startButtonB;
@@ -158,6 +162,9 @@ public class MapControll : MonoBehaviour
         startButtonB = GameObject.Find("StartButton");
         startButtonS = startButtonB.GetComponent<StartButton>();
         carCollider = Player.GetComponent<CarCollider>();
+
+        MenuControll = GameObject.Find("MenuController");
+        menuNavigation = MenuControll.GetComponent<MenuNavigation>();
 
         fBoxCollider = fCollider.GetComponent<BoxCollider>();
         //bBoxCollider = bCollider.GetComponent<BoxCollider
@@ -383,6 +390,8 @@ public class MapControll : MonoBehaviour
                 PM_bg_image.enabled = false;
                 CountDownText.enabled = false;
 
+                menuNavigation.PressingResumeB();
+
                 isGamePaused = false;
                 carCollider.playersBoxCollider.enabled = true;
                 time = 0f;
@@ -391,10 +400,10 @@ public class MapControll : MonoBehaviour
             }
         }
 
-        if ((Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.JoystickButton7)) && isGamePaused == false && pauseSetup == false && carCollider.playerCollide == false)
+        /*if ((Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.JoystickButton7)) && isGamePaused == false && pauseSetup == false && carCollider.playerCollide == false)
         {
             GamePaused();
-        }
+        }*/
 
         if (carCollider.reback_Obs == false && carCollider.isThatLevel2 == false && CposChanget == false && carCollider.isThatMT == true && highwayIdentifier == true)
         {
@@ -1536,6 +1545,7 @@ public class MapControll : MonoBehaviour
             }
         }
 
+        menuNavigation.PressingGiveUP();
 
         CposChanget = true;
 
@@ -1574,7 +1584,7 @@ public class MapControll : MonoBehaviour
         CountDownText = CountDown.GetComponent<Text>();
     }
 
-    private void GamePaused()
+    public void GamePaused()
     {
         isGamePaused = true;
         PM_bg_image.enabled = true;

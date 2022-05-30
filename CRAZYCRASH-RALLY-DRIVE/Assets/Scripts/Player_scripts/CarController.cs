@@ -36,6 +36,7 @@ public class CarController : MonoBehaviour
 
     private GameObject MenuController;
     private MenuController menuController;
+    private MenuNavigation menuNavigation;
     private GameObject Cars;
 
     public GameObject Garage;
@@ -112,6 +113,7 @@ public class CarController : MonoBehaviour
         startTreesS = startTreeDestroyer.GetComponent<StartTrees>();
         MenuController = GameObject.Find("MenuController");
         menuController = MenuController.GetComponent<MenuController>();
+        menuNavigation = MenuController.GetComponent<MenuNavigation>();
         garageControll = Garage.GetComponent<GarageControll>();
 
         InCreaseSpeed = GameObject.FindGameObjectsWithTag("InCreaseSpeed");

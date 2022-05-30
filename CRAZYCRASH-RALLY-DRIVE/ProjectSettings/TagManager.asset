@@ -47,6 +47,7 @@ TagManager:
   - F_h_R_BigF
   - F_h_L_BigF
   - InCreaseSpeed
+  - BuyButton
   layers:
   - Default
   - TransparentFX

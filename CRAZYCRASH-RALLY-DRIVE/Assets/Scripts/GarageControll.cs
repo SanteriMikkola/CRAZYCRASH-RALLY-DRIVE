@@ -1625,49 +1625,219 @@ public class GarageControll : MonoBehaviour
         pressedCarB = false;
         pressedHatB = false;
 
-        /*switch (index)
+        carCollider.LoadData();
+
+        switch (carCollider.PickedCar)
         {
             case 0: //defaltcar
                 {
-                    garageCarMeshRenderer = Cars[index].GetComponent<MeshRenderer>();
+                    if (carCollider.colorIndexOfCar1 == 0)
+                    {
+                        PaintArrow[0].SetActive(true);
+                        PaintArrow[1].SetActive(true);
 
+                        PaintArrow[2].SetActive(false);
+                        PaintArrow[3].SetActive(false);
+                        PaintArrow[4].SetActive(false);
+                        PaintArrow[5].SetActive(false);
+                        PaintArrow[6].SetActive(false);
+                        PaintArrow[7].SetActive(false);
+                    }
+                    else if (carCollider.colorIndexOfCar1 == 1)
+                    {
+                        PaintArrow[2].SetActive(true);
+                        PaintArrow[3].SetActive(true);
 
-                    PaintArrow[0].SetActive(true);
-                    PaintArrow[1].SetActive(true);
+                        PaintArrow[0].SetActive(false);
+                        PaintArrow[1].SetActive(false);
+                        PaintArrow[4].SetActive(false);
+                        PaintArrow[5].SetActive(false);
+                        PaintArrow[6].SetActive(false);
+                        PaintArrow[7].SetActive(false);
+                    }
+                    else if (carCollider.colorIndexOfCar1 == 2)
+                    {
+                        PaintArrow[4].SetActive(true);
+                        PaintArrow[5].SetActive(true);
 
-                    PaintArrow[2].SetActive(false);
-                    PaintArrow[3].SetActive(false);
-                    PaintArrow[4].SetActive(false);
-                    PaintArrow[5].SetActive(false);
+                        PaintArrow[0].SetActive(false);
+                        PaintArrow[1].SetActive(false);
+                        PaintArrow[2].SetActive(false);
+                        PaintArrow[3].SetActive(false);
+                        PaintArrow[6].SetActive(false);
+                        PaintArrow[7].SetActive(false);
+                    }
+                    else if (carCollider.colorIndexOfCar1 == 3)
+                    {
+                        PaintArrow[6].SetActive(true);
+                        PaintArrow[7].SetActive(true);
+
+                        PaintArrow[0].SetActive(false);
+                        PaintArrow[1].SetActive(false);
+                        PaintArrow[2].SetActive(false);
+                        PaintArrow[3].SetActive(false);
+                        PaintArrow[4].SetActive(false);
+                        PaintArrow[5].SetActive(false);
+                    }
                 }
                 break;
             case 1: //car2
                 {
-                    garageCarMeshRenderer = Cars[index].GetComponent<MeshRenderer>();
+                    if (carCollider.colorIndexOfCar2 == 4)
+                    {
+                        PaintArrow[8].SetActive(true);
+                        PaintArrow[9].SetActive(true);
 
-                    PaintArrow[2].SetActive(true);
-                    PaintArrow[3].SetActive(true);
+                        PaintArrow[10].SetActive(false);
+                        PaintArrow[11].SetActive(false);
+                        PaintArrow[12].SetActive(false);
+                        PaintArrow[13].SetActive(false);
+                        PaintArrow[14].SetActive(false);
+                        PaintArrow[15].SetActive(false);
+                    }
+                    else if (carCollider.colorIndexOfCar2 == 5)
+                    {
+                        PaintArrow[10].SetActive(true);
+                        PaintArrow[11].SetActive(true);
 
-                    PaintArrow[0].SetActive(false);
-                    PaintArrow[1].SetActive(false);
-                    PaintArrow[4].SetActive(false);
-                    PaintArrow[5].SetActive(false);
+                        PaintArrow[8].SetActive(false);
+                        PaintArrow[9].SetActive(false);
+                        PaintArrow[12].SetActive(false);
+                        PaintArrow[13].SetActive(false);
+                        PaintArrow[14].SetActive(false);
+                        PaintArrow[15].SetActive(false);
+                    }
+                    else if (carCollider.colorIndexOfCar2 == 6)
+                    {
+                        PaintArrow[12].SetActive(true);
+                        PaintArrow[13].SetActive(true);
+
+                        PaintArrow[8].SetActive(false);
+                        PaintArrow[9].SetActive(false);
+                        PaintArrow[10].SetActive(false);
+                        PaintArrow[11].SetActive(false);
+                        PaintArrow[14].SetActive(false);
+                        PaintArrow[15].SetActive(false);
+                    }
+                    else if (carCollider.colorIndexOfCar2 == 7)
+                    {
+                        PaintArrow[14].SetActive(true);
+                        PaintArrow[15].SetActive(true);
+
+                        PaintArrow[8].SetActive(false);
+                        PaintArrow[9].SetActive(false);
+                        PaintArrow[10].SetActive(false);
+                        PaintArrow[11].SetActive(false);
+                        PaintArrow[12].SetActive(false);
+                        PaintArrow[13].SetActive(false);
+                    }
                 }
                 break;
             case 2: //car3
                 {
-                    garageCarMeshRenderer = Cars[index].GetComponent<MeshRenderer>();
+                    if (carCollider.colorIndexOfCar3 == 8)
+                    {
+                        PaintArrow[16].SetActive(true);
+                        PaintArrow[17].SetActive(true);
 
-                    PaintArrow[4].SetActive(true);
-                    PaintArrow[5].SetActive(true);
+                        PaintArrow[18].SetActive(false);
+                        PaintArrow[19].SetActive(false);
+                        PaintArrow[20].SetActive(false);
+                        PaintArrow[21].SetActive(false);
+                        PaintArrow[22].SetActive(false);
+                        PaintArrow[23].SetActive(false);
+                    }
+                    else if (carCollider.colorIndexOfCar3 == 9)
+                    {
+                        PaintArrow[18].SetActive(true);
+                        PaintArrow[19].SetActive(true);
 
-                    PaintArrow[0].SetActive(false);
-                    PaintArrow[1].SetActive(false);
-                    PaintArrow[2].SetActive(false);
-                    PaintArrow[3].SetActive(false);
+                        PaintArrow[16].SetActive(false);
+                        PaintArrow[17].SetActive(false);
+                        PaintArrow[20].SetActive(false);
+                        PaintArrow[21].SetActive(false);
+                        PaintArrow[22].SetActive(false);
+                        PaintArrow[23].SetActive(false);
+                    }
+                    else if (carCollider.colorIndexOfCar3 == 10)
+                    {
+                        PaintArrow[20].SetActive(true);
+                        PaintArrow[21].SetActive(true);
+
+                        PaintArrow[16].SetActive(false);
+                        PaintArrow[17].SetActive(false);
+                        PaintArrow[18].SetActive(false);
+                        PaintArrow[19].SetActive(false);
+                        PaintArrow[22].SetActive(false);
+                        PaintArrow[23].SetActive(false);
+                    }
+                    else if (carCollider.colorIndexOfCar3 == 11)
+                    {
+                        PaintArrow[22].SetActive(true);
+                        PaintArrow[23].SetActive(true);
+
+                        PaintArrow[16].SetActive(false);
+                        PaintArrow[17].SetActive(false);
+                        PaintArrow[18].SetActive(false);
+                        PaintArrow[19].SetActive(false);
+                        PaintArrow[20].SetActive(false);
+                        PaintArrow[21].SetActive(false);
+                    }
                 }
                 break;
-        }*/
+            case 3: //car4
+                {
+                    if (carCollider.colorIndexOfCar4 == 12)
+                    {
+                        PaintArrow[24].SetActive(true);
+                        PaintArrow[25].SetActive(true);
+
+                        PaintArrow[26].SetActive(false);
+                        PaintArrow[27].SetActive(false);
+                        PaintArrow[28].SetActive(false);
+                        PaintArrow[29].SetActive(false);
+                        PaintArrow[30].SetActive(false);
+                        PaintArrow[31].SetActive(false);
+                    }
+                    else if (carCollider.colorIndexOfCar4 == 13)
+                    {
+                        PaintArrow[26].SetActive(true);
+                        PaintArrow[27].SetActive(true);
+
+                        PaintArrow[24].SetActive(false);
+                        PaintArrow[25].SetActive(false);
+                        PaintArrow[28].SetActive(false);
+                        PaintArrow[29].SetActive(false);
+                        PaintArrow[30].SetActive(false);
+                        PaintArrow[31].SetActive(false);
+                    }
+                    else if (carCollider.colorIndexOfCar4 == 14)
+                    {
+                        PaintArrow[28].SetActive(true);
+                        PaintArrow[29].SetActive(true);
+
+                        PaintArrow[24].SetActive(false);
+                        PaintArrow[25].SetActive(false);
+                        PaintArrow[26].SetActive(false);
+                        PaintArrow[27].SetActive(false);
+                        PaintArrow[30].SetActive(false);
+                        PaintArrow[31].SetActive(false);
+                    }
+                    else if (carCollider.colorIndexOfCar4 == 15)
+                    {
+                        PaintArrow[30].SetActive(true);
+                        PaintArrow[31].SetActive(true);
+
+                        PaintArrow[24].SetActive(false);
+                        PaintArrow[25].SetActive(false);
+                        PaintArrow[26].SetActive(false);
+                        PaintArrow[27].SetActive(false);
+                        PaintArrow[28].SetActive(false);
+                        PaintArrow[29].SetActive(false);
+                    }
+                }
+                break;
+        }
     }
 
     public void PressedHatB()

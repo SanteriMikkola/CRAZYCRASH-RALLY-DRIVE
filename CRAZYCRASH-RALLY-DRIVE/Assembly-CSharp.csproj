@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\SpeedAccelerating.cs" />
     <Compile Include="Assets\Scripts\Menu_scripts\MenuController.cs" />
     <Compile Include="Assets\Scripts\ObsCarGeneration.cs" />
+    <Compile Include="Assets\Scripts\OptionsControl.cs" />
     <Compile Include="Assets\Scripts\Collectible_scripts\ToolBox.cs" />
     <Compile Include="Assets\Scripts\Old_scripts\WheelColliders.cs" />
     <Compile Include="Assets\Scripts\SaveSys_scripts\GameData.cs" />
@@ -96,7 +97,7 @@
     <Compile Include="Assets\Scripts\Obs_scripts\RockControll.cs" />
     <Compile Include="Assets\Scripts\ObsCarMoving.cs" />
     <Compile Include="Assets\Scripts\Menu_scripts\StartButton.cs" />
-    <Compile Include="Assets\Scripts\OptionsControl.cs" />
+    <Compile Include="Assets\Scripts\Menu_scripts\MenuNavigation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
