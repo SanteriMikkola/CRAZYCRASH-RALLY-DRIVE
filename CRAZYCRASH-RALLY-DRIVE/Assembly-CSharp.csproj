@@ -92,12 +92,12 @@
     <Compile Include="Assets\Scripts\Collectible_scripts\ItemsEffect.cs" />
     <Compile Include="Assets\Scripts\ItemRandomGeneration.cs" />
     <Compile Include="Assets\Scripts\Obs_scripts\FewRocksControll.cs" />
+    <Compile Include="Assets\Scripts\Menu_scripts\MenuNavigation.cs" />
     <Compile Include="Assets\Scripts\Obs_scripts\Este.cs" />
     <Compile Include="Assets\Scripts\GameplayControlling_scripts\ScoreControll.cs" />
     <Compile Include="Assets\Scripts\Obs_scripts\RockControll.cs" />
     <Compile Include="Assets\Scripts\ObsCarMoving.cs" />
     <Compile Include="Assets\Scripts\Menu_scripts\StartButton.cs" />
-    <Compile Include="Assets\Scripts\Menu_scripts\MenuNavigation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

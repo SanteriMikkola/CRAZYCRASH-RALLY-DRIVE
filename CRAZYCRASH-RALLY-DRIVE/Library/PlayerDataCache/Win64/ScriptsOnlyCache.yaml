@@ -91,8 +91,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -253,17 +255,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 8024}
     - Class: 114
-      Script: {instanceID: 8144}
+      Script: {instanceID: 8026}
     - Class: 114
-      Script: {instanceID: 8200}
+      Script: {instanceID: 8146}
     - Class: 114
-      Script: {instanceID: 8224}
+      Script: {instanceID: 8202}
     - Class: 114
-      Script: {instanceID: 8242}
+      Script: {instanceID: 8226}
     - Class: 114
-      Script: {instanceID: 8422}
+      Script: {instanceID: 8244}
     - Class: 114
-      Script: {instanceID: 356086}
+      Script: {instanceID: 8424}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -418,9 +420,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7728}
     - Class: 114
-      Script: {instanceID: 8060}
+      Script: {instanceID: 8062}
     - Class: 114
-      Script: {instanceID: 8318}
+      Script: {instanceID: 8320}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -728,7 +730,7 @@ ScriptsOnlyBuild:
     className: BezierShape
   - hash:
       serializedVersion: 2
-      Hash: a9a058e8f45441f8eaf89ea5e0b1d829
+      Hash: 6928f836d60eb7ee2e2afa11c6f44867
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: OptionsControl
@@ -1328,7 +1330,7 @@ ScriptsOnlyBuild:
     className: Entity
   - hash:
       serializedVersion: 2
-      Hash: b8c417836e690a8a6b188f7a43974993
+      Hash: 940e8f750b8cc215edc2614cfe37017f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CarCollider
@@ -1628,6 +1630,12 @@ ScriptsOnlyBuild:
     className: FewRocksControll
   - hash:
       serializedVersion: 2
+      Hash: 5fe602a2f882c500337a983eeae21ef2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuNavigation
+  - hash:
+      serializedVersion: 2
       Hash: 0a3fa1a367fddc65eb32515029503334
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
@@ -1710,14 +1718,8 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
-  - hash:
-      serializedVersion: 2
-      Hash: 5fe602a2f882c500337a983eeae21ef2
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MenuNavigation
   platform: 19
   scenePathNames:
   - Assets/Scenes/NooraScene.unity
   - Assets/Scenes/CameplayScene.unity
-  playerPath: E:/GitRepos_v2/CRAZYCRASH-RALLY-DRIVE/ProjectBuilds/Build20/CRAZYCRASH-RALLY-DRIVE.exe
+  playerPath: E:/GitRepos_v2/CRAZYCRASH-RALLY-DRIVE/ProjectBuilds/Build21/CRAZYCRASH-RALLY-DRIVE.exe
