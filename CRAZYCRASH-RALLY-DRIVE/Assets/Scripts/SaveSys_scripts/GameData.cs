@@ -26,6 +26,8 @@ public class GameData
 
     public int screenRes;
     public bool fullscreen;
+    public int quality;
+
 
     public GameData(CarCollider carCollider)
     {
@@ -47,5 +49,6 @@ public class GameData
 
         screenRes = carCollider.screenRes;
         fullscreen = carCollider.fullscreen;
+        quality = carCollider.quality;
     }
 }
