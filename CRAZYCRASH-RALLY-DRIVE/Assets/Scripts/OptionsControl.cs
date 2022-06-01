@@ -16,8 +16,12 @@ public class OptionsControl : MonoBehaviour
     List<int> widths = new List<int>() { 2560, 1920, 1600, 1600, 1280, 1280, 1024, 800, 720 };
     List<int> heights = new List<int>() { 1440, 1080, 1200, 1024, 1024, 720, 768, 600, 480 };
 
-
     public Dropdown qualityDropdown;
+    public Toggle shadowsToggle;
+
+    [SerializeField] private UniversalRenderPipelineAsset urp_Low;
+    [SerializeField] private UniversalRenderPipelineAsset urp_Medium;
+    [SerializeField] private UniversalRenderPipelineAsset urp_High;
 
 
     void Start()
@@ -31,10 +35,12 @@ public class OptionsControl : MonoBehaviour
         SetScreenSize(carCollider.screenRes);
         SetFullscreen(carCollider.fullscreen);
         SetQuality(carCollider.quality);
+        SetShadows(carCollider.shadows);
 
         ResDropdown.value = carCollider.screenRes;
         FullscreenToggle.isOn = carCollider.fullscreen;
         qualityDropdown.value = carCollider.quality;
+        shadowsToggle.isOn = carCollider.shadows;
     }
 
     public void SetScreenSize(int index)
@@ -64,6 +70,27 @@ public class OptionsControl : MonoBehaviour
         QualitySettings.SetQualityLevel(index, false);
 
         carCollider.quality = index;
+        carCollider.SaveData();
+        carCollider.LoadData();
+    }
+
+    public void SetShadows(bool shadows)
+    {
+        if (!shadows)
+        {
+            urp_Low.shadowDistance = 0f;
+            urp_Medium.shadowDistance = 0f;
+            urp_High.shadowDistance = 0f;
+        }
+        else
+        {
+            urp_Low.shadowDistance = 60f;
+            urp_Medium.shadowDistance = 80f;
+            urp_High.shadowDistance = 120f;
+
+        }
+
+        carCollider.shadows = shadows;
         carCollider.SaveData();
         carCollider.LoadData();
     }
