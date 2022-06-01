@@ -27,6 +27,7 @@ public class GameData
     public int screenRes;
     public bool fullscreen;
     public int quality;
+    public bool shadows;
 
 
     public GameData(CarCollider carCollider)
@@ -50,5 +51,6 @@ public class GameData
         screenRes = carCollider.screenRes;
         fullscreen = carCollider.fullscreen;
         quality = carCollider.quality;
+        shadows = carCollider.shadows;
     }
 }

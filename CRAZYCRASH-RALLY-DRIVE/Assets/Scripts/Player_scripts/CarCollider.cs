@@ -135,6 +135,8 @@ public class CarCollider : MonoBehaviour
     public bool fullscreen = true;
     [HideInInspector]
     public int quality = 1;
+    [HideInInspector]
+    public bool shadows = true;
 
     public bool RESET_ALL_DATA = false;
 
@@ -205,6 +207,7 @@ public class CarCollider : MonoBehaviour
         screenRes = data.screenRes;
         fullscreen = data.fullscreen;
         quality = data.quality;
+        shadows = data.shadows;
     }
 
     private void GenerateSaveFile()
@@ -827,6 +830,7 @@ public class CarCollider : MonoBehaviour
         screenRes = 1;
         fullscreen = true;
         quality = 1;
+        shadows = true;
 
         RESET_ALL_DATA = false;
         SaveData();
