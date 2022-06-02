@@ -93,7 +93,7 @@ public class ObsCarMoving : MonoBehaviour
             transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
 
         }
-        else
+        else if (!carCollider.start_ObsCarsMove)
         {
             if (activateObs)
             {
