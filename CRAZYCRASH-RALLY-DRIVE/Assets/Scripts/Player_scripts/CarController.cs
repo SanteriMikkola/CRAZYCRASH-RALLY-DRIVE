@@ -177,6 +177,9 @@ public class CarController : MonoBehaviour
                 carCollider.isThatLevel2 = false;
                 carCollider.isThatMT = false;
                 //Debug.Log("toimiiko?");
+
+                carCollider.start_ObsCarsMove = false;
+
                 PposChanget = false;
                 var boxCol = fuelHelper.GetComponent<BoxCollider>();
                 boxCol.enabled = true;
@@ -526,7 +529,7 @@ public class CarController : MonoBehaviour
 
                 fuelControll.decreaseFuel = 0.1715f;
 
-                carCollider.maxOsumat = 2;
+                carCollider.maxOsumat = 3;
 
                 Debug.Log(targetSpeed);
 
@@ -548,7 +551,7 @@ public class CarController : MonoBehaviour
 
             if (changeCarSpeed)     ///Muutetaan pelaajan nopeutta ja maksimi osumam‰‰r‰‰ auton mukaan.
             {
-                targetSpeed = 1.7f;
+                targetSpeed = 1.912f;
 
                 fuelControll.decreaseFuel = 0.1976f;
 
