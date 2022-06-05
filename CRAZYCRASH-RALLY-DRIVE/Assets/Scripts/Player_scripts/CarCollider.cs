@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class CarCollider : MonoBehaviour
 {
@@ -22,6 +23,8 @@ public class CarCollider : MonoBehaviour
 
     private GameObject startMenuMoneyT;
     private TextMeshProUGUI startMenuMoneyT_Text;
+
+    [SerializeField] private GameObject PickedSafesText;
 
     private GameObject fMapCollider;
     private MapControll mapControllS;
@@ -50,7 +53,7 @@ public class CarCollider : MonoBehaviour
     [HideInInspector]
     public bool changeItemsPos = false;
 
-    [HideInInspector]
+    //[HideInInspector]
     public bool start_ObsCarsMove = false;
 
     //[HideInInspector]
@@ -218,6 +221,13 @@ public class CarCollider : MonoBehaviour
     public void Update()
     {
         startMenuMoneyT_Text.text = money.ToString();
+
+        if (safesPicked < 1)
+        {
+            var text = PickedSafesText.GetComponent<Text>();
+            text.text = "";
+        }
+
         /*if (playerCollide == true)
         {
             isPlayerMoving = false;
@@ -509,18 +519,25 @@ public class CarCollider : MonoBehaviour
             Debug.Log("safe");
             safePicked = true;
             safesPicked++;
+
+            var text = PickedSafesText.GetComponent<Text>();
+            text.text = safesPicked.ToString();
         }
         if (collider.gameObject.CompareTag("A_Safe"))
         {
             Debug.Log("A_safe");
             safePicked = true;
             safesPicked++;
+            var text = PickedSafesText.GetComponent<Text>();
+            text.text = safesPicked.ToString();
         }
         if (collider.gameObject.CompareTag("H_Safe"))
         {
             Debug.Log("H_safe");
             safePicked = true;
             safesPicked++;
+            var text = PickedSafesText.GetComponent<Text>();
+            text.text = safesPicked.ToString();
         }
 
         if (collider.gameObject.CompareTag("HighWay"))

@@ -17,6 +17,8 @@ public class ObsCarMoving : MonoBehaviour
     [HideInInspector]
     public Vector3 targetPos, startPos;
 
+    private Vector3 originalPos;
+
     public float speed = 0f;
 
     private bool i = false;
@@ -44,7 +46,8 @@ public class ObsCarMoving : MonoBehaviour
         ObsCar_L = GameObject.FindGameObjectsWithTag("ObsCar_L");
         ObsCar_R = GameObject.FindGameObjectsWithTag("ObsCar_R");
 
-        startPos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        startPos.Set(transform.position.x, transform.position.y, transform.position.z);
+        originalPos.Set(startPos.x, startPos.y, startPos.z);
 
         targetPos = endPos;
     }
@@ -79,6 +82,7 @@ public class ObsCarMoving : MonoBehaviour
                 if (transform.position == endPos)
                 {
                     transform.position = new Vector3(startPos.x, startPos.y, startPos.z);
+                    originalPos.Set(startPos.x, startPos.y, startPos.z);
                 }
                 if (transform.position == startPos)
                 {
@@ -88,21 +92,22 @@ public class ObsCarMoving : MonoBehaviour
                 transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
             }
         }
-        else if (carCollider.start_ObsCarsMove && mapControll.isGamePaused)
+        
+        if (carCollider.start_ObsCarsMove && mapControll.isGamePaused)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
 
         }
-        else if (!carCollider.start_ObsCarsMove)
+
+        if (!carCollider.start_ObsCarsMove)
         {
             if (activateObs)
             {
                 gameObject.SetActive(true);
-                transform.position = new Vector3(startPos.x, startPos.y, startPos.z);
+                gameObject.transform.position = new Vector3(originalPos.x, originalPos.y, originalPos.z);
                 activateObs = false;
             }
             
-
             i = false;
             //activateObs = true;
         }
