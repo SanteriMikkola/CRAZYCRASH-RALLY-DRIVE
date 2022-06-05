@@ -119,6 +119,7 @@ public class ObsCarGeneration : MonoBehaviour
 
     private void ChangeCarPos()
     {
+        Debug.Log("gkiwgk");
         this.gameObject.transform.position = new Vector3(targetPos.x, targetPos.y, targetPos.z);
         endPos.Set(targetPos.x, targetPos.y, obsCarMoving.endPos.z);
         obsCarMoving.endPos = new Vector3(endPos.x, endPos.y, endPos.z);
