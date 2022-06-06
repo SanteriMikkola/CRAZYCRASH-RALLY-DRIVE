@@ -48,6 +48,8 @@ TagManager:
   - F_h_L_BigF
   - InCreaseSpeed
   - BuyButton
+  - LeftBackWheel
+  - RightBackWheel
   layers:
   - Default
   - TransparentFX
