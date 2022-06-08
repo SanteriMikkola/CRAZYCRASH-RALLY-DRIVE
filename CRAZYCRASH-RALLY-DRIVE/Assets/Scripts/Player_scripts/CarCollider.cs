@@ -55,6 +55,7 @@ public class CarCollider : MonoBehaviour
 
     //[HideInInspector]
     public bool start_ObsCarsMove = false;
+    //public bool activateObs = true;
 
     //[HideInInspector]
     public bool changeObsCarsPos = false;

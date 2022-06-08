@@ -179,6 +179,7 @@ public class CarController : MonoBehaviour
                 //Debug.Log("toimiiko?");
 
                 carCollider.start_ObsCarsMove = false;
+                //carCollider.activateObs = true;
 
                 PposChanget = false;
                 var boxCol = fuelHelper.GetComponent<BoxCollider>();
@@ -258,6 +259,7 @@ public class CarController : MonoBehaviour
             carCollider.isThatMT = false;
             mapControll.CposChanget = true;
             carCollider.start_ObsCarsMove = false;
+            //carCollider.activateObs = true;
             //mapControll.GiveUpMapController();
             //Debug.Log("toimiiko?");
             PposChanget = false;
