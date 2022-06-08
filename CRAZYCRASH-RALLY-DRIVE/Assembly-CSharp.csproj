@@ -90,6 +90,7 @@
     <Compile Include="Assets\Scripts\GameplayControlling_scripts\Fuel_Controll.cs" />
     <Compile Include="Assets\Scripts\GameplayControlling_scripts\MoneyScreen.cs" />
     <Compile Include="Assets\Scripts\Collectible_scripts\ItemsEffect.cs" />
+    <Compile Include="Assets\Scripts\WheelSpinner.cs" />
     <Compile Include="Assets\Scripts\ItemRandomGeneration.cs" />
     <Compile Include="Assets\Scripts\Obs_scripts\FewRocksControll.cs" />
     <Compile Include="Assets\Scripts\Menu_scripts\MenuNavigation.cs" />
@@ -98,7 +99,6 @@
     <Compile Include="Assets\Scripts\Obs_scripts\RockControll.cs" />
     <Compile Include="Assets\Scripts\ObsCarMoving.cs" />
     <Compile Include="Assets\Scripts\Menu_scripts\StartButton.cs" />
-    <Compile Include="Assets\Scripts\WheelSpinner.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

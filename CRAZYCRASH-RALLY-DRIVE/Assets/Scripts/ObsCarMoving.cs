@@ -101,12 +101,24 @@ public class ObsCarMoving : MonoBehaviour
 
         if (!carCollider.start_ObsCarsMove)
         {
+            
+
             if (activateObs)
             {
+                Debug.Log("fjalwjf");
+                for (int i = 0; i < ObsCar_L.Length; i++)
+                {
+                    ObsCar_L[i].SetActive(true);
+                }
+                for (int i = 0; i < ObsCar_R.Length; i++)
+                {
+                    ObsCar_R[i].SetActive(true);
+                }
                 gameObject.SetActive(true);
                 gameObject.transform.position = new Vector3(originalPos.x, originalPos.y, originalPos.z);
                 activateObs = false;
             }
+
             
             i = false;
             //activateObs = true;
@@ -128,13 +140,14 @@ public class ObsCarMoving : MonoBehaviour
             deactiveObs = false;
         }*/
 
+
         if (activateMesh == true && disableMesh == false)
         {
             gameObject.SetActive(true);
             isColliderUnActive = false;
         }
 
-        if (disableMesh == true && activateMesh == false && activateObs == false/* && carCollider.start_ObsCarsMove/* && activateObs == false*/)
+        if (disableMesh == true && activateMesh == false && activateObs == false && carCollider.isPlayerDead == false/* && carCollider.start_ObsCarsMove/* && activateObs == false*/)
         {
             gameObject.SetActive(false);
             isColliderUnActive = true;
